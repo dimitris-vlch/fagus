@@ -1,0 +1,827 @@
+<RUN_SET>
+<RUN accession="DRR013927" alias="DRR013927" center_name="HU_GSES" run_center="HSS" run_date="2012-02-05T15:00:00Z" broker_name="DDBJ">
+  <IDENTIFIERS>
+    <PRIMARY_ID>DRR013927</PRIMARY_ID>
+    <SUBMITTER_ID namespace="HU_GSES">DRR013927</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>uperSAGE analysis between nitrogen fertilized samples and control in Fagus crenata</TITLE>
+  <EXPERIMENT_REF accession="DRX012468" refcenter="HU_GSES" refname="DRX012468">
+    <IDENTIFIERS>
+      <PRIMARY_ID>DRX012468</PRIMARY_ID>
+      <SUBMITTER_ID namespace="HU_GSES">DRX012468</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </EXPERIMENT_REF>
+  <RUN_LINKS>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>DRA001122</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-STUDY</DB>
+        <ID>DRP001178</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>DRS012213</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=DRR013927&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=DRR013927&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+  </RUN_LINKS>
+  <RUN_ATTRIBUTES>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-FIRST-PUBLIC</TAG>
+      <VALUE>2014-08-20</VALUE>
+    </RUN_ATTRIBUTE>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-LAST-UPDATE</TAG>
+      <VALUE>2015-06-19</VALUE>
+    </RUN_ATTRIBUTE>
+  </RUN_ATTRIBUTES>
+</RUN>
+<RUN accession="SRR18591245" alias="Fc_6_1_clean.fq.gz" center_name="SUB11190532" broker_name="NCBI">
+  <IDENTIFIERS>
+    <PRIMARY_ID>SRR18591245</PRIMARY_ID>
+    <SUBMITTER_ID label="2" namespace="SUB11190532">Fc_6_1_clean.fq.gz</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>Illumina NovaSeq 6000 paired end sequencing; resequence of Fagus crenata</TITLE>
+  <EXPERIMENT_REF accession="SRX14719867">
+    <IDENTIFIERS>
+      <PRIMARY_ID>SRX14719867</PRIMARY_ID>
+      <SUBMITTER_ID namespace="SUB11190532">Fc_6</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </EXPERIMENT_REF>
+  <RUN_LINKS>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>SRA1396942</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-STUDY</DB>
+        <ID>SRP367370</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>SRS12482126</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRR18591245&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRR18591245&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+  </RUN_LINKS>
+  <RUN_ATTRIBUTES>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-FIRST-PUBLIC</TAG>
+      <VALUE>2024-08-31</VALUE>
+    </RUN_ATTRIBUTE>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-LAST-UPDATE</TAG>
+      <VALUE>2024-08-31</VALUE>
+    </RUN_ATTRIBUTE>
+  </RUN_ATTRIBUTES>
+</RUN>
+<RUN accession="SRR18591290" alias="Fc_5_1_clean.fq.gz" center_name="SUB11190532" broker_name="NCBI">
+  <IDENTIFIERS>
+    <PRIMARY_ID>SRR18591290</PRIMARY_ID>
+    <SUBMITTER_ID label="1" namespace="SUB11190532">Fc_5_1_clean.fq.gz</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>Illumina NovaSeq 6000 paired end sequencing; resequence of Fagus crenata</TITLE>
+  <EXPERIMENT_REF accession="SRX14719822">
+    <IDENTIFIERS>
+      <PRIMARY_ID>SRX14719822</PRIMARY_ID>
+      <SUBMITTER_ID namespace="SUB11190532">Fc_5</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </EXPERIMENT_REF>
+  <RUN_LINKS>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>SRA1396942</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-STUDY</DB>
+        <ID>SRP367370</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>SRS12482081</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRR18591290&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRR18591290&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+  </RUN_LINKS>
+  <RUN_ATTRIBUTES>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-FIRST-PUBLIC</TAG>
+      <VALUE>2024-08-31</VALUE>
+    </RUN_ATTRIBUTE>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-LAST-UPDATE</TAG>
+      <VALUE>2024-08-31</VALUE>
+    </RUN_ATTRIBUTE>
+  </RUN_ATTRIBUTES>
+</RUN>
+<RUN accession="SRR18591291" alias="Fc_3_1_clean.fq.gz" center_name="SUB11190532" broker_name="NCBI">
+  <IDENTIFIERS>
+    <PRIMARY_ID>SRR18591291</PRIMARY_ID>
+    <SUBMITTER_ID label="0" namespace="SUB11190532">Fc_3_1_clean.fq.gz</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>Illumina NovaSeq 6000 paired end sequencing; resequence of Fagus crenata</TITLE>
+  <EXPERIMENT_REF accession="SRX14719821">
+    <IDENTIFIERS>
+      <PRIMARY_ID>SRX14719821</PRIMARY_ID>
+      <SUBMITTER_ID namespace="SUB11190532">Fc_3</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </EXPERIMENT_REF>
+  <RUN_LINKS>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>SRA1396942</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-STUDY</DB>
+        <ID>SRP367370</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>SRS12482080</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRR18591291&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRR18591291&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+  </RUN_LINKS>
+  <RUN_ATTRIBUTES>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-FIRST-PUBLIC</TAG>
+      <VALUE>2024-08-31</VALUE>
+    </RUN_ATTRIBUTE>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-LAST-UPDATE</TAG>
+      <VALUE>2024-08-31</VALUE>
+    </RUN_ATTRIBUTE>
+  </RUN_ATTRIBUTES>
+</RUN>
+<RUN accession="SRR8607405" alias="Ir3229_GGCTAC_L005_R1.fastq.gz" center_name="SUB5206874" broker_name="NCBI">
+  <IDENTIFIERS>
+    <PRIMARY_ID>SRR8607405</PRIMARY_ID>
+    <SUBMITTER_ID label="6" namespace="SUB5206874">Ir3229_GGCTAC_L005_R1.fastq.gz</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>Illumina HiSeq 2500 paired end sequencing; RNA-seq of Fagus crenata: 2014-7</TITLE>
+  <EXPERIMENT_REF accession="SRX5406830">
+    <IDENTIFIERS>
+      <PRIMARY_ID>SRX5406830</PRIMARY_ID>
+      <SUBMITTER_ID namespace="SUB5206874">Ir3229</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </EXPERIMENT_REF>
+  <RUN_LINKS>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>SRA851443</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-STUDY</DB>
+        <ID>SRP186547</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>SRS4391524</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRR8607405&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRR8607405&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+  </RUN_LINKS>
+  <RUN_ATTRIBUTES>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-FIRST-PUBLIC</TAG>
+      <VALUE>2019-02-23</VALUE>
+    </RUN_ATTRIBUTE>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-LAST-UPDATE</TAG>
+      <VALUE>2019-02-23</VALUE>
+    </RUN_ATTRIBUTE>
+  </RUN_ATTRIBUTES>
+</RUN>
+<RUN accession="SRR8607406" alias="Ir3230_CTTGTA_L006_R1.fastq.gz" center_name="SUB5206874" broker_name="NCBI">
+  <IDENTIFIERS>
+    <PRIMARY_ID>SRR8607406</PRIMARY_ID>
+    <SUBMITTER_ID label="7" namespace="SUB5206874">Ir3230_CTTGTA_L006_R1.fastq.gz</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>Illumina HiSeq 2500 paired end sequencing; RNA-seq of Fagus crenata: 2014-8</TITLE>
+  <EXPERIMENT_REF accession="SRX5406829">
+    <IDENTIFIERS>
+      <PRIMARY_ID>SRX5406829</PRIMARY_ID>
+      <SUBMITTER_ID namespace="SUB5206874">Ir3230</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </EXPERIMENT_REF>
+  <RUN_LINKS>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>SRA851443</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-STUDY</DB>
+        <ID>SRP186547</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>SRS4391523</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRR8607406&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRR8607406&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+  </RUN_LINKS>
+  <RUN_ATTRIBUTES>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-FIRST-PUBLIC</TAG>
+      <VALUE>2019-02-23</VALUE>
+    </RUN_ATTRIBUTE>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-LAST-UPDATE</TAG>
+      <VALUE>2019-02-23</VALUE>
+    </RUN_ATTRIBUTE>
+  </RUN_ATTRIBUTES>
+</RUN>
+<RUN accession="SRR8607407" alias="Ir3227_TGACCA_L006_R1.fastq.gz" center_name="SUB5206874" broker_name="NCBI">
+  <IDENTIFIERS>
+    <PRIMARY_ID>SRR8607407</PRIMARY_ID>
+    <SUBMITTER_ID label="4" namespace="SUB5206874">Ir3227_TGACCA_L006_R1.fastq.gz</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>Illumina HiSeq 2500 paired end sequencing; RNA-seq of Fagus crenata: 2013-10</TITLE>
+  <EXPERIMENT_REF accession="SRX5406828">
+    <IDENTIFIERS>
+      <PRIMARY_ID>SRX5406828</PRIMARY_ID>
+      <SUBMITTER_ID namespace="SUB5206874">Ir3227</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </EXPERIMENT_REF>
+  <RUN_LINKS>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>SRA851443</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-STUDY</DB>
+        <ID>SRP186547</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>SRS4391522</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRR8607407&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRR8607407&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+  </RUN_LINKS>
+  <RUN_ATTRIBUTES>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-FIRST-PUBLIC</TAG>
+      <VALUE>2019-02-23</VALUE>
+    </RUN_ATTRIBUTE>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-LAST-UPDATE</TAG>
+      <VALUE>2019-02-23</VALUE>
+    </RUN_ATTRIBUTE>
+  </RUN_ATTRIBUTES>
+</RUN>
+<RUN accession="SRR8607408" alias="Ir3228_TAGCTT_L005_R1.fastq.gz" center_name="SUB5206874" broker_name="NCBI">
+  <IDENTIFIERS>
+    <PRIMARY_ID>SRR8607408</PRIMARY_ID>
+    <SUBMITTER_ID label="5" namespace="SUB5206874">Ir3228_TAGCTT_L005_R1.fastq.gz</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>Illumina HiSeq 2500 paired end sequencing; RNA-seq of Fagus crenata: 2014-6</TITLE>
+  <EXPERIMENT_REF accession="SRX5406827">
+    <IDENTIFIERS>
+      <PRIMARY_ID>SRX5406827</PRIMARY_ID>
+      <SUBMITTER_ID namespace="SUB5206874">Ir3228</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </EXPERIMENT_REF>
+  <RUN_LINKS>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>SRA851443</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-STUDY</DB>
+        <ID>SRP186547</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>SRS4391521</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRR8607408&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRR8607408&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+  </RUN_LINKS>
+  <RUN_ATTRIBUTES>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-FIRST-PUBLIC</TAG>
+      <VALUE>2019-02-23</VALUE>
+    </RUN_ATTRIBUTE>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-LAST-UPDATE</TAG>
+      <VALUE>2019-02-23</VALUE>
+    </RUN_ATTRIBUTE>
+  </RUN_ATTRIBUTES>
+</RUN>
+<RUN accession="SRR8607409" alias="Ir3225_CGATGT_L006_R1.fastq.gz" center_name="SUB5206874" broker_name="NCBI">
+  <IDENTIFIERS>
+    <PRIMARY_ID>SRR8607409</PRIMARY_ID>
+    <SUBMITTER_ID label="2" namespace="SUB5206874">Ir3225_CGATGT_L006_R1.fastq.gz</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>Illumina HiSeq 2500 paired end sequencing; RNA-seq of Fagus crenata: 2013-8</TITLE>
+  <EXPERIMENT_REF accession="SRX5406826">
+    <IDENTIFIERS>
+      <PRIMARY_ID>SRX5406826</PRIMARY_ID>
+      <SUBMITTER_ID namespace="SUB5206874">Ir3225</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </EXPERIMENT_REF>
+  <RUN_LINKS>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>SRA851443</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-STUDY</DB>
+        <ID>SRP186547</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>SRS4391520</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRR8607409&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRR8607409&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+  </RUN_LINKS>
+  <RUN_ATTRIBUTES>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-FIRST-PUBLIC</TAG>
+      <VALUE>2019-02-23</VALUE>
+    </RUN_ATTRIBUTE>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-LAST-UPDATE</TAG>
+      <VALUE>2019-02-23</VALUE>
+    </RUN_ATTRIBUTE>
+  </RUN_ATTRIBUTES>
+</RUN>
+<RUN accession="SRR8607410" alias="Ir3226_TTAGGC_L007_R1.fastq.gz" center_name="SUB5206874" broker_name="NCBI">
+  <IDENTIFIERS>
+    <PRIMARY_ID>SRR8607410</PRIMARY_ID>
+    <SUBMITTER_ID label="3" namespace="SUB5206874">Ir3226_TTAGGC_L007_R1.fastq.gz</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>Illumina HiSeq 2500 paired end sequencing; RNA-seq of Fagus crenata: 2013-9</TITLE>
+  <EXPERIMENT_REF accession="SRX5406825">
+    <IDENTIFIERS>
+      <PRIMARY_ID>SRX5406825</PRIMARY_ID>
+      <SUBMITTER_ID namespace="SUB5206874">Ir3226</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </EXPERIMENT_REF>
+  <RUN_LINKS>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>SRA851443</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-STUDY</DB>
+        <ID>SRP186547</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>SRS4391519</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRR8607410&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRR8607410&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+  </RUN_LINKS>
+  <RUN_ATTRIBUTES>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-FIRST-PUBLIC</TAG>
+      <VALUE>2019-02-23</VALUE>
+    </RUN_ATTRIBUTE>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-LAST-UPDATE</TAG>
+      <VALUE>2019-02-23</VALUE>
+    </RUN_ATTRIBUTE>
+  </RUN_ATTRIBUTES>
+</RUN>
+<RUN accession="SRR8607411" alias="Ir3223_ATTCCT_L006_R1.fastq.gz" center_name="SUB5206874" broker_name="NCBI">
+  <IDENTIFIERS>
+    <PRIMARY_ID>SRR8607411</PRIMARY_ID>
+    <SUBMITTER_ID label="0" namespace="SUB5206874">Ir3223_ATTCCT_L006_R1.fastq.gz</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>Illumina HiSeq 2500 paired end sequencing; RNA-seq of Fagus crenata: 2013-6</TITLE>
+  <EXPERIMENT_REF accession="SRX5406824">
+    <IDENTIFIERS>
+      <PRIMARY_ID>SRX5406824</PRIMARY_ID>
+      <SUBMITTER_ID namespace="SUB5206874">Ir3223</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </EXPERIMENT_REF>
+  <RUN_LINKS>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>SRA851443</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-STUDY</DB>
+        <ID>SRP186547</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>SRS4391518</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRR8607411&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRR8607411&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+  </RUN_LINKS>
+  <RUN_ATTRIBUTES>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-FIRST-PUBLIC</TAG>
+      <VALUE>2019-02-23</VALUE>
+    </RUN_ATTRIBUTE>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-LAST-UPDATE</TAG>
+      <VALUE>2019-02-23</VALUE>
+    </RUN_ATTRIBUTE>
+  </RUN_ATTRIBUTES>
+</RUN>
+<RUN accession="SRR8607412" alias="Ir3224_ATCACG_L005_R1.fastq.gz" center_name="SUB5206874" broker_name="NCBI">
+  <IDENTIFIERS>
+    <PRIMARY_ID>SRR8607412</PRIMARY_ID>
+    <SUBMITTER_ID label="1" namespace="SUB5206874">Ir3224_ATCACG_L005_R1.fastq.gz</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>Illumina HiSeq 2500 paired end sequencing; RNA-seq of Fagus crenata: 2013-7</TITLE>
+  <EXPERIMENT_REF accession="SRX5406823">
+    <IDENTIFIERS>
+      <PRIMARY_ID>SRX5406823</PRIMARY_ID>
+      <SUBMITTER_ID namespace="SUB5206874">Ir3224</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </EXPERIMENT_REF>
+  <RUN_LINKS>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>SRA851443</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-STUDY</DB>
+        <ID>SRP186547</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>SRS4391517</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRR8607412&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRR8607412&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+  </RUN_LINKS>
+  <RUN_ATTRIBUTES>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-FIRST-PUBLIC</TAG>
+      <VALUE>2019-02-23</VALUE>
+    </RUN_ATTRIBUTE>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-LAST-UPDATE</TAG>
+      <VALUE>2019-02-23</VALUE>
+    </RUN_ATTRIBUTE>
+  </RUN_ATTRIBUTES>
+</RUN>
+<RUN accession="SRR8607413" alias="Ir3231_AGTCAA_L006_R1.fastq.gz" center_name="SUB5206874" broker_name="NCBI">
+  <IDENTIFIERS>
+    <PRIMARY_ID>SRR8607413</PRIMARY_ID>
+    <SUBMITTER_ID label="8" namespace="SUB5206874">Ir3231_AGTCAA_L006_R1.fastq.gz</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>Illumina HiSeq 2500 paired end sequencing; RNA-seq of Fagus crenata: 2014-9</TITLE>
+  <EXPERIMENT_REF accession="SRX5406822">
+    <IDENTIFIERS>
+      <PRIMARY_ID>SRX5406822</PRIMARY_ID>
+      <SUBMITTER_ID namespace="SUB5206874">Ir3231</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </EXPERIMENT_REF>
+  <RUN_LINKS>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>SRA851443</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-STUDY</DB>
+        <ID>SRP186547</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>SRS4391516</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRR8607413&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRR8607413&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+  </RUN_LINKS>
+  <RUN_ATTRIBUTES>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-FIRST-PUBLIC</TAG>
+      <VALUE>2019-02-23</VALUE>
+    </RUN_ATTRIBUTE>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-LAST-UPDATE</TAG>
+      <VALUE>2019-02-23</VALUE>
+    </RUN_ATTRIBUTE>
+  </RUN_ATTRIBUTES>
+</RUN>
+<RUN accession="SRR8607414" alias="Ir3232_AGTTCC_L006_R1.fastq.gz" center_name="SUB5206874" broker_name="NCBI">
+  <IDENTIFIERS>
+    <PRIMARY_ID>SRR8607414</PRIMARY_ID>
+    <SUBMITTER_ID label="9" namespace="SUB5206874">Ir3232_AGTTCC_L006_R1.fastq.gz</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>Illumina HiSeq 2500 paired end sequencing; RNA-seq of Fagus crenata: 2014-10</TITLE>
+  <EXPERIMENT_REF accession="SRX5406821">
+    <IDENTIFIERS>
+      <PRIMARY_ID>SRX5406821</PRIMARY_ID>
+      <SUBMITTER_ID namespace="SUB5206874">Ir3232</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </EXPERIMENT_REF>
+  <RUN_LINKS>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>SRA851443</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-STUDY</DB>
+        <ID>SRP186547</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>SRS4391515</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRR8607414&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRR8607414&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+  </RUN_LINKS>
+  <RUN_ATTRIBUTES>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-FIRST-PUBLIC</TAG>
+      <VALUE>2019-02-23</VALUE>
+    </RUN_ATTRIBUTE>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-LAST-UPDATE</TAG>
+      <VALUE>2019-02-23</VALUE>
+    </RUN_ATTRIBUTE>
+  </RUN_ATTRIBUTES>
+</RUN>
+<RUN accession="SRR8776267" alias="GEN-3 - Daisengen Peak HA.R1.fastq" center_name="SUB5359256" broker_name="NCBI">
+  <IDENTIFIERS>
+    <PRIMARY_ID>SRR8776267</PRIMARY_ID>
+    <SUBMITTER_ID label="0" namespace="SUB5359256">GEN-3 - Daisengen Peak HA.R1.fastq</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>Illumina HiSeq 2000 paired end sequencing; WGS reads of Fagus crenata: GEN-3</TITLE>
+  <EXPERIMENT_REF accession="SRX5566348">
+    <IDENTIFIERS>
+      <PRIMARY_ID>SRX5566348</PRIMARY_ID>
+      <SUBMITTER_ID namespace="SUB5359256">Fagus crenata GEN-3</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </EXPERIMENT_REF>
+  <RUN_LINKS>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>SRA865177</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-STUDY</DB>
+        <ID>SRP189284</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>SRS4529543</ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRR8776267&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+    <RUN_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRR8776267&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </RUN_LINK>
+  </RUN_LINKS>
+  <RUN_ATTRIBUTES>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-FIRST-PUBLIC</TAG>
+      <VALUE>2019-03-26</VALUE>
+    </RUN_ATTRIBUTE>
+    <RUN_ATTRIBUTE>
+      <TAG>ENA-LAST-UPDATE</TAG>
+      <VALUE>2019-03-26</VALUE>
+    </RUN_ATTRIBUTE>
+  </RUN_ATTRIBUTES>
+</RUN>
+</RUN_SET>

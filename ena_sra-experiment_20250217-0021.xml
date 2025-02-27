@@ -1,0 +1,1899 @@
+<EXPERIMENT_SET>
+<EXPERIMENT accession="DRX012468" alias="DRX012468" center_name="HU_GSES" broker_name="DDBJ">
+  <IDENTIFIERS>
+    <PRIMARY_ID>DRX012468</PRIMARY_ID>
+    <SUBMITTER_ID namespace="HU_GSES">DRX012468</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>SuperSAGE analysis between nitrogen fertilized samples and control in Fagus crenata</TITLE>
+  <STUDY_REF accession="DRP001178" refcenter="RIKEN_CSRS" refname="DRP001178">
+    <IDENTIFIERS>
+      <PRIMARY_ID>DRP001178</PRIMARY_ID>
+      <EXTERNAL_ID label="BioProject ID" namespace="BioProject">PRJDB2023</EXTERNAL_ID>
+      <SUBMITTER_ID namespace="RIKEN_CSRS">DRP001178</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </STUDY_REF>
+  <DESIGN>
+    <DESIGN_DESCRIPTION/>
+    <SAMPLE_DESCRIPTOR accession="DRS012213" refcenter="RIKEN_CSRS" refname="DRS012213">
+      <IDENTIFIERS>
+        <PRIMARY_ID>DRS012213</PRIMARY_ID>
+        <EXTERNAL_ID label="BioSample ID" namespace="BioSample">SAMD00006024</EXTERNAL_ID>
+        <SUBMITTER_ID namespace="RIKEN_CSRS">DRS012213</SUBMITTER_ID>
+      </IDENTIFIERS>
+    </SAMPLE_DESCRIPTOR>
+    <LIBRARY_DESCRIPTOR>
+      <LIBRARY_NAME>Im409_Im410</LIBRARY_NAME>
+      <LIBRARY_STRATEGY>OTHER</LIBRARY_STRATEGY>
+      <LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE>
+      <LIBRARY_SELECTION>Restriction Digest</LIBRARY_SELECTION>
+      <LIBRARY_LAYOUT>
+        <SINGLE/>
+      </LIBRARY_LAYOUT>
+    </LIBRARY_DESCRIPTOR>
+    <SPOT_DESCRIPTOR>
+      <SPOT_DECODE_SPEC>
+        <SPOT_LENGTH>101</SPOT_LENGTH>
+        <READ_SPEC>
+          <READ_INDEX>0</READ_INDEX>
+          <READ_LABEL>[CT]/[GT]</READ_LABEL>
+          <READ_CLASS>Technical Read</READ_CLASS>
+          <READ_TYPE>BarCode</READ_TYPE>
+          <BASE_COORD>1</BASE_COORD>
+        </READ_SPEC>
+        <READ_SPEC>
+          <READ_INDEX>1</READ_INDEX>
+          <READ_LABEL>EcoP15I</READ_LABEL>
+          <READ_CLASS>Technical Read</READ_CLASS>
+          <READ_TYPE>Other</READ_TYPE>
+          <BASE_COORD>3</BASE_COORD>
+        </READ_SPEC>
+        <READ_SPEC>
+          <READ_INDEX>2</READ_INDEX>
+          <READ_LABEL>NlaIII</READ_LABEL>
+          <READ_CLASS>Technical Read</READ_CLASS>
+          <READ_TYPE>Other</READ_TYPE>
+          <BASE_COORD>9</BASE_COORD>
+        </READ_SPEC>
+        <READ_SPEC>
+          <READ_INDEX>3</READ_INDEX>
+          <READ_CLASS>Application Read</READ_CLASS>
+          <READ_TYPE>Forward</READ_TYPE>
+          <BASE_COORD>13</BASE_COORD>
+        </READ_SPEC>
+      </SPOT_DECODE_SPEC>
+    </SPOT_DESCRIPTOR>
+  </DESIGN>
+  <PLATFORM>
+    <ILLUMINA>
+      <INSTRUMENT_MODEL>Illumina HiSeq 2000</INSTRUMENT_MODEL>
+    </ILLUMINA>
+  </PLATFORM>
+  <PROCESSING>
+    <PIPELINE>
+      <PIPE_SECTION>
+        <STEP_INDEX>1</STEP_INDEX>
+        <PREV_STEP_INDEX>NIL</PREV_STEP_INDEX>
+        <PROGRAM/>
+        <VERSION/>
+      </PIPE_SECTION>
+    </PIPELINE>
+  </PROCESSING>
+  <EXPERIMENT_LINKS>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>DRS012213</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>DRA001122</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=DRX012468&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=DRX012468&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+  </EXPERIMENT_LINKS>
+</EXPERIMENT>
+<EXPERIMENT accession="DRX181300" alias="DRX181300" center_name="MIE_U" broker_name="DDBJ">
+  <IDENTIFIERS>
+    <PRIMARY_ID>DRX181300</PRIMARY_ID>
+    <SUBMITTER_ID namespace="MIE_U">DRX181300</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>Illumina NovaSeq 6000 paired end sequencing of SAMD00184898</TITLE>
+  <STUDY_REF accession="DRP006429" refcenter="MIE_U" refname="DRP006429">
+    <IDENTIFIERS>
+      <PRIMARY_ID>DRP006429</PRIMARY_ID>
+      <EXTERNAL_ID label="BioProject ID" namespace="BioProject">PRJDB8757</EXTERNAL_ID>
+      <SUBMITTER_ID namespace="MIE_U">DRP006429</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </STUDY_REF>
+  <DESIGN>
+    <DESIGN_DESCRIPTION/>
+    <SAMPLE_DESCRIPTOR accession="DRS149559" refcenter="MIE_U" refname="DRS149559">
+      <IDENTIFIERS>
+        <PRIMARY_ID>DRS149559</PRIMARY_ID>
+        <EXTERNAL_ID label="BioSample ID" namespace="BioSample">SAMD00184898</EXTERNAL_ID>
+        <SUBMITTER_ID namespace="MIE_U">DRS149559</SUBMITTER_ID>
+      </IDENTIFIERS>
+    </SAMPLE_DESCRIPTOR>
+    <LIBRARY_DESCRIPTOR>
+      <LIBRARY_NAME/>
+      <LIBRARY_STRATEGY>Synthetic-Long-Read</LIBRARY_STRATEGY>
+      <LIBRARY_SOURCE>GENOMIC</LIBRARY_SOURCE>
+      <LIBRARY_SELECTION>RANDOM</LIBRARY_SELECTION>
+      <LIBRARY_LAYOUT>
+        <PAIRED NOMINAL_LENGTH="100"/>
+      </LIBRARY_LAYOUT>
+      <LIBRARY_CONSTRUCTION_PROTOCOL>Chromium Genome Reagent Kits v2 User Guide Rev.B</LIBRARY_CONSTRUCTION_PROTOCOL>
+    </LIBRARY_DESCRIPTOR>
+    <SPOT_DESCRIPTOR>
+      <SPOT_DECODE_SPEC>
+        <SPOT_LENGTH>300</SPOT_LENGTH>
+        <READ_SPEC>
+          <READ_INDEX>0</READ_INDEX>
+          <READ_CLASS>Application Read</READ_CLASS>
+          <READ_TYPE>Forward</READ_TYPE>
+          <BASE_COORD>1</BASE_COORD>
+        </READ_SPEC>
+        <READ_SPEC>
+          <READ_INDEX>1</READ_INDEX>
+          <READ_CLASS>Application Read</READ_CLASS>
+          <READ_TYPE>Reverse</READ_TYPE>
+          <BASE_COORD>151</BASE_COORD>
+        </READ_SPEC>
+      </SPOT_DECODE_SPEC>
+    </SPOT_DESCRIPTOR>
+  </DESIGN>
+  <PLATFORM>
+    <ILLUMINA>
+      <INSTRUMENT_MODEL>Illumina NovaSeq 6000</INSTRUMENT_MODEL>
+    </ILLUMINA>
+  </PLATFORM>
+  <EXPERIMENT_LINKS>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>DRS149559</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>DRA008930</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=DRX181300&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=DRX181300&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+  </EXPERIMENT_LINKS>
+</EXPERIMENT>
+<EXPERIMENT accession="DRX440072" alias="DRX440072" center_name="MIE_U" broker_name="DDBJ">
+  <IDENTIFIERS>
+    <PRIMARY_ID>DRX440072</PRIMARY_ID>
+    <SUBMITTER_ID namespace="MIE_U">DRX440072</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>PromethION sequencing of SAMD00184898</TITLE>
+  <STUDY_REF accession="DRP009798" refcenter="MIE_U" refname="DRP009798">
+    <IDENTIFIERS>
+      <PRIMARY_ID>DRP009798</PRIMARY_ID>
+      <EXTERNAL_ID label="BioProject ID" namespace="BioProject">PRJDB15597</EXTERNAL_ID>
+      <SUBMITTER_ID namespace="MIE_U">DRP009798</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </STUDY_REF>
+  <DESIGN>
+    <DESIGN_DESCRIPTION/>
+    <SAMPLE_DESCRIPTOR accession="DRS149559" refcenter="MIE_U" refname="DRS149559">
+      <IDENTIFIERS>
+        <PRIMARY_ID>DRS149559</PRIMARY_ID>
+        <EXTERNAL_ID label="BioSample ID" namespace="BioSample">SAMD00184898</EXTERNAL_ID>
+        <SUBMITTER_ID namespace="MIE_U">DRS149559</SUBMITTER_ID>
+      </IDENTIFIERS>
+    </SAMPLE_DESCRIPTOR>
+    <LIBRARY_DESCRIPTOR>
+      <LIBRARY_NAME/>
+      <LIBRARY_STRATEGY>WGS</LIBRARY_STRATEGY>
+      <LIBRARY_SOURCE>GENOMIC</LIBRARY_SOURCE>
+      <LIBRARY_SELECTION>RANDOM</LIBRARY_SELECTION>
+      <LIBRARY_LAYOUT>
+        <SINGLE/>
+      </LIBRARY_LAYOUT>
+      <LIBRARY_CONSTRUCTION_PROTOCOL/>
+    </LIBRARY_DESCRIPTOR>
+  </DESIGN>
+  <PLATFORM>
+    <OXFORD_NANOPORE>
+      <INSTRUMENT_MODEL>PromethION</INSTRUMENT_MODEL>
+    </OXFORD_NANOPORE>
+  </PLATFORM>
+  <EXPERIMENT_LINKS>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>DRS149559</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>DRA016032</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=DRX440072&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=DRX440072&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+  </EXPERIMENT_LINKS>
+</EXPERIMENT>
+<EXPERIMENT accession="DRX523701" alias="DRX523701" center_name="Mie University" broker_name="DDBJ">
+  <IDENTIFIERS>
+    <PRIMARY_ID>DRX523701</PRIMARY_ID>
+    <SUBMITTER_ID namespace="Mie University">DRX523701</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>DNBSEQ-T7 paired end sequencing of SAMD00760304</TITLE>
+  <STUDY_REF accession="DRP011345" refcenter="MIE_U" refname="DRP011345">
+    <IDENTIFIERS>
+      <PRIMARY_ID>DRP011345</PRIMARY_ID>
+      <EXTERNAL_ID label="BioProject ID" namespace="BioProject">PRJDB17753</EXTERNAL_ID>
+      <SUBMITTER_ID namespace="MIE_U">DRP011345</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </STUDY_REF>
+  <DESIGN>
+    <DESIGN_DESCRIPTION/>
+    <SAMPLE_DESCRIPTOR accession="DRS370316" refcenter="MIE_U" refname="DRS370316">
+      <IDENTIFIERS>
+        <PRIMARY_ID>DRS370316</PRIMARY_ID>
+        <EXTERNAL_ID label="BioSample ID" namespace="BioSample">SAMD00760304</EXTERNAL_ID>
+        <SUBMITTER_ID namespace="MIE_U">DRS370316</SUBMITTER_ID>
+      </IDENTIFIERS>
+    </SAMPLE_DESCRIPTOR>
+    <LIBRARY_DESCRIPTOR>
+      <LIBRARY_NAME>S14</LIBRARY_NAME>
+      <LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY>
+      <LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE>
+      <LIBRARY_SELECTION>PolyA</LIBRARY_SELECTION>
+      <LIBRARY_LAYOUT>
+        <PAIRED/>
+      </LIBRARY_LAYOUT>
+      <LIBRARY_CONSTRUCTION_PROTOCOL>MGIEasy Fast RNA Library Prep Set</LIBRARY_CONSTRUCTION_PROTOCOL>
+    </LIBRARY_DESCRIPTOR>
+  </DESIGN>
+  <PLATFORM>
+    <DNBSEQ>
+      <INSTRUMENT_MODEL>DNBSEQ-T7</INSTRUMENT_MODEL>
+    </DNBSEQ>
+  </PLATFORM>
+  <EXPERIMENT_LINKS>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>DRS370316</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>DRA018265</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=DRX523701&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=DRX523701&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+  </EXPERIMENT_LINKS>
+</EXPERIMENT>
+<EXPERIMENT accession="DRX523702" alias="DRX523702" center_name="Mie University" broker_name="DDBJ">
+  <IDENTIFIERS>
+    <PRIMARY_ID>DRX523702</PRIMARY_ID>
+    <SUBMITTER_ID namespace="Mie University">DRX523702</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>DNBSEQ-T7 paired end sequencing of SAMD00760305</TITLE>
+  <STUDY_REF accession="DRP011345" refcenter="MIE_U" refname="DRP011345">
+    <IDENTIFIERS>
+      <PRIMARY_ID>DRP011345</PRIMARY_ID>
+      <EXTERNAL_ID label="BioProject ID" namespace="BioProject">PRJDB17753</EXTERNAL_ID>
+      <SUBMITTER_ID namespace="MIE_U">DRP011345</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </STUDY_REF>
+  <DESIGN>
+    <DESIGN_DESCRIPTION/>
+    <SAMPLE_DESCRIPTOR accession="DRS370317" refcenter="MIE_U" refname="DRS370317">
+      <IDENTIFIERS>
+        <PRIMARY_ID>DRS370317</PRIMARY_ID>
+        <EXTERNAL_ID label="BioSample ID" namespace="BioSample">SAMD00760305</EXTERNAL_ID>
+        <SUBMITTER_ID namespace="MIE_U">DRS370317</SUBMITTER_ID>
+      </IDENTIFIERS>
+    </SAMPLE_DESCRIPTOR>
+    <LIBRARY_DESCRIPTOR>
+      <LIBRARY_NAME>S15</LIBRARY_NAME>
+      <LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY>
+      <LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE>
+      <LIBRARY_SELECTION>PolyA</LIBRARY_SELECTION>
+      <LIBRARY_LAYOUT>
+        <PAIRED/>
+      </LIBRARY_LAYOUT>
+      <LIBRARY_CONSTRUCTION_PROTOCOL>MGIEasy Fast RNA Library Prep Set</LIBRARY_CONSTRUCTION_PROTOCOL>
+    </LIBRARY_DESCRIPTOR>
+  </DESIGN>
+  <PLATFORM>
+    <DNBSEQ>
+      <INSTRUMENT_MODEL>DNBSEQ-T7</INSTRUMENT_MODEL>
+    </DNBSEQ>
+  </PLATFORM>
+  <EXPERIMENT_LINKS>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>DRS370317</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>DRA018265</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=DRX523702&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=DRX523702&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+  </EXPERIMENT_LINKS>
+</EXPERIMENT>
+<EXPERIMENT accession="DRX523703" alias="DRX523703" center_name="Mie University" broker_name="DDBJ">
+  <IDENTIFIERS>
+    <PRIMARY_ID>DRX523703</PRIMARY_ID>
+    <SUBMITTER_ID namespace="Mie University">DRX523703</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>DNBSEQ-T7 paired end sequencing of SAMD00760306</TITLE>
+  <STUDY_REF accession="DRP011345" refcenter="MIE_U" refname="DRP011345">
+    <IDENTIFIERS>
+      <PRIMARY_ID>DRP011345</PRIMARY_ID>
+      <EXTERNAL_ID label="BioProject ID" namespace="BioProject">PRJDB17753</EXTERNAL_ID>
+      <SUBMITTER_ID namespace="MIE_U">DRP011345</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </STUDY_REF>
+  <DESIGN>
+    <DESIGN_DESCRIPTION/>
+    <SAMPLE_DESCRIPTOR accession="DRS370318" refcenter="MIE_U" refname="DRS370318">
+      <IDENTIFIERS>
+        <PRIMARY_ID>DRS370318</PRIMARY_ID>
+        <EXTERNAL_ID label="BioSample ID" namespace="BioSample">SAMD00760306</EXTERNAL_ID>
+        <SUBMITTER_ID namespace="MIE_U">DRS370318</SUBMITTER_ID>
+      </IDENTIFIERS>
+    </SAMPLE_DESCRIPTOR>
+    <LIBRARY_DESCRIPTOR>
+      <LIBRARY_NAME>S20</LIBRARY_NAME>
+      <LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY>
+      <LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE>
+      <LIBRARY_SELECTION>PolyA</LIBRARY_SELECTION>
+      <LIBRARY_LAYOUT>
+        <PAIRED/>
+      </LIBRARY_LAYOUT>
+      <LIBRARY_CONSTRUCTION_PROTOCOL>MGIEasy Fast RNA Library Prep Set</LIBRARY_CONSTRUCTION_PROTOCOL>
+    </LIBRARY_DESCRIPTOR>
+  </DESIGN>
+  <PLATFORM>
+    <DNBSEQ>
+      <INSTRUMENT_MODEL>DNBSEQ-T7</INSTRUMENT_MODEL>
+    </DNBSEQ>
+  </PLATFORM>
+  <EXPERIMENT_LINKS>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>DRS370318</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>DRA018265</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=DRX523703&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=DRX523703&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+  </EXPERIMENT_LINKS>
+</EXPERIMENT>
+<EXPERIMENT accession="DRX523704" alias="DRX523704" center_name="Mie University" broker_name="DDBJ">
+  <IDENTIFIERS>
+    <PRIMARY_ID>DRX523704</PRIMARY_ID>
+    <SUBMITTER_ID namespace="Mie University">DRX523704</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>DNBSEQ-T7 paired end sequencing of SAMD00760307</TITLE>
+  <STUDY_REF accession="DRP011345" refcenter="MIE_U" refname="DRP011345">
+    <IDENTIFIERS>
+      <PRIMARY_ID>DRP011345</PRIMARY_ID>
+      <EXTERNAL_ID label="BioProject ID" namespace="BioProject">PRJDB17753</EXTERNAL_ID>
+      <SUBMITTER_ID namespace="MIE_U">DRP011345</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </STUDY_REF>
+  <DESIGN>
+    <DESIGN_DESCRIPTION/>
+    <SAMPLE_DESCRIPTOR accession="DRS370319" refcenter="MIE_U" refname="DRS370319">
+      <IDENTIFIERS>
+        <PRIMARY_ID>DRS370319</PRIMARY_ID>
+        <EXTERNAL_ID label="BioSample ID" namespace="BioSample">SAMD00760307</EXTERNAL_ID>
+        <SUBMITTER_ID namespace="MIE_U">DRS370319</SUBMITTER_ID>
+      </IDENTIFIERS>
+    </SAMPLE_DESCRIPTOR>
+    <LIBRARY_DESCRIPTOR>
+      <LIBRARY_NAME>S21</LIBRARY_NAME>
+      <LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY>
+      <LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE>
+      <LIBRARY_SELECTION>PolyA</LIBRARY_SELECTION>
+      <LIBRARY_LAYOUT>
+        <PAIRED/>
+      </LIBRARY_LAYOUT>
+      <LIBRARY_CONSTRUCTION_PROTOCOL>MGIEasy Fast RNA Library Prep Set</LIBRARY_CONSTRUCTION_PROTOCOL>
+    </LIBRARY_DESCRIPTOR>
+  </DESIGN>
+  <PLATFORM>
+    <DNBSEQ>
+      <INSTRUMENT_MODEL>DNBSEQ-T7</INSTRUMENT_MODEL>
+    </DNBSEQ>
+  </PLATFORM>
+  <EXPERIMENT_LINKS>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>DRS370319</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>DRA018265</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=DRX523704&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=DRX523704&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+  </EXPERIMENT_LINKS>
+</EXPERIMENT>
+<EXPERIMENT accession="DRX523705" alias="DRX523705" center_name="Mie University" broker_name="DDBJ">
+  <IDENTIFIERS>
+    <PRIMARY_ID>DRX523705</PRIMARY_ID>
+    <SUBMITTER_ID namespace="Mie University">DRX523705</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>DNBSEQ-T7 paired end sequencing of SAMD00760308</TITLE>
+  <STUDY_REF accession="DRP011345" refcenter="MIE_U" refname="DRP011345">
+    <IDENTIFIERS>
+      <PRIMARY_ID>DRP011345</PRIMARY_ID>
+      <EXTERNAL_ID label="BioProject ID" namespace="BioProject">PRJDB17753</EXTERNAL_ID>
+      <SUBMITTER_ID namespace="MIE_U">DRP011345</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </STUDY_REF>
+  <DESIGN>
+    <DESIGN_DESCRIPTION/>
+    <SAMPLE_DESCRIPTOR accession="DRS370320" refcenter="MIE_U" refname="DRS370320">
+      <IDENTIFIERS>
+        <PRIMARY_ID>DRS370320</PRIMARY_ID>
+        <EXTERNAL_ID label="BioSample ID" namespace="BioSample">SAMD00760308</EXTERNAL_ID>
+        <SUBMITTER_ID namespace="MIE_U">DRS370320</SUBMITTER_ID>
+      </IDENTIFIERS>
+    </SAMPLE_DESCRIPTOR>
+    <LIBRARY_DESCRIPTOR>
+      <LIBRARY_NAME>S22</LIBRARY_NAME>
+      <LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY>
+      <LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE>
+      <LIBRARY_SELECTION>PolyA</LIBRARY_SELECTION>
+      <LIBRARY_LAYOUT>
+        <PAIRED/>
+      </LIBRARY_LAYOUT>
+      <LIBRARY_CONSTRUCTION_PROTOCOL>MGIEasy Fast RNA Library Prep Set</LIBRARY_CONSTRUCTION_PROTOCOL>
+    </LIBRARY_DESCRIPTOR>
+  </DESIGN>
+  <PLATFORM>
+    <DNBSEQ>
+      <INSTRUMENT_MODEL>DNBSEQ-T7</INSTRUMENT_MODEL>
+    </DNBSEQ>
+  </PLATFORM>
+  <EXPERIMENT_LINKS>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>DRS370320</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>DRA018265</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=DRX523705&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=DRX523705&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+  </EXPERIMENT_LINKS>
+</EXPERIMENT>
+<EXPERIMENT accession="DRX523706" alias="DRX523706" center_name="Mie University" broker_name="DDBJ">
+  <IDENTIFIERS>
+    <PRIMARY_ID>DRX523706</PRIMARY_ID>
+    <SUBMITTER_ID namespace="Mie University">DRX523706</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>DNBSEQ-T7 paired end sequencing of SAMD00760309</TITLE>
+  <STUDY_REF accession="DRP011345" refcenter="MIE_U" refname="DRP011345">
+    <IDENTIFIERS>
+      <PRIMARY_ID>DRP011345</PRIMARY_ID>
+      <EXTERNAL_ID label="BioProject ID" namespace="BioProject">PRJDB17753</EXTERNAL_ID>
+      <SUBMITTER_ID namespace="MIE_U">DRP011345</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </STUDY_REF>
+  <DESIGN>
+    <DESIGN_DESCRIPTION/>
+    <SAMPLE_DESCRIPTOR accession="DRS370321" refcenter="MIE_U" refname="DRS370321">
+      <IDENTIFIERS>
+        <PRIMARY_ID>DRS370321</PRIMARY_ID>
+        <EXTERNAL_ID label="BioSample ID" namespace="BioSample">SAMD00760309</EXTERNAL_ID>
+        <SUBMITTER_ID namespace="MIE_U">DRS370321</SUBMITTER_ID>
+      </IDENTIFIERS>
+    </SAMPLE_DESCRIPTOR>
+    <LIBRARY_DESCRIPTOR>
+      <LIBRARY_NAME>S3</LIBRARY_NAME>
+      <LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY>
+      <LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE>
+      <LIBRARY_SELECTION>PolyA</LIBRARY_SELECTION>
+      <LIBRARY_LAYOUT>
+        <PAIRED/>
+      </LIBRARY_LAYOUT>
+      <LIBRARY_CONSTRUCTION_PROTOCOL>MGIEasy Fast RNA Library Prep Set</LIBRARY_CONSTRUCTION_PROTOCOL>
+    </LIBRARY_DESCRIPTOR>
+  </DESIGN>
+  <PLATFORM>
+    <DNBSEQ>
+      <INSTRUMENT_MODEL>DNBSEQ-T7</INSTRUMENT_MODEL>
+    </DNBSEQ>
+  </PLATFORM>
+  <EXPERIMENT_LINKS>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>DRS370321</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>DRA018265</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=DRX523706&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=DRX523706&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+  </EXPERIMENT_LINKS>
+</EXPERIMENT>
+<EXPERIMENT accession="DRX523707" alias="DRX523707" center_name="Mie University" broker_name="DDBJ">
+  <IDENTIFIERS>
+    <PRIMARY_ID>DRX523707</PRIMARY_ID>
+    <SUBMITTER_ID namespace="Mie University">DRX523707</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>DNBSEQ-T7 paired end sequencing of SAMD00760310</TITLE>
+  <STUDY_REF accession="DRP011345" refcenter="MIE_U" refname="DRP011345">
+    <IDENTIFIERS>
+      <PRIMARY_ID>DRP011345</PRIMARY_ID>
+      <EXTERNAL_ID label="BioProject ID" namespace="BioProject">PRJDB17753</EXTERNAL_ID>
+      <SUBMITTER_ID namespace="MIE_U">DRP011345</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </STUDY_REF>
+  <DESIGN>
+    <DESIGN_DESCRIPTION/>
+    <SAMPLE_DESCRIPTOR accession="DRS370322" refcenter="MIE_U" refname="DRS370322">
+      <IDENTIFIERS>
+        <PRIMARY_ID>DRS370322</PRIMARY_ID>
+        <EXTERNAL_ID label="BioSample ID" namespace="BioSample">SAMD00760310</EXTERNAL_ID>
+        <SUBMITTER_ID namespace="MIE_U">DRS370322</SUBMITTER_ID>
+      </IDENTIFIERS>
+    </SAMPLE_DESCRIPTOR>
+    <LIBRARY_DESCRIPTOR>
+      <LIBRARY_NAME>S4</LIBRARY_NAME>
+      <LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY>
+      <LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE>
+      <LIBRARY_SELECTION>PolyA</LIBRARY_SELECTION>
+      <LIBRARY_LAYOUT>
+        <PAIRED/>
+      </LIBRARY_LAYOUT>
+      <LIBRARY_CONSTRUCTION_PROTOCOL>MGIEasy Fast RNA Library Prep Set</LIBRARY_CONSTRUCTION_PROTOCOL>
+    </LIBRARY_DESCRIPTOR>
+  </DESIGN>
+  <PLATFORM>
+    <DNBSEQ>
+      <INSTRUMENT_MODEL>DNBSEQ-T7</INSTRUMENT_MODEL>
+    </DNBSEQ>
+  </PLATFORM>
+  <EXPERIMENT_LINKS>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>DRS370322</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>DRA018265</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=DRX523707&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=DRX523707&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+  </EXPERIMENT_LINKS>
+</EXPERIMENT>
+<EXPERIMENT accession="DRX523708" alias="DRX523708" center_name="Mie University" broker_name="DDBJ">
+  <IDENTIFIERS>
+    <PRIMARY_ID>DRX523708</PRIMARY_ID>
+    <SUBMITTER_ID namespace="Mie University">DRX523708</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>DNBSEQ-T7 paired end sequencing of SAMD00760311</TITLE>
+  <STUDY_REF accession="DRP011345" refcenter="MIE_U" refname="DRP011345">
+    <IDENTIFIERS>
+      <PRIMARY_ID>DRP011345</PRIMARY_ID>
+      <EXTERNAL_ID label="BioProject ID" namespace="BioProject">PRJDB17753</EXTERNAL_ID>
+      <SUBMITTER_ID namespace="MIE_U">DRP011345</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </STUDY_REF>
+  <DESIGN>
+    <DESIGN_DESCRIPTION/>
+    <SAMPLE_DESCRIPTOR accession="DRS370323" refcenter="MIE_U" refname="DRS370323">
+      <IDENTIFIERS>
+        <PRIMARY_ID>DRS370323</PRIMARY_ID>
+        <EXTERNAL_ID label="BioSample ID" namespace="BioSample">SAMD00760311</EXTERNAL_ID>
+        <SUBMITTER_ID namespace="MIE_U">DRS370323</SUBMITTER_ID>
+      </IDENTIFIERS>
+    </SAMPLE_DESCRIPTOR>
+    <LIBRARY_DESCRIPTOR>
+      <LIBRARY_NAME>S5</LIBRARY_NAME>
+      <LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY>
+      <LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE>
+      <LIBRARY_SELECTION>PolyA</LIBRARY_SELECTION>
+      <LIBRARY_LAYOUT>
+        <PAIRED/>
+      </LIBRARY_LAYOUT>
+      <LIBRARY_CONSTRUCTION_PROTOCOL>MGIEasy Fast RNA Library Prep Set</LIBRARY_CONSTRUCTION_PROTOCOL>
+    </LIBRARY_DESCRIPTOR>
+  </DESIGN>
+  <PLATFORM>
+    <DNBSEQ>
+      <INSTRUMENT_MODEL>DNBSEQ-T7</INSTRUMENT_MODEL>
+    </DNBSEQ>
+  </PLATFORM>
+  <EXPERIMENT_LINKS>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>DRS370323</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>DRA018265</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=DRX523708&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=DRX523708&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+  </EXPERIMENT_LINKS>
+</EXPERIMENT>
+<EXPERIMENT accession="DRX523709" alias="DRX523709" center_name="Mie University" broker_name="DDBJ">
+  <IDENTIFIERS>
+    <PRIMARY_ID>DRX523709</PRIMARY_ID>
+    <SUBMITTER_ID namespace="Mie University">DRX523709</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>DNBSEQ-T7 paired end sequencing of SAMD00760312</TITLE>
+  <STUDY_REF accession="DRP011345" refcenter="MIE_U" refname="DRP011345">
+    <IDENTIFIERS>
+      <PRIMARY_ID>DRP011345</PRIMARY_ID>
+      <EXTERNAL_ID label="BioProject ID" namespace="BioProject">PRJDB17753</EXTERNAL_ID>
+      <SUBMITTER_ID namespace="MIE_U">DRP011345</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </STUDY_REF>
+  <DESIGN>
+    <DESIGN_DESCRIPTION/>
+    <SAMPLE_DESCRIPTOR accession="DRS370324" refcenter="MIE_U" refname="DRS370324">
+      <IDENTIFIERS>
+        <PRIMARY_ID>DRS370324</PRIMARY_ID>
+        <EXTERNAL_ID label="BioSample ID" namespace="BioSample">SAMD00760312</EXTERNAL_ID>
+        <SUBMITTER_ID namespace="MIE_U">DRS370324</SUBMITTER_ID>
+      </IDENTIFIERS>
+    </SAMPLE_DESCRIPTOR>
+    <LIBRARY_DESCRIPTOR>
+      <LIBRARY_NAME>S7</LIBRARY_NAME>
+      <LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY>
+      <LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE>
+      <LIBRARY_SELECTION>PolyA</LIBRARY_SELECTION>
+      <LIBRARY_LAYOUT>
+        <PAIRED/>
+      </LIBRARY_LAYOUT>
+      <LIBRARY_CONSTRUCTION_PROTOCOL>MGIEasy Fast RNA Library Prep Set</LIBRARY_CONSTRUCTION_PROTOCOL>
+    </LIBRARY_DESCRIPTOR>
+  </DESIGN>
+  <PLATFORM>
+    <DNBSEQ>
+      <INSTRUMENT_MODEL>DNBSEQ-T7</INSTRUMENT_MODEL>
+    </DNBSEQ>
+  </PLATFORM>
+  <EXPERIMENT_LINKS>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>DRS370324</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>DRA018265</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=DRX523709&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=DRX523709&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+  </EXPERIMENT_LINKS>
+</EXPERIMENT>
+<EXPERIMENT accession="DRX523710" alias="DRX523710" center_name="Mie University" broker_name="DDBJ">
+  <IDENTIFIERS>
+    <PRIMARY_ID>DRX523710</PRIMARY_ID>
+    <SUBMITTER_ID namespace="Mie University">DRX523710</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>DNBSEQ-T7 paired end sequencing of SAMD00760313</TITLE>
+  <STUDY_REF accession="DRP011345" refcenter="MIE_U" refname="DRP011345">
+    <IDENTIFIERS>
+      <PRIMARY_ID>DRP011345</PRIMARY_ID>
+      <EXTERNAL_ID label="BioProject ID" namespace="BioProject">PRJDB17753</EXTERNAL_ID>
+      <SUBMITTER_ID namespace="MIE_U">DRP011345</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </STUDY_REF>
+  <DESIGN>
+    <DESIGN_DESCRIPTION/>
+    <SAMPLE_DESCRIPTOR accession="DRS370325" refcenter="MIE_U" refname="DRS370325">
+      <IDENTIFIERS>
+        <PRIMARY_ID>DRS370325</PRIMARY_ID>
+        <EXTERNAL_ID label="BioSample ID" namespace="BioSample">SAMD00760313</EXTERNAL_ID>
+        <SUBMITTER_ID namespace="MIE_U">DRS370325</SUBMITTER_ID>
+      </IDENTIFIERS>
+    </SAMPLE_DESCRIPTOR>
+    <LIBRARY_DESCRIPTOR>
+      <LIBRARY_NAME>S16</LIBRARY_NAME>
+      <LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY>
+      <LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE>
+      <LIBRARY_SELECTION>PolyA</LIBRARY_SELECTION>
+      <LIBRARY_LAYOUT>
+        <PAIRED/>
+      </LIBRARY_LAYOUT>
+      <LIBRARY_CONSTRUCTION_PROTOCOL>MGIEasy Fast RNA Library Prep Set</LIBRARY_CONSTRUCTION_PROTOCOL>
+    </LIBRARY_DESCRIPTOR>
+  </DESIGN>
+  <PLATFORM>
+    <DNBSEQ>
+      <INSTRUMENT_MODEL>DNBSEQ-T7</INSTRUMENT_MODEL>
+    </DNBSEQ>
+  </PLATFORM>
+  <EXPERIMENT_LINKS>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>DRS370325</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>DRA018265</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=DRX523710&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=DRX523710&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+  </EXPERIMENT_LINKS>
+</EXPERIMENT>
+<EXPERIMENT accession="ERX2808498" alias="SC_EXP_23495_8#117" center_name="Wellcome Sanger Institute">
+  <IDENTIFIERS>
+    <PRIMARY_ID>ERX2808498</PRIMARY_ID>
+    <SUBMITTER_ID namespace="Wellcome Sanger Institute">SC_EXP_23495_8#117</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>HiSeq X Ten paired end sequencing</TITLE>
+  <STUDY_REF accession="ERP023216">
+    <IDENTIFIERS>
+      <PRIMARY_ID>ERP023216</PRIMARY_ID>
+      <SECONDARY_ID>PRJEB20997</SECONDARY_ID>
+    </IDENTIFIERS>
+  </STUDY_REF>
+  <DESIGN>
+    <DESIGN_DESCRIPTION>Illumina sequencing of library DN490134S:A4, constructed from sample accession ERS2711691 for study accession ERP023216.  This is part of an Illumina multiplexed sequencing run (23495_8).  This submission includes reads tagged with the sequence TGCGATCT.</DESIGN_DESCRIPTION>
+    <SAMPLE_DESCRIPTOR accession="ERS2711691">
+      <IDENTIFIERS>
+        <PRIMARY_ID>ERS2711691</PRIMARY_ID>
+        <EXTERNAL_ID namespace="BioSample">SAMEA4892690</EXTERNAL_ID>
+      </IDENTIFIERS>
+    </SAMPLE_DESCRIPTOR>
+    <LIBRARY_DESCRIPTOR>
+      <LIBRARY_NAME>DN490134S:A4</LIBRARY_NAME>
+      <LIBRARY_STRATEGY>WGS</LIBRARY_STRATEGY>
+      <LIBRARY_SOURCE>GENOMIC</LIBRARY_SOURCE>
+      <LIBRARY_SELECTION>RANDOM</LIBRARY_SELECTION>
+      <LIBRARY_LAYOUT>
+        <PAIRED NOMINAL_LENGTH="421" NOMINAL_SDEV="107"/>
+      </LIBRARY_LAYOUT>
+      <LIBRARY_CONSTRUCTION_PROTOCOL>Standard</LIBRARY_CONSTRUCTION_PROTOCOL>
+    </LIBRARY_DESCRIPTOR>
+  </DESIGN>
+  <PLATFORM>
+    <ILLUMINA>
+      <INSTRUMENT_MODEL>HiSeq X Ten</INSTRUMENT_MODEL>
+    </ILLUMINA>
+  </PLATFORM>
+  <PROCESSING/>
+  <EXPERIMENT_LINKS>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>ERS2711691</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>ERA1599899</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERX2808498&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERX2808498&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+  </EXPERIMENT_LINKS>
+</EXPERIMENT>
+<EXPERIMENT accession="SRX14719821" alias="Fc_3" center_name="SUB11190532" broker_name="NCBI">
+  <IDENTIFIERS>
+    <PRIMARY_ID>SRX14719821</PRIMARY_ID>
+    <SUBMITTER_ID namespace="SUB11190532">Fc_3</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>resequence of Fagus crenata</TITLE>
+  <STUDY_REF accession="SRP367370">
+    <IDENTIFIERS>
+      <PRIMARY_ID>SRP367370</PRIMARY_ID>
+      <EXTERNAL_ID namespace="BioProject">PRJNA816270</EXTERNAL_ID>
+    </IDENTIFIERS>
+  </STUDY_REF>
+  <DESIGN>
+    <DESIGN_DESCRIPTION>resequence of Fagus crenata</DESIGN_DESCRIPTION>
+    <SAMPLE_DESCRIPTOR accession="SRS12482080">
+      <IDENTIFIERS>
+        <PRIMARY_ID>SRS12482080</PRIMARY_ID>
+        <SUBMITTER_ID namespace="pda|bnu_cmb">Fc_3</SUBMITTER_ID>
+      </IDENTIFIERS>
+    </SAMPLE_DESCRIPTOR>
+    <LIBRARY_DESCRIPTOR>
+      <LIBRARY_NAME>Fc_3</LIBRARY_NAME>
+      <LIBRARY_STRATEGY>WGS</LIBRARY_STRATEGY>
+      <LIBRARY_SOURCE>GENOMIC</LIBRARY_SOURCE>
+      <LIBRARY_SELECTION>RANDOM PCR</LIBRARY_SELECTION>
+      <LIBRARY_LAYOUT>
+        <PAIRED/>
+      </LIBRARY_LAYOUT>
+    </LIBRARY_DESCRIPTOR>
+  </DESIGN>
+  <PLATFORM>
+    <ILLUMINA>
+      <INSTRUMENT_MODEL>Illumina NovaSeq 6000</INSTRUMENT_MODEL>
+    </ILLUMINA>
+  </PLATFORM>
+  <EXPERIMENT_LINKS>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>SRS12482080</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>SRA1396942</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRX14719821&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRX14719821&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+  </EXPERIMENT_LINKS>
+</EXPERIMENT>
+<EXPERIMENT accession="SRX14719822" alias="Fc_5" center_name="SUB11190532" broker_name="NCBI">
+  <IDENTIFIERS>
+    <PRIMARY_ID>SRX14719822</PRIMARY_ID>
+    <SUBMITTER_ID namespace="SUB11190532">Fc_5</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>resequence of Fagus crenata</TITLE>
+  <STUDY_REF accession="SRP367370">
+    <IDENTIFIERS>
+      <PRIMARY_ID>SRP367370</PRIMARY_ID>
+      <EXTERNAL_ID namespace="BioProject">PRJNA816270</EXTERNAL_ID>
+    </IDENTIFIERS>
+  </STUDY_REF>
+  <DESIGN>
+    <DESIGN_DESCRIPTION>resequence of Fagus crenata</DESIGN_DESCRIPTION>
+    <SAMPLE_DESCRIPTOR accession="SRS12482081">
+      <IDENTIFIERS>
+        <PRIMARY_ID>SRS12482081</PRIMARY_ID>
+        <SUBMITTER_ID namespace="pda|bnu_cmb">Fc_5</SUBMITTER_ID>
+      </IDENTIFIERS>
+    </SAMPLE_DESCRIPTOR>
+    <LIBRARY_DESCRIPTOR>
+      <LIBRARY_NAME>Fc_5</LIBRARY_NAME>
+      <LIBRARY_STRATEGY>WGS</LIBRARY_STRATEGY>
+      <LIBRARY_SOURCE>GENOMIC</LIBRARY_SOURCE>
+      <LIBRARY_SELECTION>RANDOM PCR</LIBRARY_SELECTION>
+      <LIBRARY_LAYOUT>
+        <PAIRED/>
+      </LIBRARY_LAYOUT>
+    </LIBRARY_DESCRIPTOR>
+  </DESIGN>
+  <PLATFORM>
+    <ILLUMINA>
+      <INSTRUMENT_MODEL>Illumina NovaSeq 6000</INSTRUMENT_MODEL>
+    </ILLUMINA>
+  </PLATFORM>
+  <EXPERIMENT_LINKS>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>SRS12482081</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>SRA1396942</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRX14719822&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRX14719822&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+  </EXPERIMENT_LINKS>
+</EXPERIMENT>
+<EXPERIMENT accession="SRX14719867" alias="Fc_6" center_name="SUB11190532" broker_name="NCBI">
+  <IDENTIFIERS>
+    <PRIMARY_ID>SRX14719867</PRIMARY_ID>
+    <SUBMITTER_ID namespace="SUB11190532">Fc_6</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>resequence of Fagus crenata</TITLE>
+  <STUDY_REF accession="SRP367370">
+    <IDENTIFIERS>
+      <PRIMARY_ID>SRP367370</PRIMARY_ID>
+      <EXTERNAL_ID namespace="BioProject">PRJNA816270</EXTERNAL_ID>
+    </IDENTIFIERS>
+  </STUDY_REF>
+  <DESIGN>
+    <DESIGN_DESCRIPTION>resequence of Fagus crenata</DESIGN_DESCRIPTION>
+    <SAMPLE_DESCRIPTOR accession="SRS12482126">
+      <IDENTIFIERS>
+        <PRIMARY_ID>SRS12482126</PRIMARY_ID>
+        <SUBMITTER_ID namespace="pda|bnu_cmb">Fc_6</SUBMITTER_ID>
+      </IDENTIFIERS>
+    </SAMPLE_DESCRIPTOR>
+    <LIBRARY_DESCRIPTOR>
+      <LIBRARY_NAME>Fc_6</LIBRARY_NAME>
+      <LIBRARY_STRATEGY>WGS</LIBRARY_STRATEGY>
+      <LIBRARY_SOURCE>GENOMIC</LIBRARY_SOURCE>
+      <LIBRARY_SELECTION>RANDOM PCR</LIBRARY_SELECTION>
+      <LIBRARY_LAYOUT>
+        <PAIRED/>
+      </LIBRARY_LAYOUT>
+    </LIBRARY_DESCRIPTOR>
+  </DESIGN>
+  <PLATFORM>
+    <ILLUMINA>
+      <INSTRUMENT_MODEL>Illumina NovaSeq 6000</INSTRUMENT_MODEL>
+    </ILLUMINA>
+  </PLATFORM>
+  <EXPERIMENT_LINKS>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>SRS12482126</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>SRA1396942</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRX14719867&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRX14719867&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+  </EXPERIMENT_LINKS>
+</EXPERIMENT>
+<EXPERIMENT accession="SRX5406821" alias="Ir3232" center_name="SUB5206874" broker_name="NCBI">
+  <IDENTIFIERS>
+    <PRIMARY_ID>SRX5406821</PRIMARY_ID>
+    <SUBMITTER_ID namespace="SUB5206874">Ir3232</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>RNA-seq of Fagus crenata: 2014-10</TITLE>
+  <STUDY_REF accession="SRP186547">
+    <IDENTIFIERS>
+      <PRIMARY_ID>SRP186547</PRIMARY_ID>
+      <SUBMITTER_ID namespace="SUB5206874">bp0</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </STUDY_REF>
+  <DESIGN>
+    <DESIGN_DESCRIPTION>illumina TruSeq Stranded mRNA kit using illumina TruSeq Stranded mRNA Sample Preparation Guide, part# 15031047, Revision E, 2013.</DESIGN_DESCRIPTION>
+    <SAMPLE_DESCRIPTOR accession="SRS4391515">
+      <IDENTIFIERS>
+        <PRIMARY_ID>SRS4391515</PRIMARY_ID>
+        <SUBMITTER_ID namespace="pda|akikosatake_kyudai">2014-10</SUBMITTER_ID>
+      </IDENTIFIERS>
+    </SAMPLE_DESCRIPTOR>
+    <LIBRARY_DESCRIPTOR>
+      <LIBRARY_NAME>Ir3232</LIBRARY_NAME>
+      <LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY>
+      <LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE>
+      <LIBRARY_SELECTION>cDNA</LIBRARY_SELECTION>
+      <LIBRARY_LAYOUT>
+        <PAIRED/>
+      </LIBRARY_LAYOUT>
+    </LIBRARY_DESCRIPTOR>
+  </DESIGN>
+  <PLATFORM>
+    <ILLUMINA>
+      <INSTRUMENT_MODEL>Illumina HiSeq 2500</INSTRUMENT_MODEL>
+    </ILLUMINA>
+  </PLATFORM>
+  <EXPERIMENT_LINKS>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>SRS4391515</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>SRA851443</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRX5406821&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRX5406821&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+  </EXPERIMENT_LINKS>
+</EXPERIMENT>
+<EXPERIMENT accession="SRX5406822" alias="Ir3231" center_name="SUB5206874" broker_name="NCBI">
+  <IDENTIFIERS>
+    <PRIMARY_ID>SRX5406822</PRIMARY_ID>
+    <SUBMITTER_ID namespace="SUB5206874">Ir3231</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>RNA-seq of Fagus crenata: 2014-9</TITLE>
+  <STUDY_REF accession="SRP186547">
+    <IDENTIFIERS>
+      <PRIMARY_ID>SRP186547</PRIMARY_ID>
+      <SUBMITTER_ID namespace="SUB5206874">bp0</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </STUDY_REF>
+  <DESIGN>
+    <DESIGN_DESCRIPTION>illumina TruSeq Stranded mRNA kit using illumina TruSeq Stranded mRNA Sample Preparation Guide, part# 15031047, Revision E, 2013.</DESIGN_DESCRIPTION>
+    <SAMPLE_DESCRIPTOR accession="SRS4391516">
+      <IDENTIFIERS>
+        <PRIMARY_ID>SRS4391516</PRIMARY_ID>
+        <SUBMITTER_ID namespace="pda|akikosatake_kyudai">2014-9</SUBMITTER_ID>
+      </IDENTIFIERS>
+    </SAMPLE_DESCRIPTOR>
+    <LIBRARY_DESCRIPTOR>
+      <LIBRARY_NAME>Ir3231</LIBRARY_NAME>
+      <LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY>
+      <LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE>
+      <LIBRARY_SELECTION>cDNA</LIBRARY_SELECTION>
+      <LIBRARY_LAYOUT>
+        <PAIRED/>
+      </LIBRARY_LAYOUT>
+    </LIBRARY_DESCRIPTOR>
+  </DESIGN>
+  <PLATFORM>
+    <ILLUMINA>
+      <INSTRUMENT_MODEL>Illumina HiSeq 2500</INSTRUMENT_MODEL>
+    </ILLUMINA>
+  </PLATFORM>
+  <EXPERIMENT_LINKS>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>SRS4391516</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>SRA851443</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRX5406822&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRX5406822&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+  </EXPERIMENT_LINKS>
+</EXPERIMENT>
+<EXPERIMENT accession="SRX5406823" alias="Ir3224" center_name="SUB5206874" broker_name="NCBI">
+  <IDENTIFIERS>
+    <PRIMARY_ID>SRX5406823</PRIMARY_ID>
+    <SUBMITTER_ID namespace="SUB5206874">Ir3224</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>RNA-seq of Fagus crenata: 2013-7</TITLE>
+  <STUDY_REF accession="SRP186547">
+    <IDENTIFIERS>
+      <PRIMARY_ID>SRP186547</PRIMARY_ID>
+      <SUBMITTER_ID namespace="SUB5206874">bp0</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </STUDY_REF>
+  <DESIGN>
+    <DESIGN_DESCRIPTION>illumina TruSeq Stranded mRNA kit using illumina TruSeq Stranded mRNA Sample Preparation Guide, part# 15031047, Revision E, 2013.</DESIGN_DESCRIPTION>
+    <SAMPLE_DESCRIPTOR accession="SRS4391517">
+      <IDENTIFIERS>
+        <PRIMARY_ID>SRS4391517</PRIMARY_ID>
+        <SUBMITTER_ID namespace="pda|akikosatake_kyudai">2013-7</SUBMITTER_ID>
+      </IDENTIFIERS>
+    </SAMPLE_DESCRIPTOR>
+    <LIBRARY_DESCRIPTOR>
+      <LIBRARY_NAME>Ir3224</LIBRARY_NAME>
+      <LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY>
+      <LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE>
+      <LIBRARY_SELECTION>cDNA</LIBRARY_SELECTION>
+      <LIBRARY_LAYOUT>
+        <PAIRED/>
+      </LIBRARY_LAYOUT>
+    </LIBRARY_DESCRIPTOR>
+  </DESIGN>
+  <PLATFORM>
+    <ILLUMINA>
+      <INSTRUMENT_MODEL>Illumina HiSeq 2500</INSTRUMENT_MODEL>
+    </ILLUMINA>
+  </PLATFORM>
+  <EXPERIMENT_LINKS>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>SRS4391517</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>SRA851443</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRX5406823&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRX5406823&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+  </EXPERIMENT_LINKS>
+</EXPERIMENT>
+<EXPERIMENT accession="SRX5406824" alias="Ir3223" center_name="SUB5206874" broker_name="NCBI">
+  <IDENTIFIERS>
+    <PRIMARY_ID>SRX5406824</PRIMARY_ID>
+    <SUBMITTER_ID namespace="SUB5206874">Ir3223</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>RNA-seq of Fagus crenata: 2013-6</TITLE>
+  <STUDY_REF accession="SRP186547">
+    <IDENTIFIERS>
+      <PRIMARY_ID>SRP186547</PRIMARY_ID>
+      <SUBMITTER_ID namespace="SUB5206874">bp0</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </STUDY_REF>
+  <DESIGN>
+    <DESIGN_DESCRIPTION>illumina TruSeq Stranded mRNA kit using illumina TruSeq Stranded mRNA Sample Preparation Guide, part# 15031047, Revision E, 2013.</DESIGN_DESCRIPTION>
+    <SAMPLE_DESCRIPTOR accession="SRS4391518">
+      <IDENTIFIERS>
+        <PRIMARY_ID>SRS4391518</PRIMARY_ID>
+        <SUBMITTER_ID namespace="pda|akikosatake_kyudai">2013-6</SUBMITTER_ID>
+      </IDENTIFIERS>
+    </SAMPLE_DESCRIPTOR>
+    <LIBRARY_DESCRIPTOR>
+      <LIBRARY_NAME>Ir3223</LIBRARY_NAME>
+      <LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY>
+      <LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE>
+      <LIBRARY_SELECTION>cDNA</LIBRARY_SELECTION>
+      <LIBRARY_LAYOUT>
+        <PAIRED/>
+      </LIBRARY_LAYOUT>
+    </LIBRARY_DESCRIPTOR>
+  </DESIGN>
+  <PLATFORM>
+    <ILLUMINA>
+      <INSTRUMENT_MODEL>Illumina HiSeq 2500</INSTRUMENT_MODEL>
+    </ILLUMINA>
+  </PLATFORM>
+  <EXPERIMENT_LINKS>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>SRS4391518</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>SRA851443</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRX5406824&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRX5406824&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+  </EXPERIMENT_LINKS>
+</EXPERIMENT>
+<EXPERIMENT accession="SRX5406825" alias="Ir3226" center_name="SUB5206874" broker_name="NCBI">
+  <IDENTIFIERS>
+    <PRIMARY_ID>SRX5406825</PRIMARY_ID>
+    <SUBMITTER_ID namespace="SUB5206874">Ir3226</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>RNA-seq of Fagus crenata: 2013-9</TITLE>
+  <STUDY_REF accession="SRP186547">
+    <IDENTIFIERS>
+      <PRIMARY_ID>SRP186547</PRIMARY_ID>
+      <SUBMITTER_ID namespace="SUB5206874">bp0</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </STUDY_REF>
+  <DESIGN>
+    <DESIGN_DESCRIPTION>illumina TruSeq Stranded mRNA kit using illumina TruSeq Stranded mRNA Sample Preparation Guide, part# 15031047, Revision E, 2013.</DESIGN_DESCRIPTION>
+    <SAMPLE_DESCRIPTOR accession="SRS4391519">
+      <IDENTIFIERS>
+        <PRIMARY_ID>SRS4391519</PRIMARY_ID>
+        <SUBMITTER_ID namespace="pda|akikosatake_kyudai">2013-9</SUBMITTER_ID>
+      </IDENTIFIERS>
+    </SAMPLE_DESCRIPTOR>
+    <LIBRARY_DESCRIPTOR>
+      <LIBRARY_NAME>Ir3226</LIBRARY_NAME>
+      <LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY>
+      <LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE>
+      <LIBRARY_SELECTION>cDNA</LIBRARY_SELECTION>
+      <LIBRARY_LAYOUT>
+        <PAIRED/>
+      </LIBRARY_LAYOUT>
+    </LIBRARY_DESCRIPTOR>
+  </DESIGN>
+  <PLATFORM>
+    <ILLUMINA>
+      <INSTRUMENT_MODEL>Illumina HiSeq 2500</INSTRUMENT_MODEL>
+    </ILLUMINA>
+  </PLATFORM>
+  <EXPERIMENT_LINKS>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>SRS4391519</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>SRA851443</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRX5406825&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRX5406825&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+  </EXPERIMENT_LINKS>
+</EXPERIMENT>
+<EXPERIMENT accession="SRX5406826" alias="Ir3225" center_name="SUB5206874" broker_name="NCBI">
+  <IDENTIFIERS>
+    <PRIMARY_ID>SRX5406826</PRIMARY_ID>
+    <SUBMITTER_ID namespace="SUB5206874">Ir3225</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>RNA-seq of Fagus crenata: 2013-8</TITLE>
+  <STUDY_REF accession="SRP186547">
+    <IDENTIFIERS>
+      <PRIMARY_ID>SRP186547</PRIMARY_ID>
+      <SUBMITTER_ID namespace="SUB5206874">bp0</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </STUDY_REF>
+  <DESIGN>
+    <DESIGN_DESCRIPTION>illumina TruSeq Stranded mRNA kit using illumina TruSeq Stranded mRNA Sample Preparation Guide, part# 15031047, Revision E, 2013.</DESIGN_DESCRIPTION>
+    <SAMPLE_DESCRIPTOR accession="SRS4391520">
+      <IDENTIFIERS>
+        <PRIMARY_ID>SRS4391520</PRIMARY_ID>
+        <SUBMITTER_ID namespace="pda|akikosatake_kyudai">2013-8</SUBMITTER_ID>
+      </IDENTIFIERS>
+    </SAMPLE_DESCRIPTOR>
+    <LIBRARY_DESCRIPTOR>
+      <LIBRARY_NAME>Ir3225</LIBRARY_NAME>
+      <LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY>
+      <LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE>
+      <LIBRARY_SELECTION>cDNA</LIBRARY_SELECTION>
+      <LIBRARY_LAYOUT>
+        <PAIRED/>
+      </LIBRARY_LAYOUT>
+    </LIBRARY_DESCRIPTOR>
+  </DESIGN>
+  <PLATFORM>
+    <ILLUMINA>
+      <INSTRUMENT_MODEL>Illumina HiSeq 2500</INSTRUMENT_MODEL>
+    </ILLUMINA>
+  </PLATFORM>
+  <EXPERIMENT_LINKS>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>SRS4391520</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>SRA851443</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRX5406826&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRX5406826&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+  </EXPERIMENT_LINKS>
+</EXPERIMENT>
+<EXPERIMENT accession="SRX5406827" alias="Ir3228" center_name="SUB5206874" broker_name="NCBI">
+  <IDENTIFIERS>
+    <PRIMARY_ID>SRX5406827</PRIMARY_ID>
+    <SUBMITTER_ID namespace="SUB5206874">Ir3228</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>RNA-seq of Fagus crenata: 2014-6</TITLE>
+  <STUDY_REF accession="SRP186547">
+    <IDENTIFIERS>
+      <PRIMARY_ID>SRP186547</PRIMARY_ID>
+      <SUBMITTER_ID namespace="SUB5206874">bp0</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </STUDY_REF>
+  <DESIGN>
+    <DESIGN_DESCRIPTION>illumina TruSeq Stranded mRNA kit using illumina TruSeq Stranded mRNA Sample Preparation Guide, part# 15031047, Revision E, 2013.</DESIGN_DESCRIPTION>
+    <SAMPLE_DESCRIPTOR accession="SRS4391521">
+      <IDENTIFIERS>
+        <PRIMARY_ID>SRS4391521</PRIMARY_ID>
+        <SUBMITTER_ID namespace="pda|akikosatake_kyudai">2014-6</SUBMITTER_ID>
+      </IDENTIFIERS>
+    </SAMPLE_DESCRIPTOR>
+    <LIBRARY_DESCRIPTOR>
+      <LIBRARY_NAME>Ir3228</LIBRARY_NAME>
+      <LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY>
+      <LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE>
+      <LIBRARY_SELECTION>cDNA</LIBRARY_SELECTION>
+      <LIBRARY_LAYOUT>
+        <PAIRED/>
+      </LIBRARY_LAYOUT>
+    </LIBRARY_DESCRIPTOR>
+  </DESIGN>
+  <PLATFORM>
+    <ILLUMINA>
+      <INSTRUMENT_MODEL>Illumina HiSeq 2500</INSTRUMENT_MODEL>
+    </ILLUMINA>
+  </PLATFORM>
+  <EXPERIMENT_LINKS>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>SRS4391521</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>SRA851443</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRX5406827&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRX5406827&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+  </EXPERIMENT_LINKS>
+</EXPERIMENT>
+<EXPERIMENT accession="SRX5406828" alias="Ir3227" center_name="SUB5206874" broker_name="NCBI">
+  <IDENTIFIERS>
+    <PRIMARY_ID>SRX5406828</PRIMARY_ID>
+    <SUBMITTER_ID namespace="SUB5206874">Ir3227</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>RNA-seq of Fagus crenata: 2013-10</TITLE>
+  <STUDY_REF accession="SRP186547">
+    <IDENTIFIERS>
+      <PRIMARY_ID>SRP186547</PRIMARY_ID>
+      <SUBMITTER_ID namespace="SUB5206874">bp0</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </STUDY_REF>
+  <DESIGN>
+    <DESIGN_DESCRIPTION>illumina TruSeq Stranded mRNA kit using illumina TruSeq Stranded mRNA Sample Preparation Guide, part# 15031047, Revision E, 2013.</DESIGN_DESCRIPTION>
+    <SAMPLE_DESCRIPTOR accession="SRS4391522">
+      <IDENTIFIERS>
+        <PRIMARY_ID>SRS4391522</PRIMARY_ID>
+        <SUBMITTER_ID namespace="pda|akikosatake_kyudai">2013-10</SUBMITTER_ID>
+      </IDENTIFIERS>
+    </SAMPLE_DESCRIPTOR>
+    <LIBRARY_DESCRIPTOR>
+      <LIBRARY_NAME>Ir3227</LIBRARY_NAME>
+      <LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY>
+      <LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE>
+      <LIBRARY_SELECTION>cDNA</LIBRARY_SELECTION>
+      <LIBRARY_LAYOUT>
+        <PAIRED/>
+      </LIBRARY_LAYOUT>
+    </LIBRARY_DESCRIPTOR>
+  </DESIGN>
+  <PLATFORM>
+    <ILLUMINA>
+      <INSTRUMENT_MODEL>Illumina HiSeq 2500</INSTRUMENT_MODEL>
+    </ILLUMINA>
+  </PLATFORM>
+  <EXPERIMENT_LINKS>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>SRS4391522</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>SRA851443</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRX5406828&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRX5406828&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+  </EXPERIMENT_LINKS>
+</EXPERIMENT>
+<EXPERIMENT accession="SRX5406829" alias="Ir3230" center_name="SUB5206874" broker_name="NCBI">
+  <IDENTIFIERS>
+    <PRIMARY_ID>SRX5406829</PRIMARY_ID>
+    <SUBMITTER_ID namespace="SUB5206874">Ir3230</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>RNA-seq of Fagus crenata: 2014-8</TITLE>
+  <STUDY_REF accession="SRP186547">
+    <IDENTIFIERS>
+      <PRIMARY_ID>SRP186547</PRIMARY_ID>
+      <SUBMITTER_ID namespace="SUB5206874">bp0</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </STUDY_REF>
+  <DESIGN>
+    <DESIGN_DESCRIPTION>illumina TruSeq Stranded mRNA kit using illumina TruSeq Stranded mRNA Sample Preparation Guide, part# 15031047, Revision E, 2013.</DESIGN_DESCRIPTION>
+    <SAMPLE_DESCRIPTOR accession="SRS4391523">
+      <IDENTIFIERS>
+        <PRIMARY_ID>SRS4391523</PRIMARY_ID>
+        <SUBMITTER_ID namespace="pda|akikosatake_kyudai">2014-8</SUBMITTER_ID>
+      </IDENTIFIERS>
+    </SAMPLE_DESCRIPTOR>
+    <LIBRARY_DESCRIPTOR>
+      <LIBRARY_NAME>Ir3230</LIBRARY_NAME>
+      <LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY>
+      <LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE>
+      <LIBRARY_SELECTION>cDNA</LIBRARY_SELECTION>
+      <LIBRARY_LAYOUT>
+        <PAIRED/>
+      </LIBRARY_LAYOUT>
+    </LIBRARY_DESCRIPTOR>
+  </DESIGN>
+  <PLATFORM>
+    <ILLUMINA>
+      <INSTRUMENT_MODEL>Illumina HiSeq 2500</INSTRUMENT_MODEL>
+    </ILLUMINA>
+  </PLATFORM>
+  <EXPERIMENT_LINKS>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>SRS4391523</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>SRA851443</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRX5406829&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRX5406829&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+  </EXPERIMENT_LINKS>
+</EXPERIMENT>
+<EXPERIMENT accession="SRX5406830" alias="Ir3229" center_name="SUB5206874" broker_name="NCBI">
+  <IDENTIFIERS>
+    <PRIMARY_ID>SRX5406830</PRIMARY_ID>
+    <SUBMITTER_ID namespace="SUB5206874">Ir3229</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>RNA-seq of Fagus crenata: 2014-7</TITLE>
+  <STUDY_REF accession="SRP186547">
+    <IDENTIFIERS>
+      <PRIMARY_ID>SRP186547</PRIMARY_ID>
+      <SUBMITTER_ID namespace="SUB5206874">bp0</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </STUDY_REF>
+  <DESIGN>
+    <DESIGN_DESCRIPTION>illumina TruSeq Stranded mRNA kit using illumina TruSeq Stranded mRNA Sample Preparation Guide, part# 15031047, Revision E, 2013.</DESIGN_DESCRIPTION>
+    <SAMPLE_DESCRIPTOR accession="SRS4391524">
+      <IDENTIFIERS>
+        <PRIMARY_ID>SRS4391524</PRIMARY_ID>
+        <SUBMITTER_ID namespace="pda|akikosatake_kyudai">2014-7</SUBMITTER_ID>
+      </IDENTIFIERS>
+    </SAMPLE_DESCRIPTOR>
+    <LIBRARY_DESCRIPTOR>
+      <LIBRARY_NAME>Ir3229</LIBRARY_NAME>
+      <LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY>
+      <LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE>
+      <LIBRARY_SELECTION>cDNA</LIBRARY_SELECTION>
+      <LIBRARY_LAYOUT>
+        <PAIRED/>
+      </LIBRARY_LAYOUT>
+    </LIBRARY_DESCRIPTOR>
+  </DESIGN>
+  <PLATFORM>
+    <ILLUMINA>
+      <INSTRUMENT_MODEL>Illumina HiSeq 2500</INSTRUMENT_MODEL>
+    </ILLUMINA>
+  </PLATFORM>
+  <EXPERIMENT_LINKS>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>SRS4391524</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>SRA851443</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRX5406830&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRX5406830&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+  </EXPERIMENT_LINKS>
+</EXPERIMENT>
+<EXPERIMENT accession="SRX5566348" alias="Fagus crenata GEN-3" center_name="SUB5359256" broker_name="NCBI">
+  <IDENTIFIERS>
+    <PRIMARY_ID>SRX5566348</PRIMARY_ID>
+    <SUBMITTER_ID namespace="SUB5359256">Fagus crenata GEN-3</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>WGS reads of Fagus crenata: GEN-3</TITLE>
+  <STUDY_REF accession="SRP189284">
+    <IDENTIFIERS>
+      <PRIMARY_ID>SRP189284</PRIMARY_ID>
+      <SUBMITTER_ID namespace="SUB5359256">bp0</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </STUDY_REF>
+  <DESIGN>
+    <DESIGN_DESCRIPTION>A short-size Truseq DNA was constructed</DESIGN_DESCRIPTION>
+    <SAMPLE_DESCRIPTOR accession="SRS4529543">
+      <IDENTIFIERS>
+        <PRIMARY_ID>SRS4529543</PRIMARY_ID>
+        <SUBMITTER_ID namespace="pda|jimyyy">GEN-3</SUBMITTER_ID>
+      </IDENTIFIERS>
+    </SAMPLE_DESCRIPTOR>
+    <LIBRARY_DESCRIPTOR>
+      <LIBRARY_NAME>Fagus crenata GEN-3</LIBRARY_NAME>
+      <LIBRARY_STRATEGY>WGS</LIBRARY_STRATEGY>
+      <LIBRARY_SOURCE>GENOMIC</LIBRARY_SOURCE>
+      <LIBRARY_SELECTION>RANDOM</LIBRARY_SELECTION>
+      <LIBRARY_LAYOUT>
+        <PAIRED/>
+      </LIBRARY_LAYOUT>
+    </LIBRARY_DESCRIPTOR>
+  </DESIGN>
+  <PLATFORM>
+    <ILLUMINA>
+      <INSTRUMENT_MODEL>Illumina HiSeq 2000</INSTRUMENT_MODEL>
+    </ILLUMINA>
+  </PLATFORM>
+  <EXPERIMENT_LINKS>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>SRS4529543</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>SRA865177</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRX5566348&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRX5566348&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+  </EXPERIMENT_LINKS>
+</EXPERIMENT>
+<EXPERIMENT accession="SRX9596362" alias="Sample2" center_name="SUB8645681" broker_name="NCBI">
+  <IDENTIFIERS>
+    <PRIMARY_ID>SRX9596362</PRIMARY_ID>
+    <SUBMITTER_ID namespace="SUB8645681">Sample2</SUBMITTER_ID>
+  </IDENTIFIERS>
+  <TITLE>HTS of 5S-IGS</TITLE>
+  <STUDY_REF accession="SRP294469">
+    <IDENTIFIERS>
+      <PRIMARY_ID>SRP294469</PRIMARY_ID>
+      <SUBMITTER_ID namespace="SUB8645681">bp0</SUBMITTER_ID>
+    </IDENTIFIERS>
+  </STUDY_REF>
+  <DESIGN>
+    <DESIGN_DESCRIPTION>Illumina Nexteras protocol</DESIGN_DESCRIPTION>
+    <SAMPLE_DESCRIPTOR accession="SRS7800645">
+      <IDENTIFIERS>
+        <PRIMARY_ID>SRS7800645</PRIMARY_ID>
+        <SUBMITTER_ID namespace="pda|mcsimeone@unitus.it">Tube05</SUBMITTER_ID>
+      </IDENTIFIERS>
+    </SAMPLE_DESCRIPTOR>
+    <LIBRARY_DESCRIPTOR>
+      <LIBRARY_NAME>Sample2</LIBRARY_NAME>
+      <LIBRARY_STRATEGY>AMPLICON</LIBRARY_STRATEGY>
+      <LIBRARY_SOURCE>GENOMIC</LIBRARY_SOURCE>
+      <LIBRARY_SELECTION>PCR</LIBRARY_SELECTION>
+      <LIBRARY_LAYOUT>
+        <PAIRED/>
+      </LIBRARY_LAYOUT>
+    </LIBRARY_DESCRIPTOR>
+  </DESIGN>
+  <PLATFORM>
+    <ILLUMINA>
+      <INSTRUMENT_MODEL>Illumina MiSeq</INSTRUMENT_MODEL>
+    </ILLUMINA>
+  </PLATFORM>
+  <EXPERIMENT_LINKS>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SAMPLE</DB>
+        <ID>SRS7800645</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMISSION</DB>
+        <ID>SRA1164369</ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-FASTQ-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRX9596362&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+    <EXPERIMENT_LINK>
+      <XREF_LINK>
+        <DB>ENA-SUBMITTED-FILES</DB>
+        <ID><![CDATA[https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRX9596362&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+      </XREF_LINK>
+    </EXPERIMENT_LINK>
+  </EXPERIMENT_LINKS>
+</EXPERIMENT>
+</EXPERIMENT_SET>

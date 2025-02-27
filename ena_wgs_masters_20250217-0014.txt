@@ -1,0 +1,182 @@
+ID   BKZX01000000; SV 01; linear; genomic DNA; SET; PLN; 52213 SQ.
+XX
+AC   BKZX01000000;
+XX
+PR   Project:PRJDB8757;
+XX
+DT   19-DEC-2021 (Rel. 144, Created)
+DT   19-DEC-2021 (Rel. 144, Last updated, Version 0)
+XX
+DE   Fagus crenata isolate MieU_EA384, whole genome shotgun sequencing project.
+XX
+KW   WGS.
+XX
+OS   Fagus crenata (Japanese beech)
+OC   Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+OC   Spermatophyta; Magnoliopsida; eudicotyledons; Gunneridae; Pentapetalae;
+OC   rosids; fabids; Fagales; Fagaceae; Fagus.
+XX
+RN   [1]
+RC   DOI:10.1038/s41437-020-0334-8
+RX   PUBMED; 32606418.
+RA   Tsukamoto M., Akada S., Matsuda S., Jouyu H., Kisanuki H., Tomaru N.,
+RA   Torimaru T.;
+RT   "Assessments of fine-scale spatial patterns of SNPs in an old-growth beech
+RT   forest";
+RL   Heredity (Edinb) 125(4):240-252(2020).
+XX
+RN   [2]
+RP   1-52213
+RA   Torimaru T., Tomaru N.;
+RT   ;
+RL   Submitted (03-OCT-2019) to the INSDC.
+RL   Contact:Takeshi Torimaru Mie University, Graduate School of Bioresources;
+RL   Kurimamachiya-cho 1577, Tsu, Mie 514-8507, Japan
+XX
+DR   BioSample; SAMD00184898.
+XX
+CC   The Fagus crenata whole genome shotgun (WGS) project has the
+CC   project accession BKZX00000000.  This version of the project (01)
+CC   has the accession number BKZX01000000, and consists of sequences
+CC   BKZX01000001-BKZX01052213.
+CC   
+CC   ##Genome-Assembly-Data-START##
+CC   Assembly Method       :: Supernova v. 2.0.0
+CC   Assembly Name         :: Fagus_crenata_1.0
+CC   Genome Coverage       :: 45x
+CC   Sequencing Technology :: illumina Novaseq6000
+CC   ##Genome-Assembly-Data-END##
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..52213
+FT                   /organism="Fagus crenata"
+FT                   /isolate="MieU_EA384"
+FT                   /mol_type="genomic DNA"
+FT                   /lat_lon="34.74 N 136.52 E"
+FT                   /collection_date="2018-04-05"
+FT                   /db_xref="taxon:28929"
+XX
+WGS  BKZX01000001-BKZX01052213
+XX
+//
+ID   BSWM01000000; SV 01; linear; genomic DNA; SET; PLN; 1346 SQ.
+XX
+AC   BSWM01000000;
+XX
+PR   Project:PRJDB15639;
+XX
+DT   01-SEP-2023 (Rel. 144, Created)
+DT   01-SEP-2023 (Rel. 144, Last updated, Version 0)
+XX
+DE   Fagus crenata isolate MieU_EA384, whole genome shotgun sequencing project.
+XX
+KW   WGS.
+XX
+OS   Fagus crenata (Japanese beech)
+OC   Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+OC   Spermatophyta; Magnoliopsida; eudicotyledons; Gunneridae; Pentapetalae;
+OC   rosids; fabids; Fagales; Fagaceae; Fagus.
+XX
+RN   [1]
+RA   Torimaru T., Tomaru N.;
+RT   "2nd draft genome of Fagus crenata";
+RL   Unpublished.
+XX
+RN   [2]
+RP   1-1346
+RA   Torimaru T., Tomaru N.;
+RT   ;
+RL   Submitted (02-APR-2023) to the INSDC.
+RL   Contact:Takeshi Torimaru Mie University, Graduate School of Bioresources;
+RL   Kurimamachiya-cho 1577, Tsu, Mie University 514-8507, Japan
+XX
+DR   BioSample; SAMD00184898.
+XX
+CC   The Fagus crenata whole genome shotgun (WGS) project has the
+CC   project accession BSWM00000000.  This version of the project (01)
+CC   has the accession number BSWM01000000, and consists of sequences
+CC   BSWM01000001-BSWM01001346.
+CC   
+CC   ##Genome-Assembly-Data-START##
+CC   Assembly Method       :: MaSuRCA v. 3.4.1; Haplomerger2
+CC   Assembly Name         :: Fagus_crenata_2.0
+CC   Diploid               :: Alternate pseudohaplotype
+CC   Genome Coverage       :: 207x
+CC   Sequencing Technology :: Oxford Nanopore illumina Novaseq6000
+CC   ##Genome-Assembly-Data-END##
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..1346
+FT                   /organism="Fagus crenata"
+FT                   /isolate="MieU_EA384"
+FT                   /mol_type="genomic DNA"
+FT                   /country="Japan:Mie, Tsu, Mie University"
+FT                   /lat_lon="34.74 N 136.52 E"
+FT                   /collection_date="2018-04-05"
+FT                   /db_xref="taxon:28929"
+XX
+WGS  BSWM01000001-BSWM01001346
+XX
+//
+ID   BSWN01000000; SV 01; linear; genomic DNA; SET; PLN; 1346 SQ.
+XX
+AC   BSWN01000000;
+XX
+PR   Project:PRJDB15637;
+XX
+DT   01-SEP-2023 (Rel. 144, Created)
+DT   01-SEP-2023 (Rel. 144, Last updated, Version 0)
+XX
+DE   Fagus crenata isolate MieU_EA384, whole genome shotgun sequencing project.
+XX
+KW   WGS.
+XX
+OS   Fagus crenata (Japanese beech)
+OC   Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+OC   Spermatophyta; Magnoliopsida; eudicotyledons; Gunneridae; Pentapetalae;
+OC   rosids; fabids; Fagales; Fagaceae; Fagus.
+XX
+RN   [1]
+RA   Torimaru T., Tomaru N.;
+RT   "2nd draft genome of Fagus crenata";
+RL   Unpublished.
+XX
+RN   [2]
+RP   1-1346
+RA   Torimaru T., Tomaru N.;
+RT   ;
+RL   Submitted (02-APR-2023) to the INSDC.
+RL   Contact:Takeshi Torimaru Mie University, Graduate School of Bioresources;
+RL   Kurimamachiya-cho 1577, Tsu, Mie University 514-8507, Japan
+XX
+DR   BioSample; SAMD00184898.
+XX
+CC   The Fagus crenata whole genome shotgun (WGS) project has the
+CC   project accession BSWN00000000.  This version of the project (01)
+CC   has the accession number BSWN01000000, and consists of sequences
+CC   BSWN01000001-BSWN01001346.
+CC   
+CC   ##Genome-Assembly-Data-START##
+CC   Assembly Method       :: MaSuRCA v. 3.4.1; Haplomerger2
+CC   Assembly Name         :: Fagus_crenata_2.0
+CC   Diploid               :: Principal pseudohaplotype
+CC   Genome Coverage       :: 207x
+CC   Sequencing Technology :: Oxford Nanopore illumina Novaseq6000
+CC   ##Genome-Assembly-Data-END##
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..1346
+FT                   /organism="Fagus crenata"
+FT                   /isolate="MieU_EA384"
+FT                   /mol_type="genomic DNA"
+FT                   /country="Japan:Mie, Tsu, Mie University"
+FT                   /lat_lon="34.74 N 136.52 E"
+FT                   /collection_date="2018-04-05"
+FT                   /db_xref="taxon:28929"
+XX
+WGS  BSWN01000001-BSWN01001346
+XX
+//

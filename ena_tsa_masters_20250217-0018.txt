@@ -1,0 +1,62 @@
+ID   GHGX01000000; SV 01; linear; transcribed RNA; SET; PLN; 206708 SQ.
+XX
+AC   GHGX01000000;
+XX
+PR   Project:PRJNA523682
+XX
+DT   08-MAY-2019 (Rel. 140, Created)
+DT   08-MAY-2019 (Rel. 140, Last updated, Version 1)
+XX
+DE   Fagus crenata, TSA project GHGX01000000 data
+XX
+KW   Transcriptome Shotgun Assembly; TSA.
+XX
+OS   Fagus crenata (Japanese beech)
+OC   Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+OC   Spermatophyta; Magnoliopsida; eudicotyledons; Gunneridae; Pentapetalae;
+OC   rosids; fabids; Fagales; Fagaceae; Fagus.
+XX
+RN   [1]
+RA   Satake A., Kawatsu K., Teshima K., Kabeya D., Han Q.;
+RT   "Field transcriptome revealed a novel relationship between nitrate
+RT   transport and flowering in Japanese beech";
+RL   Unpublished.
+XX
+RN   [2]
+RA   Satake A., Kawatsu K., Teshima K., Kabeya D., Han Q.;
+RT   ;
+RL   Submitted (27-FEB-2019) to the INSDC.
+RL   Department of Biology, Kyushu University, 744 Motooka, Nishi-ku, Fukuoka
+RL   819-0395, Japan
+XX
+DR   BioSample; SAMN10986213.
+DR   BioSample; SAMN10986214.
+DR   BioSample; SAMN10986215.
+DR   BioSample; SAMN10986216.
+DR   BioSample; SAMN10986217.
+DR   BioSample; SAMN10986218.
+DR   BioSample; SAMN10986219.
+DR   BioSample; SAMN10986220.
+DR   BioSample; SAMN10986221.
+DR   BioSample; SAMN10986222.
+XX
+CC   All reads were QC-checked and removed adapter sequences by cutadapt
+CC   (version 1.1), and trimmed low quality reads by Trimmomatic
+CC   software (version 0.32). Cleaned reads of all samples were
+CC   assembled by Trinity software (version 2.0.6) with --SS_lib_type RF
+CC   option and default parameters.
+CC   ##Assembly-Data-START##
+CC   Assembly Method       :: Trinity 2.0.6
+CC   Sequencing Technology :: Illumina HiSeq
+CC   ##Assembly-Data-END##
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..206708
+FT                   /organism="Fagus crenata"
+FT                   /mol_type="transcribed RNA"
+FT                   /db_xref="taxon:28929"
+FT                   /submitter_seqid="TR1-c0_g1_i1"
+XX
+TSA   GHGX01000001-GHGX01206708
+//
