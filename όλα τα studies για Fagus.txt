@@ -1,0 +1,38 @@
+study_accession	study_title	tax_id
+PRJDB17753	RNA sequencing of beech seedlings grown for 12-days drought stress experiment	28929
+PRJEB76841	Fagus sylvatica (European beech)	28930
+PRJEB78583	Fagus sylvatica (European beech) genome assembly, dhFagSylv1 haplotype 2	28930
+PRJEB78584	Fagus sylvatica (European beech) genome assembly, dhFagSylv1 haplotype 1	28930
+PRJNA295146	Fagus sylvatica Raw sequence reads	28930
+PRJNA806270	Fagus japonica overview	63422
+PRJDB15599	Research on population genome of Fagus crenata	28929
+PRJDB15637	Principal pseudohaplotype	28929
+PRJDB15639	Alternate pseudohaplotype	28929
+PRJDB2023	SuperSAGE analysis between nitrogen fertilized samples and control in Fagus crenata	28929
+PRJDB8757	Whole genome sequencing of Fagus crenata	28929
+PRJNA448623	Fagus crenata overview	28929
+PRJNA602470	GenTree Fagus sylvatica Exome capture	28930
+PRJNA80187	Fagus sylvatica Transcriptome or Gene expression	28930
+PRJNA84135	Fagus sylvatica Organism overview	28930
+PRJDB15635	Genome Sequencing and phasing	28929
+PRJEB76840	Fagus sylvatica (European beech), genomic and transcriptomic data	28930
+PRJEB80328	Investigation of genomic variation of European beech	28930
+PRJNA1127824	Fagus orientalis Raw sequence reads	196626
+PRJNA726010	Fagus sylvatica Raw sequence reads	28930
+PRJDB15597	Genome Sequencing	28929
+PRJNA448277	Fagus crenata Genome sequencing and assembly	28929
+PRJNA448340	Fagus crenata Genome sequencing and assembly	28929
+PRJNA721723	Genomic signatures of natural selection at phenology-related genes in a widely distributed tree species Fagus sylvatica L	28930
+PRJNA376859	Drough stress-related transcriptome analysis of Fagus sylvatica	28930
+PRJNA321730	Fagus grandifolia Transcriptome or Gene expression	60423
+PRJNA450822	Fagus sylvatica Genome sequencing and assembly	28930
+PRJNA689109	Beech's buds-twigs Raw sequence reads	28930
+PRJNA123407	Fagus sylvatica Transcriptome or Gene expression	28930
+PRJNA123415	Fagus sylvatica Transcriptome or Gene expression	28930
+PRJNA123421	Fagus sylvatica Transcriptome or Gene expression	28930
+PRJNA123413	Fagus sylvatica Transcriptome or Gene expression	28930
+PRJNA123409	Fagus sylvatica Transcriptome or Gene expression	28930
+PRJNA123419	Fagus sylvatica Transcriptome or Gene expression	28930
+PRJNA524293	Field transcriptome revealed a novel relationship between nitrate transport and flowering in Japanese beech	28929
+PRJNA123411	Fagus sylvatica Transcriptome or Gene expression	28930
+PRJNA123417	Fagus sylvatica Transcriptome or Gene expression	28930
