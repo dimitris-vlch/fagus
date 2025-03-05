@@ -1,0 +1,6 @@
+with open(json_file, "r", encoding="utf-8") as file:
+            data = json.load(file)
+            sample_count = len(data)
+   print(f"Ο συνολικός αριθμός των δειγμάτων είναι: {sample_count}")
+    except Exception as e:
+ # Βήμα? : Μηχανισμός διαχείρισης σφαλμάτων της python κατά την εκτέλεση του κωδικα. Το except καταγραφεί σφάλματα στον κώδικα που υπάγεται η try.   Μπορεί να συνοδεύτει από τους όρους FileNotFoundError, JSONDecodeError.  Exception as e: το exception είναι κλάση σφαλμάτων που το αποθηκεύει στη μεταβλητή e.
