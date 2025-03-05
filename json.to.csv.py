@@ -36,4 +36,5 @@ with open(csv_file, "w", encoding="utf-8", newline="") as file:
     for row in data:
         writer.writerow(row)
     # Βήμα 6: Ανακοίνωση ολοκλήρωσης της διεργασίας.
-    print("Η μετατροπή του '{json_file}' ολοκληρώθηκε! Το αρχείο '{csv_file}' είναι έτοιμο.")
+    print(f"Η μετατροπή του {json_file} ολοκληρώθηκε! Το αρχείο {csv_file} είναι έτοιμο.")
+    
