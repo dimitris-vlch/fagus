@@ -59,7 +59,7 @@ def count_samples_with_country(json_file):
                 print("Προσοχή: Δεν υπάρχουν δείγματα με χώρα προέλευσης.")
     except Exception as e:
         print(f"Σφάλμα κατά την ανάγνωση του αρχείου: {e}")
-# Βήμα 18: Σε περίπτωση που ο χρήστης δεν ορισει το json αρχείο στην γραμμή εντολών με τη μορφή python3 json.metrics.py (name.of.the.json.txt), προτείνεται οδηγία, απαιτείται το άθροισμα των ορισμάτων να είναι μεγαλύτερο του 2(το 1ο είναι το json.metrics.py και το δεύτερο name.of.the.json.txt)
+# Βήμα 18: Σε περίπτωση που ο χρήστης δεν ορίσει το json αρχείο στην γραμμή εντολών με τη μορφή python3 json.metrics.py (name.of.the.json.txt), προτείνεται οδηγία, απαιτείται το άθροισμα των ορισμάτων να είναι μεγαλύτερο του 2(το 1ο είναι το json.metrics.py και το δεύτερο name.of.the.json.txt)
 if len(sys.argv) < 2:
     print("Try: python3 json.metrics.py name.of.the.json.txt")
     sys.exit(1)
