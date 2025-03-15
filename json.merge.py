@@ -5,45 +5,59 @@
 
 # Bήμα 1: Θα ορίσουμε μια συνάρτηση η οποία θα είναι υπεύθυνη για την συναρμολόγηση του νέου json αρχείου. Την ονομάζουμε merge_json_by_study_accession, έχει ως ορίσματα 3 json αρχεία, το results_study_json.txt, το results_sample_json.txt και το output json αρχείο, που μπορούμε να το ονομάσουμε results_merged_json.txt. Στην συνέχεια την καλούμε ώστε να εκτελέσει την συγχώνευση των αρχείων.
     # Βήμα 2: Εισαγωγή βιβλιοθηκών, ανάγνωση json αρχείων που θα αξιοποιήσουμε, μετατροπή αυτών σε αντικείμενα python και αποθήκευση αυτών σε μεταβλητές.
-import json
-def merge_json_by_study_accession(sample.json, study.json, merged.json):
-    with open(study.json, "r", encoding="utf-8") as file:
+
+import json  # ΣΟΣ στα ονόματα των αρχείων, όχι τελείες!
+
+def merge_json_by_study_accession(sample_json, study_json, merged_json): 
+    # Βήμα 1: Εισαγωγή βιβλιοθηκών, ανάγνωση json αρχείων που θα αξιοποιήσουμε, μετατροπή αυτών σε αντικείμενα python και αποθήκευση αυτών σε μεταβλητές.
+    with open(study_json, "r", encoding="utf-8") as file:
         data_study = json.load(file)
-    with open (sample.json, "r", encoding="utf-8") as file:
+    
+    with open(sample_json, "r", encoding="utf-8") as file:
         data_sample = json.load(file)
-    # Βήμα 3: Ορίζουμε μια λίστα-αντικείμενο python, την μεταβλητή data_to_merge η οποία και θα περιέχει όλες τις πληροφορίες που επιθυμούμε να ενσωματόσουμε στο script. Χρησιμοποιούμε ως κλειδί το study_accession για κάθε στοιχείο (study) στη λίστα και μέσω της .get(), εξάγουμε από κάθε στοιχείο της λίστας data_study τα study_title, description, study_description. Πλέον αυτά ανήκουν στην μεταβλητή data_to_merge.
+
+    # Βήμα 2: Ορίζουμε μια λίστα-αντικείμενο python, την μεταβλητή data_to_merge η οποία και θα περιέχει όλες τις πληροφορίες που επιθυμούμε να ενσωματώσουμε στο script.
+    # Χρησιμοποιούμε ως κλειδί το study_accession για κάθε στοιχείο (study) στη λίστα και μέσω της .get(), εξάγουμε από κάθε στοιχείο της λίστας data_study
+    # τα study_title, description, study_description. Πλέον αυτά ανήκουν στην μεταβλητή data_to_merge.
     data_to_merge = {
-    sample["study_accession"]{
-    "study_title": sample.get ("study_title",""),
-    "description": sample.get ("description", ""),
-    "study_description": sample.get ("study_description","")   
+        study["study_accession"]: {  
+            "study_title": study.get("study_title", ""),  
+            "description": study.get("description", ""),  
+            "study_description": study.get("study_description", "")  
+        }
+        for study in data_study  # H for study in data_study διαβάζει ένα ένα κάθε στοιχείο (study) της λίστας data_study, που περιέχει όλα τα δεδομένα του study_json.
     }
-    # H for sample in data_study διαβάζει ένα ένα κάθε στοιχείο (sample) της λίστας data_study, που περιέχει όλα τα δεδομένα του study_json.
-    for sample in data_study
-    }
-    # Βήμα 4: Συγχώνευση της λίστας data_sample με την λίστα data_to_merge, αξιοποιώντας το study_accession. Το ποιο σημαντικό βήμα του σκριπτ. Δεν δημιουργούμε μια νέα λίστα, αλλά ενημερώνουμε τα δεδομένα που υπάρχουν στην data_to_merge.
-    #για κάθε στοιχείο της sample_data,
-    for sample in samples_data:
-        # Ορίζουμε μια υπολίστα study_accession της λίστας sample_data, και κάθε στοιχείο της είναι απλώς το sample_accession, που το βρίσκει η .get() από τη μεγάλη λίστα data_sample. Η νέα λίστα sample_accession θα είναι ο συνδετικός μας κρίκος για το νέο json που θα προκύψει.
-        study_accesion = sample.get("study_accession","")
-        # SOS εαν η λίστα ΠΟΥ ΠΡΟΚΥΠΤΕΙ ΑΠΟ ΤΟ sample_data ΕΜΠΕΡΙΕΧΕΤΑΙ ΣΤΗ data_to_merge !!! Τότε:
+
+    # Βήμα 3: Συγχώνευση της λίστας data_sample με την λίστα data_to_merge, αξιοποιώντας το study_accession.
+    # Το πιο σημαντικό βήμα του script. Δεν δημιουργούμε μια νέα λίστα, αλλά ενημερώνουμε τα δεδομένα που υπάρχουν στην data_to_merge.
+    for sample in data_sample:
+        # Ορίζουμε μια υπολίστα study_accession της λίστας sample_data, και κάθε στοιχείο της είναι απλώς το sample_accession,
+        # που το βρίσκει η .get() από τη μεγάλη λίστα data_sample. Η νέα λίστα sample_accession θα είναι ο συνδετικός μας κρίκος για το νέο json που θα προκύψει.
+        study_accession = sample.get("study_accession", "")
+
+        # SOS: Εάν η λίστα ΠΟΥ ΠΡΟΚΥΠΤΕΙ ΑΠΟ ΤΟ sample_data ΕΜΠΕΡΙΕΧΕΤΑΙ ΣΤΗ data_to_merge !!! Τότε:
         if study_accession in data_to_merge:
-            # Eνημέρωσε κάθε αντικείμενο της λίστας sample_accession, με τα περιεχόμενα της data_to_merge. Πλέον, η sample_accession περιέχει τα δεδομένα της data_to_merge και συνεπώς η data_sample περιέχει όλα τα επιθυμητά δεδομένα που χρειαζόμαστε. Αρκει τώρα να τα εκτυπώσουμε στο νεο json αρχείο.
-            sample.update(data_to_merge[sample_accession])
-            
+            # Ενημέρωσε κάθε αντικείμενο της λίστας sample_accession, με τα περιεχόμενα της data_to_merge.
+            # Πλέον, η sample_accession περιέχει τα δεδομένα της data_to_merge και συνεπώς η data_sample περιέχει όλα τα επιθυμητά δεδομένα που χρειαζόμαστε.
+            # Αρκεί τώρα να τα εκτυπώσουμε στο νέο json αρχείο.
+            sample.update(data_to_merge[study_accession])
 
-    # Βήμα ?: Δημιουργία του json.merged αρχείου σε λειτουργεία εγγραφής.
-    with open(merged.json, "w", encoding="utf-8") as file:
-    # Βήμα ?: Εγγραφή του merged.json αξιοποιώντας την json.dump(). Το json.dump() χρησιμοποιεί τα δεδομένα της συγχωνεμένης λίστας data_merged, ως φάκελος file, με ensure_ascii=False για ελληνικούς χαρακτήρες και αφήνει και επιπλέον εσοχή 4 ώστε το json αρχείο να είναι περισσότερο εμφανήσιμο.
-        json.dump(data_merged, file, ensure_ascii=False, indent=4)
-    # Βήμα ?: Ανακοίνωση ολοκλήρωσης της διεργασίας.
-    print(f"Created {merged.json} .")
-    print(f"{merged.json} contains important additional data, such as description, study description and study title. ")
-#Bήμα ?: Ορισμός των ονομάτων των json αρχείων που αξιοποιούνται και απορρέουν απο το σκριπτ.
-sample.json = "results_sample_json.txt"
-study.json = "results_study_json.txt"
-merged.json = "results_merged_json.txt"
-# Βήμα ?: Ανάκληση της συνάρτησης:
-merge_json_by_study_accession(results_study_json.txt, results_sample_json.txt, results_merged_json.txt)
-        
+    # Βήμα 4: Δημιουργία του json.merged αρχείου σε λειτουργία εγγραφής.
+    with open(merged_json, "w", encoding="utf-8") as file:
+        # Βήμα 5: Εγγραφή του merged.json αξιοποιώντας την json.dump().
+        # Το json.dump() χρησιμοποιεί τα δεδομένα της συγχωνεμένης λίστας data_sample, ως φάκελος file, με ensure_ascii=False για ελληνικούς χαρακτήρες
+        # και αφήνει και επιπλέον εσοχή 4 ώστε το json αρχείο να είναι περισσότερο εμφανίσιμο.
+        json.dump(data_sample, file, ensure_ascii=False, indent=4)
 
+    # Βήμα 6: Ανακοίνωση ολοκλήρωσης της διεργασίας.
+    print(f"Created {merged_json}.")
+    print(f"{merged_json} contains important additional data, such as description, study description, and study title.")
+
+# Βήμα 7: Ορισμός των ονομάτων των json αρχείων που αξιοποιούνται και απορρέουν από το script.
+sample_json = "results_sample_json.txt"
+study_json = "results_study_json.txt"
+merged_json = "results_merged_json.txt"
+
+# Βήμα 8: Ανάκληση της συνάρτησης:
+# Δεν βάζουμε .txt απευθείας στην συνάρτηση, για αυτό και ορίσαμε τα ονόματα των αρχείων ως μεταβλητές παραπάνω.
+merge_json_by_study_accession(sample_json, study_json, merged_json)
