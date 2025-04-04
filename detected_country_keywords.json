@@ -1,0 +1,64 @@
+[
+  {
+    "country": "Germany",
+    "field": "sample_description",
+    "examples": [
+      "This library is from summer bark, taken from a three year old tree. The tree was purchased from a local tree nursery (Selders, Haan, Germany).",
+      "Protocols: Per plant: harvest of fine roots (< 2mm diameter) in the field, froozen in liquid nitrogen and transport to the lab on dry ice. Storage at -80°C until RNA extraction environmental samples T",
+      "Protocols: Per plant: harvest of fine roots (< 2mm diameter) in the field, froozen in liquid nitrogen and transport to the lab on dry ice. Storage at -80°C until RNA extraction environmental samples T",
+      "Protocols: Per plant: harvest of fine roots (< 2mm diameter) in the field, froozen in liquid nitrogen and transport to the lab on dry ice. Storage at -80°C until RNA extraction environmental samples T",
+      "Protocols: Per plant: harvest of fine roots (< 2mm diameter) in the field, froozen in liquid nitrogen and transport to the lab on dry ice. Storage at -80°C until RNA extraction environmental samples T"
+    ]
+  },
+  {
+    "country": "Germany",
+    "field": "description",
+    "examples": [
+      "This library is from summer bark, taken from a three year old tree. The tree was purchased from a local tree nursery (Selders, Haan, Germany).",
+      "Protocols: Per plant: harvest of fine roots (< 2mm diameter) in the field, froozen in liquid nitrogen and transport to the lab on dry ice. Storage at -80°C until RNA extraction environmental samples T",
+      "Protocols: Per plant: harvest of fine roots (< 2mm diameter) in the field, froozen in liquid nitrogen and transport to the lab on dry ice. Storage at -80°C until RNA extraction environmental samples T",
+      "Protocols: Per plant: harvest of fine roots (< 2mm diameter) in the field, froozen in liquid nitrogen and transport to the lab on dry ice. Storage at -80°C until RNA extraction environmental samples T",
+      "Protocols: Per plant: harvest of fine roots (< 2mm diameter) in the field, froozen in liquid nitrogen and transport to the lab on dry ice. Storage at -80°C until RNA extraction environmental samples T"
+    ]
+  },
+  {
+    "country": "Netherlands",
+    "field": "sample_description",
+    "examples": [
+      "Protocols: A 100 cm^2 area of bark was peeled of a living tree. Developing xylem was scraped from the surface underneath and directly frozen in liquid nitrogen. Mint-2 Kit for cDNA preparation (Evroge",
+      "Protocols: A 100 cm^2 area of bark was peeled of a living tree. Developing xylem was scraped from the surface underneath and directly frozen in liquid nitrogen. Mint-2 Kit for cDNA preparation (Evroge",
+      "Protocols: A 100 cm^2 area of bark was peeled of a living tree. Developing xylem was scraped from the surface underneath and directly frozen in liquid nitrogen. Frozen tissue was ground under liquid n",
+      "Protocols: A 100 cm^2 area of bark was peeled of a living tree. Developing xylem was scraped from the surface underneath and directly frozen in liquid nitrogen. Mint-2 Kit for cDNA preparation (Evroge",
+      "Protocols: A 100 cm^2 area of bark was peeled of a living tree. Developing xylem was scraped from the surface underneath and directly frozen in liquid nitrogen. Frozen tissue was ground under liquid n"
+    ]
+  },
+  {
+    "country": "Netherlands",
+    "field": "description",
+    "examples": [
+      "Protocols: A 100 cm^2 area of bark was peeled of a living tree. Developing xylem was scraped from the surface underneath and directly frozen in liquid nitrogen. Mint-2 Kit for cDNA preparation (Evroge",
+      "Protocols: A 100 cm^2 area of bark was peeled of a living tree. Developing xylem was scraped from the surface underneath and directly frozen in liquid nitrogen. Mint-2 Kit for cDNA preparation (Evroge",
+      "Protocols: A 100 cm^2 area of bark was peeled of a living tree. Developing xylem was scraped from the surface underneath and directly frozen in liquid nitrogen. Frozen tissue was ground under liquid n",
+      "Protocols: A 100 cm^2 area of bark was peeled of a living tree. Developing xylem was scraped from the surface underneath and directly frozen in liquid nitrogen. Mint-2 Kit for cDNA preparation (Evroge",
+      "Protocols: A 100 cm^2 area of bark was peeled of a living tree. Developing xylem was scraped from the surface underneath and directly frozen in liquid nitrogen. Frozen tissue was ground under liquid n"
+    ]
+  },
+  {
+    "country": "France",
+    "field": "sample_description",
+    "examples": [
+      "country: France:Ciron Valley. The cDNA library was made using mRNA extracted from setting buds harvested on 3 adult European beech located in the Ciron Valley (France). The library was built using the",
+      "country: France:Ciron Valley. The cDNA library was made using mRNA extracted from setting buds harvested on 3 adult European beech located in the Ciron Valley (France). The library was built using the",
+      "The cDNA library was made using mRNA extracted from swelling buds harvested on 3 adult European beech located in the Ciron Valley (France). The library was built using the Clone Miner cDNA library con"
+    ]
+  },
+  {
+    "country": "France",
+    "field": "description",
+    "examples": [
+      "country: France:Ciron Valley. The cDNA library was made using mRNA extracted from setting buds harvested on 3 adult European beech located in the Ciron Valley (France). The library was built using the",
+      "country: France:Ciron Valley. The cDNA library was made using mRNA extracted from setting buds harvested on 3 adult European beech located in the Ciron Valley (France). The library was built using the",
+      "The cDNA library was made using mRNA extracted from swelling buds harvested on 3 adult European beech located in the Ciron Valley (France). The library was built using the Clone Miner cDNA library con"
+    ]
+  }
+]
