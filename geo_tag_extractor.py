@@ -48,22 +48,43 @@ import pycountry
 import re
 from collections import defaultdict
 
-# Βήμα 2: Φόρτωση JSON αρχείου εισόδου
+# Βήμα 2: Φόρτωση JSON αρχείου εισόδου και μετατροπή του σε λεξικό python.
 with open("samples_without_geo.json", "r", encoding="utf-8") as file:
     data = json.load(file)
 
 # Βήμα 3: Δημιουργία λίστας με επίσημα ονόματα χωρών. Φτιάχνει ένα σύνολο (set) με όλα τα επίσημα ονόματα χωρών από τη βιβλιοθήκη pycountry.
 # pycountry.countries Κάνει loop ένα κατάλογο χωρών. Επιστρέφει μια λίστα από αντικείμενα country, το καθένα περιέχει διάφορα στοιχεία για μια χώρα.
 # Για κάθε country μέσα στο pycountry.countries, πάρε το country.name.
+
 country_names = set(country.name for country in pycountry.countries)
 
-# Regex pattern με όλες τις χώρες
+# Βήμα 4: Regex pattern με όλες τις χώρες. Φτιάχνει ένα regex pattern.
+# re.compile : δημιουργεί regex αντικείμενο με το οποίο και κάνουμε αναζήτηση.
+
+# pattern_string = r'\b(' + '|'.join(re.escape(name) for name in sorted(country_names, key=len, reverse=True)) + r')\b'
+
+#   r'\b('  ==> κανόνας regex που λέει από την αρχή μια λέξεις κάνε τα παρακάτω:
+#        r'...' για raw string, η python δεν ερμηνεύει backslashes (τενχικό κυρίως)
+#        \b regex συμβολο που δηλώνει αρχή και τέλος λέξης.
+#        ( ανοίγει ένα capturing group, μια ομάδα δηλάδη επιλογών.
+
+#   '|'.join(...) ==> δημιουργεί μια λίστα με τα ονόματα των χωρών χωρισμένα. το | σημαίνει ή διαζευτικό
+
+#   re.escape(name) for name in τυπικό βήμα, για κάθε όνομα φροντίζει οι ειδικοί χαρακτήρες να ενσωματοθούν σωστά.
+
+#   sorted(country_names, key=len, reverse=True)
+    # ταξινόμιση ονομάτων χώρας (country_names), κατα φθίνουσα σειρά (key=len, reverse=True). Έτσι το "United States of America" δεν θα ταιριάξει στο America.
+
+#   + r')\b' ==> κλείνουμε το capturing group, και βάζουμε όριο λέξης για κλείσιμο.
+
+# re.IGNORECASE τυπικό βήμα, για να μην είναι case sensitive.
+
 country_pattern = re.compile(
     r'\b(?:' + '|'.join(re.escape(name) for name in sorted(country_names, key=len, reverse=True)) + r')\b',
     re.IGNORECASE
 )
 
-# Βήμα 3: Ανίχνευση χωρών σε όλα τα πεδία κάθε εγγραφής
+# Βήμα 5: Ανίχνευση χωρών σε όλα τα πεδία κάθε εγγραφής
 geo_hits = defaultdict(lambda: defaultdict(list))
 
 for registry in data:
@@ -75,7 +96,7 @@ for registry in data:
                 if len(geo_hits[match_clean][field]) < 5:
                     geo_hits[match_clean][field].append(value.strip()[:200])
 
-# Βήμα 4: Αποθήκευση αποτελεσμάτων
+# Βήμα 6: Αποθήκευση αποτελεσμάτων
 results = []
 
 for country, field_map in geo_hits.items():
@@ -86,8 +107,8 @@ for country, field_map in geo_hits.items():
             "examples": examples
         })
 
-# Εγγραφή σε json
-with open("detected_country_keywords.json", "w", encoding="utf-8") as f:
-    json.dump(results, f, indent=2, ensure_ascii=False)
+# Βήμα 7: Εγγραφή σε json και εκτύπωση των αποτελεσμάτων στην κονσόλα.
+with open("detected_country_keywords.json", "w", encoding="utf-8") as file:
+    json.dump(results, file, indent=2, ensure_ascii=False)
 
-print("✅ Το αρχείο 'detected_country_keywords.json' δημιουργήθηκε με επιτυχία.")
+print(" 'detected_country_keywords.json' was created successfully.")
