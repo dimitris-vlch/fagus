@@ -84,7 +84,18 @@ country_pattern = re.compile(
     re.IGNORECASE
 )
 
-# Βήμα 5: Ανίχνευση χωρών σε όλα τα πεδία κάθε εγγραφής
+# Βήμα 5: Ανίχνευση χωρών σε όλα τα πεδία κάθε εγγραφής.
+
+# for registry in data: Για κάθε εγγραφή του samples_without_geo.json
+# for field, value in registry.items(): Για το περιεχόμενο (value) του κάθε αντικειμένου (field) της κάθε εγγραφής registry.item() τις εγγραφές τις διατρέχουμε μία-μία.
+# if isinstance(value, str) and value.strip(): τυπικός έλεγχος ελέγχουμε οτι το το αντικείμενο value, του λεξικού registry, οτι είναι τύπου str και όχι κενό, white space.
+# matches = country_pattern.findall(value) για το value, που είναι κάθε εγγραφή και αντικείμενο της καθε πεδίο (field), εφαρμόζουμε το regex country_pattern για να δούμε σε πόσα πεδία κάθε εγγραφής (value) βρέθηκε το country_pattern. Δηλαδή, για κάθε εγγραφή επιστρέφουμε μια λίστα με όλες τις λέξεις που αναγνωρίστηκαν ως χώρες.
+# for match in matches: για κάθε λέξη που εντοπίστηκε ως χώρα στη λίστα με τις χώρες που εντοπίστηκαν για ενα πεδίο(field):
+# match_clean = match.strip() καθαρίζουμε τυχόν κενά για λόγους συνέπειας.
+
+
+
+
 geo_hits = defaultdict(lambda: defaultdict(list))
 
 for registry in data:
@@ -93,10 +104,19 @@ for registry in data:
             matches = country_pattern.findall(value)
             for match in matches:
                 match_clean = match.strip()
-                if len(geo_hits[match_clean][field]) < 5:
-                    geo_hits[match_clean][field].append(value.strip()[:200])
 
 # Βήμα 6: Αποθήκευση αποτελεσμάτων
+
+# Δημιουργούμε την κενή λίστα results, που αποθηκεύουμε σε αυτήν όλες τις πληροφορίες που επιθυμούμε, τις οποίες και στην συνέχεια θα αποθηκεύσουμε στο json αρχείο.
+
+# for country, field_map in geo_hits.items() Για κάθε χώρα, παίρνουμε τον εσωτερικό χάρτη πεδίων field_map. country = "France", field_map = {"study_title": [...], "study_description": [...]}
+
+# for field, examples in field_map.items() Διατρέχουμε κάθε πεδίο που περιέχει αποσπάσματα. field = "study_title", examples = ["France is beautiful", "..."]
+
+# Σε αυτή τη χρήση, το .items() μας επιτρέπει να ελένξουμε τι συμβαίνει χώρα προς χώρα.
+
+# H .append() παίρνει τα πεδία που διατρέχουμε (χώρα, πεδίο, λίστα παραδειγμάτων). Και τα προσθέτει στη λίστα results.
+
 results = []
 
 for country, field_map in geo_hits.items():
