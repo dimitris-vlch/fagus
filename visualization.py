@@ -40,18 +40,18 @@ frequency = Counter()
     # frequency[geo_field] += 1 Κάθε φορά που εμφανίζεται κάποιο geo_field του geo_fields, αυξάνεται η τιμή του geo_field με το counter κατα μια μονάδα.
 
 
-for registry in data
+for registry in data:
     hits = False
-    for geo_field in geo_fields 
+    for geo_field in geo_fields:
         value = registry.get(geo_field, "").strip()
         if value:
             hits = True
             frequency[geo_field] += 1 
 
-        if hits:
-            with_geo =+ 1
-        else:
-            without_geo =+ 1
+    if hits:
+        with_geo += 1
+    else:
+        without_geo += 1
 
 # Βήμα 5: Εκτύπωση των αποτελεσμάτων της καταμέτρησης
 # for geo_field, count in frequency.items(): Eκτελούμε βρόγχο loop στο αντικείμενο frequency, το οποίο και είναι τύπου Counter.
@@ -63,3 +63,37 @@ for registry in data
 
 for geo_field, count in frequency.items():
     print(f"{geo_field}: {count}")
+
+# Βήμα 6: Pie chart
+# Καταρχήν ορίζουμε labels, sizes, colors.
+
+labels = ["With Geo Info", "Without Geo Info"]  # Τα ονόματα των δύο κομματιών της πίτας.   
+sizes = [with_geo, without_geo] # το μέγεθος του κάθε κομματιού της πίτας
+colors = ["blue","red"] # χρώματα των κομματιών της πίτας
+
+# plt.figure(figsize=(6, 6)) Δημιουργεί νέο καμβά (figure) για το γράφημα, και  ορίζει με figsize το μέγεθος του σε ίντσες όπου στην προκειμένη περίπτωση είναι 6*6. Σε pie chart οφείλουμε να είναι τετράγωνες οι διαστάσεις για να μην είναι η πίτα παραμορφωμένη.
+# plt.pie(          δημιουργεί πίτα με τα μεγέθη της μεταβλητής size, όπως και ορίσαμε παραπάνω.
+#   sizes,          το κάθε μέγεθος της πίτας είναι ίσο με το αριθμό των δειγμάτων που έχουν και δεν έχουν γεωγραφία αντίστοιχα.
+# τα ονόμα των ετικετών (labels) είναι με την ίδια σειρά με τα μεγέθη (sizes)
+# autopct="%1.1f%%" για να εμφανιστεί το ποσοστό του κάθε κομματιού πάνω στο διάγραμμα, στη προκειμένη περίπτωση έχουμε έα δεκαδικό ψηφίο καθώς και σύμβολο επί τοις εκατό.
+# startangle=90 γωνία εκκίνησης του διαγράμματος της πίτας. 90 μοίρες και είναι όπως ρολοί τις 12:00.
+# colors=colors δίνει τα χρώματα όπως και τα ορίσαμε παραπάνω.
+
+plt.figure(figsize=(6, 6))
+plt.pie(
+    sizes,
+    labels=labels,
+    autopct="%1.1f%%",  
+    startangle=90,      
+    colors=colors
+)
+
+# plt.title ορίζει τίτλο γραφήματος
+# plt.tight_layout() ρυθμίζει το layout αυτόματα ώστε να είναι το κάθε στοιχείο του γραφήματος σε σωστή θέση.
+# plt.savefig("geo_pie_chart.png") σώζει το γράφημα ως εικόνα .png.
+# plt.show() εμφανίζει το γράφημα στην οθόνη.
+
+plt.title("Ποσοστό δειγμάτων με ή χωρίς γεωγραφική πληροφορία")
+plt.tight_layout()
+plt.savefig("geo_pie_chart.png")  # αποθήκευση εικόνας
+plt.show()
