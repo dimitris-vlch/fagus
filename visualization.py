@@ -112,7 +112,7 @@ colors = ["blue","red"]
 
 
 plt.figure(figsize=(6,4))
-plt.bar(labels, sizes, colors=colors)
+plt.bar(labels, sizes, color=colors)
 plt.ylabel("Αριθμός εγγραφών")
 
 # Όπως και στο προηγούμενο βήμα, ορίζουμε .title(), .tight_layout(), .savefig(), .show() για τους ίδιους ακριβώς λόγους.
