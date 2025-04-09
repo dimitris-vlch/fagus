@@ -113,13 +113,11 @@ colors = ["blue","red"]
 
 plt.figure(figsize=(6,4))
 plt.bar(labels, sizes, colors=colors)
-
-
+plt.ylabel("Αριθμός εγγραφών")
 
 # Όπως και στο προηγούμενο βήμα, ορίζουμε .title(), .tight_layout(), .savefig(), .show() για τους ίδιους ακριβώς λόγους.
 
-plt.ylabel("Αριθμός εγγραφών")
-plt.title("Ποσοστό δειγμάτων με ή χωρίς γεωγραφική πληροφορία")
+plt.title("Αριθμός δειγμάτων με ή χωρίς γεωγραφική πληροφορία")
 plt.tight_layout()
 plt.savefig("geo_bar_Chart.png")
 plt.show()
