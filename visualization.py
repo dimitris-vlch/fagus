@@ -11,7 +11,7 @@ from collections import Counter
 with open("results_merged_json.txt", "r", encoding="utf-8") as file:
     data = json.load(file)
 
-# Βήμα 2: Ορίζουμε ένα λεξικό, geo_data, οπου κάθε αντικείμενό του είναι ένα πεδίο των αντικειμένων του λεξικού data, το οποίο και όμως φέρει γεωγραφική πληροφορία. Πεδιά του στύλ χώρα, συντεταγμένες lat, lon, κλπ.
+# Βήμα 2: Ορίζουμε ένα λεξικό, geo_fields, οπου κάθε αντικείμενό του (fields) είναι ένα πεδίο των αντικειμένων του λεξικού data, το οποίο και όμως φέρει γεωγραφική πληροφορία. Πεδιά του στύλ χώρα, συντεταγμένες lat, lon, κλπ.
 
 geo_fields = [
     "country", "location", "location_start", "location_end", "isolation_source", "lat", "lon"
@@ -96,4 +96,30 @@ plt.pie(
 plt.title("Ποσοστό δειγμάτων με ή χωρίς γεωγραφική πληροφορία")
 plt.tight_layout()
 plt.savefig("geo_pie_chart.png")  # αποθήκευση εικόνας
+plt.show()
+
+# Bήμα 7: Bar Chart
+
+# Ορίζουμε μεταβλητές για labels, sizes, colours, όπως ακριβώς κάναμε και παραπάνω.
+
+labels = ["With Geo Info", "Without Geo Info"]
+sizes = [with_geo, without_geo]
+colors = ["blue","red"]
+
+# με .figure ορίζουμε γράφημα, το οποίο και του δίνουμε διαστάσεις figsize 6 επι 4 ίντσες.
+# η .bar() δημιουργεί τις μπάρεις του Bar Chart. στο παράδειγμα μας είναι της μορφής .bar(x,y,colors), δηλαδή οι τιμές του  χ άξονα, στη συνέχεια οι τιμές του ψ άξονα και τέλος τα χρώματα των μπαρών.
+# με .ylabel() ορίζουμε τον τίτλο του κάθετου άξονα.
+
+
+plt.figure(figsize=(6,4))
+plt.bar(labels, sizes, colors=colors)
+
+
+
+# Όπως και στο προηγούμενο βήμα, ορίζουμε .title(), .tight_layout(), .savefig(), .show() για τους ίδιους ακριβώς λόγους.
+
+plt.ylabel("Αριθμός εγγραφών")
+plt.title("Ποσοστό δειγμάτων με ή χωρίς γεωγραφική πληροφορία")
+plt.tight_layout()
+plt.savefig("geo_bar_Chart.png")
 plt.show()
