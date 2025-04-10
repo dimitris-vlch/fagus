@@ -60,7 +60,7 @@ for registry in data:
 print("\n")
 print(f"Total number of samples: {total_samples}, {total_samples / total_samples: .1%}")
 print(f"Total number of samples with geological information: {with_geo} {with_geo / total_samples: .1%}")
-print(f"Samples without total abscence of geological information: {without_geo} {without_geo / total_samples: .1%} ")
+print(f"Samples without total abscence of geological information: {without_geo} {without_geo / total_samples:.1%}")
 
 # Βήμα 5: Εκτύπωση των αποτελεσμάτων της καταμέτρησης
 # for geo_field, count in frequency.items(): Eκτελούμε βρόγχο loop στο αντικείμενο frequency, το οποίο και είναι τύπου Counter.
@@ -127,13 +127,13 @@ plt.ylabel("Αριθμός εγγραφών")
 # η .figtext() είναι συνάρτηση της matplotlib. Προσθέτει κείμενο στο figure. Οι αριθμοί 0.5 και 0.01 αναφέρονται στην οριζόντια και στην κάθετη θέση.
 # 
  
-plt.figtext(0.5, 0.01, f"Σύνολο δειγμάτων: {total_samples}", ha='center', fontsize=10)
+plt.figtext(0.5, 0.02, f"Σύνολο δειγμάτων: {total_samples}", ha='center', fontsize=10)
 
 
 
 # Όπως και στο προηγούμενο βήμα, ορίζουμε .title(), .tight_layout(), .savefig(), .show() για τους ίδιους ακριβώς λόγους.
 
 plt.title("Αριθμός δειγμάτων με ή χωρίς γεωγραφική πληροφορία")
-plt.tight_layout()
+plt.tight_layout(rect=[0, 0.05, 1, 1])
 plt.savefig("geo_bar_Chart.png")
 plt.show()
