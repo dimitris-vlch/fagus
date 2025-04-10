@@ -57,10 +57,10 @@ for registry in data:
         without_geo += 1
 
 # Βήμα 5: Εκτύπωση ορισμένων βασικών αποτελεσμάτων: Εκτυπώνονται οι τιμές της κάθε μεταβλητής που αντιπροσωπεύει μέγεθος ενδιαφέροντος και στην συνέχεια το ποσοστό αυτού ως προ τοο σύνολο των δειγμάτων με ένα δεκαδικό ψηφίο.
-
-print(f"Total number of samples: {total_samples}, {total_samples / total_samples:.1%}")
-print(f"Total number of samples with geological information: {with_geo} ({with_geo / total_samples:.1%})")
-print(f"Samples without total abscence of geological information: {without_geo} ({without_geo / total_samples}) ")
+print("\n")
+print(f"Total number of samples: {total_samples}, {total_samples / total_samples: .1%}")
+print(f"Total number of samples with geological information: {with_geo} {with_geo / total_samples: .1%}")
+print(f"Samples without total abscence of geological information: {without_geo} {without_geo / total_samples: .1%} ")
 
 # Βήμα 5: Εκτύπωση των αποτελεσμάτων της καταμέτρησης
 # for geo_field, count in frequency.items(): Eκτελούμε βρόγχο loop στο αντικείμενο frequency, το οποίο και είναι τύπου Counter.
@@ -81,8 +81,8 @@ sizes = [with_geo, without_geo] # το μέγεθος του κάθε κομμα
 colors = ["blue","red"] # χρώματα των κομματιών της πίτας
 
 # plt.figure(figsize=(6, 6)) Δημιουργεί νέο καμβά (figure) για το γράφημα, και  ορίζει με figsize το μέγεθος του σε ίντσες όπου στην προκειμένη περίπτωση είναι 6*6. Σε pie chart οφείλουμε να είναι τετράγωνες οι διαστάσεις για να μην είναι η πίτα παραμορφωμένη.
-# plt.pie(          δημιουργεί πίτα με τα μεγέθη της μεταβλητής size, όπως και ορίσαμε παραπάνω.
-#   sizes,          το κάθε μέγεθος της πίτας είναι ίσο με το αριθμό των δειγμάτων που έχουν και δεν έχουν γεωγραφία αντίστοιχα.
+# plt.pie(δημιουργεί πίτα με τα μεγέθη της μεταβλητής size, όπως και ορίσαμε παραπάνω.
+#   sizes, το κάθε μέγεθος της πίτας είναι ίσο με το αριθμό των δειγμάτων που έχουν και δεν έχουν γεωγραφία αντίστοιχα.
 # τα ονόμα των ετικετών (labels) είναι με την ίδια σειρά με τα μεγέθη (sizes)
 # autopct="%1.1f%%" για να εμφανιστεί το ποσοστό του κάθε κομματιού πάνω στο διάγραμμα, στη προκειμένη περίπτωση έχουμε έα δεκαδικό ψηφίο καθώς και σύμβολο επί τοις εκατό.
 # startangle=90 γωνία εκκίνησης του διαγράμματος της πίτας. 90 μοίρες και είναι όπως ρολοί τις 12:00.
@@ -123,6 +123,13 @@ colors = ["blue","red"]
 plt.figure(figsize=(6,4))
 plt.bar(labels, sizes, color=colors)
 plt.ylabel("Αριθμός εγγραφών")
+
+# η .figtext() είναι συνάρτηση της matplotlib. Προσθέτει κείμενο στο figure. Οι αριθμοί 0.5 και 0.01 αναφέρονται στην οριζόντια και στην κάθετη θέση.
+# 
+ 
+plt.figtext(0.5, 0.01, f"Σύνολο δειγμάτων: {total_samples}", ha='center', fontsize=10)
+
+
 
 # Όπως και στο προηγούμενο βήμα, ορίζουμε .title(), .tight_layout(), .savefig(), .show() για τους ίδιους ακριβώς λόγους.
 
