@@ -168,4 +168,11 @@ colors_bar_chart = [
 plt.figure(figsize=(9,5))
 plt.bar(field_names, field_values, colors_bar_chart=any) #σε .bar() δεν ορίζουμε ως labels=   
 plt.ylabel("Συχνότητα εμφάνισης γεωγραφικής πληροφορίας.")
-plt.title
+plt.title("Bar Chart για τη συχνότητα των πεδίων με γεωγραφική πληροφορία")
+plt.xticks(rotation=30) # περιστρέφει ετικέτες στο χ αξονα κατα 30 μοίρες ώστε να μην επικαλύπτονται όταν αυτές είναι πολύ μεγάλες.
+plt.figtext(0.5, 0.01, f"Σύνολο δειγμάτων: {total_samples}", ha="center", fontsize=10) # λεζάντα στο κάτω μέρος του γραφήματος που αναφέρει τον συνολικό αριθμό των δειγμάτων.
+plt.savefig("geo_fields_bar_chart.png")
+plt.show()
+
+
+
