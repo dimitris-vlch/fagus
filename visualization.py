@@ -158,7 +158,7 @@ field_percentages = [ with_geo / total_samples * 100 for field_value in field_va
 # Βήμα 10: Διάγραμμα Pie Chart για ποσοστιαία αναπαράσταση του τύπου της γεωγραφικής πληοροφορίας που παρουσιάζεται στα δείγματα, ως προς το σύνολο των δειγμάτων.
 
 plt.figure(figsize=(7, 7))
-plt.pie(field_precentages, labels=field_names, startangle=90,  # οπου field_precentages οι τιμές για το διάγραμμα Pue και labels τα ονόματα που συνοδεύουν τις τιμές του field_precentages.
+plt.pie(field_percentages, labels=field_names, startangle=90,  # οπου field_precentages οι τιμές για το διάγραμμα Pue και labels τα ονόματα που συνοδεύουν τις τιμές του field_precentages.
 autopct= lambda p: f"{p:.1f}%\n({int(p * total_samples / 100)})", colors=colors_bar_chart) # με λάμδα ορίζουμε μια συνάρτηση. Με p: εμφανίζουμε ποσοστό. Στη πρώτη γραμμή \n έχουμε ποσοστό p με ένα δεκαδικο ψηφίο .1f% το f{} μάλλον χρείαζεται για το συντακτικό απλά. Στη δεύτερη γραμμή, από το ποσοστά field_precentages θα υπολογίσουμε ξανά τις τιμές field_values, διότι η lambda συνάρτση δεν έχει πρόσβαση στην λίστα αυτή. Η συνάρτηση int μετατρέπει ένα κλάσμα σε ακέραιο αριθμό.
 plt.title("Γραφική, ποσοστιαία αναπαράσταση της συχνότητας εμφάνισης\n(του τύπου της γεωγραφικής πληροφορίας)\n(ως προς το σύνολο των δειγμάτων)")
 plt.tight_layout() #ορίζει αυτόματα το layout.
