@@ -14,10 +14,20 @@ with open("results_merged_json.txt", "r", encoding="utf-8") as file:
 
 total_samples = len(data)
 
-# Βήμα 2: Ορίζουμε ένα λεξικό, geo_fields, οπου κάθε αντικείμενό του (fields) είναι ένα πεδίο των αντικειμένων του λεξικού data, το οποίο και όμως φέρει γεωγραφική πληροφορία. Πεδιά του στύλ χώρα, συντεταγμένες lat, lon, κλπ.
+# Βήμα 2: Ορίζουμε ένα λεξικό, geo_fields, οπου κάθε αντικείμενό του (fields) είναι ένα πεδίο των αντικειμένων του λεξικού data, το οποίο και όμως φέρει γεωγραφική πληροφορία. Πεδιά του στύλ χώρα, συντεταγμένες lat, lon, κλπ. Ορίζουμε μια λίστα με χρώματα.
 
 geo_fields = [
     "country", "location", "location_start", "location_end", "isolation_source", "lat", "lon"
+]
+
+colors_bar_chart = [
+    "#4E79A7",  # Μπλε
+    "#F28E2B",  # Πορτοκαλί
+    "#E15759",  # Κόκκινο
+    "#76B7B2",  # Κυανό-πράσινο
+    "#59A14F",  # Πράσινο
+    "#EDC948",  # Κίτρινο
+    "#B07AA1",  # Μοβ
 ]
 
 # Βήμα 3: Ορίζουμε τις μεταβλητές που θα χρειαστούμε για την καταμέτρηση. Μεταβλητή with_geo και μεταβλητή without_geo που ορίζονται ως μηδεν, καθώς και μεταβλητή που ορίζεται ως κενή λίστα Counter για να εκτελέσει την καταμέτρηση των αντικειμένων σε λεξικό data.
@@ -61,7 +71,7 @@ print(f"Total number of samples: {total_samples}, {total_samples / total_samples
 print(f"Total number of samples with geological information: {with_geo} {with_geo / total_samples: .1%}")
 print(f"Samples without total abscence of geological information: {without_geo} {without_geo / total_samples:.1%}")
 
-# Βήμα 5: Εκτύπωση των αποτελεσμάτων της καταμέτρησης
+# Βήμα 6: Εκτύπωση των αποτελεσμάτων της καταμέτρησης
 # for geo_field, count in frequency.items(): Eκτελούμε βρόγχο loop στο αντικείμενο frequency, το οποίο και είναι τύπου Counter.
 # .items() Σε λεξικά και σε μεταβλητές τύπου Counter, επιστρέφει σε ζευγάρια (key,value). Έτσι, αφου ολοκληρώθηκε το βήμα 4, θα ισχύει frequency = Counter({ "country": 4435, "lat": 853, "lon": 853, "location": 200 }).
 # Δηλαδή θα ισχύει for geo_field, count in frequency.items(): geo_field = "country", count = 4435 geo_field = "lat", count = 853 geo_field = "lon", count = 853 geo_field = "location", count = 200
@@ -72,7 +82,7 @@ print(f"Samples without total abscence of geological information: {without_geo} 
 for geo_field, count in frequency.items():
     print(f"Samples with {geo_field}: {count}")
 
-# Βήμα 6: Pie chart
+# Βήμα 7: Pie chart
 # Καταρχήν ορίζουμε labels, sizes, colors.
 
 labels = ["With Geo Info", "Without Geo Info"]  # Τα ονόματα των δύο κομματιών της πίτας.   
@@ -107,7 +117,7 @@ plt.tight_layout()
 plt.savefig("geo_pie_chart.png")  # αποθήκευση εικόνας
 plt.show()
 
-# Bήμα 7: Bar Chart
+# Bήμα 8: Bar Chart
 
 # Ορίζουμε μεταβλητές για labels, sizes, colours, όπως ακριβώς κάναμε και παραπάνω.
 
@@ -136,37 +146,28 @@ plt.show()
 
 # Pie Chart και Bar Chart για την γραφική απεικόνιση των πεδίων του geo_fields. Βλέπουμε ποιά είναι τα πεδία με τα πλουσιότερα γεωγραφικά δεδομένα.
 
-# Βήμα 8: Μετατροπή του αντικειμένου Counter σε λίστες ώστε να μπορούν να αξιοποιηθούν για διαγράμματα. frequency = ["key1":value1, "key2:value2, etc..."]
+# Βήμα 9: Μετατροπή του αντικειμένου Counter σε λίστες ώστε να μπορούν να αξιοποιηθούν για διαγράμματα. frequency = ["key1":value1, "key2:value2, etc..."]
 
 field_names = list(frequency.keys()) # δημιοργεί λίστα η οποία έχει τα ονόματα των πεδίων του frequency
 
 field_values = list(frequency.values()) # λίστα με τις τιμές των πεδίων του frequency
 
-field_precentages = (with_geo / total_samples * 100 for field_value in field_values ) # ποσοστά γεωγραφικών δεδομένων ως προς το σύνολο των δειγμάτων με γεωγραφικά δεδομένα. Θέλουμε αριθμητικά ποσοστά τα οποία και θα τα χρησιμοποιήσουμε για την κατασκευή των διαγραμμάτων. Για κάθε τιμή απο την λίστα των τιμών .values(). Συνολικά, φτιάχνουμε μια λίστα με τα αριθμητικά ποσοστά για κάθε πεδίο που επιθυμούμε να αναπαραστίσουμε.
+field_percentages = [ with_geo / total_samples * 100 for field_value in field_values ] # ποσοστά γεωγραφικών δεδομένων ως προς το σύνολο των δειγμάτων με γεωγραφικά δεδομένα. Θέλουμε αριθμητικά ποσοστά τα οποία και θα τα χρησιμοποιήσουμε για την κατασκευή των διαγραμμάτων. Για κάθε τιμή απο την λίστα των τιμών .values(). Συνολικά, φτιάχνουμε μια λίστα με τα αριθμητικά ποσοστά για κάθε πεδίο που επιθυμούμε να αναπαραστίσουμε.
+# επειδή είναι έκφραση και όχι λίστα, έχουμε [] αντι για ().
 
-# Βήμα 9: Διάγραμμα Pie Chart για ποσοστιαία αναπαράσταση του τύπου της γεωγραφικής πληοροφορίας που παρουσιάζεται στα δείγματα, ως προς το σύνολο των δειγμάτων.
+# Βήμα 10: Διάγραμμα Pie Chart για ποσοστιαία αναπαράσταση του τύπου της γεωγραφικής πληοροφορίας που παρουσιάζεται στα δείγματα, ως προς το σύνολο των δειγμάτων.
 
 plt.figure(figsize=(7, 7))
-plt.pie(field_precentages, labels=field_names, startangle=90, colors=any  # οπου field_precentages οι τιμές για το διάγραμμα Pue και labels τα ονόματα που συνοδεύουν τις τιμές του field_precentages.
-autopct= lambda p: f"{p:.1f}%\n({int(p * total_samples / 100)})",) # με λάμδα ορίζουμε μια συνάρτηση. Με p: εμφανίζουμε ποσοστό. Στη πρώτη γραμμή \n έχουμε ποσοστό p με ένα δεκαδικο ψηφίο .1f% το f{} μάλλον χρείαζεται για το συντακτικό απλά. Στη δεύτερη γραμμή, από το ποσοστά field_precentages θα υπολογίσουμε ξανά τις τιμές field_values, διότι η lambda συνάρτση δεν έχει πρόσβαση στην λίστα αυτή. Η συνάρτηση int μετατρέπει ένα κλάσμα σε ακέραιο αριθμό.
+plt.pie(field_precentages, labels=field_names, startangle=90,  # οπου field_precentages οι τιμές για το διάγραμμα Pue και labels τα ονόματα που συνοδεύουν τις τιμές του field_precentages.
+autopct= lambda p: f"{p:.1f}%\n({int(p * total_samples / 100)})", colors=colors_bar_chart) # με λάμδα ορίζουμε μια συνάρτηση. Με p: εμφανίζουμε ποσοστό. Στη πρώτη γραμμή \n έχουμε ποσοστό p με ένα δεκαδικο ψηφίο .1f% το f{} μάλλον χρείαζεται για το συντακτικό απλά. Στη δεύτερη γραμμή, από το ποσοστά field_precentages θα υπολογίσουμε ξανά τις τιμές field_values, διότι η lambda συνάρτση δεν έχει πρόσβαση στην λίστα αυτή. Η συνάρτηση int μετατρέπει ένα κλάσμα σε ακέραιο αριθμό.
 plt.title("Γραφική, ποσοστιαία αναπαράσταση της συχνότητας εμφάνισης\n(του τύπου της γεωγραφικής πληροφορίας)\n(ως προς το σύνολο των δειγμάτων)")
 plt.tight_layout() #ορίζει αυτόματα το layout.
 plt.figtext(0.5, 0.02, f"Σύνολο δειγμάτων: {total_samples}", ha="center", fontsize=10) # λεζάντα κάτω από το γράφημα, όπως περιγράφεται παραπάνω. 
 plt.savefig("field_precentages_pie_chart.png")
 plt.show()
 
-colors_bar_chart = [
-    "#4E79A7",  # Μπλε
-    "#F28E2B",  # Πορτοκαλί
-    "#E15759",  # Κόκκινο
-    "#76B7B2",  # Κυανό-πράσινο
-    "#59A14F",  # Πράσινο
-    "#EDC948",  # Κίτρινο
-    "#B07AA1",  # Μοβ
-]
-
 plt.figure(figsize=(9,5))
-plt.bar(field_names, field_values, colors_bar_chart=any) #σε .bar() δεν ορίζουμε ως labels=   
+plt.bar(field_names, field_values, color=colors_bar_chart) #σε .bar() δεν ορίζουμε ως labels=   
 plt.ylabel("Συχνότητα εμφάνισης γεωγραφικής πληροφορίας.")
 plt.title("Bar Chart για τη συχνότητα των πεδίων με γεωγραφική πληροφορία")
 plt.xticks(rotation=30) # περιστρέφει ετικέτες στο χ αξονα κατα 30 μοίρες ώστε να μην επικαλύπτονται όταν αυτές είναι πολύ μεγάλες.
