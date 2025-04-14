@@ -17,7 +17,7 @@ total_samples = len(data)
 # Βήμα 2: Ορίζουμε ένα λεξικό, geo_fields, οπου κάθε αντικείμενό του (fields) είναι ένα πεδίο των αντικειμένων του λεξικού data, το οποίο και όμως φέρει γεωγραφική πληροφορία. Πεδιά του στύλ χώρα, συντεταγμένες lat, lon, κλπ. Ορίζουμε μια λίστα με χρώματα.
 
 geo_fields = [
-    "country", "location", "location_start", "location_end", "isolation_source", "lat", "lon"
+    "country", "location", "isolation_source", "lat", 
 ]
 
 colors_bar_chart = [
@@ -157,6 +157,7 @@ field_percentages = [ (value / total_samples) * 100 for value in field_values ] 
 
 # Βήμα 10: Bar Chart για την απεικόνιση των δειγμάτων που έχουν γεωγραφική πληροφορία.
 
+field_names = ["country", "location", "coordinates", "isolation_source"]
 plt.figure(figsize=(9,5))
 plt.bar(field_names, field_values, color=colors_bar_chart) #σε .bar() δεν ορίζουμε ως labels=   
 for i, value in enumerate(field_values):
@@ -178,13 +179,17 @@ plt.figure(figsize=(12,7))
 plt.figtext(0.5, 0.95, "Ποσοστά κάλυψης γεωγραφικών πεδίων ως προς το σύνολο των δειγμάτων", ha="center", fontsize=14, fontweight="bold") # ορίζουμε τίτλο οχι με .title() αλλά με .figtext() γιατί το .title() θα το χρειαστούμε αργότερα για κάθε ξεχωριστό pie chart.
 
 rows = 2    # ορίζουμε μεταβλητές για γραμμες και στηλες που θα ορίσουν τα 8 κελιά που καθένα θα περιέχει ένα pie chart.
-cols = 4
-
+cols = 3
 # Δημιουργία πολλαπλών pie charts μέσα σε ένα πεδίο με κελιά (grid). Ένα κελί για κάθε geo_field.
 
 # η enamurate μας επιτρέπε να τοποθετούμε τα την κάθε πίτα σε διαφορετικό κελί χρησιμοποιώντας μια μεταβλητή idx, και τα αντιστοιχεί σε ένα-ένα τα αντικείμενα της λίστας field_names. Aναλυτικότερα:
 
 # εκτελούμε βρόγχο for, όπου η idx παίρνει αριθμητικές θέσεις (0,1,2, ...), όπου field_name το αντικείμενο της λίστας field_names και field_value το αντικείμενο της λίστας field_values. Με την zip δένουμε το κάθε αντικείμενο στην λίστα του. Η emurate προσθέτει το κάθε αντικείμενο των 2 λιστών σε ένα αντικείμενο idx. Στο βρόγχο αυτό, υπολογίζουμε την διαφορά του συνόλου των δειγμάτων απο την τιμή field_value.
+
+# μικρη αλλαγη στα field_names, αντι για lat και lot να έχουμε coordinates.
+
+field_names = ["country", "location", "coordinates", "isolation_source"]
+
 for idx, (field_name, field_value) in enumerate(zip(field_names, field_values)):
     missing = total_samples - field_value
     sizes = [field_value, missing] #ορίζουμε τα μεγέθη του pie chart.
@@ -193,9 +198,6 @@ for idx, (field_name, field_value) in enumerate(zip(field_names, field_values)):
     plt.subplot(rows, cols, idx + 1)    # Το plt.subplot() δημιουργεί πολλαπλά γραφήματα (subplots) σε μία ενιαία εικόνα. Του δίνουμε τις μεταβλητες που ορισαμε παραπάνω γραμμές και στήλες και μετά τη μεταβλητή idx που παίρνει αριθμητικές θέσεις για field_name.Επειδή το enumerate() ξεκινάει από 0, αλλά το subplot() περιμένει θέσεις ξεκινώντας από 1. Άρα: idx = 0 → θέση 1 idx = 1 → θέση 2. Ειμαστέ έτοιμοι τωρα να ορισουμε .pie().
     plt.pie(sizes,labels=labels,autopct="%1.1f%%", startangle=90, colors=colors)
     plt.title(field_name, fontsize=10, fontweight="bold")
-
-
-
 plt.tight_layout(rect=[0, 0.05, 0.9, 0.9])
 plt.savefig("geo_fields_pie_matrix.png")
 plt.show()
