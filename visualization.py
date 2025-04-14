@@ -206,25 +206,44 @@ plt.show()
 
 # country
 
+country= frequency.get("country")
+no_data= total_samples - country
+sizes= [country, no_data]
+labels= ["country","no data"]
+colors= ["blue", "red"]
 plt.figure(figsize=(6, 6))
 plt.pie(sizes, labels=labels, autopct="%1.1f%%", startangle=90, colors = ["blue","red"])
 plt.tight_layout()
+plt.title("Ποσοστό δειγμάτων με ή χωρίς γεωγραφική πληροφορία χώρας")
 plt.savefig("country_pie_chart.png")
 plt.show()
 
 # location
 
+location= frequency.get("location")
+no_data= total_samples - location
+sizes= [location, no_data]
+labels= ["location","no data"]
+colors= ["blue", "red"]
+
 plt.figure(figsize=(6, 6))
 plt.pie(sizes, labels=labels, autopct="%1.1f%%", startangle=90, colors = ["blue","red"])
 plt.tight_layout()
+plt.title("Ποσοστό δειγμάτων με ή χωρίς γεωγραφική πληροφορία περιοχής")
 plt.savefig("location_pie_chart.png")
 plt.show()
 
 # coordinates
 
+coordinates= frequency.get("lat")
+no_data= total_samples - coordinates
+sizes=[coordinates, no_data]
+labels= ["coordinates","no data"]
+colors= ["blue", "red"]
 
 plt.figure(figsize=(6, 6))
 plt.pie(sizes, labels=labels, autopct="%1.1f%%", startangle=90, colors = ["blue","red"])
+plt.title("Ποσοστό δειγμάτων με ή χωρίς γεωγραφική πληροφορία συντεταγμένων")
 plt.tight_layout()
 plt.savefig("coordinates_pie_chart.png")
 plt.show()
@@ -232,8 +251,15 @@ plt.show()
 
 # isolation_source
 
+isolation_source= frequency.get("isolation_source")
+no_data= total_samples - isolation_source
+sizes= [isolation_source, no_data]
+labels= ["isolation_source","no data"]
+colors= ["blue", "red"]
+
 plt.figure(figsize=(6, 6))
 plt.pie(sizes, labels=labels, autopct="%1.1f%%", startangle=90, colors = ["blue","red"])
+plt.title("Ποσοστό δειγμάτων με ή χωρίς γεωγραφική πληροφορία πηγής απομονώσεως")
 plt.tight_layout()
 plt.savefig("isolation_source_pie_chart.png")
 plt.show()
