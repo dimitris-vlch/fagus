@@ -175,7 +175,7 @@ plt.show()
 # Βήμα 11: multi-pie diagram Για καθε πεδιο γεωγραφικής πληροφορίας εμφανίζετια ενα μικρο pie chart που διχνει πόσα δείγματα έχουν το πεδιο αυτό και πόσα δείγματα δεν έχουν το πεδίο αυτό.
 
 plt.figure(figsize=(12,7))
-plt.figtext(0.5, 0.95, "Ποσοστά κάλυψης γεωγραφικών πεδίων ως προς το σύνολο των δειγμάτων", ha="center", fontsize=14 fontweight="bold") # ορίζουμε τίτλο οχι με .title() αλλά με .figtext() γιατί το .title() θα το χρειαστούμε αργότερα για κάθε ξεχωριστό pie chart.
+plt.figtext(0.5, 0.95, "Ποσοστά κάλυψης γεωγραφικών πεδίων ως προς το σύνολο των δειγμάτων", ha="center", fontsize=14, fontweight="bold") # ορίζουμε τίτλο οχι με .title() αλλά με .figtext() γιατί το .title() θα το χρειαστούμε αργότερα για κάθε ξεχωριστό pie chart.
 
 rows = 2    # ορίζουμε μεταβλητές για γραμμες και στηλες που θα ορίσουν τα 8 κελιά που καθένα θα περιέχει ένα pie chart.
 cols = 4
@@ -192,11 +192,11 @@ for idx, (field_name, field_value) in enumerate(zip(field_names, field_values)):
     colors = ["blue","red"]
     plt.subplot(rows, cols, idx + 1)    # Το plt.subplot() δημιουργεί πολλαπλά γραφήματα (subplots) σε μία ενιαία εικόνα. Του δίνουμε τις μεταβλητες που ορισαμε παραπάνω γραμμές και στήλες και μετά τη μεταβλητή idx που παίρνει αριθμητικές θέσεις για field_name.Επειδή το enumerate() ξεκινάει από 0, αλλά το subplot() περιμένει θέσεις ξεκινώντας από 1. Άρα: idx = 0 → θέση 1 idx = 1 → θέση 2. Ειμαστέ έτοιμοι τωρα να ορισουμε .pie().
     plt.pie(sizes,labels=labels,autopct="%1.1f%%", startangle=90, colors=colors)
-    plt.title(field_name, fontsize=10)
+    plt.title(field_name, fontsize=10, fontweight="bold")
 
 
 
-plt.tight_layout(rect=[0, 0.05, 1, 1])
+plt.tight_layout(rect=[0, 0.05, 0.9, 0.9])
 plt.savefig("geo_fields_pie_matrix.png")
 plt.show()
 
