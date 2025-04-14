@@ -202,4 +202,38 @@ plt.tight_layout(rect=[0, 0.05, 0.9, 0.9])
 plt.savefig("geo_fields_pie_matrix.png")
 plt.show()
 
+# Βήμα 12: 4 μεμονομένα Pie Chart, ένα για έκαστο geo_field: "country", "location", "isolation_source", "lat", 
 
+# country
+
+plt.figure(figsize=(6, 6))
+plt.pie(sizes, labels=labels, autopct="%1.1f%%", startangle=90, colors = ["blue","red"])
+plt.tight_layout()
+plt.savefig("country_pie_chart.png")
+plt.show()
+
+# location
+
+plt.figure(figsize=(6, 6))
+plt.pie(sizes, labels=labels, autopct="%1.1f%%", startangle=90, colors = ["blue","red"])
+plt.tight_layout()
+plt.savefig("location_pie_chart.png")
+plt.show()
+
+# coordinates
+
+
+plt.figure(figsize=(6, 6))
+plt.pie(sizes, labels=labels, autopct="%1.1f%%", startangle=90, colors = ["blue","red"])
+plt.tight_layout()
+plt.savefig("coordinates_pie_chart.png")
+plt.show()
+
+
+# isolation_source
+
+plt.figure(figsize=(6, 6))
+plt.pie(sizes, labels=labels, autopct="%1.1f%%", startangle=90, colors = ["blue","red"])
+plt.tight_layout()
+plt.savefig("isolation_source_pie_chart.png")
+plt.show()
