@@ -32,9 +32,6 @@ print(f"A total of {total_geo_registries} registries have been found that contai
 
 # Bήμα 6: Ενα συνοδευτικό pie chart για τα αποτελέσματα με κλεμμένο κώδικα από το προηγούμενο σκριπτ.
 
-
-# isolation_source
-
 no_data = total_registries - total_geo_registries
 sizes = [total_geo_registries, no_data]
 labels = ["registries with country and coordinates","no data"]
@@ -46,3 +43,5 @@ plt.title("Ποσοστό δειγμάτων με ή χωρίς γεωγραφι
 plt.tight_layout()
 plt.savefig("countries_and_coordinates_pie_chart.png")
 plt.show()
+
+# Βήμα 7: Επεξεργασία του country_and_coordinates_data.json.txt : αλλαγή της ονομασίας του πεδίου country σε country submitted.
