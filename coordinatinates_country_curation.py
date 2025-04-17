@@ -3,20 +3,21 @@
 # Bήμα 1: Εισαγωγή βιβλιοθηκών. matplotlib για διάγραμμα pie chart.
 
 import json
-import matplotlib as plt
+import matplotlib.pyplot as plt
 
 # Βήμα 2: Εισαγωγή json αρχείου.
 
 with open ("results_merged_json.txt", "r", encoding= "utf-8") as file:    
     data = json.load(file)
 
-total_samples= len(data)
+total_registries= len(data)
 
 # Βήμα 3: Αποσπάμε τις εγγραφές που έχουν συμπληρωμένα τα πεδία lat, lon και country ταυτόχρονα, για τον σκοπό  της προκειμένης διεργασίας.
 # [entry for entry in data if ...]
 # [<τι θα βάλεις στη λίστα> for <κάθε στοιχείο> in <συλλογή> if <κάποια συνθήκη>] 
 
 country_and_coordinates_data = [registry for registry in data if registry.get("lat") and registry.get("lon") and registry.get("country")]
+total_geo_registries = len(country_and_coordinates_data)
 
 # δηλαδή για κάθε στοιχείο registry της λίστας data, βάζουμε στοιχείο registry στην λίστα country_and_coordinates_data, εάν ισχύει η συνθήκη if.
 
@@ -27,9 +28,21 @@ with open("country_and_coordinates_data.json.txt", "w", encoding="utf-8") as fil
     
 # Βήμα 5: Ανακοίνωση αποτελεσμάτων στον κένσορα.
 
-total_geo_samples = len(country_and_coordinates_data)
-print(f"A total of {total_geo_samples} registries have been found that contain both coordinates and country information, and these have been written in country_and_coordinates_data.json.txt")
+print(f"A total of {total_geo_registries} registries have been found that contain both coordinates and country information, and these have been written in country_and_coordinates_data.json.txt")
 
 # Bήμα 6: Ενα συνοδευτικό pie chart για τα αποτελέσματα με κλεμμένο κώδικα από το προηγούμενο σκριπτ.
 
 
+# isolation_source
+
+no_data = total_registries - total_geo_registries
+sizes = [total_geo_registries, no_data]
+labels = ["registries with country and coordinates","no data"]
+colors = ["blue", "red"]
+
+plt.figure(figsize=(6, 6))
+plt.pie(sizes, labels=labels, autopct="%1.1f%%", startangle=90, colors = ["blue","red"])
+plt.title("Ποσοστό δειγμάτων με ή χωρίς γεωγραφική πληροφορία πηγής απομονώσεως")
+plt.tight_layout()
+plt.savefig("countries_and_coordinates_pie_chart.png")
+plt.show()
