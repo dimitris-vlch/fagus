@@ -55,15 +55,16 @@ for registry in data:
 
 country_and_coordinates_data = []
 
-for registry in data:
+for idx, registry in enumarate(data,1): # τροποποιούμε λιγο το for registry in data: για να χουμε καταμέτρηση δειγμάτων με idx & enumarate
     if registry.get("lat") and registry.get("lon") and registry.get("country_submitted"):
         geo_registry = {
+            "Registry number:" : idx,         
+            "sample_accession" : registry["sample_accession"],
             "lat" : registry["lat"],
             "lon" : registry["lon"],
             "country_submitted" : registry["country_submitted"]
         }
-
-country_and_coordinates_data.append(geo_registry)
+        country_and_coordinates_data.append(geo_registry)
 
 # Βήμα 9: Παρασκευή json αρχείου που περιέχει μόνο τα δεδομένα που μας ενδιαφέρουν.
 
@@ -72,4 +73,4 @@ with open("country_and_coordinates_minimal_data.json.txt", "w", encoding = "utf-
 
 # Aνακοίνωση αποτελεσμάτων στον κένσορα:
 
-print (f"country_and_coordinates_minimal_data.json.txt has been created successfully. This json file contains registries with both country and coordinates and only these fields from the whole registry, as well as the sample_accession for identification")
+print (f"country_and_coordinates_minimal_data.json.txt has been created successfully. This json file contains registries with both country and coordinates and only these fields from the whole registry, as well as the sample_accession field for identification")
