@@ -2,8 +2,17 @@
 
 # Bήμα 1: Εισαγωγή βιβλιοθηκών. matplotlib για διάγραμμα pie chart.
 
+# Η geopandas μας επιτρέπει να δουλεύουμε με γεωμετρικά αντικείμενα (σημεία, γραμμές, πολύγωνα) μέσα σε dataframe.
+# Η βιβλιοθήκη pandas χρησιμοποείται για δεδομένα σε πίνακες και θα φορτώσουμε μέσω αυτής το json αρχείο.
+# Η γνωστή pycountry, έχει τα επίσημα ISO codes των χωρών.
+# Η βιβλιοθήκη shapely δουλεύει με γεωμετρικά σχήματα. Από αυτή εισάγουμε το αντικείμενο Point. Θα μετατρέψουμε τα lat & lot σε σημεία στο χώρο (γεωμετρικά). Τα οποία θα τα επεξεργαστούμε σε GeoPandas.
+
 import json
 import matplotlib.pyplot as plt # type: ignore
+import geopandas as gpd
+import pandas as pd
+import pycountry
+from shapely.geometry import Point
 
 # Βήμα 2: Εισαγωγή json αρχείου.
 
@@ -28,7 +37,7 @@ with open("country_and_coordinates_data.json.txt", "w", encoding="utf-8") as fil
     
 # Βήμα 5: Ανακοίνωση αποτελεσμάτων στον κένσορα.
 
-print(f"A total of {total_geo_registries} registries have been found that contain both coordinates and country information, and these have been written in country_and_coordinates_data.json.txt")
+print(f"\n\nA total of {total_geo_registries} registries have been found that contain both coordinates and country information, and these have been written in country_and_coordinates_data.json.txt")
 
 # Bήμα 6: Ενα συνοδευτικό pie chart για τα αποτελέσματα με κλεμμένο κώδικα από το προηγούμενο σκριπτ.
 
@@ -47,7 +56,7 @@ plt.show()
 # Βήμα 7: Επεξεργασία του country_and_coordinates_data.json.txt : αλλαγή της ονομασίας του πεδίου country σε country submitted.
 
 for registry in data:
-    registry["country"] = registry.pop["country_submitted"] # το country φεύγει και μπαίνει country_submitted.
+    registry["country_submitted"] = registry.pop("country", "") # το country φεύγει και μπαίνει country_submitted.
 
 # Bήμα 8: Για κάθε εγγραφή κρατάμε μονάχα τα πεδία lat, lon, country_submiited
 
@@ -55,7 +64,7 @@ for registry in data:
 
 country_and_coordinates_data = []
 
-for idx, registry in enumarate(data,1): # τροποποιούμε λιγο το for registry in data: για να χουμε καταμέτρηση δειγμάτων με idx & enumarate
+for idx, registry in enumerate(data,1): # τροποποιούμε λιγο το for registry in data: για να χουμε καταμέτρηση δειγμάτων με idx & enumarate
     if registry.get("lat") and registry.get("lon") and registry.get("country_submitted"):
         geo_registry = {
             "Registry number:" : idx,         
@@ -73,4 +82,7 @@ with open("country_and_coordinates_minimal_data.json.txt", "w", encoding = "utf-
 
 # Aνακοίνωση αποτελεσμάτων στον κένσορα:
 
-print (f"country_and_coordinates_minimal_data.json.txt has been created successfully. This json file contains registries with both country and coordinates and only these fields from the whole registry, as well as the sample_accession field for identification")
+print (f"\ncountry_and_coordinates_minimal_data.json.txt has been created successfully. This json file contains {len(country_and_coordinates_data)} registries with both country and coordinates and only these fields from the whole registry, as well as the sample_accession field for identification\n")
+
+# Βήμα 10: Έλεγχος της εγκυρότητας των γεωγραφικών δεδομένων μέσω της βιβλιοθήκης geo_pandas
+

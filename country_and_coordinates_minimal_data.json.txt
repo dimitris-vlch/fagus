@@ -1,0 +1,5973 @@
+[
+  {
+    "Registry number:": 2,
+    "sample_accession": "SAMD00184898",
+    "lat": "34.74",
+    "lon": "136.52",
+    "country_submitted": "Japan:Mie, Tsu, Mie University"
+  },
+  {
+    "Registry number:": 51,
+    "sample_accession": "SAMEA9143947",
+    "lat": "51.7718",
+    "lon": "-1.3376",
+    "country_submitted": "United Kingdom"
+  },
+  {
+    "Registry number:": 60,
+    "sample_accession": "SAMN30128037",
+    "lat": "43.987475",
+    "lon": "-71.74856833",
+    "country_submitted": "USA: New Hampshire"
+  },
+  {
+    "Registry number:": 61,
+    "sample_accession": "SAMN30128041",
+    "lat": "43.95189333",
+    "lon": "-71.77865499",
+    "country_submitted": "USA: New Hampshire"
+  },
+  {
+    "Registry number:": 62,
+    "sample_accession": "SAMN30128043",
+    "lat": "43.95971833",
+    "lon": "-71.757735",
+    "country_submitted": "USA: New Hampshire"
+  },
+  {
+    "Registry number:": 63,
+    "sample_accession": "SAMN30128045",
+    "lat": "43.95573666",
+    "lon": "-71.77841166",
+    "country_submitted": "USA: New Hampshire"
+  },
+  {
+    "Registry number:": 64,
+    "sample_accession": "SAMN30128047",
+    "lat": "43.95547666",
+    "lon": "-71.76467833",
+    "country_submitted": "USA: New Hampshire"
+  },
+  {
+    "Registry number:": 65,
+    "sample_accession": "SAMN30128048",
+    "lat": "43.93977666",
+    "lon": "-71.75951666",
+    "country_submitted": "USA: New Hampshire"
+  },
+  {
+    "Registry number:": 66,
+    "sample_accession": "SAMN30128052",
+    "lat": "43.988145",
+    "lon": "-71.74650333",
+    "country_submitted": "USA: New Hampshire"
+  },
+  {
+    "Registry number:": 273,
+    "sample_accession": "SAMEA3950354",
+    "lat": "51.091",
+    "lon": "10.523",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 274,
+    "sample_accession": "SAMEA3950356",
+    "lat": "51.091",
+    "lon": "10.523",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 275,
+    "sample_accession": "SAMEA3950358",
+    "lat": "51.091",
+    "lon": "10.523",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 276,
+    "sample_accession": "SAMEA3950360",
+    "lat": "51.091",
+    "lon": "10.523",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 277,
+    "sample_accession": "SAMEA3950362",
+    "lat": "51.091",
+    "lon": "10.523",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 278,
+    "sample_accession": "SAMEA3950363",
+    "lat": "51.091",
+    "lon": "10.523",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 312,
+    "sample_accession": "SAMN14310322",
+    "lat": "46.49562",
+    "lon": "14.06661",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 313,
+    "sample_accession": "SAMN14310325",
+    "lat": "46.49512",
+    "lon": "14.06663",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 314,
+    "sample_accession": "SAMN14310326",
+    "lat": "46.49507",
+    "lon": "14.0667",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 315,
+    "sample_accession": "SAMN14310327",
+    "lat": "46.49512",
+    "lon": "14.06645",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 316,
+    "sample_accession": "SAMN14310335",
+    "lat": "46.49728",
+    "lon": "14.06731",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 317,
+    "sample_accession": "SAMN14310337",
+    "lat": "46.49744",
+    "lon": "14.06845",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 318,
+    "sample_accession": "SAMN14310339",
+    "lat": "46.4976",
+    "lon": "14.06878",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 320,
+    "sample_accession": "SAMN14310346",
+    "lat": "46.58452",
+    "lon": "14.27019",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 321,
+    "sample_accession": "SAMN14310347",
+    "lat": "46.58458",
+    "lon": "14.26995",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 322,
+    "sample_accession": "SAMN14310348",
+    "lat": "46.58462",
+    "lon": "14.2693",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 323,
+    "sample_accession": "SAMN14310350",
+    "lat": "46.58473",
+    "lon": "14.26905",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 324,
+    "sample_accession": "SAMN14310352",
+    "lat": "46.58529",
+    "lon": "14.26842",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 325,
+    "sample_accession": "SAMN14310356",
+    "lat": "46.58566",
+    "lon": "14.26682",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 326,
+    "sample_accession": "SAMN14310359",
+    "lat": "46.58658",
+    "lon": "14.26465",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 327,
+    "sample_accession": "SAMN14310364",
+    "lat": "46.58356",
+    "lon": "14.27005",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 328,
+    "sample_accession": "SAMN14310366",
+    "lat": "46.57939",
+    "lon": "14.26371",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 329,
+    "sample_accession": "SAMN14310370",
+    "lat": "46.58263",
+    "lon": "14.26605",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 330,
+    "sample_accession": "SAMN14310372",
+    "lat": "47.236836",
+    "lon": "7.473712",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 331,
+    "sample_accession": "SAMN14310376",
+    "lat": "47.23638",
+    "lon": "7.472831",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 332,
+    "sample_accession": "SAMN14310385",
+    "lat": "47.237681",
+    "lon": "7.47493",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 333,
+    "sample_accession": "SAMN14310386",
+    "lat": "47.237815",
+    "lon": "7.475417",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 334,
+    "sample_accession": "SAMN14310388",
+    "lat": "47.236915",
+    "lon": "7.472228",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 335,
+    "sample_accession": "SAMN14310389",
+    "lat": "47.236779",
+    "lon": "7.471643",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 336,
+    "sample_accession": "SAMN14310391",
+    "lat": "47.23676",
+    "lon": "7.470364",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 337,
+    "sample_accession": "SAMN14310392",
+    "lat": "47.23687",
+    "lon": "7.469658",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 338,
+    "sample_accession": "SAMN14310396",
+    "lat": "47.22173",
+    "lon": "7.401966",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 339,
+    "sample_accession": "SAMN14310397",
+    "lat": "47.222099",
+    "lon": "7.402265",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 340,
+    "sample_accession": "SAMN14310403",
+    "lat": "47.220982",
+    "lon": "7.402684",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 341,
+    "sample_accession": "SAMN14310404",
+    "lat": "47.220586",
+    "lon": "7.402724",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 342,
+    "sample_accession": "SAMN14310406",
+    "lat": "47.220512",
+    "lon": "7.401544",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 343,
+    "sample_accession": "SAMN14310409",
+    "lat": "47.21987",
+    "lon": "7.401395",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 344,
+    "sample_accession": "SAMN14310411",
+    "lat": "47.220369",
+    "lon": "7.402198",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 345,
+    "sample_accession": "SAMN14310415",
+    "lat": "47.219491",
+    "lon": "7.402317",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 346,
+    "sample_accession": "SAMN14310416",
+    "lat": "47.22129",
+    "lon": "7.403849",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 347,
+    "sample_accession": "SAMN14310419",
+    "lat": "47.221161",
+    "lon": "7.399999",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 348,
+    "sample_accession": "SAMN14310420",
+    "lat": "47.221401",
+    "lon": "7.399643",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 349,
+    "sample_accession": "SAMN14310422",
+    "lat": "47.77585",
+    "lon": "12.81433333",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 350,
+    "sample_accession": "SAMN14310426",
+    "lat": "47.776069",
+    "lon": "12.815436",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 351,
+    "sample_accession": "SAMN14310436",
+    "lat": "47.77488333",
+    "lon": "12.8161",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 352,
+    "sample_accession": "SAMN14310439",
+    "lat": "47.77588333",
+    "lon": "12.8149",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 353,
+    "sample_accession": "SAMN14310440",
+    "lat": "47.7757",
+    "lon": "12.81523333",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 354,
+    "sample_accession": "SAMN14310443",
+    "lat": "47.77525",
+    "lon": "12.81628333",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 355,
+    "sample_accession": "SAMN14310445",
+    "lat": "47.77486667",
+    "lon": "12.81696667",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 356,
+    "sample_accession": "SAMN14310446",
+    "lat": "47.76901667",
+    "lon": "12.82825",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 357,
+    "sample_accession": "SAMN14310448",
+    "lat": "47.76963333",
+    "lon": "12.82841667",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 358,
+    "sample_accession": "SAMN14310450",
+    "lat": "47.77003333",
+    "lon": "12.82935",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 359,
+    "sample_accession": "SAMN14310453",
+    "lat": "47.76938333",
+    "lon": "12.82845",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 360,
+    "sample_accession": "SAMN14310455",
+    "lat": "47.76943333",
+    "lon": "12.82801667",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 361,
+    "sample_accession": "SAMN14310457",
+    "lat": "47.76981667",
+    "lon": "12.82961667",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 362,
+    "sample_accession": "SAMN14310458",
+    "lat": "47.76991667",
+    "lon": "12.82988333",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 363,
+    "sample_accession": "SAMN14310460",
+    "lat": "47.77",
+    "lon": "12.83016667",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 364,
+    "sample_accession": "SAMN14310464",
+    "lat": "47.76958333",
+    "lon": "12.82983333",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 365,
+    "sample_accession": "SAMN14310466",
+    "lat": "47.76915",
+    "lon": "12.82971667",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 366,
+    "sample_accession": "SAMN14310477",
+    "lat": "51.162546",
+    "lon": "8.908222",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 367,
+    "sample_accession": "SAMN14310480",
+    "lat": "51.161734",
+    "lon": "8.908742",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 368,
+    "sample_accession": "SAMN14310481",
+    "lat": "51.161193",
+    "lon": "8.908828",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 369,
+    "sample_accession": "SAMN14310485",
+    "lat": "51.159936",
+    "lon": "8.9086",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 370,
+    "sample_accession": "SAMN14310489",
+    "lat": "51.163242",
+    "lon": "8.907507",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 371,
+    "sample_accession": "SAMN14310491",
+    "lat": "51.163692",
+    "lon": "8.907122",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 372,
+    "sample_accession": "SAMN14310492",
+    "lat": "51.163612",
+    "lon": "8.907687",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 373,
+    "sample_accession": "SAMN14310497",
+    "lat": "51.129788",
+    "lon": "8.97879",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 374,
+    "sample_accession": "SAMN14310499",
+    "lat": "51.130311",
+    "lon": "8.97853",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 375,
+    "sample_accession": "SAMN14310506",
+    "lat": "51.131254",
+    "lon": "8.97625",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 376,
+    "sample_accession": "SAMN14310510",
+    "lat": "51.130503",
+    "lon": "8.977513",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 377,
+    "sample_accession": "SAMN14310513",
+    "lat": "51.129717",
+    "lon": "8.977898",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 378,
+    "sample_accession": "SAMN14310515",
+    "lat": "51.129148",
+    "lon": "8.97836",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 379,
+    "sample_accession": "SAMN14310518",
+    "lat": "51.128389",
+    "lon": "8.97916",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 380,
+    "sample_accession": "SAMN14310521",
+    "lat": "42.66808",
+    "lon": "-0.12167",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 381,
+    "sample_accession": "SAMN14310522",
+    "lat": "42.66783",
+    "lon": "-0.1237",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 382,
+    "sample_accession": "SAMN14310525",
+    "lat": "42.6702",
+    "lon": "-0.12283",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 383,
+    "sample_accession": "SAMN14310526",
+    "lat": "42.6706",
+    "lon": "-0.12281",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 384,
+    "sample_accession": "SAMN14310528",
+    "lat": "42.67128",
+    "lon": "-0.1226",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 385,
+    "sample_accession": "SAMN14310529",
+    "lat": "42.67151",
+    "lon": "-0.12271",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 386,
+    "sample_accession": "SAMN14310530",
+    "lat": "42.67187",
+    "lon": "-0.12272",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 387,
+    "sample_accession": "SAMN14310533",
+    "lat": "42.67349",
+    "lon": "-0.12331",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 388,
+    "sample_accession": "SAMN14310535",
+    "lat": "42.67443",
+    "lon": "-0.12305",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 389,
+    "sample_accession": "SAMN14310536",
+    "lat": "42.67492",
+    "lon": "-0.12322",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 390,
+    "sample_accession": "SAMN14310538",
+    "lat": "42.67522",
+    "lon": "-0.12346",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 391,
+    "sample_accession": "SAMN14310539",
+    "lat": "42.67556",
+    "lon": "-0.12278",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 392,
+    "sample_accession": "SAMN14310540",
+    "lat": "42.67591",
+    "lon": "-0.12266",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 393,
+    "sample_accession": "SAMN14310541",
+    "lat": "42.67625",
+    "lon": "-0.12267",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 394,
+    "sample_accession": "SAMN14310545",
+    "lat": "42.67763",
+    "lon": "-0.12236",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 395,
+    "sample_accession": "SAMN14310554",
+    "lat": "42.71041",
+    "lon": "-0.12636",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 396,
+    "sample_accession": "SAMN14310559",
+    "lat": "42.71017",
+    "lon": "-0.12577",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 397,
+    "sample_accession": "SAMN14310561",
+    "lat": "42.71217",
+    "lon": "-0.12664",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 398,
+    "sample_accession": "SAMN14310566",
+    "lat": "42.7145",
+    "lon": "-0.12762",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 399,
+    "sample_accession": "SAMN14310567",
+    "lat": "42.7151",
+    "lon": "-0.12776",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 400,
+    "sample_accession": "SAMN14310568",
+    "lat": "42.71604",
+    "lon": "-0.12806",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 401,
+    "sample_accession": "SAMN14310570",
+    "lat": "42.71671",
+    "lon": "-0.12902",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 402,
+    "sample_accession": "SAMN14310571",
+    "lat": "44.18539",
+    "lon": "5.23456",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 403,
+    "sample_accession": "SAMN14310572",
+    "lat": "44.18517",
+    "lon": "5.23422",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 404,
+    "sample_accession": "SAMN14310574",
+    "lat": "44.18515",
+    "lon": "5.23502",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 405,
+    "sample_accession": "SAMN14310576",
+    "lat": "44.18489",
+    "lon": "5.23445",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 406,
+    "sample_accession": "SAMN14310577",
+    "lat": "44.18477",
+    "lon": "5.2348",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 407,
+    "sample_accession": "SAMN14310578",
+    "lat": "44.18482",
+    "lon": "5.2352",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 408,
+    "sample_accession": "SAMN14310581",
+    "lat": "44.18446",
+    "lon": "5.23542",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 409,
+    "sample_accession": "SAMN14310598",
+    "lat": "44.17904",
+    "lon": "5.24275",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 410,
+    "sample_accession": "SAMN14310599",
+    "lat": "44.1792",
+    "lon": "5.24303",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 411,
+    "sample_accession": "SAMN14310600",
+    "lat": "44.17929",
+    "lon": "5.24355",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 412,
+    "sample_accession": "SAMN14310604",
+    "lat": "44.17893",
+    "lon": "5.24357",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 413,
+    "sample_accession": "SAMN14310612",
+    "lat": "44.17861",
+    "lon": "5.24314",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 414,
+    "sample_accession": "SAMN14310613",
+    "lat": "44.17873",
+    "lon": "5.24381",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 415,
+    "sample_accession": "SAMN14310616",
+    "lat": "44.17855",
+    "lon": "5.24427",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 416,
+    "sample_accession": "SAMN14310618",
+    "lat": "44.17834",
+    "lon": "5.2433",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 417,
+    "sample_accession": "SAMN14310628",
+    "lat": "41.86261",
+    "lon": "9.10422",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 418,
+    "sample_accession": "SAMN14310634",
+    "lat": "41.86361",
+    "lon": "9.10526",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 419,
+    "sample_accession": "SAMN14310637",
+    "lat": "41.86321",
+    "lon": "9.10429",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 420,
+    "sample_accession": "SAMN14310640",
+    "lat": "41.86393",
+    "lon": "9.10459",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 421,
+    "sample_accession": "SAMN14310642",
+    "lat": "41.86348",
+    "lon": "9.10398",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 422,
+    "sample_accession": "SAMN14310645",
+    "lat": "41.86253",
+    "lon": "9.10374",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 423,
+    "sample_accession": "SAMN14310646",
+    "lat": "41.8648",
+    "lon": "9.13929",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 424,
+    "sample_accession": "SAMN14310647",
+    "lat": "41.8646",
+    "lon": "9.13904",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 425,
+    "sample_accession": "SAMN14310650",
+    "lat": "41.86538",
+    "lon": "9.13975",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 426,
+    "sample_accession": "SAMN14310651",
+    "lat": "41.86559",
+    "lon": "9.13994",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 427,
+    "sample_accession": "SAMN14310662",
+    "lat": "41.86648",
+    "lon": "9.13955",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 428,
+    "sample_accession": "SAMN14310667",
+    "lat": "41.86536",
+    "lon": "9.13807",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 429,
+    "sample_accession": "SAMN14310668",
+    "lat": "41.86582",
+    "lon": "9.13829",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 439,
+    "sample_accession": "SAMN14310695",
+    "lat": "51.52610505",
+    "lon": "-1.02303157",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 440,
+    "sample_accession": "SAMN14310700",
+    "lat": "51.52324875",
+    "lon": "-1.03078835",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 441,
+    "sample_accession": "SAMN14310701",
+    "lat": "51.52504575",
+    "lon": "-1.02741572",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 442,
+    "sample_accession": "SAMN14310704",
+    "lat": "51.52267928",
+    "lon": "-1.02998142",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 443,
+    "sample_accession": "SAMN14310706",
+    "lat": "51.52575385",
+    "lon": "-1.02575325",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 444,
+    "sample_accession": "SAMN14310710",
+    "lat": "51.5260214",
+    "lon": "-1.02394989",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 445,
+    "sample_accession": "SAMN14310712",
+    "lat": "51.52363641",
+    "lon": "-1.03127576",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 446,
+    "sample_accession": "SAMN14310715",
+    "lat": "51.52598209",
+    "lon": "-1.02493845",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 447,
+    "sample_accession": "SAMN14310717",
+    "lat": "51.52731867",
+    "lon": "-1.02681155",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 448,
+    "sample_accession": "SAMN14310718",
+    "lat": "51.52793482",
+    "lon": "-1.02765469",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 449,
+    "sample_accession": "SAMN14310719",
+    "lat": "51.5288611",
+    "lon": "-1.02940667",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 450,
+    "sample_accession": "SAMN14310720",
+    "lat": "51.61976762",
+    "lon": "-0.98915703",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 451,
+    "sample_accession": "SAMN14310725",
+    "lat": "51.62019585",
+    "lon": "-0.98359698",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 452,
+    "sample_accession": "SAMN14310727",
+    "lat": "51.62048863",
+    "lon": "-0.98244446",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 453,
+    "sample_accession": "SAMN14310731",
+    "lat": "51.62168993",
+    "lon": "-0.97972546",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 454,
+    "sample_accession": "SAMN14310733",
+    "lat": "51.61773149",
+    "lon": "-0.99121545",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 455,
+    "sample_accession": "SAMN14310738",
+    "lat": "51.61807984",
+    "lon": "-0.98864079",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 456,
+    "sample_accession": "SAMN14310746",
+    "lat": "40.556668",
+    "lon": "23.707833",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 457,
+    "sample_accession": "SAMN14310749",
+    "lat": "40.555704",
+    "lon": "23.706798",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 458,
+    "sample_accession": "SAMN14310751",
+    "lat": "40.556427",
+    "lon": "23.706736",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 459,
+    "sample_accession": "SAMN14310752",
+    "lat": "40.557065",
+    "lon": "23.70771",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 460,
+    "sample_accession": "SAMN14310758",
+    "lat": "40.556183",
+    "lon": "23.707935",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 461,
+    "sample_accession": "SAMN14310760",
+    "lat": "40.556465",
+    "lon": "23.707078",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 462,
+    "sample_accession": "SAMN14310764",
+    "lat": "40.556045",
+    "lon": "23.70833",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 463,
+    "sample_accession": "SAMN14310765",
+    "lat": "40.556745",
+    "lon": "23.70694",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 464,
+    "sample_accession": "SAMN14310767",
+    "lat": "40.555874",
+    "lon": "23.706322",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 465,
+    "sample_accession": "SAMN14310769",
+    "lat": "40.555561",
+    "lon": "23.706486",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 466,
+    "sample_accession": "SAMN14310772",
+    "lat": "40.548075",
+    "lon": "23.72182",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 467,
+    "sample_accession": "SAMN14310774",
+    "lat": "40.548908",
+    "lon": "23.721249",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 468,
+    "sample_accession": "SAMN14310775",
+    "lat": "40.54999",
+    "lon": "23.720566",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 469,
+    "sample_accession": "SAMN14310783",
+    "lat": "40.5468",
+    "lon": "23.721366",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 470,
+    "sample_accession": "SAMN14310787",
+    "lat": "40.547525",
+    "lon": "23.720624",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 471,
+    "sample_accession": "SAMN14310789",
+    "lat": "40.548782",
+    "lon": "23.720806",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 472,
+    "sample_accession": "SAMN14310792",
+    "lat": "40.550397",
+    "lon": "23.720333",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 473,
+    "sample_accession": "SAMN14310799",
+    "lat": "42.515111",
+    "lon": "13.548836",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 474,
+    "sample_accession": "SAMN14310800",
+    "lat": "42.515195",
+    "lon": "13.549285",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 475,
+    "sample_accession": "SAMN14310804",
+    "lat": "42.516018",
+    "lon": "13.550537",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 476,
+    "sample_accession": "SAMN14310809",
+    "lat": "42.515204",
+    "lon": "13.549777",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 477,
+    "sample_accession": "SAMN14310812",
+    "lat": "42.51458",
+    "lon": "13.548849",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 478,
+    "sample_accession": "SAMN14310813",
+    "lat": "42.514305",
+    "lon": "13.548706",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 479,
+    "sample_accession": "SAMN14310815",
+    "lat": "42.513977",
+    "lon": "13.548011",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 480,
+    "sample_accession": "SAMN14310816",
+    "lat": "42.513625",
+    "lon": "13.54795",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 481,
+    "sample_accession": "SAMN14310822",
+    "lat": "42.501424",
+    "lon": "13.575237",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 482,
+    "sample_accession": "SAMN14310823",
+    "lat": "42.501326",
+    "lon": "13.574993",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 483,
+    "sample_accession": "SAMN14310824",
+    "lat": "42.501144",
+    "lon": "13.574535",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 484,
+    "sample_accession": "SAMN14310825",
+    "lat": "42.501067",
+    "lon": "13.574285",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 485,
+    "sample_accession": "SAMN14310827",
+    "lat": "42.500711",
+    "lon": "13.573764",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 486,
+    "sample_accession": "SAMN14310829",
+    "lat": "42.500542",
+    "lon": "13.573076",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 487,
+    "sample_accession": "SAMN14310836",
+    "lat": "42.502275",
+    "lon": "13.575167",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 488,
+    "sample_accession": "SAMN14310839",
+    "lat": "42.502571",
+    "lon": "13.576104",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 489,
+    "sample_accession": "SAMN14310840",
+    "lat": "42.502762",
+    "lon": "13.576304",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 490,
+    "sample_accession": "SAMN14310841",
+    "lat": "42.502854",
+    "lon": "13.575898",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 491,
+    "sample_accession": "SAMN14310844",
+    "lat": "42.50268",
+    "lon": "13.574426",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 492,
+    "sample_accession": "SAMN14310847",
+    "lat": "59.194553",
+    "lon": "10.050105",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 493,
+    "sample_accession": "SAMN14310852",
+    "lat": "59.196437",
+    "lon": "10.049845",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 494,
+    "sample_accession": "SAMN14310856",
+    "lat": "59.195584",
+    "lon": "10.051025",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 495,
+    "sample_accession": "SAMN14310858",
+    "lat": "59.194656",
+    "lon": "10.048384",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 496,
+    "sample_accession": "SAMN14310861",
+    "lat": "59.195172",
+    "lon": "10.046475",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 497,
+    "sample_accession": "SAMN14310862",
+    "lat": "59.195662",
+    "lon": "10.046053",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 498,
+    "sample_accession": "SAMN14310865",
+    "lat": "59.196725",
+    "lon": "10.046985",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 499,
+    "sample_accession": "SAMN14310866",
+    "lat": "59.196399",
+    "lon": "10.047184",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 500,
+    "sample_accession": "SAMN14310867",
+    "lat": "59.195896",
+    "lon": "10.047403",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 501,
+    "sample_accession": "SAMN14310871",
+    "lat": "59.384677",
+    "lon": "10.30944",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 502,
+    "sample_accession": "SAMN14310876",
+    "lat": "59.385699",
+    "lon": "10.309087",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 503,
+    "sample_accession": "SAMN14310878",
+    "lat": "59.386031",
+    "lon": "10.309193",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 504,
+    "sample_accession": "SAMN14310882",
+    "lat": "59.386389",
+    "lon": "10.308835",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 505,
+    "sample_accession": "SAMN14310891",
+    "lat": "59.387506",
+    "lon": "10.308578",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 506,
+    "sample_accession": "SAMN14310892",
+    "lat": "59.387406",
+    "lon": "10.309354",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 507,
+    "sample_accession": "SAMN14310894",
+    "lat": "59.385667",
+    "lon": "10.308515",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 508,
+    "sample_accession": "SAMN14310895",
+    "lat": "55.949649",
+    "lon": "13.726562",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 509,
+    "sample_accession": "SAMN14310904",
+    "lat": "55.949855",
+    "lon": "13.72437",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 510,
+    "sample_accession": "SAMN14310905",
+    "lat": "55.949996",
+    "lon": "13.723929",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 511,
+    "sample_accession": "SAMN14310906",
+    "lat": "55.950195",
+    "lon": "13.723571",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 512,
+    "sample_accession": "SAMN14310910",
+    "lat": "55.950486",
+    "lon": "13.724586",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 513,
+    "sample_accession": "SAMN14310911",
+    "lat": "55.950355",
+    "lon": "13.72496",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 514,
+    "sample_accession": "SAMN14310912",
+    "lat": "55.950127",
+    "lon": "13.725407",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 515,
+    "sample_accession": "SAMN14310914",
+    "lat": "55.950274",
+    "lon": "13.726757",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 516,
+    "sample_accession": "SAMN14310917",
+    "lat": "55.951974",
+    "lon": "13.725963",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 517,
+    "sample_accession": "SAMN14310919",
+    "lat": "55.951443",
+    "lon": "13.725756",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 518,
+    "sample_accession": "SAMN14310921",
+    "lat": "56.403915",
+    "lon": "12.997331",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 519,
+    "sample_accession": "SAMN14310923",
+    "lat": "56.404146",
+    "lon": "12.995176",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 520,
+    "sample_accession": "SAMN14310928",
+    "lat": "56.404841",
+    "lon": "12.990007",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 521,
+    "sample_accession": "SAMN14310930",
+    "lat": "56.405588",
+    "lon": "12.988173",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 522,
+    "sample_accession": "SAMN14310933",
+    "lat": "56.407063",
+    "lon": "12.986653",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 523,
+    "sample_accession": "SAMN14310941",
+    "lat": "56.407671",
+    "lon": "12.979888",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 524,
+    "sample_accession": "SAMN14310944",
+    "lat": "56.407924",
+    "lon": "12.976946",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 552,
+    "sample_accession": "SAMN14485762",
+    "lat": "55.675833",
+    "lon": "8.585556",
+    "country_submitted": "Denmark"
+  },
+  {
+    "Registry number:": 784,
+    "sample_accession": "SAMN25243692",
+    "lat": "47.83819",
+    "lon": "2.75792",
+    "country_submitted": "France: Nogent-sur-Vernisson"
+  },
+  {
+    "Registry number:": 786,
+    "sample_accession": "SAMEA104564673",
+    "lat": "52.924816",
+    "lon": "-4.444735",
+    "country_submitted": "United Kingdom"
+  },
+  {
+    "Registry number:": 787,
+    "sample_accession": "SAMEA9098360",
+    "lat": "59.18",
+    "lon": "10.24",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 814,
+    "sample_accession": "SAMEA3950355",
+    "lat": "51.091",
+    "lon": "10.523",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 816,
+    "sample_accession": "SAMEA3950364",
+    "lat": "51.091",
+    "lon": "10.523",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 822,
+    "sample_accession": "SAMEA9143944",
+    "lat": "51.7718",
+    "lon": "-1.3376",
+    "country_submitted": "United Kingdom"
+  },
+  {
+    "Registry number:": 824,
+    "sample_accession": "SAMEA9143945",
+    "lat": "51.7718",
+    "lon": "-1.3376",
+    "country_submitted": "United Kingdom"
+  },
+  {
+    "Registry number:": 826,
+    "sample_accession": "SAMN30128038",
+    "lat": "43.95547666",
+    "lon": "-71.76467833",
+    "country_submitted": "USA: New Hampshire"
+  },
+  {
+    "Registry number:": 828,
+    "sample_accession": "SAMN30128039",
+    "lat": "43.94704333",
+    "lon": "-71.73243333",
+    "country_submitted": "USA: New Hampshire"
+  },
+  {
+    "Registry number:": 830,
+    "sample_accession": "SAMN30128040",
+    "lat": "43.93977666",
+    "lon": "-71.75951666",
+    "country_submitted": "USA: New Hampshire"
+  },
+  {
+    "Registry number:": 831,
+    "sample_accession": "SAMN30128044",
+    "lat": "43.988145",
+    "lon": "-71.74650333",
+    "country_submitted": "USA: New Hampshire"
+  },
+  {
+    "Registry number:": 833,
+    "sample_accession": "SAMN30128050",
+    "lat": "43.94704333",
+    "lon": "-71.73243333",
+    "country_submitted": "USA: New Hampshire"
+  },
+  {
+    "Registry number:": 975,
+    "sample_accession": "SAMEA9143085",
+    "lat": "51.7718",
+    "lon": "-1.3376",
+    "country_submitted": "United Kingdom"
+  },
+  {
+    "Registry number:": 998,
+    "sample_accession": "SAMN35637343",
+    "lat": "50.7501374",
+    "lon": "4.42212358",
+    "country_submitted": "Belgium: Sonian Forest"
+  },
+  {
+    "Registry number:": 1001,
+    "sample_accession": "SAMN35637345",
+    "lat": "50.75070214",
+    "lon": "4.42253096",
+    "country_submitted": "Belgium: Sonian Forest"
+  },
+  {
+    "Registry number:": 1002,
+    "sample_accession": "SAMN35637346",
+    "lat": "50.75089137",
+    "lon": "4.42294164",
+    "country_submitted": "Belgium: Sonian Forest"
+  },
+  {
+    "Registry number:": 1005,
+    "sample_accession": "SAMN35637349",
+    "lat": "50.75071713",
+    "lon": "4.42349117",
+    "country_submitted": "Belgium: Sonian Forest"
+  },
+  {
+    "Registry number:": 1006,
+    "sample_accession": "SAMN35637358",
+    "lat": "47.47994996",
+    "lon": "8.36522466",
+    "country_submitted": "Switzerland: Laegern Forest"
+  },
+  {
+    "Registry number:": 1009,
+    "sample_accession": "SAMN35637359",
+    "lat": "47.4796418",
+    "lon": "8.36539386",
+    "country_submitted": "Switzerland: Laegern Forest"
+  },
+  {
+    "Registry number:": 1011,
+    "sample_accession": "SAMN35637360",
+    "lat": "47.47924633",
+    "lon": "8.36542573",
+    "country_submitted": "Switzerland: Laegern Forest"
+  },
+  {
+    "Registry number:": 1012,
+    "sample_accession": "SAMN35637365",
+    "lat": "41.79090823",
+    "lon": "-1.81031612",
+    "country_submitted": "Spain: Moncayo Nature Reserve"
+  },
+  {
+    "Registry number:": 1014,
+    "sample_accession": "SAMN35637367",
+    "lat": "41.79167497",
+    "lon": "-1.80992018",
+    "country_submitted": "Spain: Moncayo Nature Reserve"
+  },
+  {
+    "Registry number:": 1015,
+    "sample_accession": "SAMN35637368",
+    "lat": "41.79152357",
+    "lon": "-1.80942182",
+    "country_submitted": "Spain: Moncayo Nature Reserve"
+  },
+  {
+    "Registry number:": 1017,
+    "sample_accession": "SAMN35637369",
+    "lat": "41.79116093",
+    "lon": "-1.80974884",
+    "country_submitted": "Spain: Moncayo Nature Reserve"
+  },
+  {
+    "Registry number:": 1020,
+    "sample_accession": "SAMN35637380",
+    "lat": "42.509167",
+    "lon": "-0.672778",
+    "country_submitted": "Spain: Monte Pena"
+  },
+  {
+    "Registry number:": 1021,
+    "sample_accession": "SAMN35637383",
+    "lat": "43.32812121",
+    "lon": "5.76970889",
+    "country_submitted": "France: Massif de la Sainte-Baume"
+  },
+  {
+    "Registry number:": 1024,
+    "sample_accession": "SAMN35637384",
+    "lat": "43.3287071",
+    "lon": "5.76935447",
+    "country_submitted": "France: Massif de la Sainte-Baume"
+  },
+  {
+    "Registry number:": 1025,
+    "sample_accession": "SAMN35637386",
+    "lat": "43.32896242",
+    "lon": "5.76896086",
+    "country_submitted": "France: Massif de la Sainte-Baume"
+  },
+  {
+    "Registry number:": 1028,
+    "sample_accession": "SAMN35637387",
+    "lat": "43.32845835",
+    "lon": "5.76914403",
+    "country_submitted": "France: Massif de la Sainte-Baume"
+  },
+  {
+    "Registry number:": 1029,
+    "sample_accession": "SAMN35637388",
+    "lat": "43.32819553",
+    "lon": "5.76931434",
+    "country_submitted": "France: Massif de la Sainte-Baume"
+  },
+  {
+    "Registry number:": 1031,
+    "sample_accession": "SAMN35637391",
+    "lat": "41.88339437",
+    "lon": "9.16370842",
+    "country_submitted": "France: Plateau du Coscione"
+  },
+  {
+    "Registry number:": 1033,
+    "sample_accession": "SAMN35637408",
+    "lat": "42.49130619",
+    "lon": "3.03178611",
+    "country_submitted": "France: Fort De La Massane"
+  },
+  {
+    "Registry number:": 1035,
+    "sample_accession": "SAMN35637409",
+    "lat": "42.49086752",
+    "lon": "3.03220431",
+    "country_submitted": "France: Fort De La Massane"
+  },
+  {
+    "Registry number:": 1038,
+    "sample_accession": "SAMN35637413",
+    "lat": "42.11452514",
+    "lon": "9.0969583",
+    "country_submitted": "France: Vizzavona"
+  },
+  {
+    "Registry number:": 1040,
+    "sample_accession": "SAMN35637414",
+    "lat": "42.11451165",
+    "lon": "9.0976172",
+    "country_submitted": "France: Vizzavona"
+  },
+  {
+    "Registry number:": 1042,
+    "sample_accession": "SAMN35637415",
+    "lat": "42.11426565",
+    "lon": "9.09808845",
+    "country_submitted": "France: Vizzavona"
+  },
+  {
+    "Registry number:": 1045,
+    "sample_accession": "SAMN35637416",
+    "lat": "42.11474059",
+    "lon": "9.09835236",
+    "country_submitted": "France: Vizzavona"
+  },
+  {
+    "Registry number:": 1048,
+    "sample_accession": "SAMN35637419",
+    "lat": "42.11503012",
+    "lon": "9.09669849",
+    "country_submitted": "France: Vizzavona"
+  },
+  {
+    "Registry number:": 1050,
+    "sample_accession": "SAMN35637420",
+    "lat": "42.11501567",
+    "lon": "9.09611428",
+    "country_submitted": "France: Vizzavona"
+  },
+  {
+    "Registry number:": 1052,
+    "sample_accession": "SAMN35637427",
+    "lat": "44.36027456",
+    "lon": "15.46665544",
+    "country_submitted": "Croatia: Paklenica National Park"
+  },
+  {
+    "Registry number:": 1055,
+    "sample_accession": "SAMN35637428",
+    "lat": "44.36042796",
+    "lon": "15.46698037",
+    "country_submitted": "Croatia: Paklenica National Park"
+  },
+  {
+    "Registry number:": 1057,
+    "sample_accession": "SAMN35637430",
+    "lat": "44.36080653",
+    "lon": "15.46752463",
+    "country_submitted": "Croatia: Paklenica National Park"
+  },
+  {
+    "Registry number:": 1059,
+    "sample_accession": "SAMN35637432",
+    "lat": "42.17373173",
+    "lon": "12.15541119",
+    "country_submitted": "Italy: Bracciano Natural Park"
+  },
+  {
+    "Registry number:": 1061,
+    "sample_accession": "SAMN35637438",
+    "lat": "42.17411176",
+    "lon": "12.15648486",
+    "country_submitted": "Italy: Bracciano Natural Park"
+  },
+  {
+    "Registry number:": 1064,
+    "sample_accession": "SAMN35637439",
+    "lat": "42.17447731",
+    "lon": "12.15600583",
+    "country_submitted": "Italy: Bracciano Natural Park"
+  },
+  {
+    "Registry number:": 1065,
+    "sample_accession": "SAMN35637441",
+    "lat": "37.70975374",
+    "lon": "15.04391952",
+    "country_submitted": "Italy: Mount Etna"
+  },
+  {
+    "Registry number:": 1068,
+    "sample_accession": "SAMN35637444",
+    "lat": "37.7083089",
+    "lon": "15.04452962",
+    "country_submitted": "Italy: Mount Etna"
+  },
+  {
+    "Registry number:": 1069,
+    "sample_accession": "SAMN35637445",
+    "lat": "37.70770489",
+    "lon": "15.04475287",
+    "country_submitted": "Italy: Mount Etna"
+  },
+  {
+    "Registry number:": 1070,
+    "sample_accession": "SAMN35637446",
+    "lat": "37.70773567",
+    "lon": "15.04535067",
+    "country_submitted": "Italy: Mount Etna"
+  },
+  {
+    "Registry number:": 1072,
+    "sample_accession": "SAMN35637450",
+    "lat": "37.70938723",
+    "lon": "15.04598005",
+    "country_submitted": "Italy: Mount Etna"
+  },
+  {
+    "Registry number:": 1074,
+    "sample_accession": "SAMN35637452",
+    "lat": "40.50599479",
+    "lon": "15.75294968",
+    "country_submitted": "Italy: Monte Pierfaone"
+  },
+  {
+    "Registry number:": 1075,
+    "sample_accession": "SAMN35637453",
+    "lat": "40.5059187",
+    "lon": "15.75323036",
+    "country_submitted": "Italy: Monte Pierfaone"
+  },
+  {
+    "Registry number:": 1077,
+    "sample_accession": "SAMN35637455",
+    "lat": "40.50577554",
+    "lon": "15.7539473",
+    "country_submitted": "Italy: Monte Pierfaone"
+  },
+  {
+    "Registry number:": 1078,
+    "sample_accession": "SAMN35637456",
+    "lat": "40.50549512",
+    "lon": "15.75395551",
+    "country_submitted": "Italy: Monte Pierfaone"
+  },
+  {
+    "Registry number:": 1080,
+    "sample_accession": "SAMN35637461",
+    "lat": "37.85853487",
+    "lon": "14.0420053",
+    "country_submitted": "Italy: Madonie Regional Natural Park"
+  },
+  {
+    "Registry number:": 1082,
+    "sample_accession": "SAMN35637465",
+    "lat": "37.85684177",
+    "lon": "14.04158261",
+    "country_submitted": "Italy: Madonie Regional Natural Park"
+  },
+  {
+    "Registry number:": 1083,
+    "sample_accession": "SAMN35637466",
+    "lat": "37.85692687",
+    "lon": "14.04091599",
+    "country_submitted": "Italy: Madonie Regional Natural Park"
+  },
+  {
+    "Registry number:": 1084,
+    "sample_accession": "SAMN35637469",
+    "lat": "37.85834292",
+    "lon": "14.04165567",
+    "country_submitted": "Italy: Madonie Regional Natural Park"
+  },
+  {
+    "Registry number:": 1087,
+    "sample_accession": "SAMN35637470",
+    "lat": "37.85857566",
+    "lon": "14.04165452",
+    "country_submitted": "Italy: Madonie Regional Natural Park"
+  },
+  {
+    "Registry number:": 1088,
+    "sample_accession": "SAMN35637474",
+    "lat": "39.9046188",
+    "lon": "16.10973178",
+    "country_submitted": "Italy: Pollino National Park"
+  },
+  {
+    "Registry number:": 1091,
+    "sample_accession": "SAMN35637475",
+    "lat": "39.90428101",
+    "lon": "16.10993086",
+    "country_submitted": "Italy: Pollino National Park"
+  },
+  {
+    "Registry number:": 1092,
+    "sample_accession": "SAMN35637477",
+    "lat": "39.90479061",
+    "lon": "16.1103739",
+    "country_submitted": "Italy: Pollino National Park"
+  },
+  {
+    "Registry number:": 1095,
+    "sample_accession": "SAMN35637478",
+    "lat": "39.905112",
+    "lon": "16.11017805",
+    "country_submitted": "Italy: Pollino National Park"
+  },
+  {
+    "Registry number:": 1096,
+    "sample_accession": "SAMN35637481",
+    "lat": "40.94900288",
+    "lon": "15.63176112",
+    "country_submitted": "Italy: Monte Vulture"
+  },
+  {
+    "Registry number:": 1099,
+    "sample_accession": "SAMN35637487",
+    "lat": "40.94876348",
+    "lon": "15.63076344",
+    "country_submitted": "Italy: Monte Vulture"
+  },
+  {
+    "Registry number:": 1100,
+    "sample_accession": "SAMN35637488",
+    "lat": "40.94907127",
+    "lon": "15.63124338",
+    "country_submitted": "Italy: Monte Vulture"
+  },
+  {
+    "Registry number:": 1102,
+    "sample_accession": "SAMN35637490",
+    "lat": "49.23293161",
+    "lon": "22.47221463",
+    "country_submitted": "Poland: Bieszczady National Park"
+  },
+  {
+    "Registry number:": 1104,
+    "sample_accession": "SAMN35637491",
+    "lat": "49.23261253",
+    "lon": "22.4724451",
+    "country_submitted": "Poland: Bieszczady National Park"
+  },
+  {
+    "Registry number:": 1105,
+    "sample_accession": "SAMN35637493",
+    "lat": "49.23192029",
+    "lon": "22.47301723",
+    "country_submitted": "Poland: Bieszczady National Park"
+  },
+  {
+    "Registry number:": 1107,
+    "sample_accession": "SAMN35637494",
+    "lat": "49.23163146",
+    "lon": "22.47213011",
+    "country_submitted": "Poland: Bieszczady National Park"
+  },
+  {
+    "Registry number:": 1108,
+    "sample_accession": "SAMN35637496",
+    "lat": "49.23241376",
+    "lon": "22.47188009",
+    "country_submitted": "Poland: Bieszczady National Park"
+  },
+  {
+    "Registry number:": 1110,
+    "sample_accession": "SAMN35637498",
+    "lat": "49.23310548",
+    "lon": "22.47153733",
+    "country_submitted": "Poland: Bieszczady National Park"
+  },
+  {
+    "Registry number:": 1112,
+    "sample_accession": "SAMN35637502",
+    "lat": "53.71285478",
+    "lon": "21.47201855",
+    "country_submitted": "Poland: Ukta Foresty"
+  },
+  {
+    "Registry number:": 1115,
+    "sample_accession": "SAMN35637504",
+    "lat": "53.7130549",
+    "lon": "21.47127103",
+    "country_submitted": "Poland: Ukta Foresty"
+  },
+  {
+    "Registry number:": 1116,
+    "sample_accession": "SAMN35637507",
+    "lat": "53.71399885",
+    "lon": "21.4709102",
+    "country_submitted": "Poland: Ukta Foresty"
+  },
+  {
+    "Registry number:": 1119,
+    "sample_accession": "SAMN35637508",
+    "lat": "49.67003094",
+    "lon": "18.85985191",
+    "country_submitted": "Poland: Bukowa Mountain"
+  },
+  {
+    "Registry number:": 1121,
+    "sample_accession": "SAMN35637509",
+    "lat": "49.66978107",
+    "lon": "18.86027615",
+    "country_submitted": "Poland: Bukowa Mountain"
+  },
+  {
+    "Registry number:": 1123,
+    "sample_accession": "SAMN35637512",
+    "lat": "49.6692049",
+    "lon": "18.86170572",
+    "country_submitted": "Poland: Bukowa Mountain"
+  },
+  {
+    "Registry number:": 1126,
+    "sample_accession": "SAMN35637514",
+    "lat": "49.66910247",
+    "lon": "18.86051421",
+    "country_submitted": "Poland: Bukowa Mountain"
+  },
+  {
+    "Registry number:": 1128,
+    "sample_accession": "SAMN35637517",
+    "lat": "49.66975466",
+    "lon": "18.85941897",
+    "country_submitted": "Poland: Bukowa Mountain"
+  },
+  {
+    "Registry number:": 1130,
+    "sample_accession": "SAMN35637518",
+    "lat": "44.34310184",
+    "lon": "19.29151693",
+    "country_submitted": "Serbia: Boranja"
+  },
+  {
+    "Registry number:": 1132,
+    "sample_accession": "SAMN35637520",
+    "lat": "44.34229797",
+    "lon": "19.29287248",
+    "country_submitted": "Serbia: Boranja"
+  },
+  {
+    "Registry number:": 1134,
+    "sample_accession": "SAMN35637526",
+    "lat": "45.13705731",
+    "lon": "19.63671871",
+    "country_submitted": "Serbia: Fruska Gora"
+  },
+  {
+    "Registry number:": 1135,
+    "sample_accession": "SAMN35637529",
+    "lat": "45.13626744",
+    "lon": "19.63606837",
+    "country_submitted": "Serbia: Fruska Gora"
+  },
+  {
+    "Registry number:": 1137,
+    "sample_accession": "SAMN35637533",
+    "lat": "55.56060229",
+    "lon": "13.20865943",
+    "country_submitted": "Sweden: Bokskogen"
+  },
+  {
+    "Registry number:": 1138,
+    "sample_accession": "SAMN35637534",
+    "lat": "55.56020516",
+    "lon": "13.20833359",
+    "country_submitted": "Sweden: Bokskogen"
+  },
+  {
+    "Registry number:": 1139,
+    "sample_accession": "SAMN35637535",
+    "lat": "55.55993736",
+    "lon": "13.20795147",
+    "country_submitted": "Sweden: Bokskogen"
+  },
+  {
+    "Registry number:": 1142,
+    "sample_accession": "SAMN35637536",
+    "lat": "55.55964482",
+    "lon": "13.20774352",
+    "country_submitted": "Sweden: Bokskogen"
+  },
+  {
+    "Registry number:": 1144,
+    "sample_accession": "SAMN35637541",
+    "lat": "55.56070473",
+    "lon": "13.20997208",
+    "country_submitted": "Sweden: Bokskogen"
+  },
+  {
+    "Registry number:": 1145,
+    "sample_accession": "SAMN35637545",
+    "lat": "45.54261057",
+    "lon": "14.76272354",
+    "country_submitted": "Slovenia: Krokar Forest"
+  },
+  {
+    "Registry number:": 1148,
+    "sample_accession": "SAMN35637547",
+    "lat": "45.54169118",
+    "lon": "14.76289874",
+    "country_submitted": "Slovenia: Krokar Forest"
+  },
+  {
+    "Registry number:": 1149,
+    "sample_accession": "SAMN35637549",
+    "lat": "45.54251845",
+    "lon": "14.76350777",
+    "country_submitted": "Slovenia: Krokar Forest"
+  },
+  {
+    "Registry number:": 2035,
+    "sample_accession": "SAMN35637344",
+    "lat": "50.75038771",
+    "lon": "4.42225653",
+    "country_submitted": "Belgium: Sonian Forest"
+  },
+  {
+    "Registry number:": 2036,
+    "sample_accession": "SAMN35637347",
+    "lat": "50.75112158",
+    "lon": "4.42302472",
+    "country_submitted": "Belgium: Sonian Forest"
+  },
+  {
+    "Registry number:": 2038,
+    "sample_accession": "SAMN35637348",
+    "lat": "50.75105209",
+    "lon": "4.42357367",
+    "country_submitted": "Belgium: Sonian Forest"
+  },
+  {
+    "Registry number:": 2039,
+    "sample_accession": "SAMN35637351",
+    "lat": "50.7501941",
+    "lon": "4.42273793",
+    "country_submitted": "Belgium: Sonian Forest"
+  },
+  {
+    "Registry number:": 2042,
+    "sample_accession": "SAMN35637352",
+    "lat": "50.74993303",
+    "lon": "4.42242063",
+    "country_submitted": "Belgium: Sonian Forest"
+  },
+  {
+    "Registry number:": 2044,
+    "sample_accession": "SAMN35637356",
+    "lat": "47.47924816",
+    "lon": "8.36496007",
+    "country_submitted": "Switzerland: Laegern Forest"
+  },
+  {
+    "Registry number:": 2045,
+    "sample_accession": "SAMN35637357",
+    "lat": "47.47943528",
+    "lon": "8.36487164",
+    "country_submitted": "Switzerland: Laegern Forest"
+  },
+  {
+    "Registry number:": 2047,
+    "sample_accession": "SAMN35637361",
+    "lat": "47.47912",
+    "lon": "8.36541",
+    "country_submitted": "Switzerland: Laegern Forest"
+  },
+  {
+    "Registry number:": 2048,
+    "sample_accession": "SAMN35637363",
+    "lat": "41.79030042",
+    "lon": "-1.81083375",
+    "country_submitted": "Spain: Moncayo Nature Reserve"
+  },
+  {
+    "Registry number:": 2050,
+    "sample_accession": "SAMN35637370",
+    "lat": "41.7908955",
+    "lon": "-1.81000161",
+    "country_submitted": "Spain: Moncayo Nature Reserve"
+  },
+  {
+    "Registry number:": 2052,
+    "sample_accession": "SAMN35637371",
+    "lat": "41.79056531",
+    "lon": "-1.81011478",
+    "country_submitted": "Spain: Moncayo Nature Reserve"
+  },
+  {
+    "Registry number:": 2053,
+    "sample_accession": "SAMN35637373",
+    "lat": "42.5075783",
+    "lon": "-0.67597205",
+    "country_submitted": "Spain: Monte Pena"
+  },
+  {
+    "Registry number:": 2054,
+    "sample_accession": "SAMN35637374",
+    "lat": "42.50991354",
+    "lon": "-0.67632587",
+    "country_submitted": "Spain: Monte Pena"
+  },
+  {
+    "Registry number:": 2055,
+    "sample_accession": "SAMN35637375",
+    "lat": "42.51034443",
+    "lon": "-0.67722209",
+    "country_submitted": "Spain: Monte Pena"
+  },
+  {
+    "Registry number:": 2057,
+    "sample_accession": "SAMN35637376",
+    "lat": "42.50965094",
+    "lon": "-0.67070415",
+    "country_submitted": "Spain: Monte Pena"
+  },
+  {
+    "Registry number:": 2059,
+    "sample_accession": "SAMN35637379",
+    "lat": "42.50963039",
+    "lon": "-0.67150179",
+    "country_submitted": "Spain: Monte Pena"
+  },
+  {
+    "Registry number:": 2060,
+    "sample_accession": "SAMN35637385",
+    "lat": "43.3290381",
+    "lon": "5.76955933",
+    "country_submitted": "France: Massif de la Sainte-Baume"
+  },
+  {
+    "Registry number:": 2061,
+    "sample_accession": "SAMN35637389",
+    "lat": "43.32792498",
+    "lon": "5.76943003",
+    "country_submitted": "France: Massif de la Sainte-Baume"
+  },
+  {
+    "Registry number:": 2063,
+    "sample_accession": "SAMN35637390",
+    "lat": "43.32764624",
+    "lon": "5.76941964",
+    "country_submitted": "France: Massif de la Sainte-Baume"
+  },
+  {
+    "Registry number:": 2065,
+    "sample_accession": "SAMN35637393",
+    "lat": "41.88291837",
+    "lon": "9.16215035",
+    "country_submitted": "France: Plateau du Coscione"
+  },
+  {
+    "Registry number:": 2067,
+    "sample_accession": "SAMN35637394",
+    "lat": "41.88251363",
+    "lon": "9.16120503",
+    "country_submitted": "France: Plateau du Coscione"
+  },
+  {
+    "Registry number:": 2068,
+    "sample_accession": "SAMN35637395",
+    "lat": "41.88236223",
+    "lon": "9.15959138",
+    "country_submitted": "France: Plateau du Coscione"
+  },
+  {
+    "Registry number:": 2070,
+    "sample_accession": "SAMN35637397",
+    "lat": "41.8814562",
+    "lon": "9.16171138",
+    "country_submitted": "France: Plateau du Coscione"
+  },
+  {
+    "Registry number:": 2072,
+    "sample_accession": "SAMN35637400",
+    "lat": "41.88248677",
+    "lon": "9.16395886",
+    "country_submitted": "France: Plateau du Coscione"
+  },
+  {
+    "Registry number:": 2073,
+    "sample_accession": "SAMN35637402",
+    "lat": "42.49135526",
+    "lon": "3.03262631",
+    "country_submitted": "France: Fort De La Massane"
+  },
+  {
+    "Registry number:": 2075,
+    "sample_accession": "SAMN35637405",
+    "lat": "42.49207094",
+    "lon": "3.03104821",
+    "country_submitted": "France: Fort De La Massane"
+  },
+  {
+    "Registry number:": 2076,
+    "sample_accession": "SAMN35637407",
+    "lat": "42.49141249",
+    "lon": "3.03132578",
+    "country_submitted": "France: Fort De La Massane"
+  },
+  {
+    "Registry number:": 2078,
+    "sample_accession": "SAMN35637410",
+    "lat": "42.49068069",
+    "lon": "3.03262412",
+    "country_submitted": "France: Fort De La Massane"
+  },
+  {
+    "Registry number:": 2080,
+    "sample_accession": "SAMN35637412",
+    "lat": "42.11472579",
+    "lon": "9.09650752",
+    "country_submitted": "France: Vizzavona"
+  },
+  {
+    "Registry number:": 2082,
+    "sample_accession": "SAMN35637421",
+    "lat": "44.36057508",
+    "lon": "15.46785701",
+    "country_submitted": "Croatia: Paklenica National Park"
+  },
+  {
+    "Registry number:": 2083,
+    "sample_accession": "SAMN35637424",
+    "lat": "44.36008582",
+    "lon": "15.4669794",
+    "country_submitted": "Croatia: Paklenica National Park"
+  },
+  {
+    "Registry number:": 2084,
+    "sample_accession": "SAMN35637425",
+    "lat": "44.35979473",
+    "lon": "15.46697699",
+    "country_submitted": "Croatia: Paklenica National Park"
+  },
+  {
+    "Registry number:": 2087,
+    "sample_accession": "SAMN35637426",
+    "lat": "44.36003712",
+    "lon": "15.46636723",
+    "country_submitted": "Croatia: Paklenica National Park"
+  },
+  {
+    "Registry number:": 2088,
+    "sample_accession": "SAMN35637433",
+    "lat": "42.17375268",
+    "lon": "12.15604266",
+    "country_submitted": "Italy: Bracciano Natural Park"
+  },
+  {
+    "Registry number:": 2089,
+    "sample_accession": "SAMN35637436",
+    "lat": "42.17368886",
+    "lon": "12.15731961",
+    "country_submitted": "Italy: Bracciano Natural Park"
+  },
+  {
+    "Registry number:": 2091,
+    "sample_accession": "SAMN35637437",
+    "lat": "42.17386617",
+    "lon": "12.15686013",
+    "country_submitted": "Italy: Bracciano Natural Park"
+  },
+  {
+    "Registry number:": 2093,
+    "sample_accession": "SAMN35637443",
+    "lat": "37.70906338",
+    "lon": "15.04411173",
+    "country_submitted": "Italy: Mount Etna"
+  },
+  {
+    "Registry number:": 2095,
+    "sample_accession": "SAMN35637454",
+    "lat": "40.50589432",
+    "lon": "15.75360669",
+    "country_submitted": "Italy: Monte Pierfaone"
+  },
+  {
+    "Registry number:": 2096,
+    "sample_accession": "SAMN35637460",
+    "lat": "40.50570816",
+    "lon": "15.75267489",
+    "country_submitted": "Italy: Monte Pierfaone"
+  },
+  {
+    "Registry number:": 2097,
+    "sample_accession": "SAMN35637462",
+    "lat": "37.85829899",
+    "lon": "14.04206055",
+    "country_submitted": "Italy: Madonie Regional Natural Park"
+  },
+  {
+    "Registry number:": 2100,
+    "sample_accession": "SAMN35637467",
+    "lat": "37.85733116",
+    "lon": "14.04119879",
+    "country_submitted": "Italy: Madonie Regional Natural Park"
+  },
+  {
+    "Registry number:": 2101,
+    "sample_accession": "SAMN35637471",
+    "lat": "39.90561078",
+    "lon": "16.10892709",
+    "country_submitted": "Italy: Pollino National Park"
+  },
+  {
+    "Registry number:": 2102,
+    "sample_accession": "SAMN35637476",
+    "lat": "39.90444785",
+    "lon": "16.11072789",
+    "country_submitted": "Italy: Pollino National Park"
+  },
+  {
+    "Registry number:": 2104,
+    "sample_accession": "SAMN35637484",
+    "lat": "40.9479578",
+    "lon": "15.63093358",
+    "country_submitted": "Italy: Monte Vulture"
+  },
+  {
+    "Registry number:": 2105,
+    "sample_accession": "SAMN35637495",
+    "lat": "49.23204701",
+    "lon": "22.47201569",
+    "country_submitted": "Poland: Bieszczady National Park"
+  },
+  {
+    "Registry number:": 2106,
+    "sample_accession": "SAMN35637497",
+    "lat": "49.23278079",
+    "lon": "22.4717562",
+    "country_submitted": "Poland: Bieszczady National Park"
+  },
+  {
+    "Registry number:": 2109,
+    "sample_accession": "SAMN35637499",
+    "lat": "53.71367398",
+    "lon": "21.4718094",
+    "country_submitted": "Poland: Ukta Foresty"
+  },
+  {
+    "Registry number:": 2110,
+    "sample_accession": "SAMN35637500",
+    "lat": "53.7133508",
+    "lon": "21.4717324",
+    "country_submitted": "Poland: Ukta Foresty"
+  },
+  {
+    "Registry number:": 2112,
+    "sample_accession": "SAMN35637503",
+    "lat": "53.71277368",
+    "lon": "21.47097659",
+    "country_submitted": "Poland: Ukta Foresty"
+  },
+  {
+    "Registry number:": 2114,
+    "sample_accession": "SAMN35637505",
+    "lat": "53.7133799",
+    "lon": "21.47111585",
+    "country_submitted": "Poland: Ukta Foresty"
+  },
+  {
+    "Registry number:": 2116,
+    "sample_accession": "SAMN35637506",
+    "lat": "53.71368987",
+    "lon": "21.47086902",
+    "country_submitted": "Poland: Ukta Foresty"
+  },
+  {
+    "Registry number:": 2118,
+    "sample_accession": "SAMN35637511",
+    "lat": "49.66941559",
+    "lon": "18.86104255",
+    "country_submitted": "Poland: Bukowa Mountain"
+  },
+  {
+    "Registry number:": 2119,
+    "sample_accession": "SAMN35637519",
+    "lat": "44.34263983",
+    "lon": "19.2919704",
+    "country_submitted": "Serbia: Boranja"
+  },
+  {
+    "Registry number:": 2121,
+    "sample_accession": "SAMN35637521",
+    "lat": "44.34124457",
+    "lon": "19.29303964",
+    "country_submitted": "Serbia: Boranja"
+  },
+  {
+    "Registry number:": 2122,
+    "sample_accession": "SAMN35637522",
+    "lat": "45.13654185",
+    "lon": "19.63482653",
+    "country_submitted": "Serbia: Fruska Gora"
+  },
+  {
+    "Registry number:": 2123,
+    "sample_accession": "SAMN35637527",
+    "lat": "45.13651052",
+    "lon": "19.63678304",
+    "country_submitted": "Serbia: Fruska Gora"
+  },
+  {
+    "Registry number:": 2125,
+    "sample_accession": "SAMN35637530",
+    "lat": "45.13621033",
+    "lon": "19.63559965",
+    "country_submitted": "Serbia: Fruska Gora"
+  },
+  {
+    "Registry number:": 2126,
+    "sample_accession": "SAMN35637531",
+    "lat": "45.13621029",
+    "lon": "19.63506853",
+    "country_submitted": "Serbia: Fruska Gora"
+  },
+  {
+    "Registry number:": 2128,
+    "sample_accession": "SAMN35637532",
+    "lat": "55.56091927",
+    "lon": "13.20930751",
+    "country_submitted": "Sweden: Bokskogen"
+  },
+  {
+    "Registry number:": 2129,
+    "sample_accession": "SAMN35637543",
+    "lat": "45.54307761",
+    "lon": "14.76345172",
+    "country_submitted": "Slovenia: Krokar Forest"
+  },
+  {
+    "Registry number:": 2131,
+    "sample_accession": "SAMN35637544",
+    "lat": "45.54285462",
+    "lon": "14.76314259",
+    "country_submitted": "Slovenia: Krokar Forest"
+  },
+  {
+    "Registry number:": 2133,
+    "sample_accession": "SAMN35637550",
+    "lat": "45.54275884",
+    "lon": "14.76392273",
+    "country_submitted": "Slovenia: Krokar Forest"
+  },
+  {
+    "Registry number:": 2325,
+    "sample_accession": "SAMN43020298",
+    "lat": "38.89077",
+    "lon": "-76.55846",
+    "country_submitted": "USA:Maryland"
+  },
+  {
+    "Registry number:": 2346,
+    "sample_accession": "SAMEA9143946",
+    "lat": "51.7718",
+    "lon": "-1.3376",
+    "country_submitted": "United Kingdom"
+  },
+  {
+    "Registry number:": 2360,
+    "sample_accession": "SAMN25243691",
+    "lat": "47.83819",
+    "lon": "2.75792",
+    "country_submitted": "France: Nogent-sur-Vernisson"
+  },
+  {
+    "Registry number:": 2363,
+    "sample_accession": "SAMN25243693",
+    "lat": "47.83819",
+    "lon": "2.75792",
+    "country_submitted": "France: Nogent-sur-Vernisson"
+  },
+  {
+    "Registry number:": 2366,
+    "sample_accession": "SAMN30128042",
+    "lat": "43.94704333",
+    "lon": "-71.73243333",
+    "country_submitted": "USA: New Hampshire"
+  },
+  {
+    "Registry number:": 2368,
+    "sample_accession": "SAMN30128046",
+    "lat": "43.987475",
+    "lon": "-71.74856833",
+    "country_submitted": "USA: New Hampshire"
+  },
+  {
+    "Registry number:": 2371,
+    "sample_accession": "SAMN30128049",
+    "lat": "43.95189333",
+    "lon": "-71.77865499",
+    "country_submitted": "USA: New Hampshire"
+  },
+  {
+    "Registry number:": 2373,
+    "sample_accession": "SAMN30128051",
+    "lat": "43.95971833",
+    "lon": "-71.757735",
+    "country_submitted": "USA: New Hampshire"
+  },
+  {
+    "Registry number:": 2376,
+    "sample_accession": "SAMN30128053",
+    "lat": "43.95573666",
+    "lon": "-71.77841166",
+    "country_submitted": "USA: New Hampshire"
+  },
+  {
+    "Registry number:": 2418,
+    "sample_accession": "SAMN08948264",
+    "lat": "53.585828",
+    "lon": "18.935269",
+    "country_submitted": "Poland: Jamy Forest District"
+  },
+  {
+    "Registry number:": 2572,
+    "sample_accession": "SAMEA117367601",
+    "lat": "45.19335257",
+    "lon": "5.77719388",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 2733,
+    "sample_accession": "SAMN35637350",
+    "lat": "50.75041341",
+    "lon": "4.42321588",
+    "country_submitted": "Belgium: Sonian Forest"
+  },
+  {
+    "Registry number:": 2737,
+    "sample_accession": "SAMN35637353",
+    "lat": "47.47990465",
+    "lon": "8.36458833",
+    "country_submitted": "Switzerland: Laegern Forest"
+  },
+  {
+    "Registry number:": 2739,
+    "sample_accession": "SAMN35637354",
+    "lat": "47.47967865",
+    "lon": "8.36474272",
+    "country_submitted": "Switzerland: Laegern Forest"
+  },
+  {
+    "Registry number:": 2742,
+    "sample_accession": "SAMN35637355",
+    "lat": "47.47946",
+    "lon": "8.36496",
+    "country_submitted": "Switzerland: Laegern Forest"
+  },
+  {
+    "Registry number:": 2745,
+    "sample_accession": "SAMN35637362",
+    "lat": "47.47905",
+    "lon": "8.3654",
+    "country_submitted": "Switzerland: Laegern Forest"
+  },
+  {
+    "Registry number:": 2748,
+    "sample_accession": "SAMN35637364",
+    "lat": "41.79063551",
+    "lon": "-1.81050251",
+    "country_submitted": "Spain: Moncayo Nature Reserve"
+  },
+  {
+    "Registry number:": 2751,
+    "sample_accession": "SAMN35637366",
+    "lat": "41.79123054",
+    "lon": "-1.8101533",
+    "country_submitted": "Spain: Moncayo Nature Reserve"
+  },
+  {
+    "Registry number:": 2753,
+    "sample_accession": "SAMN35637372",
+    "lat": "41.7901764",
+    "lon": "-1.8104241",
+    "country_submitted": "Spain: Moncayo Nature Reserve"
+  },
+  {
+    "Registry number:": 2756,
+    "sample_accession": "SAMN35637377",
+    "lat": "42.50980474",
+    "lon": "-0.67128676",
+    "country_submitted": "Spain: Monte Pena"
+  },
+  {
+    "Registry number:": 2758,
+    "sample_accession": "SAMN35637378",
+    "lat": "42.50962977",
+    "lon": "-0.6718852",
+    "country_submitted": "Spain: Monte Pena"
+  },
+  {
+    "Registry number:": 2762,
+    "sample_accession": "SAMN35637381",
+    "lat": "43.32763295",
+    "lon": "5.76979387",
+    "country_submitted": "France: Massif de la Sainte-Baume"
+  },
+  {
+    "Registry number:": 2765,
+    "sample_accession": "SAMN35637382",
+    "lat": "43.32783486",
+    "lon": "5.76973077",
+    "country_submitted": "France: Massif de la Sainte-Baume"
+  },
+  {
+    "Registry number:": 2767,
+    "sample_accession": "SAMN35637392",
+    "lat": "41.88341074",
+    "lon": "9.16316614",
+    "country_submitted": "France: Plateau du Coscione"
+  },
+  {
+    "Registry number:": 2771,
+    "sample_accession": "SAMN35637396",
+    "lat": "41.8813926",
+    "lon": "9.16014756",
+    "country_submitted": "France: Plateau du Coscione"
+  },
+  {
+    "Registry number:": 2773,
+    "sample_accession": "SAMN35637398",
+    "lat": "41.88213963",
+    "lon": "9.16229195",
+    "country_submitted": "France: Plateau du Coscione"
+  },
+  {
+    "Registry number:": 2775,
+    "sample_accession": "SAMN35637399",
+    "lat": "41.88224539",
+    "lon": "9.16330661",
+    "country_submitted": "France: Plateau du Coscione"
+  },
+  {
+    "Registry number:": 2778,
+    "sample_accession": "SAMN35637401",
+    "lat": "42.49099419",
+    "lon": "3.03305722",
+    "country_submitted": "France: Fort De La Massane"
+  },
+  {
+    "Registry number:": 2780,
+    "sample_accession": "SAMN35637403",
+    "lat": "42.49163773",
+    "lon": "3.03225069",
+    "country_submitted": "France: Fort De La Massane"
+  },
+  {
+    "Registry number:": 2782,
+    "sample_accession": "SAMN35637404",
+    "lat": "42.49196744",
+    "lon": "3.03179835",
+    "country_submitted": "France: Fort De La Massane"
+  },
+  {
+    "Registry number:": 2784,
+    "sample_accession": "SAMN35637406",
+    "lat": "42.49155225",
+    "lon": "3.03072632",
+    "country_submitted": "France: Fort De La Massane"
+  },
+  {
+    "Registry number:": 2786,
+    "sample_accession": "SAMN35637411",
+    "lat": "42.11532561",
+    "lon": "9.09632883",
+    "country_submitted": "France: Vizzavona"
+  },
+  {
+    "Registry number:": 2789,
+    "sample_accession": "SAMN35637417",
+    "lat": "42.11484606",
+    "lon": "9.0979134",
+    "country_submitted": "France: Vizzavona"
+  },
+  {
+    "Registry number:": 2791,
+    "sample_accession": "SAMN35637418",
+    "lat": "42.11491338",
+    "lon": "9.09716112",
+    "country_submitted": "France: Vizzavona"
+  },
+  {
+    "Registry number:": 2793,
+    "sample_accession": "SAMN35637422",
+    "lat": "44.36044549",
+    "lon": "15.46754478",
+    "country_submitted": "Croatia: Paklenica National Park"
+  },
+  {
+    "Registry number:": 2796,
+    "sample_accession": "SAMN35637423",
+    "lat": "44.36030579",
+    "lon": "15.46732508",
+    "country_submitted": "Croatia: Paklenica National Park"
+  },
+  {
+    "Registry number:": 2799,
+    "sample_accession": "SAMN35637429",
+    "lat": "44.36064567",
+    "lon": "15.46720064",
+    "country_submitted": "Croatia: Paklenica National Park"
+  },
+  {
+    "Registry number:": 2801,
+    "sample_accession": "SAMN35637431",
+    "lat": "42.17390453",
+    "lon": "12.15492814",
+    "country_submitted": "Italy: Bracciano Natural Park"
+  },
+  {
+    "Registry number:": 2804,
+    "sample_accession": "SAMN35637434",
+    "lat": "42.17355018",
+    "lon": "12.15644968",
+    "country_submitted": "Italy: Bracciano Natural Park"
+  },
+  {
+    "Registry number:": 2807,
+    "sample_accession": "SAMN35637435",
+    "lat": "42.17328708",
+    "lon": "12.15695463",
+    "country_submitted": "Italy: Bracciano Natural Park"
+  },
+  {
+    "Registry number:": 2809,
+    "sample_accession": "SAMN35637440",
+    "lat": "42.17455818",
+    "lon": "12.15528532",
+    "country_submitted": "Italy: Bracciano Natural Park"
+  },
+  {
+    "Registry number:": 2812,
+    "sample_accession": "SAMN35637442",
+    "lat": "37.70945",
+    "lon": "15.04386",
+    "country_submitted": "Italy: Mount Etna"
+  },
+  {
+    "Registry number:": 2815,
+    "sample_accession": "SAMN35637447",
+    "lat": "37.70844587",
+    "lon": "15.04551924",
+    "country_submitted": "Italy: Mount Etna"
+  },
+  {
+    "Registry number:": 2818,
+    "sample_accession": "SAMN35637448",
+    "lat": "37.7088537",
+    "lon": "15.04558455",
+    "country_submitted": "Italy: Mount Etna"
+  },
+  {
+    "Registry number:": 2820,
+    "sample_accession": "SAMN35637449",
+    "lat": "37.70904804",
+    "lon": "15.04587706",
+    "country_submitted": "Italy: Mount Etna"
+  },
+  {
+    "Registry number:": 2824,
+    "sample_accession": "SAMN35637451",
+    "lat": "40.50605401",
+    "lon": "15.752594",
+    "country_submitted": "Italy: Monte Pierfaone"
+  },
+  {
+    "Registry number:": 2826,
+    "sample_accession": "SAMN35637457",
+    "lat": "40.50542736",
+    "lon": "15.75361634",
+    "country_submitted": "Italy: Monte Pierfaone"
+  },
+  {
+    "Registry number:": 2828,
+    "sample_accession": "SAMN35637458",
+    "lat": "40.50566795",
+    "lon": "15.75340126",
+    "country_submitted": "Italy: Monte Pierfaone"
+  },
+  {
+    "Registry number:": 2831,
+    "sample_accession": "SAMN35637459",
+    "lat": "40.50563622",
+    "lon": "15.75310496",
+    "country_submitted": "Italy: Monte Pierfaone"
+  },
+  {
+    "Registry number:": 2834,
+    "sample_accession": "SAMN35637463",
+    "lat": "37.8577452",
+    "lon": "14.04183043",
+    "country_submitted": "Italy: Madonie Regional Natural Park"
+  },
+  {
+    "Registry number:": 2837,
+    "sample_accession": "SAMN35637464",
+    "lat": "37.85735751",
+    "lon": "14.04185205",
+    "country_submitted": "Italy: Madonie Regional Natural Park"
+  },
+  {
+    "Registry number:": 2839,
+    "sample_accession": "SAMN35637468",
+    "lat": "37.85781334",
+    "lon": "14.04137",
+    "country_submitted": "Italy: Madonie Regional Natural Park"
+  },
+  {
+    "Registry number:": 2843,
+    "sample_accession": "SAMN35637472",
+    "lat": "39.90529879",
+    "lon": "16.10933653",
+    "country_submitted": "Italy: Pollino National Park"
+  },
+  {
+    "Registry number:": 2845,
+    "sample_accession": "SAMN35637473",
+    "lat": "39.90495197",
+    "lon": "16.10937041",
+    "country_submitted": "Italy: Pollino National Park"
+  },
+  {
+    "Registry number:": 2849,
+    "sample_accession": "SAMN35637479",
+    "lat": "39.90585892",
+    "lon": "16.109378",
+    "country_submitted": "Italy: Pollino National Park"
+  },
+  {
+    "Registry number:": 2851,
+    "sample_accession": "SAMN35637480",
+    "lat": "40.94931997",
+    "lon": "15.6318338",
+    "country_submitted": "Italy: Monte Vulture"
+  },
+  {
+    "Registry number:": 2853,
+    "sample_accession": "SAMN35637482",
+    "lat": "40.94859742",
+    "lon": "15.63156098",
+    "country_submitted": "Italy: Monte Vulture"
+  },
+  {
+    "Registry number:": 2857,
+    "sample_accession": "SAMN35637483",
+    "lat": "40.94823472",
+    "lon": "15.63109713",
+    "country_submitted": "Italy: Monte Vulture"
+  },
+  {
+    "Registry number:": 2859,
+    "sample_accession": "SAMN35637485",
+    "lat": "40.9481467",
+    "lon": "15.63049608",
+    "country_submitted": "Italy: Monte Vulture"
+  },
+  {
+    "Registry number:": 2862,
+    "sample_accession": "SAMN35637486",
+    "lat": "40.94850306",
+    "lon": "15.63056491",
+    "country_submitted": "Italy: Monte Vulture"
+  },
+  {
+    "Registry number:": 2864,
+    "sample_accession": "SAMN35637489",
+    "lat": "49.23328919",
+    "lon": "22.47208492",
+    "country_submitted": "Poland: Bieszczady National Park"
+  },
+  {
+    "Registry number:": 2867,
+    "sample_accession": "SAMN35637492",
+    "lat": "49.23225533",
+    "lon": "22.47283517",
+    "country_submitted": "Poland: Bieszczady National Park"
+  },
+  {
+    "Registry number:": 2870,
+    "sample_accession": "SAMN35637501",
+    "lat": "53.71300627",
+    "lon": "21.47176808",
+    "country_submitted": "Poland: Ukta Foresty"
+  },
+  {
+    "Registry number:": 2872,
+    "sample_accession": "SAMN35637510",
+    "lat": "49.66955655",
+    "lon": "18.86062352",
+    "country_submitted": "Poland: Bukowa Mountain"
+  },
+  {
+    "Registry number:": 2876,
+    "sample_accession": "SAMN35637513",
+    "lat": "49.66882205",
+    "lon": "18.86127057",
+    "country_submitted": "Poland: Bukowa Mountain"
+  },
+  {
+    "Registry number:": 2878,
+    "sample_accession": "SAMN35637515",
+    "lat": "49.66917952",
+    "lon": "18.85992867",
+    "country_submitted": "Poland: Bukowa Mountain"
+  },
+  {
+    "Registry number:": 2881,
+    "sample_accession": "SAMN35637516",
+    "lat": "49.66949034",
+    "lon": "18.85970732",
+    "country_submitted": "Poland: Bukowa Mountain"
+  },
+  {
+    "Registry number:": 2883,
+    "sample_accession": "SAMN35637523",
+    "lat": "45.13657403",
+    "lon": "19.63538953",
+    "country_submitted": "Serbia: Fruska Gora"
+  },
+  {
+    "Registry number:": 2886,
+    "sample_accession": "SAMN35637524",
+    "lat": "45.13668031",
+    "lon": "19.63587213",
+    "country_submitted": "Serbia: Fruska Gora"
+  },
+  {
+    "Registry number:": 2889,
+    "sample_accession": "SAMN35637525",
+    "lat": "45.13676005",
+    "lon": "19.63618841",
+    "country_submitted": "Serbia: Fruska Gora"
+  },
+  {
+    "Registry number:": 2892,
+    "sample_accession": "SAMN35637528",
+    "lat": "45.13639953",
+    "lon": "19.63648893",
+    "country_submitted": "Serbia: Fruska Gora"
+  },
+  {
+    "Registry number:": 2894,
+    "sample_accession": "SAMN35637537",
+    "lat": "55.55942178",
+    "lon": "13.20818602",
+    "country_submitted": "Sweden: Bokskogen"
+  },
+  {
+    "Registry number:": 2897,
+    "sample_accession": "SAMN35637538",
+    "lat": "55.5598027",
+    "lon": "13.20859552",
+    "country_submitted": "Sweden: Bokskogen"
+  },
+  {
+    "Registry number:": 2900,
+    "sample_accession": "SAMN35637539",
+    "lat": "55.55996646",
+    "lon": "13.20906383",
+    "country_submitted": "Sweden: Bokskogen"
+  },
+  {
+    "Registry number:": 2902,
+    "sample_accession": "SAMN35637540",
+    "lat": "55.5603182",
+    "lon": "13.20939628",
+    "country_submitted": "Sweden: Bokskogen"
+  },
+  {
+    "Registry number:": 2906,
+    "sample_accession": "SAMN35637542",
+    "lat": "45.54328222",
+    "lon": "14.7638186",
+    "country_submitted": "Slovenia: Krokar Forest"
+  },
+  {
+    "Registry number:": 2908,
+    "sample_accession": "SAMN35637546",
+    "lat": "45.5423958",
+    "lon": "14.76250257",
+    "country_submitted": "Slovenia: Krokar Forest"
+  },
+  {
+    "Registry number:": 2911,
+    "sample_accession": "SAMN35637548",
+    "lat": "45.54217249",
+    "lon": "14.76318769",
+    "country_submitted": "Slovenia: Krokar Forest"
+  },
+  {
+    "Registry number:": 2913,
+    "sample_accession": "SAMN35637551",
+    "lat": "45.54296045",
+    "lon": "14.76421608",
+    "country_submitted": "Slovenia: Krokar Forest"
+  },
+  {
+    "Registry number:": 3400,
+    "sample_accession": "SAMEA3950353",
+    "lat": "51.091",
+    "lon": "10.523",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3402,
+    "sample_accession": "SAMEA3950357",
+    "lat": "51.091",
+    "lon": "10.523",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3404,
+    "sample_accession": "SAMEA3950359",
+    "lat": "51.091",
+    "lon": "10.523",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3406,
+    "sample_accession": "SAMEA3950361",
+    "lat": "51.091",
+    "lon": "10.523",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3613,
+    "sample_accession": "SAMN14310328",
+    "lat": "46.49523",
+    "lon": "14.06671",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 3615,
+    "sample_accession": "SAMN14310330",
+    "lat": "46.49657",
+    "lon": "14.06713",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 3617,
+    "sample_accession": "SAMN14310331",
+    "lat": "46.49743",
+    "lon": "14.06826",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 3619,
+    "sample_accession": "SAMN14310333",
+    "lat": "46.49709",
+    "lon": "14.06787",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 3621,
+    "sample_accession": "SAMN14310336",
+    "lat": "46.49729",
+    "lon": "14.06767",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 3630,
+    "sample_accession": "SAMN14310353",
+    "lat": "46.58529",
+    "lon": "14.26785",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 3632,
+    "sample_accession": "SAMN14310355",
+    "lat": "46.58533",
+    "lon": "14.26702",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 3634,
+    "sample_accession": "SAMN14310360",
+    "lat": "46.58614",
+    "lon": "14.26403",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 3636,
+    "sample_accession": "SAMN14310361",
+    "lat": "46.58447",
+    "lon": "14.27065",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 3638,
+    "sample_accession": "SAMN14310362",
+    "lat": "46.58399",
+    "lon": "14.27014",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 3641,
+    "sample_accession": "SAMN14310365",
+    "lat": "46.57957",
+    "lon": "14.26357",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 3643,
+    "sample_accession": "SAMN14310367",
+    "lat": "46.57684",
+    "lon": "14.26148",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 3645,
+    "sample_accession": "SAMN14310369",
+    "lat": "46.57982",
+    "lon": "14.26361",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 3647,
+    "sample_accession": "SAMN14310371",
+    "lat": "47.23668",
+    "lon": "7.47344",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 3650,
+    "sample_accession": "SAMN14310373",
+    "lat": "47.236999",
+    "lon": "7.474424",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 3653,
+    "sample_accession": "SAMN14310374",
+    "lat": "47.237243",
+    "lon": "7.475119",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 3655,
+    "sample_accession": "SAMN14310377",
+    "lat": "47.236264",
+    "lon": "7.472301",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 3658,
+    "sample_accession": "SAMN14310378",
+    "lat": "47.236102",
+    "lon": "7.471736",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 3660,
+    "sample_accession": "SAMN14310379",
+    "lat": "47.235898",
+    "lon": "7.471454",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 3663,
+    "sample_accession": "SAMN14310380",
+    "lat": "47.235841",
+    "lon": "7.470979",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 3666,
+    "sample_accession": "SAMN14310383",
+    "lat": "47.23732",
+    "lon": "7.473996",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 3668,
+    "sample_accession": "SAMN14310384",
+    "lat": "47.237433",
+    "lon": "7.474445",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 3671,
+    "sample_accession": "SAMN14310387",
+    "lat": "47.237106",
+    "lon": "7.472973",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 3674,
+    "sample_accession": "SAMN14310390",
+    "lat": "47.236786",
+    "lon": "7.471073",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 3676,
+    "sample_accession": "SAMN14310393",
+    "lat": "47.237139",
+    "lon": "7.470012",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 3678,
+    "sample_accession": "SAMN14310394",
+    "lat": "47.237307",
+    "lon": "7.470649",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 3680,
+    "sample_accession": "SAMN14310395",
+    "lat": "47.237369",
+    "lon": "7.471308",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 3682,
+    "sample_accession": "SAMN14310399",
+    "lat": "47.22295",
+    "lon": "7.402801",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 3684,
+    "sample_accession": "SAMN14310401",
+    "lat": "47.22194",
+    "lon": "7.402989",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 3685,
+    "sample_accession": "SAMN14310405",
+    "lat": "47.221107",
+    "lon": "7.402064",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 3687,
+    "sample_accession": "SAMN14310410",
+    "lat": "47.220226",
+    "lon": "7.401453",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 3688,
+    "sample_accession": "SAMN14310412",
+    "lat": "47.220038",
+    "lon": "7.402128",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 3690,
+    "sample_accession": "SAMN14310414",
+    "lat": "47.219242",
+    "lon": "7.401888",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 3692,
+    "sample_accession": "SAMN14310417",
+    "lat": "47.221024",
+    "lon": "7.401379",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 3693,
+    "sample_accession": "SAMN14310421",
+    "lat": "47.776293",
+    "lon": "12.814292",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3695,
+    "sample_accession": "SAMN14310423",
+    "lat": "47.77596667",
+    "lon": "12.8145",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3697,
+    "sample_accession": "SAMN14310425",
+    "lat": "47.776072",
+    "lon": "12.814955",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3698,
+    "sample_accession": "SAMN14310429",
+    "lat": "47.775415",
+    "lon": "12.816346",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3700,
+    "sample_accession": "SAMN14310433",
+    "lat": "47.77558333",
+    "lon": "12.81503333",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3702,
+    "sample_accession": "SAMN14310434",
+    "lat": "47.77535",
+    "lon": "12.81555",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3703,
+    "sample_accession": "SAMN14310435",
+    "lat": "47.77501667",
+    "lon": "12.8159",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3705,
+    "sample_accession": "SAMN14310437",
+    "lat": "47.77488333",
+    "lon": "12.81655",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3707,
+    "sample_accession": "SAMN14310438",
+    "lat": "47.77463333",
+    "lon": "12.81678333",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3708,
+    "sample_accession": "SAMN14310444",
+    "lat": "47.775",
+    "lon": "12.81663333",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3710,
+    "sample_accession": "SAMN14310447",
+    "lat": "47.76975",
+    "lon": "12.82868333",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3712,
+    "sample_accession": "SAMN14310449",
+    "lat": "47.76983333",
+    "lon": "12.82903333",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3713,
+    "sample_accession": "SAMN14310454",
+    "lat": "47.76955",
+    "lon": "12.82883333",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3715,
+    "sample_accession": "SAMN14310459",
+    "lat": "47.76925",
+    "lon": "12.82821667",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3716,
+    "sample_accession": "SAMN14310468",
+    "lat": "47.76913333",
+    "lon": "12.82908333",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3718,
+    "sample_accession": "SAMN14310470",
+    "lat": "47.76901667",
+    "lon": "12.82855",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3720,
+    "sample_accession": "SAMN14310472",
+    "lat": "51.162863",
+    "lon": "8.908947",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3721,
+    "sample_accession": "SAMN14310473",
+    "lat": "51.16257",
+    "lon": "8.909109",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3723,
+    "sample_accession": "SAMN14310475",
+    "lat": "51.162709",
+    "lon": "8.908584",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3725,
+    "sample_accession": "SAMN14310476",
+    "lat": "51.162754",
+    "lon": "8.908021",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3726,
+    "sample_accession": "SAMN14310478",
+    "lat": "51.162213",
+    "lon": "8.908454",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3729,
+    "sample_accession": "SAMN14310479",
+    "lat": "51.161934",
+    "lon": "8.908604",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3731,
+    "sample_accession": "SAMN14310484",
+    "lat": "51.160136",
+    "lon": "8.908895",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3733,
+    "sample_accession": "SAMN14310486",
+    "lat": "51.160286",
+    "lon": "8.908377",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3734,
+    "sample_accession": "SAMN14310493",
+    "lat": "51.163425",
+    "lon": "8.907979",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3736,
+    "sample_accession": "SAMN14310494",
+    "lat": "51.163634",
+    "lon": "8.90834",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3738,
+    "sample_accession": "SAMN14310495",
+    "lat": "51.163381",
+    "lon": "8.908485",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3740,
+    "sample_accession": "SAMN14310496",
+    "lat": "51.1295",
+    "lon": "8.978961",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3742,
+    "sample_accession": "SAMN14310500",
+    "lat": "51.130619",
+    "lon": "8.978357",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3744,
+    "sample_accession": "SAMN14310501",
+    "lat": "51.130914",
+    "lon": "8.978192",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3746,
+    "sample_accession": "SAMN14310502",
+    "lat": "51.131095",
+    "lon": "8.977856",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3747,
+    "sample_accession": "SAMN14310505",
+    "lat": "51.131674",
+    "lon": "8.976777",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3749,
+    "sample_accession": "SAMN14310507",
+    "lat": "51.131058",
+    "lon": "8.976583",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3750,
+    "sample_accession": "SAMN14310508",
+    "lat": "51.130812",
+    "lon": "8.976909",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3752,
+    "sample_accession": "SAMN14310509",
+    "lat": "51.130793",
+    "lon": "8.977512",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3754,
+    "sample_accession": "SAMN14310512",
+    "lat": "51.129925",
+    "lon": "8.977615",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3756,
+    "sample_accession": "SAMN14310517",
+    "lat": "51.128647",
+    "lon": "8.978886",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3758,
+    "sample_accession": "SAMN14310519",
+    "lat": "51.129032",
+    "lon": "8.979758",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3759,
+    "sample_accession": "SAMN14310524",
+    "lat": "42.66959",
+    "lon": "-0.12291",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 3761,
+    "sample_accession": "SAMN14310532",
+    "lat": "42.67301",
+    "lon": "-0.1231",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 3763,
+    "sample_accession": "SAMN14310534",
+    "lat": "42.6738",
+    "lon": "-0.12315",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 3764,
+    "sample_accession": "SAMN14310537",
+    "lat": "42.67451",
+    "lon": "-0.12375",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 3766,
+    "sample_accession": "SAMN14310547",
+    "lat": "42.71516",
+    "lon": "-0.12735",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 3768,
+    "sample_accession": "SAMN14310548",
+    "lat": "42.71472",
+    "lon": "-0.12707",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 3769,
+    "sample_accession": "SAMN14310550",
+    "lat": "42.71389",
+    "lon": "-0.1267",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 3771,
+    "sample_accession": "SAMN14310551",
+    "lat": "42.71331",
+    "lon": "-0.1268",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 3773,
+    "sample_accession": "SAMN14310553",
+    "lat": "42.71258",
+    "lon": "-0.12645",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 3775,
+    "sample_accession": "SAMN14310555",
+    "lat": "42.71186",
+    "lon": "-0.12612",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 3776,
+    "sample_accession": "SAMN14310556",
+    "lat": "42.71163",
+    "lon": "-0.12581",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 3778,
+    "sample_accession": "SAMN14310557",
+    "lat": "42.71111",
+    "lon": "-0.12558",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 3780,
+    "sample_accession": "SAMN14310560",
+    "lat": "42.70978",
+    "lon": "-0.12591",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 3782,
+    "sample_accession": "SAMN14310562",
+    "lat": "42.713",
+    "lon": "-0.12713",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 3783,
+    "sample_accession": "SAMN14310563",
+    "lat": "42.71329",
+    "lon": "-0.12733",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 3785,
+    "sample_accession": "SAMN14310564",
+    "lat": "42.71351",
+    "lon": "-0.12731",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 3787,
+    "sample_accession": "SAMN14310569",
+    "lat": "42.71685",
+    "lon": "-0.12949",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 3789,
+    "sample_accession": "SAMN14310580",
+    "lat": "44.18459",
+    "lon": "5.23572",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3790,
+    "sample_accession": "SAMN14310582",
+    "lat": "44.18454",
+    "lon": "5.23514",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3792,
+    "sample_accession": "SAMN14310588",
+    "lat": "44.18376",
+    "lon": "5.23406",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3794,
+    "sample_accession": "SAMN14310593",
+    "lat": "44.18451",
+    "lon": "5.23608",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3796,
+    "sample_accession": "SAMN14310594",
+    "lat": "44.18462",
+    "lon": "5.23637",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3797,
+    "sample_accession": "SAMN14310597",
+    "lat": "44.17881",
+    "lon": "5.2422",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3799,
+    "sample_accession": "SAMN14310603",
+    "lat": "44.17912",
+    "lon": "5.24407",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3801,
+    "sample_accession": "SAMN14310607",
+    "lat": "44.17855",
+    "lon": "5.24238",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3803,
+    "sample_accession": "SAMN14310608",
+    "lat": "44.17837",
+    "lon": "5.24207",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3804,
+    "sample_accession": "SAMN14310609",
+    "lat": "44.17815",
+    "lon": "5.24181",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3806,
+    "sample_accession": "SAMN14310610",
+    "lat": "44.17824",
+    "lon": "5.24245",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3808,
+    "sample_accession": "SAMN14310615",
+    "lat": "44.17863",
+    "lon": "5.24466",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3810,
+    "sample_accession": "SAMN14310621",
+    "lat": "41.86229",
+    "lon": "9.10486",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3811,
+    "sample_accession": "SAMN14310623",
+    "lat": "41.86279",
+    "lon": "9.10524",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3813,
+    "sample_accession": "SAMN14310625",
+    "lat": "41.86314",
+    "lon": "9.10583",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3815,
+    "sample_accession": "SAMN14310627",
+    "lat": "41.8625",
+    "lon": "9.10462",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3817,
+    "sample_accession": "SAMN14310629",
+    "lat": "41.86235",
+    "lon": "9.10395",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3818,
+    "sample_accession": "SAMN14310630",
+    "lat": "41.86279",
+    "lon": "9.10444",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3820,
+    "sample_accession": "SAMN14310633",
+    "lat": "41.8634",
+    "lon": "9.10555",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3822,
+    "sample_accession": "SAMN14310636",
+    "lat": "41.86311",
+    "lon": "9.10463",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3824,
+    "sample_accession": "SAMN14310639",
+    "lat": "41.86376",
+    "lon": "9.1049",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3825,
+    "sample_accession": "SAMN14310641",
+    "lat": "41.86373",
+    "lon": "9.10425",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3827,
+    "sample_accession": "SAMN14310644",
+    "lat": "41.86286",
+    "lon": "9.10381",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3829,
+    "sample_accession": "SAMN14310654",
+    "lat": "41.86534",
+    "lon": "9.13886",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3830,
+    "sample_accession": "SAMN14310656",
+    "lat": "41.86497",
+    "lon": "9.13904",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3832,
+    "sample_accession": "SAMN14310658",
+    "lat": "41.86619",
+    "lon": "9.14064",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3834,
+    "sample_accession": "SAMN14310661",
+    "lat": "41.86623",
+    "lon": "9.13953",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3836,
+    "sample_accession": "SAMN14310665",
+    "lat": "41.86573",
+    "lon": "9.1388",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3837,
+    "sample_accession": "SAMN14310670",
+    "lat": "41.86628",
+    "lon": "9.13884",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3842,
+    "sample_accession": "SAMN14310321",
+    "lat": "46.49724",
+    "lon": "14.06788",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 3844,
+    "sample_accession": "SAMN14310323",
+    "lat": "46.49554",
+    "lon": "14.06662",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 3847,
+    "sample_accession": "SAMN14310324",
+    "lat": "46.49534",
+    "lon": "14.0668",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 3849,
+    "sample_accession": "SAMN14310329",
+    "lat": "46.49563",
+    "lon": "14.06662",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 3852,
+    "sample_accession": "SAMN14310332",
+    "lat": "46.49739",
+    "lon": "14.0683",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 3853,
+    "sample_accession": "SAMN14310699",
+    "lat": "51.52432222",
+    "lon": "-1.03054368",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 3854,
+    "sample_accession": "SAMN14310334",
+    "lat": "46.4968",
+    "lon": "14.0677",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 3855,
+    "sample_accession": "SAMN14310702",
+    "lat": "51.52549183",
+    "lon": "-1.02836397",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 3856,
+    "sample_accession": "SAMN14310338",
+    "lat": "46.49754",
+    "lon": "14.06862",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 3857,
+    "sample_accession": "SAMN14310703",
+    "lat": "51.52212784",
+    "lon": "-1.0296562",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 3858,
+    "sample_accession": "SAMN14310340",
+    "lat": "46.49858",
+    "lon": "14.06844",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 3859,
+    "sample_accession": "SAMN14310705",
+    "lat": "51.52403816",
+    "lon": "-1.03085104",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 3861,
+    "sample_accession": "SAMN14310708",
+    "lat": "51.52486646",
+    "lon": "-1.02951195",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 3862,
+    "sample_accession": "SAMN14310349",
+    "lat": "46.58462",
+    "lon": "14.26912",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 3863,
+    "sample_accession": "SAMN14310711",
+    "lat": "51.52709202",
+    "lon": "-1.0271294",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 3864,
+    "sample_accession": "SAMN14310351",
+    "lat": "46.58504",
+    "lon": "14.26879",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 3865,
+    "sample_accession": "SAMN14310354",
+    "lat": "46.58506",
+    "lon": "14.26725",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 3866,
+    "sample_accession": "SAMN14310716",
+    "lat": "51.52732755",
+    "lon": "-1.02719159",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 3867,
+    "sample_accession": "SAMN14310357",
+    "lat": "46.58518",
+    "lon": "14.26586",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 3868,
+    "sample_accession": "SAMN14310721",
+    "lat": "51.61968372",
+    "lon": "-0.98670901",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 3869,
+    "sample_accession": "SAMN14310358",
+    "lat": "46.58581",
+    "lon": "14.26578",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 3870,
+    "sample_accession": "SAMN14310726",
+    "lat": "51.62039149",
+    "lon": "-0.98291041",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 3871,
+    "sample_accession": "SAMN14310363",
+    "lat": "46.58355",
+    "lon": "14.26977",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 3872,
+    "sample_accession": "SAMN14310368",
+    "lat": "46.57941",
+    "lon": "14.26347",
+    "country_submitted": "Austria"
+  },
+  {
+    "Registry number:": 3873,
+    "sample_accession": "SAMN14310729",
+    "lat": "51.62138575",
+    "lon": "-0.98103538",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 3874,
+    "sample_accession": "SAMN14310375",
+    "lat": "47.237485",
+    "lon": "7.475411",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 3875,
+    "sample_accession": "SAMN14310734",
+    "lat": "51.61790935",
+    "lon": "-0.99070793",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 3876,
+    "sample_accession": "SAMN14310381",
+    "lat": "47.23574",
+    "lon": "7.470352",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 3877,
+    "sample_accession": "SAMN14310741",
+    "lat": "51.61837162",
+    "lon": "-0.9874783",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 3878,
+    "sample_accession": "SAMN14310382",
+    "lat": "47.237079",
+    "lon": "7.473421",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 3879,
+    "sample_accession": "SAMN14310742",
+    "lat": "51.61862609",
+    "lon": "-0.98697748",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 3880,
+    "sample_accession": "SAMN14310398",
+    "lat": "47.222385",
+    "lon": "7.402544",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 3881,
+    "sample_accession": "SAMN14310744",
+    "lat": "51.61875794",
+    "lon": "-0.98600996",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 3882,
+    "sample_accession": "SAMN14310400",
+    "lat": "47.222234",
+    "lon": "7.403105",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 3883,
+    "sample_accession": "SAMN14310402",
+    "lat": "47.221342",
+    "lon": "7.403034",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 3884,
+    "sample_accession": "SAMN14310745",
+    "lat": "40.556253",
+    "lon": "23.708399",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 3885,
+    "sample_accession": "SAMN14310407",
+    "lat": "47.220352",
+    "lon": "7.401281",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 3886,
+    "sample_accession": "SAMN14310748",
+    "lat": "40.556012",
+    "lon": "23.7072",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 3887,
+    "sample_accession": "SAMN14310408",
+    "lat": "47.220126",
+    "lon": "7.401017",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 3888,
+    "sample_accession": "SAMN14310413",
+    "lat": "47.21973",
+    "lon": "7.40197",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 3889,
+    "sample_accession": "SAMN14310750",
+    "lat": "40.556028",
+    "lon": "23.706472",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 3890,
+    "sample_accession": "SAMN14310418",
+    "lat": "47.220716",
+    "lon": "7.400916",
+    "country_submitted": "Switzerland"
+  },
+  {
+    "Registry number:": 3891,
+    "sample_accession": "SAMN14310754",
+    "lat": "40.555784",
+    "lon": "23.708568",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 3892,
+    "sample_accession": "SAMN14310424",
+    "lat": "47.776043",
+    "lon": "12.813981",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3893,
+    "sample_accession": "SAMN14310755",
+    "lat": "40.555579",
+    "lon": "23.708043",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 3894,
+    "sample_accession": "SAMN14310427",
+    "lat": "47.775797",
+    "lon": "12.815725",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3895,
+    "sample_accession": "SAMN14310756",
+    "lat": "40.555367",
+    "lon": "23.707239",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 3896,
+    "sample_accession": "SAMN14310428",
+    "lat": "47.775776",
+    "lon": "12.816165",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3897,
+    "sample_accession": "SAMN14310430",
+    "lat": "47.77524",
+    "lon": "12.816797",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3898,
+    "sample_accession": "SAMN14310759",
+    "lat": "40.556662",
+    "lon": "23.707481",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 3899,
+    "sample_accession": "SAMN14310431",
+    "lat": "47.774995",
+    "lon": "12.817127",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3900,
+    "sample_accession": "SAMN14310762",
+    "lat": "40.555768",
+    "lon": "23.707603",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 3901,
+    "sample_accession": "SAMN14310432",
+    "lat": "47.7757",
+    "lon": "12.81471667",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3902,
+    "sample_accession": "SAMN14310771",
+    "lat": "40.547666",
+    "lon": "23.721598",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 3903,
+    "sample_accession": "SAMN14310441",
+    "lat": "47.77541667",
+    "lon": "12.81561667",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3904,
+    "sample_accession": "SAMN14310776",
+    "lat": "40.54952",
+    "lon": "23.721104",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 3905,
+    "sample_accession": "SAMN14310442",
+    "lat": "47.77531667",
+    "lon": "12.81586667",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3906,
+    "sample_accession": "SAMN14310779",
+    "lat": "40.548085",
+    "lon": "23.722351",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 3907,
+    "sample_accession": "SAMN14310451",
+    "lat": "47.77015",
+    "lon": "12.82968333",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3908,
+    "sample_accession": "SAMN14310452",
+    "lat": "47.77031667",
+    "lon": "12.82996667",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3909,
+    "sample_accession": "SAMN14310782",
+    "lat": "40.547188",
+    "lon": "23.722051",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 3910,
+    "sample_accession": "SAMN14310456",
+    "lat": "47.7697",
+    "lon": "12.82915",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3911,
+    "sample_accession": "SAMN14310790",
+    "lat": "40.549391",
+    "lon": "23.720643",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 3912,
+    "sample_accession": "SAMN14310461",
+    "lat": "47.76918333",
+    "lon": "12.82861667",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3913,
+    "sample_accession": "SAMN14310791",
+    "lat": "40.550103",
+    "lon": "23.720054",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 3914,
+    "sample_accession": "SAMN14310462",
+    "lat": "47.76928333",
+    "lon": "12.82908333",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3915,
+    "sample_accession": "SAMN14310795",
+    "lat": "42.514703",
+    "lon": "13.547629",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 3916,
+    "sample_accession": "SAMN14310463",
+    "lat": "47.7695",
+    "lon": "12.82951667",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3917,
+    "sample_accession": "SAMN14310796",
+    "lat": "42.514661",
+    "lon": "13.548032",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 3918,
+    "sample_accession": "SAMN14310465",
+    "lat": "47.76966667",
+    "lon": "12.83011667",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3919,
+    "sample_accession": "SAMN14310797",
+    "lat": "42.514916",
+    "lon": "13.54822",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 3920,
+    "sample_accession": "SAMN14310467",
+    "lat": "47.7691",
+    "lon": "12.82943333",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3921,
+    "sample_accession": "SAMN14310801",
+    "lat": "42.515437",
+    "lon": "13.549953",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 3922,
+    "sample_accession": "SAMN14310469",
+    "lat": "47.769",
+    "lon": "12.82886667",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3923,
+    "sample_accession": "SAMN14310808",
+    "lat": "42.517044",
+    "lon": "13.551258",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 3924,
+    "sample_accession": "SAMN14310471",
+    "lat": "51.16301",
+    "lon": "8.908568",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3925,
+    "sample_accession": "SAMN14310818",
+    "lat": "42.513767",
+    "lon": "13.547453",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 3926,
+    "sample_accession": "SAMN14310474",
+    "lat": "51.162216",
+    "lon": "8.909067",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3927,
+    "sample_accession": "SAMN14310482",
+    "lat": "51.16086",
+    "lon": "8.908877",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3928,
+    "sample_accession": "SAMN14310819",
+    "lat": "42.514162",
+    "lon": "13.547427",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 3929,
+    "sample_accession": "SAMN14310821",
+    "lat": "42.501751",
+    "lon": "13.575498",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 3930,
+    "sample_accession": "SAMN14310483",
+    "lat": "51.160476",
+    "lon": "8.908807",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3931,
+    "sample_accession": "SAMN14310487",
+    "lat": "51.161831",
+    "lon": "8.908209",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3932,
+    "sample_accession": "SAMN14310826",
+    "lat": "42.500898",
+    "lon": "13.573929",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 3933,
+    "sample_accession": "SAMN14310488",
+    "lat": "51.162118",
+    "lon": "8.907895",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3934,
+    "sample_accession": "SAMN14310830",
+    "lat": "42.500695",
+    "lon": "13.572583",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 3935,
+    "sample_accession": "SAMN14310490",
+    "lat": "51.163452",
+    "lon": "8.907325",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3936,
+    "sample_accession": "SAMN14310842",
+    "lat": "42.502975",
+    "lon": "13.575483",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 3937,
+    "sample_accession": "SAMN14310498",
+    "lat": "51.130032",
+    "lon": "8.978515",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3938,
+    "sample_accession": "SAMN14310845",
+    "lat": "59.194228",
+    "lon": "10.048703",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 3939,
+    "sample_accession": "SAMN14310503",
+    "lat": "51.131254",
+    "lon": "8.97754",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3940,
+    "sample_accession": "SAMN14310849",
+    "lat": "59.195188",
+    "lon": "10.048783",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 3941,
+    "sample_accession": "SAMN14310504",
+    "lat": "51.131431",
+    "lon": "8.977249",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3942,
+    "sample_accession": "SAMN14310850",
+    "lat": "59.195624",
+    "lon": "10.048905",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 3943,
+    "sample_accession": "SAMN14310511",
+    "lat": "51.130232",
+    "lon": "8.977512",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3944,
+    "sample_accession": "SAMN14310855",
+    "lat": "59.195991",
+    "lon": "10.051006",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 3945,
+    "sample_accession": "SAMN14310514",
+    "lat": "51.129469",
+    "lon": "8.978157",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3946,
+    "sample_accession": "SAMN14310857",
+    "lat": "59.194902",
+    "lon": "10.050401",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 3947,
+    "sample_accession": "SAMN14310516",
+    "lat": "51.128895",
+    "lon": "8.978618",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3948,
+    "sample_accession": "SAMN14310859",
+    "lat": "59.194997",
+    "lon": "10.048112",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 3949,
+    "sample_accession": "SAMN14310520",
+    "lat": "51.129222",
+    "lon": "8.979395",
+    "country_submitted": "Germany"
+  },
+  {
+    "Registry number:": 3950,
+    "sample_accession": "SAMN14310523",
+    "lat": "42.66916",
+    "lon": "-0.12289",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 3951,
+    "sample_accession": "SAMN14310860",
+    "lat": "59.19516",
+    "lon": "10.047265",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 3952,
+    "sample_accession": "SAMN14310527",
+    "lat": "42.67096",
+    "lon": "-0.12284",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 3953,
+    "sample_accession": "SAMN14310863",
+    "lat": "59.196137",
+    "lon": "10.045695",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 3954,
+    "sample_accession": "SAMN14310531",
+    "lat": "42.67268",
+    "lon": "-0.12308",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 3955,
+    "sample_accession": "SAMN14310542",
+    "lat": "42.67665",
+    "lon": "-0.12245",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 3956,
+    "sample_accession": "SAMN14310543",
+    "lat": "42.67682",
+    "lon": "-0.12256",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 3957,
+    "sample_accession": "SAMN14310544",
+    "lat": "42.67726",
+    "lon": "-0.12242",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 3958,
+    "sample_accession": "SAMN14310546",
+    "lat": "42.71552",
+    "lon": "-0.12756",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 3959,
+    "sample_accession": "SAMN14310868",
+    "lat": "59.195628",
+    "lon": "10.047944",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 3960,
+    "sample_accession": "SAMN14310549",
+    "lat": "42.71412",
+    "lon": "-0.12709",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 3961,
+    "sample_accession": "SAMN14310552",
+    "lat": "42.71291",
+    "lon": "-0.1267",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 3962,
+    "sample_accession": "SAMN14310872",
+    "lat": "59.384952",
+    "lon": "10.311018",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 3963,
+    "sample_accession": "SAMN14310558",
+    "lat": "42.71045",
+    "lon": "-0.12577",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 3964,
+    "sample_accession": "SAMN14310875",
+    "lat": "59.385513",
+    "lon": "10.309788",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 3965,
+    "sample_accession": "SAMN14310565",
+    "lat": "42.71367",
+    "lon": "-0.1275",
+    "country_submitted": "Spain"
+  },
+  {
+    "Registry number:": 3966,
+    "sample_accession": "SAMN14310877",
+    "lat": "59.38581",
+    "lon": "10.309803",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 3967,
+    "sample_accession": "SAMN14310573",
+    "lat": "44.18508",
+    "lon": "5.23468",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3968,
+    "sample_accession": "SAMN14310879",
+    "lat": "59.386095",
+    "lon": "10.310184",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 3969,
+    "sample_accession": "SAMN14310575",
+    "lat": "44.18538",
+    "lon": "5.23501",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3970,
+    "sample_accession": "SAMN14310880",
+    "lat": "59.386539",
+    "lon": "10.310338",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 3971,
+    "sample_accession": "SAMN14310579",
+    "lat": "44.18484",
+    "lon": "5.23556",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3972,
+    "sample_accession": "SAMN14310881",
+    "lat": "59.386493",
+    "lon": "10.309495",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 3973,
+    "sample_accession": "SAMN14310583",
+    "lat": "44.1845",
+    "lon": "5.23477",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3974,
+    "sample_accession": "SAMN14310886",
+    "lat": "59.387795",
+    "lon": "10.310809",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 3975,
+    "sample_accession": "SAMN14310584",
+    "lat": "44.18449",
+    "lon": "5.23428",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3976,
+    "sample_accession": "SAMN14310887",
+    "lat": "59.388679",
+    "lon": "10.309947",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 3977,
+    "sample_accession": "SAMN14310585",
+    "lat": "44.18425",
+    "lon": "5.23435",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3978,
+    "sample_accession": "SAMN14310586",
+    "lat": "44.18402",
+    "lon": "5.23422",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3979,
+    "sample_accession": "SAMN14310889",
+    "lat": "59.388134",
+    "lon": "10.309615",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 3980,
+    "sample_accession": "SAMN14310587",
+    "lat": "44.184",
+    "lon": "5.23381",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3981,
+    "sample_accession": "SAMN14310893",
+    "lat": "59.388023",
+    "lon": "10.31019",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 3982,
+    "sample_accession": "SAMN14310589",
+    "lat": "44.18419",
+    "lon": "5.23476",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3983,
+    "sample_accession": "SAMN14310897",
+    "lat": "55.949125",
+    "lon": "13.7269",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 3984,
+    "sample_accession": "SAMN14310590",
+    "lat": "44.18429",
+    "lon": "5.23505",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3985,
+    "sample_accession": "SAMN14310898",
+    "lat": "55.948963",
+    "lon": "13.72635",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 3986,
+    "sample_accession": "SAMN14310591",
+    "lat": "44.18406",
+    "lon": "5.23547",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3987,
+    "sample_accession": "SAMN14310900",
+    "lat": "55.94987",
+    "lon": "13.727073",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 3988,
+    "sample_accession": "SAMN14310592",
+    "lat": "44.18421",
+    "lon": "5.23594",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3989,
+    "sample_accession": "SAMN14310901",
+    "lat": "55.949958",
+    "lon": "13.726048",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 3990,
+    "sample_accession": "SAMN14310595",
+    "lat": "44.18487",
+    "lon": "5.23671",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3991,
+    "sample_accession": "SAMN14310596",
+    "lat": "44.17861",
+    "lon": "5.24196",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3992,
+    "sample_accession": "SAMN14310902",
+    "lat": "55.949601",
+    "lon": "13.725766",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 3993,
+    "sample_accession": "SAMN14310601",
+    "lat": "44.17938",
+    "lon": "5.24403",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3994,
+    "sample_accession": "SAMN14310907",
+    "lat": "55.950508",
+    "lon": "13.723354",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 3995,
+    "sample_accession": "SAMN14310602",
+    "lat": "44.17921",
+    "lon": "5.24449",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3996,
+    "sample_accession": "SAMN14310909",
+    "lat": "55.950459",
+    "lon": "13.723922",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 3997,
+    "sample_accession": "SAMN14310605",
+    "lat": "44.17894",
+    "lon": "5.2432",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 3998,
+    "sample_accession": "SAMN14310913",
+    "lat": "55.950469",
+    "lon": "13.725922",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 3999,
+    "sample_accession": "SAMN14310606",
+    "lat": "44.17876",
+    "lon": "5.24277",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 4000,
+    "sample_accession": "SAMN14310611",
+    "lat": "44.1785",
+    "lon": "5.24272",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 4001,
+    "sample_accession": "SAMN14310916",
+    "lat": "55.951849",
+    "lon": "13.726741",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 4002,
+    "sample_accession": "SAMN14310614",
+    "lat": "44.17888",
+    "lon": "5.24436",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 4003,
+    "sample_accession": "SAMN14310920",
+    "lat": "56.403391",
+    "lon": "12.998566",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 4004,
+    "sample_accession": "SAMN14310617",
+    "lat": "44.17847",
+    "lon": "5.24376",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 4005,
+    "sample_accession": "SAMN14310922",
+    "lat": "56.403945",
+    "lon": "12.996179",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 4006,
+    "sample_accession": "SAMN14310619",
+    "lat": "44.17819",
+    "lon": "5.24291",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 4007,
+    "sample_accession": "SAMN14310924",
+    "lat": "56.404625",
+    "lon": "12.994461",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 4008,
+    "sample_accession": "SAMN14310620",
+    "lat": "44.17796",
+    "lon": "5.24228",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 4009,
+    "sample_accession": "SAMN14310925",
+    "lat": "56.404648",
+    "lon": "12.993454",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 4010,
+    "sample_accession": "SAMN14310622",
+    "lat": "41.86256",
+    "lon": "9.10503",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 4011,
+    "sample_accession": "SAMN14310926",
+    "lat": "56.404932",
+    "lon": "12.992329",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 4012,
+    "sample_accession": "SAMN14310624",
+    "lat": "41.86305",
+    "lon": "9.10546",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 4013,
+    "sample_accession": "SAMN14310626",
+    "lat": "41.86208",
+    "lon": "9.10456",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 4014,
+    "sample_accession": "SAMN14310927",
+    "lat": "56.404944",
+    "lon": "12.991048",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 4015,
+    "sample_accession": "SAMN14310631",
+    "lat": "41.86293",
+    "lon": "9.10495",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 4016,
+    "sample_accession": "SAMN14310929",
+    "lat": "56.405272",
+    "lon": "12.98893",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 4017,
+    "sample_accession": "SAMN14310632",
+    "lat": "41.8632",
+    "lon": "9.10519",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 4018,
+    "sample_accession": "SAMN14310934",
+    "lat": "56.407224",
+    "lon": "12.986142",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 4019,
+    "sample_accession": "SAMN14310635",
+    "lat": "41.86342",
+    "lon": "9.10488",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 4020,
+    "sample_accession": "SAMN14310935",
+    "lat": "56.407392",
+    "lon": "12.984857",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 4021,
+    "sample_accession": "SAMN14310638",
+    "lat": "41.8635",
+    "lon": "9.10454",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 4022,
+    "sample_accession": "SAMN14310936",
+    "lat": "56.407774",
+    "lon": "12.984049",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 4023,
+    "sample_accession": "SAMN14310643",
+    "lat": "41.86298",
+    "lon": "9.10416",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 4024,
+    "sample_accession": "SAMN14310939",
+    "lat": "56.40759",
+    "lon": "12.981722",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 4025,
+    "sample_accession": "SAMN14310648",
+    "lat": "41.86509",
+    "lon": "9.13961",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 4026,
+    "sample_accession": "SAMN14310940",
+    "lat": "56.407695",
+    "lon": "12.981015",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 4027,
+    "sample_accession": "SAMN14310649",
+    "lat": "41.86524",
+    "lon": "9.14003",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 4028,
+    "sample_accession": "SAMN14310652",
+    "lat": "41.86568",
+    "lon": "9.13953",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 4029,
+    "sample_accession": "SAMN14310943",
+    "lat": "56.407882",
+    "lon": "12.978074",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 4030,
+    "sample_accession": "SAMN14310653",
+    "lat": "41.86556",
+    "lon": "9.13908",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 4032,
+    "sample_accession": "SAMN14310655",
+    "lat": "41.86505",
+    "lon": "9.13871",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 4034,
+    "sample_accession": "SAMN14310657",
+    "lat": "41.86597",
+    "lon": "9.14029",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 4036,
+    "sample_accession": "SAMN14310659",
+    "lat": "41.8658",
+    "lon": "9.13921",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 4038,
+    "sample_accession": "SAMN14310660",
+    "lat": "41.86606",
+    "lon": "9.13909",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 4040,
+    "sample_accession": "SAMN14310663",
+    "lat": "41.86672",
+    "lon": "9.1398",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 4042,
+    "sample_accession": "SAMN14310664",
+    "lat": "41.86651",
+    "lon": "9.14006",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 4044,
+    "sample_accession": "SAMN14310666",
+    "lat": "41.86516",
+    "lon": "9.13843",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 4046,
+    "sample_accession": "SAMN14310669",
+    "lat": "41.86607",
+    "lon": "9.13855",
+    "country_submitted": "France"
+  },
+  {
+    "Registry number:": 4061,
+    "sample_accession": "SAMN14310696",
+    "lat": "51.52460067",
+    "lon": "-1.02981965",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 4063,
+    "sample_accession": "SAMN14310697",
+    "lat": "51.52559686",
+    "lon": "-1.02612734",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 4065,
+    "sample_accession": "SAMN14310698",
+    "lat": "51.52295941",
+    "lon": "-1.03053899",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 4066,
+    "sample_accession": "SAMN14310707",
+    "lat": "51.52514876",
+    "lon": "-1.02672388",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 4068,
+    "sample_accession": "SAMN14310709",
+    "lat": "51.52565184",
+    "lon": "-1.02686134",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 4070,
+    "sample_accession": "SAMN14310713",
+    "lat": "51.52532101",
+    "lon": "-1.02894894",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 4078,
+    "sample_accession": "SAMN14310714",
+    "lat": "51.52500216",
+    "lon": "-1.02799944",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 4081,
+    "sample_accession": "SAMN14310722",
+    "lat": "51.61987709",
+    "lon": "-0.98602404",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 4083,
+    "sample_accession": "SAMN14310723",
+    "lat": "51.62007666",
+    "lon": "-0.98504461",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 4085,
+    "sample_accession": "SAMN14310724",
+    "lat": "51.62025101",
+    "lon": "-0.98417969",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 4088,
+    "sample_accession": "SAMN14310728",
+    "lat": "51.62069919",
+    "lon": "-0.98186418",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 4090,
+    "sample_accession": "SAMN14310730",
+    "lat": "51.62142883",
+    "lon": "-0.98036123",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 4092,
+    "sample_accession": "SAMN14310732",
+    "lat": "51.61746578",
+    "lon": "-0.99172256",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 4095,
+    "sample_accession": "SAMN14310735",
+    "lat": "51.61799753",
+    "lon": "-0.99020896",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 4097,
+    "sample_accession": "SAMN14310736",
+    "lat": "51.61807381",
+    "lon": "-0.98973312",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 4099,
+    "sample_accession": "SAMN14310737",
+    "lat": "51.61811412",
+    "lon": "-0.98901839",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 4102,
+    "sample_accession": "SAMN14310739",
+    "lat": "51.61828511",
+    "lon": "-0.98834574",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 4104,
+    "sample_accession": "SAMN14310740",
+    "lat": "51.61836885",
+    "lon": "-0.98786906",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 4106,
+    "sample_accession": "SAMN14310743",
+    "lat": "51.61838109",
+    "lon": "-0.98660943",
+    "country_submitted": "United Kingdom: Great Britain"
+  },
+  {
+    "Registry number:": 4108,
+    "sample_accession": "SAMN14310747",
+    "lat": "40.556399",
+    "lon": "23.70753",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 4110,
+    "sample_accession": "SAMN14310753",
+    "lat": "40.556578",
+    "lon": "23.708305",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 4112,
+    "sample_accession": "SAMN14310757",
+    "lat": "40.555966",
+    "lon": "23.707664",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 4115,
+    "sample_accession": "SAMN14310761",
+    "lat": "40.556114",
+    "lon": "23.706809",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 4117,
+    "sample_accession": "SAMN14310763",
+    "lat": "40.55585",
+    "lon": "23.708049",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 4119,
+    "sample_accession": "SAMN14310766",
+    "lat": "40.556185",
+    "lon": "23.706312",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 4121,
+    "sample_accession": "SAMN14310768",
+    "lat": "40.55568",
+    "lon": "23.706241",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 4122,
+    "sample_accession": "SAMN14310770",
+    "lat": "40.547206",
+    "lon": "23.721063",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 4124,
+    "sample_accession": "SAMN14310773",
+    "lat": "40.548563",
+    "lon": "23.721524",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 4126,
+    "sample_accession": "SAMN14310777",
+    "lat": "40.549221",
+    "lon": "23.721767",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 4128,
+    "sample_accession": "SAMN14310778",
+    "lat": "40.548457",
+    "lon": "23.722052",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 4131,
+    "sample_accession": "SAMN14310780",
+    "lat": "40.547411",
+    "lon": "23.722792",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 4133,
+    "sample_accession": "SAMN14310781",
+    "lat": "40.547053",
+    "lon": "23.722622",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 4135,
+    "sample_accession": "SAMN14310784",
+    "lat": "40.546404",
+    "lon": "23.721515",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 4137,
+    "sample_accession": "SAMN14310785",
+    "lat": "40.546687",
+    "lon": "23.720889",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 4139,
+    "sample_accession": "SAMN14310786",
+    "lat": "40.54708",
+    "lon": "23.720648",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 4142,
+    "sample_accession": "SAMN14310788",
+    "lat": "40.547946",
+    "lon": "23.720728",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 4145,
+    "sample_accession": "SAMN14310793",
+    "lat": "40.550443",
+    "lon": "23.719811",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 4147,
+    "sample_accession": "SAMN14310794",
+    "lat": "40.550849",
+    "lon": "23.719534",
+    "country_submitted": "Greece"
+  },
+  {
+    "Registry number:": 4150,
+    "sample_accession": "SAMN14310798",
+    "lat": "42.514923",
+    "lon": "13.548602",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 4152,
+    "sample_accession": "SAMN14310802",
+    "lat": "42.515634",
+    "lon": "13.550208",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 4155,
+    "sample_accession": "SAMN14310803",
+    "lat": "42.515845",
+    "lon": "13.550568",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 4157,
+    "sample_accession": "SAMN14310805",
+    "lat": "42.516211",
+    "lon": "13.550678",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 4159,
+    "sample_accession": "SAMN14310806",
+    "lat": "42.516413",
+    "lon": "13.550985",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 4161,
+    "sample_accession": "SAMN14310807",
+    "lat": "42.516674",
+    "lon": "13.551072",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 4163,
+    "sample_accession": "SAMN14310810",
+    "lat": "42.514914",
+    "lon": "13.549601",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 4165,
+    "sample_accession": "SAMN14310811",
+    "lat": "42.514781",
+    "lon": "13.549162",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 4167,
+    "sample_accession": "SAMN14310814",
+    "lat": "42.514178",
+    "lon": "13.548371",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 4169,
+    "sample_accession": "SAMN14310817",
+    "lat": "42.513689",
+    "lon": "13.547604",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 4171,
+    "sample_accession": "SAMN14310820",
+    "lat": "42.502103",
+    "lon": "13.575612",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 4173,
+    "sample_accession": "SAMN14310828",
+    "lat": "42.50048",
+    "lon": "13.57356",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 4175,
+    "sample_accession": "SAMN14310831",
+    "lat": "42.500926",
+    "lon": "13.57273",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 4176,
+    "sample_accession": "SAMN14310832",
+    "lat": "42.501127",
+    "lon": "13.573057",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 4178,
+    "sample_accession": "SAMN14310833",
+    "lat": "42.501181",
+    "lon": "13.573788",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 4180,
+    "sample_accession": "SAMN14310834",
+    "lat": "42.501476",
+    "lon": "13.57441",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 4182,
+    "sample_accession": "SAMN14310835",
+    "lat": "42.501673",
+    "lon": "13.575022",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 4185,
+    "sample_accession": "SAMN14310837",
+    "lat": "42.502478",
+    "lon": "13.575548",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 4187,
+    "sample_accession": "SAMN14310838",
+    "lat": "42.502519",
+    "lon": "13.57583",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 4189,
+    "sample_accession": "SAMN14310843",
+    "lat": "42.502912",
+    "lon": "13.575091",
+    "country_submitted": "Italy"
+  },
+  {
+    "Registry number:": 4191,
+    "sample_accession": "SAMN14310846",
+    "lat": "59.194014",
+    "lon": "10.049916",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 4193,
+    "sample_accession": "SAMN14310848",
+    "lat": "59.195104",
+    "lon": "10.049567",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 4195,
+    "sample_accession": "SAMN14310851",
+    "lat": "59.196155",
+    "lon": "10.049127",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 4198,
+    "sample_accession": "SAMN14310853",
+    "lat": "59.196587",
+    "lon": "10.050664",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 4200,
+    "sample_accession": "SAMN14310854",
+    "lat": "59.196339",
+    "lon": "10.051377",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 4202,
+    "sample_accession": "SAMN14310864",
+    "lat": "59.196548",
+    "lon": "10.045819",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 4204,
+    "sample_accession": "SAMN14310869",
+    "lat": "59.195206",
+    "lon": "10.04799",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 4206,
+    "sample_accession": "SAMN14310870",
+    "lat": "59.384273",
+    "lon": "10.309404",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 4208,
+    "sample_accession": "SAMN14310873",
+    "lat": "59.385108",
+    "lon": "10.311658",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 4210,
+    "sample_accession": "SAMN14310874",
+    "lat": "59.385267",
+    "lon": "10.30929",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 4213,
+    "sample_accession": "SAMN14310883",
+    "lat": "59.386822",
+    "lon": "10.309093",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 4215,
+    "sample_accession": "SAMN14310884",
+    "lat": "59.386966",
+    "lon": "10.309739",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 4217,
+    "sample_accession": "SAMN14310885",
+    "lat": "59.387244",
+    "lon": "10.310479",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 4219,
+    "sample_accession": "SAMN14310888",
+    "lat": "59.388814",
+    "lon": "10.309409",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 4221,
+    "sample_accession": "SAMN14310890",
+    "lat": "59.387843",
+    "lon": "10.309098",
+    "country_submitted": "Norway"
+  },
+  {
+    "Registry number:": 4223,
+    "sample_accession": "SAMN14310896",
+    "lat": "55.949554",
+    "lon": "13.726714",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 4226,
+    "sample_accession": "SAMN14310899",
+    "lat": "55.948667",
+    "lon": "13.726806",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 4227,
+    "sample_accession": "SAMN14310903",
+    "lat": "55.949753",
+    "lon": "13.724916",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 4229,
+    "sample_accession": "SAMN14310908",
+    "lat": "55.950683",
+    "lon": "13.723409",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 4231,
+    "sample_accession": "SAMN14310915",
+    "lat": "55.95147",
+    "lon": "13.726716",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 4234,
+    "sample_accession": "SAMN14310918",
+    "lat": "55.951783",
+    "lon": "13.725373",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 4236,
+    "sample_accession": "SAMN14310931",
+    "lat": "56.405911",
+    "lon": "12.986951",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 4239,
+    "sample_accession": "SAMN14310932",
+    "lat": "56.40636",
+    "lon": "12.987244",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 4241,
+    "sample_accession": "SAMN14310937",
+    "lat": "56.407794",
+    "lon": "12.983312",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 4243,
+    "sample_accession": "SAMN14310938",
+    "lat": "56.407824",
+    "lon": "12.982542",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 4245,
+    "sample_accession": "SAMN14310942",
+    "lat": "56.407668",
+    "lon": "12.979302",
+    "country_submitted": "Sweden"
+  },
+  {
+    "Registry number:": 4687,
+    "sample_accession": "SAMN18558391",
+    "lat": "32.67",
+    "lon": "106.56",
+    "country_submitted": "China:Sichuan"
+  },
+  {
+    "Registry number:": 4756,
+    "sample_accession": "SAMN20060705",
+    "lat": "27.55",
+    "lon": "105.39",
+    "country_submitted": "China:Guizhou"
+  },
+  {
+    "Registry number:": 4762,
+    "sample_accession": "SAMN22764886",
+    "lat": "28.52",
+    "lon": "120.73",
+    "country_submitted": "China:Zhejiang"
+  },
+  {
+    "Registry number:": 4934,
+    "sample_accession": "SAMEA116328426",
+    "lat": "57.447195",
+    "lon": "-2.7647005",
+    "country_submitted": "United Kingdom"
+  },
+  {
+    "Registry number:": 4936,
+    "sample_accession": "SAMEA116328437",
+    "lat": "57.447195",
+    "lon": "-2.7647005",
+    "country_submitted": "United Kingdom"
+  }
+]
