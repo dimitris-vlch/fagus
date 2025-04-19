@@ -3,7 +3,7 @@
 # Bήμα 1: Εισαγωγή βιβλιοθηκών. matplotlib για διάγραμμα pie chart.
 
 import json
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt # type: ignore
 
 # Βήμα 2: Εισαγωγή json αρχείου.
 
@@ -45,3 +45,31 @@ plt.savefig("countries_and_coordinates_pie_chart.png")
 plt.show()
 
 # Βήμα 7: Επεξεργασία του country_and_coordinates_data.json.txt : αλλαγή της ονομασίας του πεδίου country σε country submitted.
+
+for registry in data:
+    registry["country"] = registry.pop["country_submitted"] # το country φεύγει και μπαίνει country_submitted.
+
+# Bήμα 8: Για κάθε εγγραφή κρατάμε μονάχα τα πεδία lat, lon, country_submiited
+
+# Η στρατιγική μας. Δημιουργούμε μια κενή λίστα country_and_coordinates_data στην οποία στο τέλος θα την γεμίσουμε με .append(geo_registry). Δημιουργούμε το geo_registry μεσα σε μια for με την παραπάνω συνθήκη if για να βάλουμε μονάχα τα κατάλληλα δείγματα. Στην συνέχεια φτιάχνουμε geo_registry = {"πεδιο" registry.get("πεδιο")}   
+
+country_and_coordinates_data = []
+
+for registry in data:
+    if registry.get("lat") and registry.get("lon") and registry.get("country_submitted"):
+        geo_registry = {
+            "lat" : registry["lat"],
+            "lon" : registry["lon"],
+            "country_submitted" : registry["country_submitted"]
+        }
+
+country_and_coordinates_data.append(geo_registry)
+
+# Βήμα 9: Παρασκευή json αρχείου που περιέχει μόνο τα δεδομένα που μας ενδιαφέρουν.
+
+with open("country_and_coordinates_minimal_data.json.txt", "w", encoding = "utf-8") as file:
+    json.dump(country_and_coordinates_data, file, indent = 2, ensure_ascii= False )
+
+# Aνακοίνωση αποτελεσμάτων στον κένσορα:
+
+print (f"country_and_coordinates_minimal_data.json.txt has been created successfully. This json file contains registries with both country and coordinates and only these fields from the whole registry, as well as the sample_accession for identification")
