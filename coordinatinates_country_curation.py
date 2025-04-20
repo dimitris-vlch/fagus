@@ -86,3 +86,4 @@ print (f"\ncountry_and_coordinates_minimal_data.json.txt has been created succes
 
 # Βήμα 10: Έλεγχος της εγκυρότητας των γεωγραφικών δεδομένων μέσω της βιβλιοθήκης geo_pandas
 
+# Ορισμός dataframe
