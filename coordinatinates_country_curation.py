@@ -86,4 +86,42 @@ print (f"\ncountry_and_coordinates_minimal_data.json.txt has been created succes
 
 # Βήμα 10: Έλεγχος της εγκυρότητας των γεωγραφικών δεδομένων μέσω της βιβλιοθήκης geo_pandas
 
-# Ορισμός dataframe
+    # Ορισμός dataframe. Μετατρέπουμε την λίστα country_and_coordinates_data σε dataframe. Μετατρέπει το json σε πίνακα
+
+dataframe = pd.DataFrame(country_and_coordinates_data)
+
+    # Στον πίνακα dataframe προσθέτουμε μια νέα στήλη, coordinates_point. Η στήλη περιέχει ένα γεωμετρικό σημείο Point(lon, lat). 
+    # η .apply() χρησιμοποιείται για να εφαρμόσουμε μια συνάρτηση σε κάθε στοιχείο ενός πίνακα pandas.
+    # Με axis=1 η συνάρτηση .apply() εφαρμόζεται σε κάθε γραμμή του πίνακα ενώ με axis=0 σε κάθε στήλη.
+    # Με lambda row: Εφαρμόζουμε την συνάρτηση για κάθε γραμμή του πίνακα.
+    # Με float() μετατρέπουμε string σε φυσικό αριθμό για να μη βγαλει error η shapely. float("34.74") → 34.74
+    # Mε row αναφεράμαστε για κάθε στήλη του dataframe
+    # Με Point ορίζουμε σημείο (x,y)
+
+dataframe["coordinates_point"] = dataframe.apply(lambda row: Point(float(row["lon"]), float(row["lat"])), axis=1)
+
+    # Κατασκευή ενός GeoDataFrame. Εναν πίνακα pandas, που αναγνωρίζει χωρικά αντικείμενα όπως Point. 
+    # Ορίζουμε ένα gpd.GeoDataFrame() με όρισμα:
+    # Το Dataframe που αξιοποιούμε
+    # geometry = dataframe["coordinates_point"] την στήλη του dataframe που περιέχει την γεωγραφική πληροφορία.
+    # crs="EPSG:4326" Το σύστημα συντεταγμένων που αξιοποιείται.
+
+geo_dataframe = gpd.geodataframe (dataframe, geography = dataframe["coordinates_point"], crs = "EPSG:4326")
+
+# Η geopandas έχει έτοιμο geodataset τον παγκόσμιο χάρτη σε χαμηλή ανάλυση. Ο χάρτης περιέχει πολύγωνα που περιγράφουν το σχήμα, τα σύνορα της κάθε χώρας.
+# gpd.datasets.get_path("naturalearth_lowres") βρίσκει την τοποθεσία του dataset που λέγεται naturalearth_lowres
+# gpd.read_file(...) διαβάζει την τοποθεσία που παίρνει από το gpd.datasets.get_path και την μετατρέπει σε geodataframe.
+
+geopandas_naturalearth_lowres = gpd.read_file(gpd.datasets.get_path("naturalearth_lowres"))
+
+# φορτώνω τον χάρτη natural_lowres.
+# με .explode() καλύτερη απεικονιση νησιωτικών συμπλεγμάτων.
+# index_parts=False: και .reset_index(drop=True): είναι τυπικά, για να δουλέψει σωστά ο κώδικας.
+
+geopandas_geo_dataframe = geopandas_naturalearth_lowres.explode(index_parts=False).reset_index(drop=True)
+
+# με τις τυπικές αυτές αλλαγές, ο κώδικας θα δουλέψει καλύτερα.
+#print(geopandas_naturalearth_lowres[["name", "geometry"]].head())
+#print(geopandas_geo_dataframe[["name", "geometry"]].head())
+
+# Κανονικοποίση της δηλωμένης χώρας, ώστε στο πεδίο country submitted να έχουμε μόνο την χώρα, χωρίς λοιπές πληροφορίες.
