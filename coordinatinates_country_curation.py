@@ -75,6 +75,8 @@ for idx, registry in enumerate(data,1): # τροποποιούμε λιγο το
         }
         country_and_coordinates_data.append(geo_registry)
 
+# Βήμα 9: Απλοποίηση του πεδίου country_submitted, ώστε να περιέχει μοναχά την χώρα χωρίς την παρουσία επιπλέον πληροφοριών.
+
 # Βήμα 9: Παρασκευή json αρχείου που περιέχει μόνο τα δεδομένα που μας ενδιαφέρουν.
 
 with open("country_and_coordinates_minimal_data.json.txt", "w", encoding = "utf-8") as file:
