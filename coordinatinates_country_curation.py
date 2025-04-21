@@ -58,13 +58,22 @@ plt.show()
 for registry in data:
     registry["country_submitted"] = registry.pop("country", "") # το country φεύγει και μπαίνει country_submitted.
 
-# Bήμα 8: Για κάθε εγγραφή κρατάμε μονάχα τα πεδία lat, lon, country_submiited
+# Βήμα 8: Απλοποίηση του πεδίου country_submitted, ώστε να περιέχει μοναχά την χώρα χωρίς την παρουσία επιπλέον πληροφοριών.
+# για κάθε πεδίο του country_submitted, εφαρμόζουμε την συνάρτηση: lambda x: x.split(":")[0].split()[0].
+# .x.split(":")[0] κρατάει οτι υπάρχει πριν την άνω-κάτω τελεία.
+# .strip() αφαιρεί περιττά κένα πριν και μετά.
+
+for registry in data:
+    registry["country_submitted"] = registry["country_submitted"].apply(lambda x: x.split(":")[0].strip())
+
+# Bήμα 9: Για κάθε εγγραφή κρατάμε μονάχα τα πεδία lat, lon, country_submited
 
 # Η στρατιγική μας. Δημιουργούμε μια κενή λίστα country_and_coordinates_data στην οποία στο τέλος θα την γεμίσουμε με .append(geo_registry). Δημιουργούμε το geo_registry μεσα σε μια for με την παραπάνω συνθήκη if για να βάλουμε μονάχα τα κατάλληλα δείγματα. Στην συνέχεια φτιάχνουμε geo_registry = {"πεδιο" registry.get("πεδιο")}   
 
 country_and_coordinates_data = []
 
-for idx, registry in enumerate(data,1): # τροποποιούμε λιγο το for registry in data: για να χουμε καταμέτρηση δειγμάτων με idx & enumarate
+for idx, registry in enumerate(data,1): 
+# τροποποιούμε λιγο το for registry in data: για να χουμε καταμέτρηση δειγμάτων με idx & enumarate
     if registry.get("lat") and registry.get("lon") and registry.get("country_submitted"):
         geo_registry = {
             "Registry number:" : idx,         
@@ -75,47 +84,47 @@ for idx, registry in enumerate(data,1): # τροποποιούμε λιγο το
         }
         country_and_coordinates_data.append(geo_registry)
 
-# Βήμα 9: Απλοποίηση του πεδίου country_submitted, ώστε να περιέχει μοναχά την χώρα χωρίς την παρουσία επιπλέον πληροφοριών.
-
-# Βήμα 9: Παρασκευή json αρχείου που περιέχει μόνο τα δεδομένα που μας ενδιαφέρουν.
+# Βήμα 10: Παρασκευή json αρχείου που περιέχει μόνο τα δεδομένα που μας ενδιαφέρουν.
 
 with open("country_and_coordinates_minimal_data.json.txt", "w", encoding = "utf-8") as file:
     json.dump(country_and_coordinates_data, file, indent = 2, ensure_ascii= False )
 
-# Aνακοίνωση αποτελεσμάτων στον κένσορα:
+# Βήμα 11: Aνακοίνωση αποτελεσμάτων στον κένσορα:
 
 print (f"\ncountry_and_coordinates_minimal_data.json.txt has been created successfully. This json file contains {len(country_and_coordinates_data)} registries with both country and coordinates and only these fields from the whole registry, as well as the sample_accession field for identification\n")
 
-# Βήμα 10: Έλεγχος της εγκυρότητας των γεωγραφικών δεδομένων μέσω της βιβλιοθήκης geo_pandas
+### Έλεγχος της εγκυρότητας των γεωγραφικών δεδομένων μέσω της βιβλιοθήκης geo_pandas
 
-    # Ορισμός dataframe. Μετατρέπουμε την λίστα country_and_coordinates_data σε dataframe. Μετατρέπει το json σε πίνακα
+# Βήμα 12: Ορισμός dataframe. Μετατρέπουμε την λίστα country_and_coordinates_data σε dataframe. Μετατρέπει το json σε πίνακα
 
 dataframe = pd.DataFrame(country_and_coordinates_data)
 
-    # Στον πίνακα dataframe προσθέτουμε μια νέα στήλη, coordinates_point. Η στήλη περιέχει ένα γεωμετρικό σημείο Point(lon, lat). 
-    # η .apply() χρησιμοποιείται για να εφαρμόσουμε μια συνάρτηση σε κάθε στοιχείο ενός πίνακα pandas.
-    # Με axis=1 η συνάρτηση .apply() εφαρμόζεται σε κάθε γραμμή του πίνακα ενώ με axis=0 σε κάθε στήλη.
-    # Με lambda row: Εφαρμόζουμε την συνάρτηση για κάθε γραμμή του πίνακα.
-    # Με float() μετατρέπουμε string σε φυσικό αριθμό για να μη βγαλει error η shapely. float("34.74") → 34.74
-    # Mε row αναφεράμαστε για κάθε στήλη του dataframe
-    # Με Point ορίζουμε σημείο (x,y)
+# Βήμα 13: Στον πίνακα dataframe προσθέτουμε μια νέα στήλη, coordinates_point. Η στήλη περιέχει ένα γεωμετρικό σημείο Point(lon, lat). 
+# η .apply() χρησιμοποιείται για να εφαρμόσουμε μια συνάρτηση σε κάθε στοιχείο ενός πίνακα pandas.
+# Με axis=1 η συνάρτηση .apply() εφαρμόζεται σε κάθε γραμμή του πίνακα ενώ με axis=0 σε κάθε στήλη.
+# Με lambda row: Εφαρμόζουμε την συνάρτηση για κάθε γραμμή του πίνακα.
+# Με float() μετατρέπουμε string σε φυσικό αριθμό για να μη βγαλει error η shapely. float("34.74") → 34.74
+# Mε row αναφεράμαστε για κάθε στήλη του dataframe
+# Με Point ορίζουμε σημείο (x,y)
 
 dataframe["coordinates_point"] = dataframe.apply(lambda row: Point(float(row["lon"]), float(row["lat"])), axis=1)
 
-    # Κατασκευή ενός GeoDataFrame. Εναν πίνακα pandas, που αναγνωρίζει χωρικά αντικείμενα όπως Point. 
-    # Ορίζουμε ένα gpd.GeoDataFrame() με όρισμα:
-    # Το Dataframe που αξιοποιούμε
-    # geometry = dataframe["coordinates_point"] την στήλη του dataframe που περιέχει την γεωγραφική πληροφορία.
-    # crs="EPSG:4326" Το σύστημα συντεταγμένων που αξιοποιείται.
+# Βήμα 14: Κατασκευή ενός GeoDataFrame. Εναν πίνακα pandas, που αναγνωρίζει χωρικά αντικείμενα όπως Point. 
+# Ορίζουμε ένα gpd.GeoDataFrame() με όρισμα:
+# Το Dataframe που αξιοποιούμε
+# geometry = dataframe["coordinates_point"] την στήλη του dataframe που περιέχει την γεωγραφική πληροφορία.
+# crs="EPSG:4326" Το σύστημα συντεταγμένων που αξιοποιείται.
 
-geo_dataframe = gpd.geodataframe (dataframe, geography = dataframe["coordinates_point"], crs = "EPSG:4326")
+geo_dataframe = gpd.GeoDataFrame(dataframe, geometry = dataframe["coordinates_point"], crs = "EPSG:4326")
 
+# Βήμα 15: Καλούμε έτοιμο geodataframe της geopandas, το naturalearth_lowres
 # Η geopandas έχει έτοιμο geodataset τον παγκόσμιο χάρτη σε χαμηλή ανάλυση. Ο χάρτης περιέχει πολύγωνα που περιγράφουν το σχήμα, τα σύνορα της κάθε χώρας.
 # gpd.datasets.get_path("naturalearth_lowres") βρίσκει την τοποθεσία του dataset που λέγεται naturalearth_lowres
 # gpd.read_file(...) διαβάζει την τοποθεσία που παίρνει από το gpd.datasets.get_path και την μετατρέπει σε geodataframe.
 
 geopandas_naturalearth_lowres = gpd.read_file(gpd.datasets.get_path("naturalearth_lowres"))
 
+# Βήμα 16: Επεξεργασία naturalearth_lowres
 # φορτώνω τον χάρτη natural_lowres.
 # με .explode() καλύτερη απεικονιση νησιωτικών συμπλεγμάτων.
 # index_parts=False: και .reset_index(drop=True): είναι τυπικά, για να δουλέψει σωστά ο κώδικας.
@@ -126,4 +135,26 @@ geopandas_geo_dataframe = geopandas_naturalearth_lowres.explode(index_parts=Fals
 #print(geopandas_naturalearth_lowres[["name", "geometry"]].head())
 #print(geopandas_geo_dataframe[["name", "geometry"]].head())
 
-# Κανονικοποίση της δηλωμένης χώρας, ώστε στο πεδίο country submitted να έχουμε μόνο την χώρα, χωρίς λοιπές πληροφορίες.
+
+# Βήμα 11: Ενώση των 2 geodataframes, των geopandas_geo_dataframe και geo_dataframe
+# η .sjoin είναι συνάρτηση της geopandas για χωρική ένωση. Για κάθε σημείο point που έχουμε ορίσει στο πρώτο dataset geo_dataframe, το αντιστοιχεί στο πολύγωνο geopandas_geo_dataframe.
+# how = "left" ωστε να κρατάμε όλα τα σημεία από το geo_dataframe, ακόμα και αν αυτά δεν αντιστοιχούν σε κάποια χώρα.
+# με predicate = "" καθορίζεται ο τύπος της χωρικής ένωσης. Με within, ελέγχεται αν τα σημεία του πρώτου, ανήκουν στο πολύγωνο του δεύτερου.
+
+combined_geo_dataframe = gpd.sjoin(geo_dataframe, geopandas_geo_dataframe, how = "left", predicate = "within")
+
+# το combined_geo_dataframe έχει και μια στήλη name, που είναι η χώρα από το geopandas_geo_dataframe, καθώς και τη στήλη country από το geo_dataframe.
+
+# Βήμα 17: Προετοιμασία λίστας curated_data που θα χρησιμοποιηθεί για το json αρχείο.
+# δημιουργία κενής λίστας curated_data, στην οποία και στην συνέχεια θα γράψουμε τα απαραίτητα πεδία για κάθε λεξικότ της.
+# στην for, ορίζουμε και _ για index.
+
+
+curated_data = []
+
+
+
+# Βήμα 18: Εγγραφή σε json αρχείο.
+
+with open("countries_and_coordinates_curation.json.txt", "r",encoding="utf-8") as file:
+    json.dump(curated_data, file, indent = 2, ensure_ascii= False)
