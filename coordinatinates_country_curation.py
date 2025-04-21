@@ -60,11 +60,11 @@ for registry in data:
 
 # Βήμα 8: Απλοποίηση του πεδίου country_submitted, ώστε να περιέχει μοναχά την χώρα χωρίς την παρουσία επιπλέον πληροφοριών.
 # για κάθε πεδίο του country_submitted, εφαρμόζουμε την συνάρτηση: lambda x: x.split(":")[0].split()[0].
-# .x.split(":")[0] κρατάει οτι υπάρχει πριν την άνω-κάτω τελεία.
+# .split(":")[0] κρατάει οτι υπάρχει πριν την άνω-κάτω τελεία.
 # .strip() αφαιρεί περιττά κένα πριν και μετά.
 
 for registry in data:
-    registry["country_submitted"] = registry["country_submitted"].apply(lambda x: x.split(":")[0].strip())
+    registry["country_submitted"] = registry["country_submitted"].split(":")[0].strip()
 
 # Bήμα 9: Για κάθε εγγραφή κρατάμε μονάχα τα πεδία lat, lon, country_submited
 
@@ -119,10 +119,11 @@ geo_dataframe = gpd.GeoDataFrame(dataframe, geometry = dataframe["coordinates_po
 
 # Βήμα 15: Καλούμε έτοιμο geodataframe της geopandas, το naturalearth_lowres
 # Η geopandas έχει έτοιμο geodataset τον παγκόσμιο χάρτη σε χαμηλή ανάλυση. Ο χάρτης περιέχει πολύγωνα που περιγράφουν το σχήμα, τα σύνορα της κάθε χώρας.
-# gpd.datasets.get_path("naturalearth_lowres") βρίσκει την τοποθεσία του dataset που λέγεται naturalearth_lowres
 # gpd.read_file(...) διαβάζει την τοποθεσία που παίρνει από το gpd.datasets.get_path και την μετατρέπει σε geodataframe.
+# δυστυχώς δεν είναι προεγκατεστημένος ο χάρτης και πρέπει να τον κατεβάσουμε και να ορίσουμε το path.
 
-geopandas_naturalearth_lowres = gpd.read_file(gpd.datasets.get_path("naturalearth_lowres"))
+
+geopandas_naturalearth_lowres = gpd.read_file("/home/dimitris/Documents/Github my repo/fagus/ne_110m_admin_0_countries")
 
 # Βήμα 16: Επεξεργασία naturalearth_lowres
 # φορτώνω τον χάρτη natural_lowres.
@@ -163,7 +164,9 @@ for _, row in combined_geo_dataframe.iterrows():
         "country_suggested_from_coordinates": row["name"]
     })
 
-# Βήμα 18: Εγγραφή σε json αρχείο.
+# Βήμα 18: Εγγραφή σε json αρχείο , ανακοίνωση των αποτελεσμάτων στον κένσορα.
 
 with open("countries_and_coordinates_curation.json.txt", "r",encoding="utf-8") as file:
     json.dump(curated_data, file, indent = 2, ensure_ascii= False)
+
+print(f"\ncountries_and_coordinates_curation.json.txt was created successfully!")
