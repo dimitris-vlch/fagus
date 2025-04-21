@@ -144,13 +144,16 @@ geopandas_geo_dataframe = geopandas_naturalearth_lowres.explode(index_parts=Fals
 
 combined_geo_dataframe = gpd.sjoin(geo_dataframe, geopandas_geo_dataframe, how = "left", predicate = "within")
 
-# το combined_geo_dataframe έχει και μια στήλη name, που είναι η χώρα από το geopandas_geo_dataframe, καθώς και τη στήλη country από το geo_dataframe.
+# το combined_geo_dataframe έχει και μια στήλη ADMIN, που είναι η χώρα από το geopandas_geo_dataframe, καθώς και τη στήλη country από το geo_dataframe.
 
 # Βήμα 17: Προετοιμασία λίστας curated_data που θα χρησιμοποιηθεί για το json αρχείο.
 # δημιουργία κενής λίστας curated_data, στην οποία και στην συνέχεια θα γράψουμε τα απαραίτητα πεδία για κάθε λεξικότ της.
 # στην for, ορίζουμε και _, το _ παίρνει την τιμή του index που προσφέρει το dataframe, αλλά εμείς αυτό δεν το χρειαζόμαστε εδώ και το αγνοούμε.
 # η .iterrows() είναι κλασσική μέθοδος για να πάρουμε τα ενα πίνακα pandas και να τον κάνουμε μεταβλητή.
 # με την append.() αντιστοιχούμε κάθε γραμμή (row) σε ένα λεξικό της curated_data.
+
+print("Available columns in geo_joined:\n", combined_geo_dataframe.columns.tolist())
+
 
 curated_data = []
 
@@ -161,12 +164,12 @@ for _, row in combined_geo_dataframe.iterrows():
         "lat": row["lat"],
         "lon": row["lon"],
         "country_submitted": row["country_submitted"],
-        "country_suggested_from_coordinates": row["name"]
+        "country_suggested_from_coordinates": row["ADMIN"]
     })
 
 # Βήμα 18: Εγγραφή σε json αρχείο , ανακοίνωση των αποτελεσμάτων στον κένσορα.
 
-with open("countries_and_coordinates_curation.json.txt", "r",encoding="utf-8") as file:
+with open("countries_and_coordinates_curation.json.txt", "w",encoding="utf-8") as file:
     json.dump(curated_data, file, indent = 2, ensure_ascii= False)
 
 print(f"\ncountries_and_coordinates_curation.json.txt was created successfully!")
