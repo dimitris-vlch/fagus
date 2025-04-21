@@ -147,12 +147,21 @@ combined_geo_dataframe = gpd.sjoin(geo_dataframe, geopandas_geo_dataframe, how =
 
 # Βήμα 17: Προετοιμασία λίστας curated_data που θα χρησιμοποιηθεί για το json αρχείο.
 # δημιουργία κενής λίστας curated_data, στην οποία και στην συνέχεια θα γράψουμε τα απαραίτητα πεδία για κάθε λεξικότ της.
-# στην for, ορίζουμε και _ για index.
-
+# στην for, ορίζουμε και _, το _ παίρνει την τιμή του index που προσφέρει το dataframe, αλλά εμείς αυτό δεν το χρειαζόμαστε εδώ και το αγνοούμε.
+# η .iterrows() είναι κλασσική μέθοδος για να πάρουμε τα ενα πίνακα pandas και να τον κάνουμε μεταβλητή.
+# με την append.() αντιστοιχούμε κάθε γραμμή (row) σε ένα λεξικό της curated_data.
 
 curated_data = []
 
-
+for _, row in combined_geo_dataframe.iterrows():
+    curated_data.append({
+        "Registry number:": row["Registry number:"],
+        "sample_accession": row["sample_accession"],
+        "lat": row["lat"],
+        "lon": row["lon"],
+        "country_submitted": row["country_submitted"],
+        "country_suggested_from_coordinates": row["name"]
+    })
 
 # Βήμα 18: Εγγραφή σε json αρχείο.
 
