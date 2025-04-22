@@ -6,10 +6,11 @@ import matplotlib.pyplot as plt # type: ignore
 import geopandas as gpd # type: ignore
 import pandas as pd # type: ignore
 from shapely.geometry import Point # type: ignore
+import time
 
 # Κώδικας και βιβλιοθήκες που λειτουργούν ως υπόβαθρο για να τρέξει το σκριπτ.
 
-with open("country_and_coordinates_data", "r", encoding= "utf-8") as file:
+with open("country_and_coordinates_minimal_data.json.txt", "r", encoding= "utf-8") as file:
     country_and_coordinates_data = json.load(file)
 
 dataframe = pd.DataFrame(country_and_coordinates_data)
@@ -85,37 +86,31 @@ if coordinates_without_country:
 # ο nomatism έχει όριο ένα request το δευτερόλεπτο. εξού και το  time.sleep(1).
 
 if coordinates_without_country:
-    
     print(f"\nReverse geocoding with nominatim initiated. This may take a minute or two.")
 
     geolocator = Nominatim(user_agent="fagus_country_checker")
-    
     coordinates_with_country_from_nominatim = []
 
-    for registry in coordinates_without_country: 
-         lat = float(point["lat"])
-         lon = float(point["lon"])
+    for i, registry in enumerate(coordinates_without_country):
+        lat = float(registry["lat"])
+        lon = float(registry["lon"])
 
-    try:
-        location = geolocator.reverse((lat, lon), language="en", timeout=10)
-        country = location.raw.get("address", {}).get("country", "UNKNOWN")
-    
-    except Exception as e:
-        country = f"ERROR: {e}" and print(f"{i+1}/{len(coords)} | ({lat}, {lon}) → {country}")
-    time.sleep(1)  # Πολύ σημαντικό για να ΜΗΝ σε μπλοκάρει το OSM πρεπει να μου τα εξηγησεις
+        try:
+            location = geolocator.reverse((lat, lon), language="en", timeout=10)
+            country = location.raw.get("address", {}).get("country", "UNKNOWN")
+        except Exception as e:
+            country = f"ERROR: {e}"
 
-    
-    coordinates_with_country_from_nominatim.append({
-        "lat": lat,
-        "lon": lon,
-        "country_suggested_by_nominatim": country
-    })
+        print(f"{i+1}/{len(coordinates_without_country)} | ({lat}, {lon}) → {country}")
+        time.sleep(1)  # για να μην μας μπλοκάρει το OSM
 
+        coordinates_with_country_from_nominatim.append({
+            "lat": lat,
+            "lon": lon,
+            "country_suggested_by_nominatim": country
+        })
 
-
-
-    
     with open("coordinates_with_country_from_nominatim.json.txt", "w", encoding="utf-8") as file:
         json.dump(coordinates_with_country_from_nominatim, file, indent=2, ensure_ascii=False)
 
-    print("\nReverse geocoding has been completed. Coordinates_with_country_from_nominatim.json.txt has been creted!")
+    print("\nReverse geocoding has been completed. File 'coordinates_with_country_from_nominatim.json.txt' has been created.")

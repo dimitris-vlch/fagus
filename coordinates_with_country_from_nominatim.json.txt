@@ -1,0 +1,307 @@
+[
+  {
+    "lat": 59.194553,
+    "lon": 10.050105,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.196437,
+    "lon": 10.049845,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.195584,
+    "lon": 10.051025,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.194656,
+    "lon": 10.048384,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.195172,
+    "lon": 10.046475,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.195662,
+    "lon": 10.046053,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.196725,
+    "lon": 10.046985,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.196399,
+    "lon": 10.047184,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.195896,
+    "lon": 10.047403,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.384677,
+    "lon": 10.30944,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.385699,
+    "lon": 10.309087,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.386031,
+    "lon": 10.309193,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.386389,
+    "lon": 10.308835,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.387506,
+    "lon": 10.308578,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.387406,
+    "lon": 10.309354,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.385667,
+    "lon": 10.308515,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.18,
+    "lon": 10.24,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 42.49130619,
+    "lon": 3.03178611,
+    "country_suggested_by_nominatim": "France"
+  },
+  {
+    "lat": 42.49086752,
+    "lon": 3.03220431,
+    "country_suggested_by_nominatim": "France"
+  },
+  {
+    "lat": 42.49135526,
+    "lon": 3.03262631,
+    "country_suggested_by_nominatim": "France"
+  },
+  {
+    "lat": 42.49207094,
+    "lon": 3.03104821,
+    "country_suggested_by_nominatim": "France"
+  },
+  {
+    "lat": 42.49141249,
+    "lon": 3.03132578,
+    "country_suggested_by_nominatim": "France"
+  },
+  {
+    "lat": 42.49068069,
+    "lon": 3.03262412,
+    "country_suggested_by_nominatim": "France"
+  },
+  {
+    "lat": 42.49099419,
+    "lon": 3.03305722,
+    "country_suggested_by_nominatim": "France"
+  },
+  {
+    "lat": 42.49163773,
+    "lon": 3.03225069,
+    "country_suggested_by_nominatim": "France"
+  },
+  {
+    "lat": 42.49196744,
+    "lon": 3.03179835,
+    "country_suggested_by_nominatim": "France"
+  },
+  {
+    "lat": 42.49155225,
+    "lon": 3.03072632,
+    "country_suggested_by_nominatim": "France"
+  },
+  {
+    "lat": 59.194228,
+    "lon": 10.048703,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.195188,
+    "lon": 10.048783,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.195624,
+    "lon": 10.048905,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.195991,
+    "lon": 10.051006,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.194902,
+    "lon": 10.050401,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.194997,
+    "lon": 10.048112,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.19516,
+    "lon": 10.047265,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.196137,
+    "lon": 10.045695,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.195628,
+    "lon": 10.047944,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.384952,
+    "lon": 10.311018,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.385513,
+    "lon": 10.309788,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.38581,
+    "lon": 10.309803,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.386095,
+    "lon": 10.310184,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.386539,
+    "lon": 10.310338,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.386493,
+    "lon": 10.309495,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.387795,
+    "lon": 10.310809,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.388679,
+    "lon": 10.309947,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.388134,
+    "lon": 10.309615,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.388023,
+    "lon": 10.31019,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.194014,
+    "lon": 10.049916,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.195104,
+    "lon": 10.049567,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.196155,
+    "lon": 10.049127,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.196587,
+    "lon": 10.050664,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.196339,
+    "lon": 10.051377,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.196548,
+    "lon": 10.045819,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.195206,
+    "lon": 10.04799,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.384273,
+    "lon": 10.309404,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.385108,
+    "lon": 10.311658,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.385267,
+    "lon": 10.30929,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.386822,
+    "lon": 10.309093,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.386966,
+    "lon": 10.309739,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.387244,
+    "lon": 10.310479,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.388814,
+    "lon": 10.309409,
+    "country_suggested_by_nominatim": "Norway"
+  },
+  {
+    "lat": 59.387843,
+    "lon": 10.309098,
+    "country_suggested_by_nominatim": "Norway"
+  }
+]
