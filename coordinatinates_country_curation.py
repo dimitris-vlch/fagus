@@ -37,7 +37,7 @@ with open("country_and_coordinates_data.json.txt", "w", encoding="utf-8") as fil
     
 # Βήμα 5: Ανακοίνωση αποτελεσμάτων στον κένσορα.
 
-print(f"\n\nA total of {total_geo_registries} registries have been found that contain both coordinates and country information, and these have been written in country_and_coordinates_data.json.txt")
+print(f"\n\nA total of {total_geo_registries} registries have been found that contain both coordinates and country information, and these have been written in country_and_coordinates_data.json.txt.")
 
 # Bήμα 6: Ενα συνοδευτικό pie chart για τα αποτελέσματα με κλεμμένο κώδικα από το προηγούμενο σκριπτ.
 
@@ -91,7 +91,7 @@ with open("country_and_coordinates_minimal_data.json.txt", "w", encoding = "utf-
 
 # Βήμα 11: Aνακοίνωση αποτελεσμάτων στον κένσορα:
 
-print (f"\ncountry_and_coordinates_minimal_data.json.txt has been created successfully. This json file contains {len(country_and_coordinates_data)} registries with both country and coordinates and only these fields from the whole registry, as well as the sample_accession field for identification\n")
+print (f"\ncountry_and_coordinates_minimal_data.json.txt has been created successfully. This json file contains {len(country_and_coordinates_data)} registries with both country and coordinates and only these fields from the whole registry, as well as the sample_accession field for identification.\n")
 
 ### Έλεγχος της εγκυρότητας των γεωγραφικών δεδομένων μέσω της βιβλιοθήκης geo_pandas
 
@@ -151,20 +151,36 @@ combined_geo_dataframe = gpd.sjoin(geo_dataframe, geopandas_geo_dataframe, how =
 # στην for, ορίζουμε και _, το _ παίρνει την τιμή του index που προσφέρει το dataframe, αλλά εμείς αυτό δεν το χρειαζόμαστε εδώ και το αγνοούμε.
 # η .iterrows() είναι κλασσική μέθοδος για να πάρουμε τα ενα πίνακα pandas και να τον κάνουμε μεταβλητή.
 # με την append.() αντιστοιχούμε κάθε γραμμή (row) σε ένα λεξικό της curated_data.
-
-print("Available columns in geo_joined:\n", combined_geo_dataframe.columns.tolist())
+# πεδίο country_match, ελέγχει αν τα δύο πεδία των χωρών είναι ίδια.
+# print("Available columns in geo_joined:\n", combined_geo_dataframe.columns.tolist())
 
 
 curated_data = []
 
 for _, row in combined_geo_dataframe.iterrows():
+
+# Επιδιόρθωση σφάλματος: Η Σερβία γράφεται από τον geopandas_naturalearth_lowres ως Republic of Serbia, ενώ η ΗΠΑ γράφεται United States of America. Επομένως, μέσα στην for, αν η row["ADMIN"] δίνει τις τιμές United States of America και Republic of Serbia, μετανομάνται σε USA και Serbia. Στην συνέχεια ακολουθεί εκ νέου έλεγχος αντιστοίχησης, αυτή τη φορά όμως δίκαιος, τα αποτελέσματα έχουν τωρα την ευκαιρία να γίνουν δεκτά.
+
+    suggested = row["ADMIN"]
+    country_match = "yes" if row["country_submitted"] == row["ADMIN"] else "no"
+    
+    if suggested == "United States of America":
+        suggested = "USA"
+        country_match = "yes" if row["country_submitted"] == suggested else "no"
+    elif suggested == "Republic of Serbia":
+        suggested = "Serbia"
+        country_match = "yes" if row["country_submitted"] == suggested else "no"
+
+    
     curated_data.append({
         "Registry number:": row["Registry number:"],
         "sample_accession": row["sample_accession"],
         "lat": row["lat"],
         "lon": row["lon"],
         "country_submitted": row["country_submitted"],
-        "country_suggested_from_coordinates": row["ADMIN"]
+        "country_suggested_from_coordinates": suggested,
+    #   "country_match": "yes" if row["country_submitted"] == row["ADMIN"] else "no"
+        "country_match": country_match
     })
 
 # Βήμα 18: Εγγραφή σε json αρχείο , ανακοίνωση των αποτελεσμάτων στον κένσορα.
@@ -172,4 +188,17 @@ for _, row in combined_geo_dataframe.iterrows():
 with open("countries_and_coordinates_curation.json.txt", "w",encoding="utf-8") as file:
     json.dump(curated_data, file, indent = 2, ensure_ascii= False)
 
-print(f"\ncountries_and_coordinates_curation.json.txt was created successfully!")
+print(f"\ncountries_and_coordinates_curation.json.txt was created successfully! This json file provides data concering whether the country suggested from the coordinates matches with the country submitted by the researcher.")
+
+# Bήμα 19: Γραφική απεικόνιση των αποτελεσμάτων: Pie chart.
+
+colors_bar_chart = [
+    "#4E79A7",  # Μπλε
+    "#F28E2B",  # Πορτοκαλί
+    "#E15759",  # Κόκκινο
+    "#76B7B2",  # Κυανό-πράσινο
+    "#59A14F",  # Πράσινο
+    "#EDC948",  # Κίτρινο
+    "#B07AA1",  # Μοβ
+]
+
