@@ -1,4 +1,3 @@
-
 import json
 import matplotlib.pyplot as plt # type: ignore
 from geopy.geocoders import Nominatim  # type: ignore
@@ -88,6 +87,7 @@ if coordinates_without_country:
 if coordinates_without_country:
     print(f"\nReverse geocoding with nominatim initiated. This may take a minute or two.")
 
+
     geolocator = Nominatim(user_agent="fagus_country_checker")
     coordinates_with_country_from_nominatim = []
 
@@ -114,3 +114,13 @@ if coordinates_without_country:
         json.dump(coordinates_with_country_from_nominatim, file, indent=2, ensure_ascii=False)
 
     print("\nReverse geocoding has been completed. File 'coordinates_with_country_from_nominatim.json.txt' has been created.")
+
+    # Ένωση των χωρών που βρέθηκαν με το nomatism με το τελικό json αρχείο που περιέχει και τα υπόλοιπα δεδομένα, το curated_data.json.txt
+
+    for registry in curated_data:
+        for entry in coordinates_with_country_from_nominatim:
+            if registry.get("lat") == entry.get("lat") and registry.get("lon") == entry.get("lon"):
+                registry["country_match_nominatim"] = entry.get("country_suggested_by_nominatim")
+
+    with open("this_is_a_test_json.txt", "w", encoding= "utf-8") as file:
+        json.dump(curated_data, file, indent= 2, ensure_ascii= False)
