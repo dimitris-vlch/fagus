@@ -12,6 +12,7 @@ import matplotlib.pyplot as plt # type: ignore
 import geopandas as gpd # type: ignore
 import pandas as pd # type: ignore
 from shapely.geometry import Point # type: ignore
+from geopy.geocoders import Nominatim
 
 # Βήμα 2: Εισαγωγή json αρχείου.
 
@@ -203,8 +204,10 @@ if coordinates_without_country:
     with open("coordinates_without_country.json.txt", "w", encoding= "utf-8") as file:
         json.dump(coordinates_without_country, file, indent= 2, ensure_ascii= False)
 
+# reverse geocoding για coordinates_without_country.json.txt: 
+# Nominatim μέσω της Python βιβλιοθήκης geopy (openstreetmap)
 
-# αποθήκευση των συντεταγμένων αυτών, ΧΩΡΙΣ ΕΠΙΠΛΕΟΝ ΣΤΟΙΧΕΙΑ, σε λίστα 
+
 
 # Βήμα 18: Εγγραφή σε json αρχείο , ανακοίνωση των αποτελεσμάτων στον κένσορα.
 
