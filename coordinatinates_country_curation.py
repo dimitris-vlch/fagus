@@ -9,10 +9,9 @@
 
 import json
 import matplotlib.pyplot as plt # type: ignore
-import geopandas as gpd
-import pandas as pd
-import pycountry
-from shapely.geometry import Point
+import geopandas as gpd # type: ignore
+import pandas as pd # type: ignore
+from shapely.geometry import Point # type: ignore
 
 # Βήμα 2: Εισαγωγή json αρχείου.
 
@@ -87,7 +86,7 @@ for idx, registry in enumerate(data,1):
 # Βήμα 10: Παρασκευή json αρχείου που περιέχει μόνο τα δεδομένα που μας ενδιαφέρουν.
 
 with open("country_and_coordinates_minimal_data.json.txt", "w", encoding = "utf-8") as file:
-    json.dump(country_and_coordinates_data, file, indent = 2, ensure_ascii= False )
+    json.dump(country_and_coordinates_data, file, indent = 2, ensure_ascii= False)
 
 # Βήμα 11: Aνακοίνωση αποτελεσμάτων στον κένσορα:
 
@@ -154,12 +153,11 @@ combined_geo_dataframe = gpd.sjoin(geo_dataframe, geopandas_geo_dataframe, how =
 # πεδίο country_match, ελέγχει αν τα δύο πεδία των χωρών είναι ίδια.
 # print("Available columns in geo_joined:\n", combined_geo_dataframe.columns.tolist())
 
+# Επιδιόρθωση σφάλματος 1: Η Σερβία γράφεται από τον geopandas_naturalearth_lowres ως Republic of Serbia, ενώ η ΗΠΑ γράφεται United States of America. Επομένως, μέσα στην for, αν η row["ADMIN"] δίνει τις τιμές United States of America και Republic of Serbia, μετανομάνται σε USA και Serbia. Στην συνέχεια ακολουθεί εκ νέου έλεγχος αντιστοίχησης, αυτή τη φορά όμως δίκαιος, τα αποτελέσματα έχουν τωρα την ευκαιρία να γίνουν δεκτά.
 
 curated_data = []
 
 for _, row in combined_geo_dataframe.iterrows():
-
-# Επιδιόρθωση σφάλματος: Η Σερβία γράφεται από τον geopandas_naturalearth_lowres ως Republic of Serbia, ενώ η ΗΠΑ γράφεται United States of America. Επομένως, μέσα στην for, αν η row["ADMIN"] δίνει τις τιμές United States of America και Republic of Serbia, μετανομάνται σε USA και Serbia. Στην συνέχεια ακολουθεί εκ νέου έλεγχος αντιστοίχησης, αυτή τη φορά όμως δίκαιος, τα αποτελέσματα έχουν τωρα την ευκαιρία να γίνουν δεκτά.
 
     suggested = row["ADMIN"]
     country_match = "yes" if row["country_submitted"] == row["ADMIN"] else "no"
@@ -182,6 +180,31 @@ for _, row in combined_geo_dataframe.iterrows():
     #   "country_match": "yes" if row["country_submitted"] == row["ADMIN"] else "no"
         "country_match": country_match
     })
+
+# Επιδιόρθωση σφάλματος 2: Ο χάρτης που αξιοποιήσαμε δεν παρέχει γεωγραφικές συντεταγμένες για Νορβηγία.
+# Χρήση LLM για την εξαγωγή λίστας συντεταγμένων που δεν έχουν αντιστοιχίσει σε χώρες.
+# Αρχικά, απομόνωση των συντεταγμένων οι οποίες και δεν αντιστοιχούν σε χώρα:
+
+coordinates_without_country = []
+
+for registry in curated_data:
+    if pd.isna(registry.get("country_suggested_from_coordinates")): # Ελέγχει αν η χώρα είναι NaN με pd.isna() για pandas-style NaN)
+        coordinates_without_country.append({
+        "lat": registry["lat"],
+        "lon": registry["lon"],
+        })
+    
+    #Το if coordinates_without_country: ελέγχει αν η λίστα δεν είναι κενή
+
+if coordinates_without_country:
+    
+    print(f"\nA total of {len(coordinates_without_country)} registries have been found with coordinates that do not match to any countries. Proceeding to save these coordinates to coordinates_without_country.json.txt")
+
+    with open("coordinates_without_country.json.txt", "w", encoding= "utf-8") as file:
+        json.dump(coordinates_without_country, file, indent= 2, ensure_ascii= False)
+
+
+# αποθήκευση των συντεταγμένων αυτών, ΧΩΡΙΣ ΕΠΙΠΛΕΟΝ ΣΤΟΙΧΕΙΑ, σε λίστα 
 
 # Βήμα 18: Εγγραφή σε json αρχείο , ανακοίνωση των αποτελεσμάτων στον κένσορα.
 
