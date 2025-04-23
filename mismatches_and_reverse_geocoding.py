@@ -1,7 +1,6 @@
 import json
 import matplotlib.pyplot as plt # type: ignore
 from geopy.geocoders import Nominatim  # type: ignore
-import matplotlib.pyplot as plt # type: ignore
 import geopandas as gpd # type: ignore
 import pandas as pd # type: ignore
 from shapely.geometry import Point # type: ignore
