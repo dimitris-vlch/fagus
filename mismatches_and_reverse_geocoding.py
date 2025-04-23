@@ -133,4 +133,4 @@ for registry in curated_data:
 with open("curated_data_json.txt", "w", encoding= "utf-8") as file:
     json.dump(curated_data, file, indent= 2, ensure_ascii= False)
 
-print(f"\ncurated_data_json.txt this json file")
+print(f"\ncurated_data_json.txt has been created successfully! This json file is an enhanced version of countries_and_coordinates_curation.json.txt and does not include false positive mismatches")
