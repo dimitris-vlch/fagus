@@ -1,3 +1,11 @@
+# In order for the script to work successfully, run the following commands on bash terminal consequetively.
+
+# python3 coordinatinates_country_curation.py
+# python3 coordinatinates_country_curation.py
+# python3 coordinatinates_country_curation.py
+
+# note coordinatinates_country_curation.py. The script coordinatinates_country_curation.py takes a while to be completed, so it would be wise for it to be separated from the other the other parts of the script.
+
 # Φτιάχνουμε ένα σκριπτάκι που ελέγχει τις γεωγραφικές συντεταγμένες της κάθε καταχώρησης, για το κατα πόσο αντιστοιχούν στην χώρα που έχει δηλωθεί. θεωρείται ότι αρκετές φορές ο ερευνητής κατά την συμπλήρωση των πεδίων των καταχωρήσεων, ενδεχομένως να μπερδέψει το latitude με το lontitude, η να συμπληρώσει την χώρα που εντοπίζεται το ερευνητικό ίδρυμα, αντί της χώρας συλλογής του δείγματος. Αυτοί και άλλοι λόγοι, επισημαίνουν την ανάγκη πραγματοποίησης της διόρθωσης αυτής στα μεταδεδομένα καταχωρήσεων του δείγματος.
 
 # Bήμα 1: Εισαγωγή βιβλιοθηκών. matplotlib για διάγραμμα pie chart.
@@ -156,70 +164,16 @@ combined_geo_dataframe = gpd.sjoin(geo_dataframe, geopandas_geo_dataframe, how =
 
 # Επιδιόρθωση σφάλματος 1: Η Σερβία γράφεται από τον geopandas_naturalearth_lowres ως Republic of Serbia, ενώ η ΗΠΑ γράφεται United States of America. Επομένως, μέσα στην for, αν η row["ADMIN"] δίνει τις τιμές United States of America και Republic of Serbia, μετανομάνται σε USA και Serbia. Στην συνέχεια ακολουθεί εκ νέου έλεγχος αντιστοίχησης, αυτή τη φορά όμως δίκαιος, τα αποτελέσματα έχουν τωρα την ευκαιρία να γίνουν δεκτά.
 
-curated_data = []
-
-for _, row in combined_geo_dataframe.iterrows():
-
-    suggested = row["ADMIN"]
-    country_match = "yes" if row["country_submitted"] == row["ADMIN"] else "no"
-    
-    if suggested == "United States of America":
-        suggested = "USA"
-        country_match = "yes" if row["country_submitted"] == suggested else "no"
-    elif suggested == "Republic of Serbia":
-        suggested = "Serbia"
-        country_match = "yes" if row["country_submitted"] == suggested else "no"
-
-    
-    curated_data.append({
-        "Registry number:": row["Registry number:"],
-        "sample_accession": row["sample_accession"],
-        "lat": row["lat"],
-        "lon": row["lon"],
-        "country_submitted": row["country_submitted"],
-        "country_suggested_from_coordinates": suggested,
-    #   "country_match": "yes" if row["country_submitted"] == row["ADMIN"] else "no"
-        "country_match": country_match
-    })
-
 # Επιδιόρθωση σφάλματος 2: Ο χάρτης που αξιοποιήσαμε δεν παρέχει γεωγραφικές συντεταγμένες για Νορβηγία.
 # Χρήση LLM για την εξαγωγή λίστας συντεταγμένων που δεν έχουν αντιστοιχίσει σε χώρες.
 # Αρχικά, απομόνωση των συντεταγμένων οι οποίες και δεν αντιστοιχούν σε χώρα:
 
-coordinates_without_country = []
+# Οι επιδιορθώσεις επειδή είναι αρκετές γραμμές κώδικα, γίνονται στο αρχείο mismatches_and_reverse_geocoding.py.
 
-for registry in curated_data:
-    if pd.isna(registry.get("country_suggested_from_coordinates")): # Ελέγχει αν η χώρα είναι NaN με pd.isna() για pandas-style NaN)
-        coordinates_without_country.append({
-        "lat": registry["lat"],
-        "lon": registry["lon"],
-        })
-    
-    #Το if coordinates_without_country: ελέγχει αν η λίστα δεν είναι κενή
+# Βήμα 18: Φόρτωση αρχείου curated_data_json.txt, το οποίο παράγεται από των κώδικα του coordinatinates_country_curation.py.
 
-if coordinates_without_country:
-    
-    print(f"\nA total of {len(coordinates_without_country)} registries have been found with coordinates that do not match to any countries. Proceeding to save these coordinates to coordinates_without_country.json.txt")
-
-    with open("coordinates_without_country.json.txt", "w", encoding= "utf-8") as file:
-        json.dump(coordinates_without_country, file, indent= 2, ensure_ascii= False)
-
-# reverse geocoding για coordinates_without_country.json.txt: 
-# Nominatim μέσω της Python βιβλιοθήκης geopy (openstreetmap)
-
-if coordinates_without_country:
-
-    
-    with open("coordinates_with_country_from_nominatim.json", "w", encoding="utf-8") as out:
-        json.dump(results, out, indent=2, ensure_ascii=False)
-
-
-# Βήμα 18: Εγγραφή σε json αρχείο , ανακοίνωση των αποτελεσμάτων στον κένσορα.
-
-with open("countries_and_coordinates_curation.json.txt", "w",encoding="utf-8") as file:
-    json.dump(curated_data, file, indent = 2, ensure_ascii= False)
-
-print(f"\ncountries_and_coordinates_curation.json.txt was created successfully! This json file provides data concering whether the country suggested from the coordinates matches with the country submitted by the researcher.")
+with open("curated_data_json.txt", "r", encoding="utf-8")as file:
+    curated_data = json.load(file)
 
 # Bήμα 19: Γραφική απεικόνιση των αποτελεσμάτων: Pie chart.
 
