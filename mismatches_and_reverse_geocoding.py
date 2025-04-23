@@ -117,10 +117,20 @@ if coordinates_without_country:
 
     # Ένωση των χωρών που βρέθηκαν με το nomatism με το τελικό json αρχείο που περιέχει και τα υπόλοιπα δεδομένα, το curated_data.json.txt
 
-    for registry in curated_data:
-        for entry in coordinates_with_country_from_nominatim:
-            if registry.get("lat") == entry.get("lat") and registry.get("lon") == entry.get("lon"):
-                registry["country_match_nominatim"] = entry.get("country_suggested_by_nominatim")
+for registry in curated_data:
+    for entry in coordinates_with_country_from_nominatim:
+        lat_match = float(registry.get("lat")) == float(entry.get("lat"))
+        lon_match = float(registry.get("lon")) == float(entry.get("lon"))
+        
+        if lat_match and lon_match:
+            registry["country_match_nominatim"] = entry.get("country_suggested_by_nominatim")
+# για κάθε λίστα του curated data, εαν η pandas για country_suggested_from_coordinates επιστρέφει NaN, τότε έαν registry.get("country_match_nominatim") == registry.get("country_submitted"), θα ισχύει registry["country_match"] = "yes"
+for registry in curated_data:
+    if pd.isna(registry.get("country_suggested_from_coordinates")):
+        if registry.get("country_match_nominatim") == registry.get("country_submitted"):
+            registry["country_match"] = "yes"
 
-    with open("this_is_a_test_json.txt", "w", encoding= "utf-8") as file:
-        json.dump(curated_data, file, indent= 2, ensure_ascii= False)
+with open("curated_data_json.txt", "w", encoding= "utf-8") as file:
+    json.dump(curated_data, file, indent= 2, ensure_ascii= False)
+
+print(f"\ncurated_data_json.txt this json file")
