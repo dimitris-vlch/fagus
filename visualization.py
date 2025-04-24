@@ -12,7 +12,7 @@ from collections import Counter
 with open("results_merged_json.txt", "r", encoding="utf-8") as file:
     data = json.load(file)
 
-total_samples = len(data)
+total_registries = len(data)
 
 # Βήμα 2: Ορίζουμε ένα λεξικό, geo_fields, οπου κάθε αντικείμενό του (fields) είναι ένα πεδίο των αντικειμένων του λεξικού data, το οποίο και όμως φέρει γεωγραφική πληροφορία. Πεδιά του στύλ χώρα, συντεταγμένες lat, lon, κλπ. Ορίζουμε μια λίστα με χρώματα.
 
@@ -67,9 +67,9 @@ for registry in data:
 
 # Βήμα 5: Εκτύπωση ορισμένων βασικών αποτελεσμάτων: Εκτυπώνονται οι τιμές της κάθε μεταβλητής που αντιπροσωπεύει μέγεθος ενδιαφέροντος και στην συνέχεια το ποσοστό αυτού ως προ τοο σύνολο των δειγμάτων με ένα δεκαδικό ψηφίο.
 print("\n")
-print(f"Total number of samples: {total_samples}, {total_samples / total_samples: .1%}")
-print(f"Total number of samples with geological information: {with_geo} {with_geo / total_samples: .1%}")
-print(f"Samples without total abscence of geological information: {without_geo} {without_geo / total_samples:.1%}")
+print(f"Total number of registries: {total_registries}, {total_registries / total_registries: .1%}")
+print(f"Total number of registries with geological information: {with_geo} {with_geo / total_registries: .1%}")
+print(f"Registries without total abscence of geological information: {without_geo} {without_geo / total_registries:.1%}")
 
 # Βήμα 6: Εκτύπωση των αποτελεσμάτων της καταμέτρησης
 # for geo_field, count in frequency.items(): Eκτελούμε βρόγχο loop στο αντικείμενο frequency, το οποίο και είναι τύπου Counter.
@@ -111,7 +111,7 @@ plt.pie(
 # plt.savefig("geo_pie_chart.png") σώζει το γράφημα ως εικόνα .png.
 # plt.show() εμφανίζει το γράφημα στην οθόνη.
 
-plt.figtext(0.5, 0.03, f"Σύνολο δειγμάτων: {total_samples}", ha='center', fontsize=10) # σχολιασμός παρακάτω.
+plt.figtext(0.5, 0.03, f"Σύνολο δειγμάτων: {total_registries}", ha='center', fontsize=10) # σχολιασμός παρακάτω.
 plt.title("Ποσοστό δειγμάτων με ή χωρίς γεωγραφική πληροφορία")
 plt.tight_layout()
 plt.savefig("geo_pie_chart.png")  # αποθήκευση εικόνας
@@ -135,7 +135,7 @@ plt.ylabel("Αριθμός εγγραφών")
 
 # η .figtext() είναι συνάρτηση της matplotlib. Προσθέτει κείμενο στο figure. Οι αριθμοί 0.5 και 0.01 αναφέρονται στην οριζόντια και στην κάθετη θέση του κειμένου και παίρνουν τιμές από 0 μέχρι και 1, από αριστερά προς τα δεξιά και από κάτω προς τα πάνω αντίστοιχα. το ha αναφέρεται στην στοίχιση του κειμένου και πέρνει τιμές center, left, right και fontsize  μέγεθος γραμματοσειράς. 
  
-plt.figtext(0.5, 0.03, f"Σύνολο δειγμάτων: {total_samples}", ha='center', fontsize=10)
+plt.figtext(0.5, 0.03, f"Σύνολο δειγμάτων: {total_registries}", ha='center', fontsize=10)
 
 # Όπως και στο προηγούμενο βήμα, ορίζουμε .title(), .tight_layout(), .savefig(), .show() για τους ίδιους ακριβώς λόγους.
 
@@ -152,7 +152,7 @@ field_names = list(frequency.keys()) # δημιοργεί λίστα η οποί
 
 field_values = list(frequency.values()) # λίστα με τις τιμές των πεδίων του frequency
 
-field_percentages = [ (value / total_samples) * 100 for value in field_values ] # ποσοστά γεωγραφικών δεδομένων ως προς το σύνολο των δειγμάτων. Θέλουμε αριθμητικά ποσοστά τα οποία και θα τα χρησιμοποιήσουμε για την κατασκευή των διαγραμμάτων. Για κάθε τιμή απο την λίστα των τιμών .values(). Συνολικά, φτιάχνουμε μια λίστα με τα αριθμητικά ποσοστά για κάθε πεδίο που επιθυμούμε να αναπαραστίσουμε.
+field_percentages = [ (value / total_registries) * 100 for value in field_values ] # ποσοστά γεωγραφικών δεδομένων ως προς το σύνολο των δειγμάτων. Θέλουμε αριθμητικά ποσοστά τα οποία και θα τα χρησιμοποιήσουμε για την κατασκευή των διαγραμμάτων. Για κάθε τιμή απο την λίστα των τιμών .values(). Συνολικά, φτιάχνουμε μια λίστα με τα αριθμητικά ποσοστά για κάθε πεδίο που επιθυμούμε να αναπαραστίσουμε.
 # επειδή είναι έκφραση και όχι λίστα, έχουμε [] αντι για ().
 
 # Βήμα 10: Bar Chart για την απεικόνιση των δειγμάτων που έχουν γεωγραφική πληροφορία.
@@ -168,7 +168,7 @@ for i, value in enumerate(field_values):
 plt.ylabel("Συχνότητα εμφάνισης γεωγραφικής πληροφορίας.")
 plt.title("Bar Chart για τη συχνότητα των πεδίων με γεωγραφική πληροφορία")
 plt.xticks(rotation=30) # περιστρέφει ετικέτες στο χ αξονα κατα 30 μοίρες ώστε να μην επικαλύπτονται όταν αυτές είναι πολύ μεγάλες.
-plt.figtext(0.5, 0.03, f"Σύνολο δειγμάτων: {total_samples}", ha="center", fontsize=10) # λεζάντα στο κάτω μέρος του γραφήματος που αναφέρει τον συνολικό αριθμό των δειγμάτων.
+plt.figtext(0.5, 0.03, f"Σύνολο δειγμάτων: {total_registries}", ha="center", fontsize=10) # λεζάντα στο κάτω μέρος του γραφήματος που αναφέρει τον συνολικό αριθμό των δειγμάτων.
 plt.tight_layout(rect=[0, 0.05, 1, 1])
 plt.savefig("geo_fields_bar_chart.png")
 plt.show()
@@ -191,7 +191,7 @@ cols = 3
 field_names = ["country", "location", "coordinates", "isolation_source"]
 
 for idx, (field_name, field_value) in enumerate(zip(field_names, field_values)):
-    missing = total_samples - field_value
+    missing = total_registries - field_value
     sizes = [field_value, missing] #ορίζουμε τα μεγέθη του pie chart.
     labels = ["Παρατίθεται", "Απουσιάζει"] # labels και χρωματα μπλε και κοκκινο για τα μεγέθη.
     colors = ["blue","red"]
@@ -207,7 +207,7 @@ plt.show()
 # country
 
 country= frequency.get("country")
-no_data= total_samples - country
+no_data= total_registries - country
 sizes= [country, no_data]
 labels= ["country","no data"]
 colors= ["blue", "red"]
@@ -221,7 +221,7 @@ plt.show()
 # location
 
 location= frequency.get("location")
-no_data= total_samples - location
+no_data= total_registries - location
 sizes= [location, no_data]
 labels= ["location","no data"]
 colors= ["blue", "red"]
@@ -236,7 +236,7 @@ plt.show()
 # coordinates
 
 coordinates= frequency.get("lat")
-no_data= total_samples - coordinates
+no_data= total_registries - coordinates
 sizes=[coordinates, no_data]
 labels= ["coordinates","no data"]
 colors= ["blue", "red"]
@@ -252,7 +252,7 @@ plt.show()
 # isolation_source
 
 isolation_source= frequency.get("isolation_source")
-no_data= total_samples - isolation_source
+no_data= total_registries - isolation_source
 sizes= [isolation_source, no_data]
 labels= ["isolation_source","no data"]
 colors= ["blue", "red"]
