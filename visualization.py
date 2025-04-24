@@ -69,7 +69,7 @@ for registry in data:
 print("\n")
 print(f"Total number of registries: {total_registries}, {total_registries / total_registries: .1%}")
 print(f"Total number of registries with geological information: {with_geo} {with_geo / total_registries: .1%}")
-print(f"Registries without total abscence of geological information: {without_geo} {without_geo / total_registries:.1%}")
+print(f"Registries with total abscence of geological information: {without_geo} {without_geo / total_registries:.1%}")
 
 # Βήμα 6: Εκτύπωση των αποτελεσμάτων της καταμέτρησης
 # for geo_field, count in frequency.items(): Eκτελούμε βρόγχο loop στο αντικείμενο frequency, το οποίο και είναι τύπου Counter.
@@ -101,7 +101,7 @@ plt.figure(figsize=(6, 6))
 plt.pie(
     sizes,
     labels=labels,
-    autopct="%1.1f%%",  
+    autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})",  
     startangle=90,      
     colors=colors
 )
@@ -113,6 +113,7 @@ plt.pie(
 
 plt.figtext(0.5, 0.03, f"Σύνολο δειγμάτων: {total_registries}", ha='center', fontsize=10) # σχολιασμός παρακάτω.
 plt.title("Ποσοστό δειγμάτων με ή χωρίς γεωγραφική πληροφορία")
+plt.figtext(0.5, 0.03, f"Σύνολο δειγμάτων: {total_registries}", ha='center', fontsize=10)
 plt.tight_layout()
 plt.savefig("geo_pie_chart.png")  # αποθήκευση εικόνας
 plt.show()
@@ -140,6 +141,7 @@ plt.figtext(0.5, 0.03, f"Σύνολο δειγμάτων: {total_registries}", h
 # Όπως και στο προηγούμενο βήμα, ορίζουμε .title(), .tight_layout(), .savefig(), .show() για τους ίδιους ακριβώς λόγους.
 
 plt.title("Αριθμός δειγμάτων με ή χωρίς γεωγραφική πληροφορία")
+plt.figtext(0.5, 0.03, f"Σύνολο δειγμάτων: {total_registries}", ha='center', fontsize=10)
 plt.tight_layout(rect=[0, 0.05, 1, 1])  # η συγκεκριμένη ρύθμιση για .tight_layout() τραβάει το γράφημα λίγο προς τα πάνω για να κάνει χώρο και για το .figtext() να χωρέσει.
 plt.savefig("geo_bar_Chart.png")
 plt.show()
@@ -196,7 +198,7 @@ for idx, (field_name, field_value) in enumerate(zip(field_names, field_values)):
     labels = ["Παρατίθεται", "Απουσιάζει"] # labels και χρωματα μπλε και κοκκινο για τα μεγέθη.
     colors = ["blue","red"]
     plt.subplot(rows, cols, idx + 1)    # Το plt.subplot() δημιουργεί πολλαπλά γραφήματα (subplots) σε μία ενιαία εικόνα. Του δίνουμε τις μεταβλητες που ορισαμε παραπάνω γραμμές και στήλες και μετά τη μεταβλητή idx που παίρνει αριθμητικές θέσεις για field_name.Επειδή το enumerate() ξεκινάει από 0, αλλά το subplot() περιμένει θέσεις ξεκινώντας από 1. Άρα: idx = 0 → θέση 1 idx = 1 → θέση 2. Ειμαστέ έτοιμοι τωρα να ορισουμε .pie().
-    plt.pie(sizes,labels=labels,autopct="%1.1f%%", startangle=90, colors=colors)
+    plt.pie(sizes,labels=labels,autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors=colors)
     plt.title(field_name, fontsize=10, fontweight="bold")
 plt.tight_layout(rect=[0, 0.05, 0.9, 0.9])
 plt.savefig("geo_fields_pie_matrix.png")
@@ -212,9 +214,10 @@ sizes= [country, no_data]
 labels= ["country","no data"]
 colors= ["blue", "red"]
 plt.figure(figsize=(6, 6))
-plt.pie(sizes, labels=labels, autopct="%1.1f%%", startangle=90, colors = ["blue","red"])
+plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors = ["blue","red"])
 plt.tight_layout()
 plt.title("Ποσοστό δειγμάτων με ή χωρίς γεωγραφική πληροφορία χώρας")
+plt.figtext(0.5, 0.03, f"Σύνολο δειγμάτων: {total_registries}", ha='center', fontsize=10)
 plt.savefig("country_pie_chart.png")
 plt.show()
 
@@ -227,9 +230,10 @@ labels= ["location","no data"]
 colors= ["blue", "red"]
 
 plt.figure(figsize=(6, 6))
-plt.pie(sizes, labels=labels, autopct="%1.1f%%", startangle=90, colors = ["blue","red"])
+plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors = ["blue","red"])
 plt.tight_layout()
 plt.title("Ποσοστό δειγμάτων με ή χωρίς γεωγραφική πληροφορία περιοχής")
+plt.figtext(0.5, 0.03, f"Σύνολο δειγμάτων: {total_registries}", ha='center', fontsize=10)
 plt.savefig("location_pie_chart.png")
 plt.show()
 
@@ -242,8 +246,9 @@ labels= ["coordinates","no data"]
 colors= ["blue", "red"]
 
 plt.figure(figsize=(6, 6))
-plt.pie(sizes, labels=labels, autopct="%1.1f%%", startangle=90, colors = ["blue","red"])
+plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors = ["blue","red"])
 plt.title("Ποσοστό δειγμάτων με ή χωρίς γεωγραφική πληροφορία συντεταγμένων")
+plt.figtext(0.5, 0.03, f"Σύνολο δειγμάτων: {total_registries}", ha='center', fontsize=10)
 plt.tight_layout()
 plt.savefig("coordinates_pie_chart.png")
 plt.show()
@@ -258,8 +263,9 @@ labels= ["isolation_source","no data"]
 colors= ["blue", "red"]
 
 plt.figure(figsize=(6, 6))
-plt.pie(sizes, labels=labels, autopct="%1.1f%%", startangle=90, colors = ["blue","red"])
+plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors = ["blue","red"])
 plt.title("Ποσοστό δειγμάτων με ή χωρίς γεωγραφική πληροφορία πηγής απομονώσεως")
+plt.figtext(0.5, 0.03, f"Σύνολο δειγμάτων: {total_registries}", ha='center', fontsize=10)
 plt.tight_layout()
 plt.savefig("isolation_source_pie_chart.png")
 plt.show()
