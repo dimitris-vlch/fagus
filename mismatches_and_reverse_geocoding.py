@@ -1,9 +1,9 @@
 import json
-import matplotlib.pyplot as plt # type: ignore
-from geopy.geocoders import Nominatim  # type: ignore
-import geopandas as gpd # type: ignore
-import pandas as pd # type: ignore
-from shapely.geometry import Point # type: ignore
+import matplotlib.pyplot as plt 
+from geopy.geocoders import Nominatim 
+import geopandas as gpd 
+import pandas as pd 
+from shapely.geometry import Point
 import time
 
 # Κώδικας και βιβλιοθήκες που λειτουργούν ως υπόβαθρο για να τρέξει το σκριπτ.
