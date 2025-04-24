@@ -1,6 +1,6 @@
 # Σκριπτάκι για την γραφική αναπαράσταση των αποτελεσμάτων σε Bar και Pie chart
 
-# Βήμα 1: Εισαγωγή βιλβιοθηκών και ανάγνωση του αρχείου json, μετατροπή του σε λεξικό python και υπολογισμός του συνολικού αριθμού των δειγμάτων (total_samples).
+# Βήμα 1: Εισαγωγή βιλβιοθηκών και ανάγνωση του αρχείου json, μετατροπή του σε λεξικό python και υπολογισμός του συνολικού αριθμού των εγγραφών (total_samples).
 
 # Αξιοποιούμε το υποπακέτο pyplot της βιβλιοθήκης matplotlib. Το plt ειναι alias για matplotlib.pyplot. Το pyplot έχει συναρτήσεις για γραφικά διαγράμματα, bar chart, pie charts, συναρτήσεις για τίτλους και ετικέτες, καθώς και για να εμφανίσεις τα διαγράμματα.
 # Εισάγουμε την υποβιβλιοθήκη Counter από την βιβλιοθήκη collections. Το Counter το αξιοποιούμε για να δούμε πόσες φορές εμφανίζεται κάθε τιμή. Μας είναι χρήσιμο επειδή έχουμε πολλά δείγματα και κάθε δείγμα έχει διαφορετικά μεταδεδομένα γεωγραφίας, βλέπουμε απλώς την συχνότητα εμφάνισης της τοποθεσίας, της χώρας κλπ.
@@ -65,7 +65,7 @@ for registry in data:
     else:
         without_geo += 1
 
-# Βήμα 5: Εκτύπωση ορισμένων βασικών αποτελεσμάτων: Εκτυπώνονται οι τιμές της κάθε μεταβλητής που αντιπροσωπεύει μέγεθος ενδιαφέροντος και στην συνέχεια το ποσοστό αυτού ως προ τοο σύνολο των δειγμάτων με ένα δεκαδικό ψηφίο.
+# Βήμα 5: Εκτύπωση ορισμένων βασικών αποτελεσμάτων: Εκτυπώνονται οι τιμές της κάθε μεταβλητής που αντιπροσωπεύει μέγεθος ενδιαφέροντος και στην συνέχεια το ποσοστό αυτού ως προ τοο σύνολο των εγγραφών με ένα δεκαδικό ψηφίο.
 print("\n")
 print(f"Total number of registries: {total_registries}, {total_registries / total_registries: .1%}")
 print(f"Total number of registries with geological information: {with_geo} {with_geo / total_registries: .1%}")
@@ -91,7 +91,7 @@ colors = ["blue","red"] # χρώματα των κομματιών της πίτ
 
 # plt.figure(figsize=(6, 6)) Δημιουργεί νέο καμβά (figure) για το γράφημα, και  ορίζει με figsize το μέγεθος του σε ίντσες όπου στην προκειμένη περίπτωση είναι 6*6. Σε pie chart οφείλουμε να είναι τετράγωνες οι διαστάσεις για να μην είναι η πίτα παραμορφωμένη.
 # plt.pie(δημιουργεί πίτα με τα μεγέθη της μεταβλητής size, όπως και ορίσαμε παραπάνω.
-#   sizes, το κάθε μέγεθος της πίτας είναι ίσο με το αριθμό των δειγμάτων που έχουν και δεν έχουν γεωγραφία αντίστοιχα.
+# sizes, το κάθε μέγεθος της πίτας είναι ίσο με το αριθμό των εγγραφών που έχουν και δεν έχουν γεωγραφία αντίστοιχα.
 # τα ονόμα των ετικετών (labels) είναι με την ίδια σειρά με τα μεγέθη (sizes)
 # autopct="%1.1f%%" για να εμφανιστεί το ποσοστό του κάθε κομματιού πάνω στο διάγραμμα, στη προκειμένη περίπτωση έχουμε έα δεκαδικό ψηφίο καθώς και σύμβολο επί τοις εκατό.
 # startangle=90 γωνία εκκίνησης του διαγράμματος της πίτας. 90 μοίρες και είναι όπως ρολοί τις 12:00.
@@ -111,9 +111,9 @@ plt.pie(
 # plt.savefig("geo_pie_chart.png") σώζει το γράφημα ως εικόνα .png.
 # plt.show() εμφανίζει το γράφημα στην οθόνη.
 
-plt.figtext(0.5, 0.03, f"Σύνολο δειγμάτων: {total_registries}", ha='center', fontsize=10) # σχολιασμός παρακάτω.
-plt.title("Ποσοστό δειγμάτων με ή χωρίς γεωγραφική πληροφορία")
-plt.figtext(0.5, 0.03, f"Σύνολο δειγμάτων: {total_registries}", ha='center', fontsize=10)
+plt.figtext(0.5, 0.03, f"Σύνολο εγγραφών: {total_registries}", ha='center', fontsize=10) # σχολιασμός παρακάτω.
+plt.title("Ποσοστό εγγραφών με ή χωρίς γεωγραφική πληροφορία")
+plt.figtext(0.5, 0.03, f"Σύνολο εγγραφών: {total_registries}", ha='center', fontsize=10)
 plt.tight_layout()
 plt.savefig("geo_pie_chart.png")  # αποθήκευση εικόνας
 plt.show()
@@ -136,12 +136,12 @@ plt.ylabel("Αριθμός εγγραφών")
 
 # η .figtext() είναι συνάρτηση της matplotlib. Προσθέτει κείμενο στο figure. Οι αριθμοί 0.5 και 0.01 αναφέρονται στην οριζόντια και στην κάθετη θέση του κειμένου και παίρνουν τιμές από 0 μέχρι και 1, από αριστερά προς τα δεξιά και από κάτω προς τα πάνω αντίστοιχα. το ha αναφέρεται στην στοίχιση του κειμένου και πέρνει τιμές center, left, right και fontsize  μέγεθος γραμματοσειράς. 
  
-plt.figtext(0.5, 0.03, f"Σύνολο δειγμάτων: {total_registries}", ha='center', fontsize=10)
+plt.figtext(0.5, 0.03, f"Σύνολο εγγραφών: {total_registries}", ha='center', fontsize=10)
 
 # Όπως και στο προηγούμενο βήμα, ορίζουμε .title(), .tight_layout(), .savefig(), .show() για τους ίδιους ακριβώς λόγους.
 
-plt.title("Αριθμός δειγμάτων με ή χωρίς γεωγραφική πληροφορία")
-plt.figtext(0.5, 0.03, f"Σύνολο δειγμάτων: {total_registries}", ha='center', fontsize=10)
+plt.title("Αριθμός εγγραφών με ή χωρίς γεωγραφική πληροφορία")
+plt.figtext(0.5, 0.03, f"Σύνολο εγγραφών: {total_registries}", ha='center', fontsize=10)
 plt.tight_layout(rect=[0, 0.05, 1, 1])  # η συγκεκριμένη ρύθμιση για .tight_layout() τραβάει το γράφημα λίγο προς τα πάνω για να κάνει χώρο και για το .figtext() να χωρέσει.
 plt.savefig("geo_bar_Chart.png")
 plt.show()
@@ -154,23 +154,23 @@ field_names = list(frequency.keys()) # δημιοργεί λίστα η οποί
 
 field_values = list(frequency.values()) # λίστα με τις τιμές των πεδίων του frequency
 
-field_percentages = [ (value / total_registries) * 100 for value in field_values ] # ποσοστά γεωγραφικών δεδομένων ως προς το σύνολο των δειγμάτων. Θέλουμε αριθμητικά ποσοστά τα οποία και θα τα χρησιμοποιήσουμε για την κατασκευή των διαγραμμάτων. Για κάθε τιμή απο την λίστα των τιμών .values(). Συνολικά, φτιάχνουμε μια λίστα με τα αριθμητικά ποσοστά για κάθε πεδίο που επιθυμούμε να αναπαραστίσουμε.
+field_percentages = [ (value / total_registries) * 100 for value in field_values ] # ποσοστά γεωγραφικών δεδομένων ως προς το σύνολο των εγγραφών. Θέλουμε αριθμητικά ποσοστά τα οποία και θα τα χρησιμοποιήσουμε για την κατασκευή των διαγραμμάτων. Για κάθε τιμή απο την λίστα των τιμών .values(). Συνολικά, φτιάχνουμε μια λίστα με τα αριθμητικά ποσοστά για κάθε πεδίο που επιθυμούμε να αναπαραστίσουμε.
 # επειδή είναι έκφραση και όχι λίστα, έχουμε [] αντι για ().
 
-# Βήμα 10: Bar Chart για την απεικόνιση των δειγμάτων που έχουν γεωγραφική πληροφορία.
+# Βήμα 10: Bar Chart για την απεικόνιση των εγγραφών που έχουν γεωγραφική πληροφορία.
 
 field_names = ["country", "location", "coordinates", "isolation_source"]
 plt.figure(figsize=(9,5))
 plt.bar(field_names, field_values, color=colors_bar_chart) #σε .bar() δεν ορίζουμε ως labels=   
 for i, value in enumerate(field_values):
-    plt.text(i, value + 10, str(value), ha='center', fontsize=9) # λεζάντα που βάζει τον αριθμο δειγμάτων λίγο πάνω απο κάθε μπαρα. value + 10 καθορίζει την θέση της λεζάντας, ενω το str(value) το κείμενο.
+    plt.text(i, value + 10, str(value), ha='center', fontsize=9) # λεζάντα που βάζει τον αριθμο εγγραφών λίγο πάνω απο κάθε μπαρα. value + 10 καθορίζει την θέση της λεζάντας, ενω το str(value) το κείμενο.
 #   Το enumerate() σου δίνει:
 #   i: το index (0, 1, 2, ...)
 #   value: η τιμή της μπάρας (π.χ. 4435)
 plt.ylabel("Συχνότητα εμφάνισης γεωγραφικής πληροφορίας.")
 plt.title("Bar Chart για τη συχνότητα των πεδίων με γεωγραφική πληροφορία")
 plt.xticks(rotation=30) # περιστρέφει ετικέτες στο χ αξονα κατα 30 μοίρες ώστε να μην επικαλύπτονται όταν αυτές είναι πολύ μεγάλες.
-plt.figtext(0.5, 0.03, f"Σύνολο δειγμάτων: {total_registries}", ha="center", fontsize=10) # λεζάντα στο κάτω μέρος του γραφήματος που αναφέρει τον συνολικό αριθμό των δειγμάτων.
+plt.figtext(0.5, 0.03, f"Σύνολο εγγραφών: {total_registries}", ha="center", fontsize=10) # λεζάντα στο κάτω μέρος του γραφήματος που αναφέρει τον συνολικό αριθμό των εγγραφών.
 plt.tight_layout(rect=[0, 0.05, 1, 1])
 plt.savefig("geo_fields_bar_chart.png")
 plt.show()
@@ -178,7 +178,7 @@ plt.show()
 # Βήμα 11: multi-pie diagram Για καθε πεδιο γεωγραφικής πληροφορίας εμφανίζετια ενα μικρο pie chart που διχνει πόσα δείγματα έχουν το πεδιο αυτό και πόσα δείγματα δεν έχουν το πεδίο αυτό.
 
 plt.figure(figsize=(12,7))
-plt.figtext(0.5, 0.95, "Ποσοστά κάλυψης γεωγραφικών πεδίων ως προς το σύνολο των δειγμάτων", ha="center", fontsize=14, fontweight="bold") # ορίζουμε τίτλο οχι με .title() αλλά με .figtext() γιατί το .title() θα το χρειαστούμε αργότερα για κάθε ξεχωριστό pie chart.
+plt.figtext(0.5, 0.95, "Ποσοστά κάλυψης γεωγραφικών πεδίων ως προς το σύνολο των εγγραφών", ha="center", fontsize=14, fontweight="bold") # ορίζουμε τίτλο οχι με .title() αλλά με .figtext() γιατί το .title() θα το χρειαστούμε αργότερα για κάθε ξεχωριστό pie chart.
 
 rows = 2    # ορίζουμε μεταβλητές για γραμμες και στηλες που θα ορίσουν τα 8 κελιά που καθένα θα περιέχει ένα pie chart.
 cols = 3
@@ -186,7 +186,7 @@ cols = 3
 
 # η enamurate μας επιτρέπε να τοποθετούμε τα την κάθε πίτα σε διαφορετικό κελί χρησιμοποιώντας μια μεταβλητή idx, και τα αντιστοιχεί σε ένα-ένα τα αντικείμενα της λίστας field_names. Aναλυτικότερα:
 
-# εκτελούμε βρόγχο for, όπου η idx παίρνει αριθμητικές θέσεις (0,1,2, ...), όπου field_name το αντικείμενο της λίστας field_names και field_value το αντικείμενο της λίστας field_values. Με την zip δένουμε το κάθε αντικείμενο στην λίστα του. Η emurate προσθέτει το κάθε αντικείμενο των 2 λιστών σε ένα αντικείμενο idx. Στο βρόγχο αυτό, υπολογίζουμε την διαφορά του συνόλου των δειγμάτων απο την τιμή field_value.
+# εκτελούμε βρόγχο for, όπου η idx παίρνει αριθμητικές θέσεις (0,1,2, ...), όπου field_name το αντικείμενο της λίστας field_names και field_value το αντικείμενο της λίστας field_values. Με την zip δένουμε το κάθε αντικείμενο στην λίστα του. Η emurate προσθέτει το κάθε αντικείμενο των 2 λιστών σε ένα αντικείμενο idx. Στο βρόγχο αυτό, υπολογίζουμε την διαφορά του συνόλου των εγγραφών απο την τιμή field_value.
 
 # μικρη αλλαγη στα field_names, αντι για lat και lot να έχουμε coordinates.
 
@@ -216,8 +216,8 @@ colors= ["blue", "red"]
 plt.figure(figsize=(6, 6))
 plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors = ["blue","red"])
 plt.tight_layout()
-plt.title("Ποσοστό δειγμάτων με ή χωρίς γεωγραφική πληροφορία χώρας")
-plt.figtext(0.5, 0.03, f"Σύνολο δειγμάτων: {total_registries}", ha='center', fontsize=10)
+plt.title("Ποσοστό εγγραφών με ή χωρίς γεωγραφική πληροφορία χώρας")
+plt.figtext(0.5, 0.03, f"Σύνολο εγγραφών: {total_registries}", ha='center', fontsize=10)
 plt.savefig("country_pie_chart.png")
 plt.show()
 
@@ -232,8 +232,8 @@ colors= ["blue", "red"]
 plt.figure(figsize=(6, 6))
 plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors = ["blue","red"])
 plt.tight_layout()
-plt.title("Ποσοστό δειγμάτων με ή χωρίς γεωγραφική πληροφορία περιοχής")
-plt.figtext(0.5, 0.03, f"Σύνολο δειγμάτων: {total_registries}", ha='center', fontsize=10)
+plt.title("Ποσοστό εγγραφών με ή χωρίς γεωγραφική πληροφορία περιοχής")
+plt.figtext(0.5, 0.03, f"Σύνολο εγγραφών: {total_registries}", ha='center', fontsize=10)
 plt.savefig("location_pie_chart.png")
 plt.show()
 
@@ -247,8 +247,8 @@ colors= ["blue", "red"]
 
 plt.figure(figsize=(6, 6))
 plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors = ["blue","red"])
-plt.title("Ποσοστό δειγμάτων με ή χωρίς γεωγραφική πληροφορία συντεταγμένων")
-plt.figtext(0.5, 0.03, f"Σύνολο δειγμάτων: {total_registries}", ha='center', fontsize=10)
+plt.title("Ποσοστό εγγραφών με ή χωρίς γεωγραφική πληροφορία συντεταγμένων")
+plt.figtext(0.5, 0.03, f"Σύνολο εγγραφών: {total_registries}", ha='center', fontsize=10)
 plt.tight_layout()
 plt.savefig("coordinates_pie_chart.png")
 plt.show()
@@ -264,8 +264,8 @@ colors= ["blue", "red"]
 
 plt.figure(figsize=(6, 6))
 plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors = ["blue","red"])
-plt.title("Ποσοστό δειγμάτων με ή χωρίς γεωγραφική πληροφορία πηγής απομονώσεως")
-plt.figtext(0.5, 0.03, f"Σύνολο δειγμάτων: {total_registries}", ha='center', fontsize=10)
+plt.title("Ποσοστό εγγραφών με ή χωρίς γεωγραφική πληροφορία πηγής απομονώσεως")
+plt.figtext(0.5, 0.03, f"Σύνολο εγγραφών: {total_registries}", ha='center', fontsize=10)
 plt.tight_layout()
 plt.savefig("isolation_source_pie_chart.png")
 plt.show()
