@@ -67,7 +67,7 @@ for registry in data:
 country_and_coordinates_data = []
 
 for idx, registry in enumerate(data,1): 
-# τροποποιούμε λιγο το for registry in data: για να χουμε καταμέτρηση δειγμάτων με idx & enumarate
+# τροποποιούμε λιγο το for registry in data: για να χουμε καταμέτρηση εγγραφών με idx & enumarate
     if registry.get("lat") and registry.get("lon") and registry.get("country_submitted"):
         geo_registry = {
             "Registry number:" : idx,         
@@ -186,15 +186,39 @@ colors = ["blue", "red"]
 
 plt.figure(figsize=(6, 6))
 plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors = ["blue","red"])
-plt.title("Ποσοστό δειγμάτων με ή χωρίς γεωγραφική πληροφορία πηγής απομονώσεως")
+plt.title("Ποσοστό εγγραφών με ή χωρίς γεωγραφική πληροφορία χώρας και συντεταγμένων.")
 # συμβολοσειρά της μορφής "42.3% (152)"
 # lambda pct: f"" καλεί συνάρτηση
 # {pct:.1f}%: υπολογίζει ποσοστό με .1 δεκαδικο ψηφιο
 # pct / 100. * sum(sizes) μετατρέπει ποσοστό σε απόλυτο αριθμό
 # int μετατρέπει απόλυτο αριθμό σε ακέραιο
-plt.figtext(0.5, 0.03, f"Σύνολο δειγμάτων: {total_registries}", ha='center', fontsize=10)
+plt.figtext(0.5, 0.03, f"Σύνολο εγγραφών: {total_registries}", ha='center', fontsize=12)
 plt.tight_layout()
 plt.savefig("countries_and_coordinates_pie_chart.png")
 plt.show()
 
-# Διάγραμμα 2: Pie Chart Για εγγραφές με συντεταγμένες και χώρα ταυτόχρονα, όπου υπάρχει ομολογία χώρας
+#Το Διάγραμμα 2 (Pie Chart) παρουσιάζει τα αποτελέσματα της σύγκρισης ανάμεσα στη χώρα που έχει δηλωθεί ως τόπος προέλευσης ενός δείγματος και στη χώρα που προκύπτει από τις δηλωμένες γεωγραφικές συντεταγμένες. Η επεξεργασία των συντεταγμένων γίνεται με χρήση των βιβλιοθηκών Geopandas και Nominatim, μέσω της διαδικασίας του reverse geocoding. Στο γράφημα περιλαμβάνονται μόνο οι εγγραφές που φέρουν ταυτόχρονα και δηλωμένη χώρα και γεωγραφικές συντεταγμένες. 
+
+match = 0
+mismatch = 0
+
+for registry in curated_data:
+    if registry["country_match"] == "yes":
+        match +=1
+    else:
+        mismatch +=1
+
+print(f"\n {match} matches and {mismatch} mismatches")
+
+sizes = [match, mismatch]
+labels = ["coordinates alligning with country","faulty coordinates or country"]
+colors = ["blue", "red"]
+
+plt.figure(figsize=(6, 6))
+plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=00, colors = ["blue","red"])
+plt.title("Εγγραφές με συντεταγμένες που συμφωνούν με την δηλωμένη χώρα συγκριτικα με εγγραφές που διαφωνούν")
+plt.figtext(0.5, 0.02, f"Σύνολο εγγραφών: {total_registries}", ha='center', fontsize=12)
+plt.figtext(0.5, 0.07, f"Σύνολο εγγραφών με συντεγμένες και χώρα: {len(curated_data)}", ha='center', fontsize=12)
+plt.tight_layout()
+plt.savefig("countries_and_coordinates_pie_chart.png")
+plt.show()

@@ -5,48 +5,53 @@ import pandas as pd
 from shapely.geometry import Point 
 from geopy.geocoders import Nominatim  
 
-# Βήμα 2: Εισαγωγή json αρχείου.
 
-with open ("results_merged_json.txt", "r", encoding= "utf-8") as file:    
-    data = json.load(file)
 
-total_registries= len(data)
+with open("country_and_coordinates_minimal_data.json.txt", "r", encoding= "utf-8") as file:
+    country_and_coordinates_data = json.load(file)
 
-# Βήμα 3: Αποσπάμε τις εγγραφές που έχουν συμπληρωμένα τα πεδία lat, lon και country ταυτόχρονα, για τον σκοπό  της προκειμένης διεργασίας.
-# [entry for entry in data if ...]
-# [<τι θα βάλεις στη λίστα> for <κάθε στοιχείο> in <συλλογή> if <κάποια συνθήκη>] 
+dataframe = pd.DataFrame(country_and_coordinates_data)
 
-country_and_coordinates_data = [registry for registry in data if registry.get("lat") and registry.get("lon") and registry.get("country")]
-total_geo_registries = len(country_and_coordinates_data)
+dataframe["coordinates_point"] = dataframe.apply(lambda row: Point(float(row["lon"]), float(row["lat"])), axis=1)
 
-# δηλαδή για κάθε στοιχείο registry της λίστας data, βάζουμε στοιχείο registry στην λίστα country_and_coordinates_data, εάν ισχύει η συνθήκη if.
+geo_dataframe = gpd.GeoDataFrame(dataframe, geometry = dataframe["coordinates_point"], crs = "EPSG:4326")
 
-# Bήμα 4: Αποθήκεση επιθυμητών εγγραφών σε json.
+geopandas_naturalearth_lowres = gpd.read_file("/home/dimitris/Documents/Github my repo/fagus/ne_110m_admin_0_countries")
 
-with open("country_and_coordinates_data.json.txt", "w", encoding="utf-8") as file:
-    json.dump(country_and_coordinates_data, file, indent=2, ensure_ascii=False)
+geopandas_geo_dataframe = geopandas_naturalearth_lowres.explode(index_parts=False).reset_index(drop=True)
+
+combined_geo_dataframe = gpd.sjoin(geo_dataframe, geopandas_geo_dataframe, how = "left", predicate = "within")
+
+
+
+calculated_mismatches_1 = 0
+false_positive_mismatches = 0 
+
+for _, row in combined_geo_dataframe.iterrows():
+    country_match = "yes" if row["country_submitted"] == row["ADMIN"] else "no"
+    if country_match == "no":
+        calculated_mismatches_1 += 1
+
+print(f"\nΥπολογίζοντας αποκλειστικά με geopandas, βρίσκω {calculated_mismatches_1} αναντιστοιχίες χώρας-συντεταγμένων και ανιχνεύω {false_positive_mismatches} ψευδώς θετικές αναντιστοιχίες")
+
+calculated_mismatches_2 = 0
+
+# Υπολογίζω mismatches με geopandas και πραγματοποιώ την διόρθωση για ΗΠΑ
+
+for _, row in combined_geo_dataframe.iterrows():
     
-# Βήμα 5: Ανακοίνωση αποτελεσμάτων στον κένσορα.
+    suggested = row["ADMIN"]
+    
+    if suggested == "United States of America":
+        suggested = "USA"
+    
+    country_match = "yes" if row["country_submitted"] == row["ADMIN"] or row["country_submitted"] == suggested else "no"
+    
+    if country_match == "no":
+        calculated_mismatches_2 += 1
 
-print(f"\n\nA total of {total_geo_registries} registries have been found that contain both coordinates and country information, and these have been written in country_and_coordinates_data.json.txt.")
+false_positive_mismatches = calculated_mismatches_1 - calculated_mismatches_2
 
-# Bήμα 6: Ενα συνοδευτικό pie chart για τα αποτελέσματα με κλεμμένο κώδικα από το προηγούμενο σκριπτ.
+print(f"\nΥπολογίζοντας αποκλειστικά με geopandas, βρίσκω {calculated_mismatches_2} αναντιστοιχίες χώρας-συντεταγμένων και ανιχνεύω {false_positive_mismatches} ψευδώς θετικές αναντιστοιχίες")
 
-no_data = total_registries - total_geo_registries
-sizes = [total_geo_registries, no_data]
-labels = ["registries with country and coordinates","no data"]
-colors = ["blue", "red"]
-
-plt.figure(figsize=(6, 6))
-plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors = ["blue","red"])
-plt.title("Ποσοστό δειγμάτων με ή χωρίς γεωγραφική πληροφορία πηγής απομονώσεως")
-# συμβολοσειρά της μορφής "42.3% (152)"
-# lambda pct: f"" καλεί συνάρτηση
-# {pct:.1f}%: υπολογίζει ποσοστό με .1 δεκαδικο ψηφιο
-# pct / 100. * sum(sizes) μετατρέπει ποσοστό σε απόλυτο αριθμό
-# int μετατρέπει απόλυτο αριθμό σε ακέραιο
-plt.figtext(0.5, 0.03, f"Σύνολο δειγμάτων: {total_registries}", ha='center', fontsize=10)
-plt.tight_layout()
-plt.savefig("countries_and_coordinates_pie_chart.png")
-plt.show()
-
+    

@@ -133,3 +133,43 @@ with open("curated_data_json.txt", "w", encoding= "utf-8") as file:
     json.dump(curated_data, file, indent= 2, ensure_ascii= False)
 
 print(f"\ncurated_data_json.txt has been created successfully! This json file is an enhanced version of countries_and_coordinates_curation.json.txt and does not include false positive mismatches")
+
+
+# Οπτικοποίηση των αποτελεσμάτων:
+
+# Γιατί ήταν σημαντικές οι παραπάνω διορθώσεις;
+
+# Διάγραμμα 1: Bar Plot που συγκρίνει τον αριθμό των αποτελεσμάτων mismatch ύστερα από την επεξεργασία των συντεταγμένων με τον geopandas χάρτη πολυγώνων naturalearth_lowres, τον αριθμό των mismatch μετά την διόρθωση για Σερβία, τον αριθμό των mismatch μετά την διόρθωση για ΗΠΑ και τον αριθμό των mismatch μετά την συμπλήρωση χώρας με Nominatim για τις συντεταγμένες που δεν εντοπίζονται στο χάρτη naturalearth_lowres.
+
+# Yπολογίζω mismatches αποκλειστικά με geopandas, δεν έχουμε άκομα ανιχνεύσει καμία ψευδώς θετική αναντιστοιχία χώρας-συντεταγμένων:
+
+calculated_mismatches = 0
+false_positive_mismatches = 0 
+
+for _, row in combined_geo_dataframe.iterrows():
+    country_match = "yes" if row["country_submitted"] == row["ADMIN"] else "no"
+    if country_match == "no":
+        calculated_mismatches += 1
+
+print(f"\nΥπολογίζοντας αποκλειστικά με geopandas, βρίσκω {calculated_mismatches} αναντιστοιχίες χώρας-συντεταγμένων και ανιχνεύω {false_positive_mismatches} ψευδώς θετικές αναντιστοιχίες")
+
+calculated_mismatches = 0
+false_positive_mismatches = 0 
+
+# Υπολογίζω mismatches με geopandas και πραγματοποιώ την διόρθωση για ΗΠΑ
+
+for _, row in combined_geo_dataframe.iterrows():
+    
+    suggested = row["ADMIN"]
+    
+    if suggested == "United States of America":
+        suggested = "USA"
+    
+    country_match = "yes" if row["country_submitted"] == row["ADMIN"] or row["country_submitted"] == suggested else "no"
+    
+    if country_match == "no":
+        calculated_mismatches += 1
+
+print(f"\nΥπολογίζοντας αποκλειστικά με geopandas, βρίσκω {calculated_mismatches} αναντιστοιχίες χώρας-συντεταγμένων και ανιχνεύω {false_positive_mismatches} ψευδώς θετικές αναντιστοιχίες")
+
+    
