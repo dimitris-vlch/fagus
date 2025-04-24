@@ -57,6 +57,7 @@ colors = ["blue", "red"]
 plt.figure(figsize=(6, 6))
 plt.pie(sizes, labels=labels, autopct="%1.1f%%", startangle=90, colors = ["blue","red"])
 plt.title("Ποσοστό δειγμάτων με ή χωρίς γεωγραφική πληροφορία πηγής απομονώσεως")
+plt.figtext(0.5, 0.03, f"Σύνολο δειγμάτων: {total_samples}", ha='center', fontsize=10)
 plt.tight_layout()
 plt.savefig("countries_and_coordinates_pie_chart.png")
 plt.show()
