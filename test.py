@@ -38,10 +38,10 @@ labels = ["registries with country and coordinates","no data"]
 colors = ["blue", "red"]
 
 plt.figure(figsize=(6, 6))
-plt.pie(sizes, labels=labels, autopct= lambda pct: "{pct:.1f}% (int{pct / 100. * sum(sizes)})", startangle=90, colors = ["blue","red"])
+plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors = ["blue","red"])
 plt.title("Ποσοστό δειγμάτων με ή χωρίς γεωγραφική πληροφορία πηγής απομονώσεως")
 # συμβολοσειρά της μορφής "42.3% (152)"
-# lambda pct: καλεί συνάρτηση
+# lambda pct: f"" καλεί συνάρτηση
 # {pct:.1f}%: υπολογίζει ποσοστό με .1 δεκαδικο ψηφιο
 # pct / 100. * sum(sizes) μετατρέπει ποσοστό σε απόλυτο αριθμό
 # int μετατρέπει απόλυτο αριθμό σε ακέραιο

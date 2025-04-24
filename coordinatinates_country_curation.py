@@ -18,7 +18,7 @@
 import json
 import matplotlib.pyplot as plt 
 import geopandas as gpd 
-import pandas as pd
+import pandas as pd 
 from shapely.geometry import Point 
 from geopy.geocoders import Nominatim  
 
@@ -55,8 +55,13 @@ labels = ["registries with country and coordinates","no data"]
 colors = ["blue", "red"]
 
 plt.figure(figsize=(6, 6))
-plt.pie(sizes, labels=labels, autopct="%1.1f%%", startangle=90, colors = ["blue","red"])
+plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors = ["blue","red"])
 plt.title("Ποσοστό δειγμάτων με ή χωρίς γεωγραφική πληροφορία πηγής απομονώσεως")
+# συμβολοσειρά της μορφής "42.3% (152)"
+# lambda pct: f"" καλεί συνάρτηση
+# {pct:.1f}%: υπολογίζει ποσοστό με .1 δεκαδικο ψηφιο
+# pct / 100. * sum(sizes) μετατρέπει ποσοστό σε απόλυτο αριθμό
+# int μετατρέπει απόλυτο αριθμό σε ακέραιο
 plt.figtext(0.5, 0.03, f"Σύνολο δειγμάτων: {total_registries}", ha='center', fontsize=10)
 plt.tight_layout()
 plt.savefig("countries_and_coordinates_pie_chart.png")
