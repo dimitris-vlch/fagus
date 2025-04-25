@@ -21,6 +21,9 @@ import geopandas as gpd
 import pandas as pd 
 from shapely.geometry import Point 
 from geopy.geocoders import Nominatim  
+import numpy as np
+from matplotlib.offsetbox import OffsetImage, AnnotationBbox
+import matplotlib.image as mpimg
 
 # Βήμα 2: Εισαγωγή json αρχείου.
 
@@ -184,7 +187,7 @@ sizes = [total_geo_registries, no_data]
 labels = ["registries with country and coordinates","no data"]
 colors = ["blue", "red"]
 
-plt.figure(figsize=(6, 6))
+fig = plt.figure(figsize=(6, 6)) # ορίζω fig = ώστε μετά να έχω προσβασε σε fig.add_axes() για την τροποποίηση της θέσης του λόγκο.
 plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors = ["blue","red"])
 plt.title("Ποσοστό εγγραφών με ή χωρίς γεωγραφική πληροφορία χώρας και συντεταγμένων.")
 # συμβολοσειρά της μορφής "42.3% (152)"
@@ -193,6 +196,14 @@ plt.title("Ποσοστό εγγραφών με ή χωρίς γεωγραφικ
 # pct / 100. * sum(sizes) μετατρέπει ποσοστό σε απόλυτο αριθμό
 # int μετατρέπει απόλυτο αριθμό σε ακέραιο
 plt.figtext(0.5, 0.03, f"Σύνολο εγγραφών: {total_registries}", ha='center', fontsize=12)
+
+# Python-logo
+python_logo = mpimg.imread('png-clipart-python-others-text-logo.png')  
+imagebox = OffsetImage(python_logo, zoom=0.1)  # zoom για να μικρύνει
+logo_ax = fig.add_axes([0.89, -0.02, 0.1, 0.1], anchor='NE', zorder=1, facecolor = 'white')
+logo_ax.imshow(python_logo)
+logo_ax.axis('off')
+
 plt.tight_layout()
 plt.savefig("countries_and_coordinates_pie_chart.png")
 plt.show()
@@ -214,11 +225,19 @@ sizes = [match, mismatch]
 labels = ["coordinates alligning with country","faulty coordinates or country"]
 colors = ["blue", "red"]
 
-plt.figure(figsize=(6, 6))
+fig = plt.figure(figsize=(6, 6)) # ορίζω fig = ώστε μετά να έχω προσβασε σε fig.add_axes() για την τροποποίηση της θέσης του λόγκο.
 plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=00, colors = ["blue","red"])
 plt.title("Εγγραφές με συντεταγμένες που συμφωνούν με την δηλωμένη χώρα συγκριτικα με εγγραφές που διαφωνούν")
 plt.figtext(0.5, 0.02, f"Σύνολο εγγραφών: {total_registries}", ha='center', fontsize=12)
 plt.figtext(0.5, 0.07, f"Σύνολο εγγραφών με συντεγμένες και χώρα: {len(curated_data)}", ha='center', fontsize=12)
+
+# Python-logo
+python_logo = mpimg.imread('png-clipart-python-others-text-logo.png')  
+imagebox = OffsetImage(python_logo, zoom=0.1)  # zoom για να μικρύνει
+logo_ax = fig.add_axes([0.89, -0.02, 0.1, 0.1], anchor='NE', zorder=1, facecolor = 'white')
+logo_ax.imshow(python_logo)
+logo_ax.axis('off')
+
 plt.tight_layout()
 plt.savefig("countries_and_coordinates_pie_chart.png")
 plt.show()
