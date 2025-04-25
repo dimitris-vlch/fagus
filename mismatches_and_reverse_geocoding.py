@@ -6,6 +6,9 @@ import pandas as pd
 from shapely.geometry import Point
 import numpy as np
 import time
+from matplotlib.offsetbox import OffsetImage, AnnotationBbox
+import matplotlib.image as mpimg
+
 
 # Κώδικας και βιβλιοθήκες που λειτουργούν ως υπόβαθρο για να τρέξει το σκριπτ.
 
@@ -291,10 +294,31 @@ ax.legend()
 # ha='center' horizontal allignment, στοίχιση κειμένου γύρω από το μέσο της θέσης που δηλώνουμε.
 # Συνολικά: Η τιμή θα τοποθετηθεί στό μέσο της μπάρας και λίγο ποιό πάνω από την κορυφή της.
 
+
 for bars in [bars1, bars2]:
     for bar in bars:
         yval = bar.get_height()
         ax.text(bar.get_x() + bar.get_width()/2.0, yval + 1, int(yval), ha='center', va='bottom', fontsize=10)
+
+
+# Βάζουμε logo-python:
+# Κατεβάζω logo: https://www.pngegg.com/en/png-cmbei
+# Με 3 κλάσεις matplotlib from matplotlib.offsetbox import OffsetImage, AnnotationBbox και import matplotlib.image as mpimg
+
+# Φορτώνω εικόνα 
+python_logo = mpimg.imread('png-clipart-python-others-text-logo.png')  
+
+# Δημιουργία image box
+imagebox = OffsetImage(python_logo, zoom=0.1)  # zoom για να μικρύνει
+
+# Δημιουργώ μικρό χώρο (axes) στο figure, σε ποσοστά
+logo_ax = fig.add_axes([0.89, -0.02, 0.1, 0.1], anchor='NE', zorder=1, facecolor = 'white')
+
+# Βάζω την εικόνα μέσα στον χώρο αυτό
+logo_ax.imshow(python_logo)
+
+# Κρύβω άξονες
+logo_ax.axis('off')
 
 plt.tight_layout()
 plt.savefig("mismatch_curation_bar_plot.png")

@@ -164,7 +164,7 @@ bars2 = ax.bar(x + width/2, false_positives, width, label='Ψευδώς θετι
 ax.set_ylabel("Registries", fontsize=12)
 ax.set_title("Περιορισμοί geopandas & αναγκαιότητα βελτιστοποίησης \nγια τον εντοπισμό ψευδών θετικών αναντιστοιχιών", fontsize=14)
 ax.set_xticks(x)
-ax.set_xticklabels(labels, rotation=20)
+ax.set_xticklabels(labels, rotation=30)
 ax.legend()
 
 # Εμφάνιση αριθμού δειγμάτων πάνω από κάθε μπάρα:
@@ -189,17 +189,21 @@ for bars in [bars1, bars2]:
 # Με 3 κλάσεις matplotlib from matplotlib.offsetbox import OffsetImage, AnnotationBbox και import matplotlib.image as mpimg
 
 # Φορτώνω εικόνα 
-python_logo = mpimg.imread('png-clipart-python-others-text-logo')  
+python_logo = mpimg.imread('png-clipart-python-others-text-logo.png')  
 
 # Δημιουργία image box
-imagebox = OffsetImage(python_logo, zoom=0.2)  # zoom για να μικρύνει
-ab = AnnotationBbox(imagebox, (2.5, max(mismatches)+20), frameon=False)  # Τοποθέτηση στο γράφημα
+imagebox = OffsetImage(python_logo, zoom=0.1)  # zoom για να μικρύνει
 
-ax.add_artist(ab)
+# Δημιουργώ μικρό χώρο (axes) στο figure, σε ποσοστά
+logo_ax = fig.add_axes([0.89, -0.02, 0.1, 0.1], anchor='NE', zorder=1, facecolor = 'white')
 
+# Βάζω την εικόνα μέσα στον χώρο αυτό
+logo_ax.imshow(python_logo)
+
+# Κρύβω άξονες
+logo_ax.axis('off')
 
 plt.tight_layout()
 plt.savefig("mismatch_curation_bar_plot.png")
 plt.show()
-
 
