@@ -8,6 +8,9 @@
 import json
 import matplotlib.pyplot as plt
 from collections import Counter 
+import numpy as np
+from matplotlib.offsetbox import OffsetImage, AnnotationBbox
+import matplotlib.image as mpimg
 
 with open("results_merged_json.txt", "r", encoding="utf-8") as file:
     data = json.load(file)
@@ -97,7 +100,7 @@ colors = ["blue","red"] # χρώματα των κομματιών της πίτ
 # startangle=90 γωνία εκκίνησης του διαγράμματος της πίτας. 90 μοίρες και είναι όπως ρολοί τις 12:00.
 # colors=colors δίνει τα χρώματα όπως και τα ορίσαμε παραπάνω.
 
-plt.figure(figsize=(6, 6))
+fig = plt.figure(figsize=(6, 6))
 plt.pie(
     sizes,
     labels=labels,
@@ -113,7 +116,15 @@ plt.pie(
 
 plt.figtext(0.5, 0.03, f"Σύνολο εγγραφών: {total_registries}", ha='center', fontsize=10) # σχολιασμός παρακάτω.
 plt.title("Ποσοστό εγγραφών με ή χωρίς γεωγραφική πληροφορία")
-plt.figtext(0.5, 0.03, f"Σύνολο εγγραφών: {total_registries}", ha='center', fontsize=10)
+
+# Python-logo
+python_logo = mpimg.imread('png-clipart-python-others-text-logo.png')  
+imagebox = OffsetImage(python_logo, zoom=0.1)  # zoom για να μικρύνει
+logo_ax = fig.add_axes([0.89, -0.02, 0.1, 0.1], anchor='NE', zorder=1, facecolor = 'white')
+logo_ax.imshow(python_logo)
+logo_ax.axis('off')
+
+
 plt.tight_layout()
 plt.savefig("geo_pie_chart.png")  # αποθήκευση εικόνας
 plt.show()
@@ -130,7 +141,7 @@ colors = ["blue","red"]
 # η .bar() δημιουργεί τις μπάρεις του Bar Chart. στο παράδειγμα μας είναι της μορφής .bar(x,y,colors), δηλαδή οι τιμές του  χ άξονα, στη συνέχεια οι τιμές του ψ άξονα και τέλος τα χρώματα των μπαρών.
 # με .ylabel() ορίζουμε τον τίτλο του κάθετου άξονα.
 
-plt.figure(figsize=(6,4))
+fig = plt.figure(figsize=(6,4))
 plt.bar(labels, sizes, color=colors)
 plt.ylabel("Αριθμός εγγραφών")
 
@@ -142,6 +153,14 @@ plt.figtext(0.5, 0.03, f"Σύνολο εγγραφών: {total_registries}", ha=
 
 plt.title("Αριθμός εγγραφών με ή χωρίς γεωγραφική πληροφορία")
 plt.figtext(0.5, 0.03, f"Σύνολο εγγραφών: {total_registries}", ha='center', fontsize=10)
+
+# Python-logo
+python_logo = mpimg.imread('png-clipart-python-others-text-logo.png')  
+imagebox = OffsetImage(python_logo, zoom=0.1)  # zoom για να μικρύνει
+logo_ax = fig.add_axes([0.89, -0.02, 0.1, 0.1], anchor='NE', zorder=1, facecolor = 'white')
+logo_ax.imshow(python_logo)
+logo_ax.axis('off')
+
 plt.tight_layout(rect=[0, 0.05, 1, 1])  # η συγκεκριμένη ρύθμιση για .tight_layout() τραβάει το γράφημα λίγο προς τα πάνω για να κάνει χώρο και για το .figtext() να χωρέσει.
 plt.savefig("geo_bar_Chart.png")
 plt.show()
@@ -160,7 +179,7 @@ field_percentages = [ (value / total_registries) * 100 for value in field_values
 # Βήμα 10: Bar Chart για την απεικόνιση των εγγραφών που έχουν γεωγραφική πληροφορία.
 
 field_names = ["country", "location", "coordinates", "isolation_source"]
-plt.figure(figsize=(9,5))
+fig = plt.figure(figsize=(9,5))
 plt.bar(field_names, field_values, color=colors_bar_chart) #σε .bar() δεν ορίζουμε ως labels=   
 for i, value in enumerate(field_values):
     plt.text(i, value + 10, str(value), ha='center', fontsize=9) # λεζάντα που βάζει τον αριθμο εγγραφών λίγο πάνω απο κάθε μπαρα. value + 10 καθορίζει την θέση της λεζάντας, ενω το str(value) το κείμενο.
@@ -171,13 +190,21 @@ plt.ylabel("Συχνότητα εμφάνισης γεωγραφικής πλη�
 plt.title("Bar Chart για τη συχνότητα των πεδίων με γεωγραφική πληροφορία")
 plt.xticks(rotation=30) # περιστρέφει ετικέτες στο χ αξονα κατα 30 μοίρες ώστε να μην επικαλύπτονται όταν αυτές είναι πολύ μεγάλες.
 plt.figtext(0.5, 0.03, f"Σύνολο εγγραφών: {total_registries}", ha="center", fontsize=10) # λεζάντα στο κάτω μέρος του γραφήματος που αναφέρει τον συνολικό αριθμό των εγγραφών.
+
+# Python-logo
+python_logo = mpimg.imread('png-clipart-python-others-text-logo.png')  
+imagebox = OffsetImage(python_logo, zoom=0.1)  # zoom για να μικρύνει
+logo_ax = fig.add_axes([0.89, -0.02, 0.1, 0.1], anchor='NE', zorder=1, facecolor = 'white')
+logo_ax.imshow(python_logo)
+logo_ax.axis('off')
+
 plt.tight_layout(rect=[0, 0.05, 1, 1])
 plt.savefig("geo_fields_bar_chart.png")
 plt.show()
 
 # Βήμα 11: multi-pie diagram Για καθε πεδιο γεωγραφικής πληροφορίας εμφανίζετια ενα μικρο pie chart που διχνει πόσα δείγματα έχουν το πεδιο αυτό και πόσα δείγματα δεν έχουν το πεδίο αυτό.
 
-plt.figure(figsize=(12,7))
+fig = plt.figure(figsize=(12,7))
 plt.figtext(0.5, 0.95, "Ποσοστά κάλυψης γεωγραφικών πεδίων ως προς το σύνολο των εγγραφών", ha="center", fontsize=14, fontweight="bold") # ορίζουμε τίτλο οχι με .title() αλλά με .figtext() γιατί το .title() θα το χρειαστούμε αργότερα για κάθε ξεχωριστό pie chart.
 
 rows = 2    # ορίζουμε μεταβλητές για γραμμες και στηλες που θα ορίσουν τα 8 κελιά που καθένα θα περιέχει ένα pie chart.
@@ -200,6 +227,14 @@ for idx, (field_name, field_value) in enumerate(zip(field_names, field_values)):
     plt.subplot(rows, cols, idx + 1)    # Το plt.subplot() δημιουργεί πολλαπλά γραφήματα (subplots) σε μία ενιαία εικόνα. Του δίνουμε τις μεταβλητες που ορισαμε παραπάνω γραμμές και στήλες και μετά τη μεταβλητή idx που παίρνει αριθμητικές θέσεις για field_name.Επειδή το enumerate() ξεκινάει από 0, αλλά το subplot() περιμένει θέσεις ξεκινώντας από 1. Άρα: idx = 0 → θέση 1 idx = 1 → θέση 2. Ειμαστέ έτοιμοι τωρα να ορισουμε .pie().
     plt.pie(sizes,labels=labels,autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors=colors)
     plt.title(field_name, fontsize=10, fontweight="bold")
+
+# Python-logo
+python_logo = mpimg.imread('png-clipart-python-others-text-logo.png')  
+imagebox = OffsetImage(python_logo, zoom=0.1)  # zoom για να μικρύνει
+logo_ax = fig.add_axes([0.89, -0.02, 0.1, 0.1], anchor='NE', zorder=1, facecolor = 'white')
+logo_ax.imshow(python_logo)
+logo_ax.axis('off')
+
 plt.tight_layout(rect=[0, 0.05, 0.9, 0.9])
 plt.savefig("geo_fields_pie_matrix.png")
 plt.show()
@@ -213,8 +248,16 @@ no_data= total_registries - country
 sizes= [country, no_data]
 labels= ["country","no data"]
 colors= ["blue", "red"]
-plt.figure(figsize=(6, 6))
+fig = plt.figure(figsize=(6, 6))
 plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors = ["blue","red"])
+
+# Python-logo
+python_logo = mpimg.imread('png-clipart-python-others-text-logo.png')  
+imagebox = OffsetImage(python_logo, zoom=0.1)  # zoom για να μικρύνει
+logo_ax = fig.add_axes([0.89, -0.02, 0.1, 0.1], anchor='NE', zorder=1, facecolor = 'white')
+logo_ax.imshow(python_logo)
+logo_ax.axis('off')
+
 plt.tight_layout()
 plt.title("Ποσοστό εγγραφών με ή χωρίς γεωγραφική πληροφορία χώρας")
 plt.figtext(0.5, 0.03, f"Σύνολο εγγραφών: {total_registries}", ha='center', fontsize=10)
@@ -229,8 +272,16 @@ sizes= [location, no_data]
 labels= ["location","no data"]
 colors= ["blue", "red"]
 
-plt.figure(figsize=(6, 6))
+fig = plt.figure(figsize=(6, 6))
 plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors = ["blue","red"])
+
+# Python-logo
+python_logo = mpimg.imread('png-clipart-python-others-text-logo.png')  
+imagebox = OffsetImage(python_logo, zoom=0.1)  # zoom για να μικρύνει
+logo_ax = fig.add_axes([0.89, -0.02, 0.1, 0.1], anchor='NE', zorder=1, facecolor = 'white')
+logo_ax.imshow(python_logo)
+logo_ax.axis('off')
+
 plt.tight_layout()
 plt.title("Ποσοστό εγγραφών με ή χωρίς γεωγραφική πληροφορία περιοχής")
 plt.figtext(0.5, 0.03, f"Σύνολο εγγραφών: {total_registries}", ha='center', fontsize=10)
@@ -245,10 +296,18 @@ sizes=[coordinates, no_data]
 labels= ["coordinates","no data"]
 colors= ["blue", "red"]
 
-plt.figure(figsize=(6, 6))
+fig= plt.figure(figsize=(6, 6))
 plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors = ["blue","red"])
 plt.title("Ποσοστό εγγραφών με ή χωρίς γεωγραφική πληροφορία συντεταγμένων")
 plt.figtext(0.5, 0.03, f"Σύνολο εγγραφών: {total_registries}", ha='center', fontsize=10)
+
+# Python-logo
+python_logo = mpimg.imread('png-clipart-python-others-text-logo.png')  
+imagebox = OffsetImage(python_logo, zoom=0.1)  # zoom για να μικρύνει
+logo_ax = fig.add_axes([0.89, -0.02, 0.1, 0.1], anchor='NE', zorder=1, facecolor = 'white')
+logo_ax.imshow(python_logo)
+logo_ax.axis('off')
+
 plt.tight_layout()
 plt.savefig("coordinates_pie_chart.png")
 plt.show()
@@ -262,10 +321,18 @@ sizes= [isolation_source, no_data]
 labels= ["isolation_source","no data"]
 colors= ["blue", "red"]
 
-plt.figure(figsize=(6, 6))
+fig = plt.figure(figsize=(6, 6))
 plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors = ["blue","red"])
 plt.title("Ποσοστό εγγραφών με ή χωρίς γεωγραφική πληροφορία πηγής απομονώσεως")
 plt.figtext(0.5, 0.03, f"Σύνολο εγγραφών: {total_registries}", ha='center', fontsize=10)
+
+# Python-logo
+python_logo = mpimg.imread('png-clipart-python-others-text-logo.png')  
+imagebox = OffsetImage(python_logo, zoom=0.1)  # zoom για να μικρύνει
+logo_ax = fig.add_axes([0.89, -0.02, 0.1, 0.1], anchor='NE', zorder=1, facecolor = 'white')
+logo_ax.imshow(python_logo)
+logo_ax.axis('off')
+
 plt.tight_layout()
 plt.savefig("isolation_source_pie_chart.png")
 plt.show()
