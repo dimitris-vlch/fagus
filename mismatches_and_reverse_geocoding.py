@@ -4,6 +4,7 @@ from geopy.geocoders import Nominatim
 import geopandas as gpd 
 import pandas as pd 
 from shapely.geometry import Point
+import numpy as np
 import time
 
 # Κώδικας και βιβλιοθήκες που λειτουργούν ως υπόβαθρο για να τρέξει το σκριπτ.
