@@ -105,3 +105,48 @@ for registry in curated_data:
 false_positive_mismatches = calculated_mismatches_1 - mismatch
 
 print(f"\nΥπολογίζοντας με geopandas και  και διορθώνοντας για ΗΠΑ και Σερβία, βρίσκω {mismatch} αναντιστοιχίες χώρας-συντεταγμένων και ανιχνεύω {false_positive_mismatches} ψευδώς θετικές αναντιστοιχίες")
+
+# Εισαγωγή απαραίτητων βιβλιοθηκών
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Ονόματα για τα 4 ζευγάρια
+labels = [
+    "Geopandas (αρχικά)",
+    "Geopandas + ΗΠΑ",
+    "Geopandas + ΗΠΑ+Σερβία",
+    "Geopandas + Nominatim"
+]
+
+# Υψος κύριων bars (mismatches)
+mismatches = [128, 110, 93, 83]
+
+# Υψος συνοδευτικών bars (false positives που διορθώθηκαν σε κάθε βήμα)
+false_positives = [0, 18, 17, 10]  # Υπολογισμένα ως διαφορά με προηγούμενο
+
+x = np.arange(len(labels))  # θέσεις για τις μπάρες
+width = 0.35  # πλάτος μπάρας
+
+fig, ax = plt.subplots(figsize=(10, 6))
+
+# Μπάρες mismatches
+bars1 = ax.bar(x - width/2, mismatches, width, label='Αναντιστοιχίες (Mismatch)', color='skyblue')
+
+# Μπάρες false positives
+bars2 = ax.bar(x + width/2, false_positives, width, label='Ψευδώς θετικές που διορθώθηκαν', color='orange')
+
+# Τίτλοι και ετικέτες
+ax.set_ylabel("Αριθμός περιπτώσεων", fontsize=12)
+ax.set_title("Αναγωγή αναντιστοιχιών και εντοπισμός ψευδώς θετικών κατά τις διορθώσεις", fontsize=14)
+ax.set_xticks(x)
+ax.set_xticklabels(labels, rotation=20)
+ax.legend()
+
+# Τιμές πάνω από κάθε μπάρα
+for bars in [bars1, bars2]:
+    for bar in bars:
+        yval = bar.get_height()
+        ax.text(bar.get_x() + bar.get_width()/2.0, yval + 1, int(yval), ha='center', va='bottom', fontsize=10)
+
+plt.tight_layout()
+plt.show()

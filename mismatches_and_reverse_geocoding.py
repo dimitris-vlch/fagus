@@ -217,3 +217,5 @@ for registry in curated_data:
 false_positive_mismatches = calculated_mismatches_1 - mismatch
 
 print(f"\nΥπολογίζοντας με geopandas και Nominatim και διορθώνοντας για ΗΠΑ και Σερβία, βρίσκω {mismatch} αναντιστοιχίες χώρας-συντεταγμένων και ανιχνεύω {false_positive_mismatches} ψευδώς θετικές αναντιστοιχίες")
+
+# Bar Plot
