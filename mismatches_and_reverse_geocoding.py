@@ -218,4 +218,84 @@ false_positive_mismatches = calculated_mismatches_1 - mismatch
 
 print(f"\nΥπολογίζοντας με geopandas και Nominatim και διορθώνοντας για ΗΠΑ και Σερβία, βρίσκω {mismatch} αναντιστοιχίες χώρας-συντεταγμένων και ανιχνεύω {false_positive_mismatches} ψευδώς θετικές αναντιστοιχίες")
 
+
 # Bar Plot
+
+
+# Ονόματα για τα 4 ζευγάρια
+labels = [
+    "Geopandas (αρχικά)",
+    "Geopandas + ΗΠΑ",
+    "Geopandas + ΗΠΑ + Σερβία",
+    "Geopandas + Nominatim + ΗΠΑ + Σερβία"
+]
+
+# Υψος κύριων bars (mismatches)
+mismatches = [
+    calculated_mismatches_1,
+    calculated_mismatches_2,
+    calculated_mismatches_3,
+    mismatch
+]
+
+# Υψος συνοδευτικών bars (false positives που διορθώθηκαν σε κάθε βήμα)
+false_positives = [
+    calculated_mismatches_1 - calculated_mismatches_1,
+    calculated_mismatches_1 - calculated_mismatches_2,
+    calculated_mismatches_1 - calculated_mismatches_3,
+    calculated_mismatches_1 - mismatch,
+] 
+
+# Πίνακας τύπου numpy, len(labels) 4 αφού έχουμε 4 ζευγάρια labels.
+x = np.arange(len(labels)) 
+
+width = 0.35 # Πάχος της μπάρας
+width = 0.35 # Πλάτος της μπάρας
+
+fig, ax = plt.subplots(figsize=(10, 6)) # Πλαίσιο fig και άξονες ax για το γράφημα
+
+# Για κάθε label, αντιστοιχούν 2 μπάρες.
+# x - width/2, μετακινεί την μπάρα λίγο αριστερά από το κέντρο της θέσης
+# x + width/2, μετακινεί την μπάρα λίγο δεξιά από το κέντρο της θέσης
+# Ύψος μπάρας είναι τα mismatches
+# Το πλάτος κάθε μπαρας είναι το 35% δια του 2 του διαθέσιμου κενού.
+# label το όνομα της κάθε μπάρας και color το χρώμα
+
+bars1 = ax.bar(x - width/2, mismatches, width, label='Αναντιστοιχίες (Mismatch)', color='skyblue') # Μπάρες mismatches
+
+bars2 = ax.bar(x + width/2, false_positives, width, label='Ψευδώς θετικές που διορθώθηκαν', color='orange') # Μπάρες false positives
+
+# Τίτλοι και ετικέτες
+# ax.set_ylabel() τίτλος για άξονα y
+# ax.set_title () τίτλος γραφήματος
+# ax.set_xticks(x) βάζει ετικέτες στις θέσεις 0, 1, 2, 3
+# ax.set_xticklabels() βάζει ετικέτες την μεταβλητή που ορίζουμε
+# ax.legend() τοποθετεί υπόμνημα με τα ονόματα των μπαρών και το χρώμα τους. διαβάζει τα labels στο ax.bar(...)), και τα αντίστοιχα χρώματά τους.
+
+
+ax.set_ylabel("Registries", fontsize=12)
+ax.set_title("Περιορισμοί geopandas & αναγκαιότητα βελτιστοποίησης για τον εντοπισμό ψευδών θετικών αναντιστοιχιών", fontsize=14)
+ax.set_xticks(x)
+ax.set_xticklabels(labels, rotation=20)
+ax.legend()
+
+# Εμφάνιση αριθμού δειγμάτων πάνω από κάθε μπάρα:
+# Ορίζουμε πρώτα εξωτερικό loop για κάθε μπάρα mismatch & false positive και έπειτα εσωτερικό loop όλες τις μπάρες μαζί.
+# Που θα τοποθετηθεί το νούμερο στον άξονα χ; στην θέση bar.get_x() για να δηλώσουμε την θέση να είναι ίδια με την θέση που ξεκινάει η μπάρα στο άξονα χ
+# bar.get_width()/2.0  Με αυτή την οδηγία το κείμενο στοιχίζεται γύρω από το μέσο της μπάρας.
+# yval = bar.get_height() Εδώ το yval είναι η τίμη του ύψους της μπάρας, δηλαδή οι τιμές mismatches και false_positives.
+# int(yval) μετατρέπει την τιμή yval σε ακέραιο αριθμό. 
+# yval + 1 στην θέση αυτή βάζουμε που θα εμφανίζεται το κείμενο. Λίγο πάνω (ένα) από το ύψος της μπάρας.
+# va='bottom' vertical allignment, στοίχιση κειμένου δηλαδή ακριβώς κάτω από την θέση που δηλώνουμε.
+# ha='center' horizontal allignment, στοίχιση κειμένου γύρω από το μέσο της θέσης που δηλώνουμε.
+# Συνολικά: Η τιμή θα τοποθετηθεί στό μέσο της μπάρας και λίγο ποιό πάνω από την κορυφή της.
+
+for bars in [bars1, bars2]:
+    for bar in bars:
+        yval = bar.get_height()
+        ax.text(bar.get_x() + bar.get_width()/2.0, yval + 1, int(yval), ha='center', va='bottom', fontsize=10)
+
+plt.tight_layout()
+plt.savefig("mismatch_curation_bar_plot.png")
+plt.show()
+
