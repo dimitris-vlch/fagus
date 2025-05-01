@@ -89,33 +89,33 @@
     </mxGraphModel>
   </diagram>
   <diagram id="-TnvmqEqA2xLUWq6llNa" name="Page-2">
-    <mxGraphModel dx="1050" dy="622" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="950" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="913" dy="541" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="950" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="TO6lL-4IeJvYnI1GItPU-1" value="Location-related Metadata" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;perimeterSpacing=2;verticalAlign=middle;horizontal=1;spacing=5;" vertex="1" parent="1">
-          <mxGeometry x="390" y="200" width="140" height="49" as="geometry" />
+        <mxCell id="TO6lL-4IeJvYnI1GItPU-1" value="5,441 sample registries&lt;div&gt;37 study registries&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;perimeterSpacing=2;verticalAlign=middle;horizontal=1;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="390" y="230" width="140" height="49" as="geometry" />
         </mxCell>
         <mxCell id="TO6lL-4IeJvYnI1GItPU-2" value="Inconsistencies" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="277" y="344" width="120" height="40" as="geometry" />
+          <mxGeometry x="277" y="560" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="TO6lL-4IeJvYnI1GItPU-3" value="Gaps" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="525" y="344" width="120" height="40" as="geometry" />
+          <mxGeometry x="525" y="560" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="TO6lL-4IeJvYnI1GItPU-4" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;strokeWidth=2;targetPerimeterSpacing=9;sourcePerimeterSpacing=11;" edge="1" parent="1" source="TO6lL-4IeJvYnI1GItPU-1" target="TO6lL-4IeJvYnI1GItPU-2">
+        <mxCell id="TO6lL-4IeJvYnI1GItPU-4" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;strokeWidth=2;targetPerimeterSpacing=9;sourcePerimeterSpacing=11;" edge="1" parent="1" target="TO6lL-4IeJvYnI1GItPU-2">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="551" y="299" as="sourcePoint" />
-            <mxPoint x="601" y="249" as="targetPoint" />
+            <mxPoint x="426.9354838709678" y="478" as="sourcePoint" />
+            <mxPoint x="601" y="465" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="TO6lL-4IeJvYnI1GItPU-5" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;strokeWidth=2;sourcePerimeterSpacing=11;targetPerimeterSpacing=9;" edge="1" parent="1" source="TO6lL-4IeJvYnI1GItPU-1" target="TO6lL-4IeJvYnI1GItPU-3">
+        <mxCell id="TO6lL-4IeJvYnI1GItPU-5" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;strokeWidth=2;sourcePerimeterSpacing=11;targetPerimeterSpacing=9;" edge="1" parent="1" target="TO6lL-4IeJvYnI1GItPU-3">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="445" y="249" as="sourcePoint" />
-            <mxPoint x="377" y="329" as="targetPoint" />
+            <mxPoint x="493.6021505376343" y="478" as="sourcePoint" />
+            <mxPoint x="377" y="545" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="TO6lL-4IeJvYnI1GItPU-6" value="Fagus genetic data in European Nucleotide Database" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;perimeterSpacing=2;spacing=5;" vertex="1" parent="1">
-          <mxGeometry x="380" y="50" width="160" height="60" as="geometry" />
+          <mxGeometry x="380" y="80" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="TO6lL-4IeJvYnI1GItPU-7" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;strokeWidth=2;targetPerimeterSpacing=7;sourcePerimeterSpacing=7;" edge="1" parent="1" source="TO6lL-4IeJvYnI1GItPU-6" target="TO6lL-4IeJvYnI1GItPU-1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -124,55 +124,64 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="TO6lL-4IeJvYnI1GItPU-8" value="Parsing publication information" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;perimeterSpacing=0;" vertex="1" parent="1">
-          <mxGeometry x="525" y="478" width="120" height="50" as="geometry" />
+          <mxGeometry x="525" y="694" width="120" height="50" as="geometry" />
         </mxCell>
         <mxCell id="TO6lL-4IeJvYnI1GItPU-9" value="&amp;nbsp;Reverse Geocoding coordinates" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;perimeterSpacing=0;" vertex="1" parent="1">
-          <mxGeometry x="277" y="478" width="120" height="50" as="geometry" />
+          <mxGeometry x="277" y="694" width="120" height="50" as="geometry" />
         </mxCell>
         <mxCell id="TO6lL-4IeJvYnI1GItPU-10" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;strokeWidth=2;targetPerimeterSpacing=9;sourcePerimeterSpacing=11;" edge="1" parent="1" source="TO6lL-4IeJvYnI1GItPU-2" target="TO6lL-4IeJvYnI1GItPU-9">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="433" y="262" as="sourcePoint" />
-            <mxPoint x="372" y="331" as="targetPoint" />
+            <mxPoint x="433" y="478" as="sourcePoint" />
+            <mxPoint x="372" y="547" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="TO6lL-4IeJvYnI1GItPU-11" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;strokeWidth=2;targetPerimeterSpacing=9;sourcePerimeterSpacing=11;" edge="1" parent="1" source="TO6lL-4IeJvYnI1GItPU-3" target="TO6lL-4IeJvYnI1GItPU-8">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="355" y="391" as="sourcePoint" />
-            <mxPoint x="355" y="471" as="targetPoint" />
+            <mxPoint x="355" y="607" as="sourcePoint" />
+            <mxPoint x="355" y="687" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="TO6lL-4IeJvYnI1GItPU-12" value="Country information retrived" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;perimeterSpacing=0;" vertex="1" parent="1">
-          <mxGeometry x="525" y="620" width="120" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="TO6lL-4IeJvYnI1GItPU-13" value="Misalignment detected" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;perimeterSpacing=0;" vertex="1" parent="1">
-          <mxGeometry x="276" y="620" width="120" height="50" as="geometry" />
+        <mxCell id="TO6lL-4IeJvYnI1GItPU-13" value="35 cases of country–coordinate misalignment" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;perimeterSpacing=0;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="262" y="836" width="150" height="50" as="geometry" />
         </mxCell>
         <mxCell id="TO6lL-4IeJvYnI1GItPU-14" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;strokeWidth=2;targetPerimeterSpacing=9;sourcePerimeterSpacing=11;" edge="1" parent="1" source="TO6lL-4IeJvYnI1GItPU-9" target="TO6lL-4IeJvYnI1GItPU-13">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="290" y="550" as="sourcePoint" />
-            <mxPoint x="290" y="624" as="targetPoint" />
+            <mxPoint x="290" y="766" as="sourcePoint" />
+            <mxPoint x="290" y="840" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="TO6lL-4IeJvYnI1GItPU-15" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;strokeWidth=2;targetPerimeterSpacing=9;sourcePerimeterSpacing=11;" edge="1" parent="1" source="TO6lL-4IeJvYnI1GItPU-8" target="TO6lL-4IeJvYnI1GItPU-12">
+        <mxCell id="TO6lL-4IeJvYnI1GItPU-15" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;strokeWidth=2;targetPerimeterSpacing=9;sourcePerimeterSpacing=11;" edge="1" parent="1" source="TO6lL-4IeJvYnI1GItPU-8">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="347" y="549" as="sourcePoint" />
-            <mxPoint x="346" y="621" as="targetPoint" />
+            <mxPoint x="347" y="765" as="sourcePoint" />
+            <mxPoint x="585" y="826.9999999999998" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="TO6lL-4IeJvYnI1GItPU-16" value="Curated Metadata exported as JSON &amp;amp; CSV" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;perimeterSpacing=2;verticalAlign=middle;horizontal=1;spacing=5;" vertex="1" parent="1">
-          <mxGeometry x="370" y="760" width="170" height="49" as="geometry" />
+          <mxGeometry x="370" y="976" width="170" height="49" as="geometry" />
         </mxCell>
         <mxCell id="TO6lL-4IeJvYnI1GItPU-17" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;strokeWidth=2;targetPerimeterSpacing=9;sourcePerimeterSpacing=11;" edge="1" parent="1" source="TO6lL-4IeJvYnI1GItPU-13" target="TO6lL-4IeJvYnI1GItPU-16">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="437" y="272" as="sourcePoint" />
-            <mxPoint x="373" y="345" as="targetPoint" />
+            <mxPoint x="437" y="488" as="sourcePoint" />
+            <mxPoint x="373" y="561" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="TO6lL-4IeJvYnI1GItPU-18" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;strokeWidth=2;targetPerimeterSpacing=9;sourcePerimeterSpacing=11;" edge="1" parent="1" source="TO6lL-4IeJvYnI1GItPU-12" target="TO6lL-4IeJvYnI1GItPU-16">
+        <mxCell id="TO6lL-4IeJvYnI1GItPU-18" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;strokeWidth=2;targetPerimeterSpacing=9;sourcePerimeterSpacing=11;" edge="1" parent="1" target="TO6lL-4IeJvYnI1GItPU-16">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="377" y="691" as="sourcePoint" />
-            <mxPoint x="435" y="759" as="targetPoint" />
+            <mxPoint x="551.4516129032259" y="896.9999999999998" as="sourcePoint" />
+            <mxPoint x="435" y="975" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="TO6lL-4IeJvYnI1GItPU-19" value="4.435 registries with country of origin&lt;div&gt;4.596 registries accompanied by studies&lt;/div&gt;&lt;div&gt;853 registries with coordinates&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;perimeterSpacing=2;verticalAlign=middle;horizontal=1;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="340" y="370" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="TO6lL-4IeJvYnI1GItPU-20" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;strokeWidth=2;targetPerimeterSpacing=7;sourcePerimeterSpacing=7;" edge="1" parent="1" source="TO6lL-4IeJvYnI1GItPU-1" target="TO6lL-4IeJvYnI1GItPU-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="129" as="sourcePoint" />
+            <mxPoint x="470" y="201" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TO6lL-4IeJvYnI1GItPU-22" value="country information retrieved for 26 registries" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;perimeterSpacing=0;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="510" y="836" width="150" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
