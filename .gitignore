@@ -1,2 +1,5 @@
+<<<<<<< HEAD
 # Ignore virtual environments
+=======
+>>>>>>> 3910ded42f79829e9ec99929ee23c283c9c30a73
 .venv/
