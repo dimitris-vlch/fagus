@@ -1,0 +1,75 @@
+[
+{"study_accession":"PRJDB17753","study_title":"RNA sequencing of beech seedlings grown for 12-days drought stress experiment","tax_id":"28929"}
+,
+{"study_accession":"PRJEB76841","study_title":"Fagus sylvatica (European beech)","tax_id":"28930"}
+,
+{"study_accession":"PRJEB78583","study_title":"Fagus sylvatica (European beech) genome assembly, dhFagSylv1 haplotype 2","tax_id":"28930"}
+,
+{"study_accession":"PRJEB78584","study_title":"Fagus sylvatica (European beech) genome assembly, dhFagSylv1 haplotype 1","tax_id":"28930"}
+,
+{"study_accession":"PRJNA295146","study_title":"Fagus sylvatica Raw sequence reads","tax_id":"28930"}
+,
+{"study_accession":"PRJNA806270","study_title":"Fagus japonica overview","tax_id":"63422"}
+,
+{"study_accession":"PRJDB15599","study_title":"Research on population genome of Fagus crenata","tax_id":"28929"}
+,
+{"study_accession":"PRJDB15637","study_title":"Principal pseudohaplotype","tax_id":"28929"}
+,
+{"study_accession":"PRJDB15639","study_title":"Alternate pseudohaplotype","tax_id":"28929"}
+,
+{"study_accession":"PRJDB2023","study_title":"SuperSAGE analysis between nitrogen fertilized samples and control in Fagus crenata","tax_id":"28929"}
+,
+{"study_accession":"PRJDB8757","study_title":"Whole genome sequencing of Fagus crenata","tax_id":"28929"}
+,
+{"study_accession":"PRJNA448623","study_title":"Fagus crenata overview","tax_id":"28929"}
+,
+{"study_accession":"PRJNA602470","study_title":"GenTree Fagus sylvatica Exome capture","tax_id":"28930"}
+,
+{"study_accession":"PRJNA80187","study_title":"Fagus sylvatica Transcriptome or Gene expression","tax_id":"28930"}
+,
+{"study_accession":"PRJNA84135","study_title":"Fagus sylvatica Organism overview","tax_id":"28930"}
+,
+{"study_accession":"PRJDB15635","study_title":"Genome Sequencing and phasing","tax_id":"28929"}
+,
+{"study_accession":"PRJEB76840","study_title":"Fagus sylvatica (European beech), genomic and transcriptomic data","tax_id":"28930"}
+,
+{"study_accession":"PRJEB80328","study_title":"Investigation of genomic variation of European beech","tax_id":"28930"}
+,
+{"study_accession":"PRJNA1127824","study_title":"Fagus orientalis Raw sequence reads","tax_id":"196626"}
+,
+{"study_accession":"PRJNA726010","study_title":"Fagus sylvatica Raw sequence reads","tax_id":"28930"}
+,
+{"study_accession":"PRJDB15597","study_title":"Genome Sequencing","tax_id":"28929"}
+,
+{"study_accession":"PRJNA448277","study_title":"Fagus crenata Genome sequencing and assembly","tax_id":"28929"}
+,
+{"study_accession":"PRJNA448340","study_title":"Fagus crenata Genome sequencing and assembly","tax_id":"28929"}
+,
+{"study_accession":"PRJNA721723","study_title":"Genomic signatures of natural selection at phenology-related genes in a widely distributed tree species Fagus sylvatica L","tax_id":"28930"}
+,
+{"study_accession":"PRJNA376859","study_title":"Drough stress-related transcriptome analysis of Fagus sylvatica","tax_id":"28930"}
+,
+{"study_accession":"PRJNA321730","study_title":"Fagus grandifolia Transcriptome or Gene expression","tax_id":"60423"}
+,
+{"study_accession":"PRJNA450822","study_title":"Fagus sylvatica Genome sequencing and assembly","tax_id":"28930"}
+,
+{"study_accession":"PRJNA689109","study_title":"Beech's buds-twigs Raw sequence reads","tax_id":"28930"}
+,
+{"study_accession":"PRJNA123407","study_title":"Fagus sylvatica Transcriptome or Gene expression","tax_id":"28930"}
+,
+{"study_accession":"PRJNA123415","study_title":"Fagus sylvatica Transcriptome or Gene expression","tax_id":"28930"}
+,
+{"study_accession":"PRJNA123421","study_title":"Fagus sylvatica Transcriptome or Gene expression","tax_id":"28930"}
+,
+{"study_accession":"PRJNA123413","study_title":"Fagus sylvatica Transcriptome or Gene expression","tax_id":"28930"}
+,
+{"study_accession":"PRJNA123409","study_title":"Fagus sylvatica Transcriptome or Gene expression","tax_id":"28930"}
+,
+{"study_accession":"PRJNA123419","study_title":"Fagus sylvatica Transcriptome or Gene expression","tax_id":"28930"}
+,
+{"study_accession":"PRJNA524293","study_title":"Field transcriptome revealed a novel relationship between nitrate transport and flowering in Japanese beech","tax_id":"28929"}
+,
+{"study_accession":"PRJNA123411","study_title":"Fagus sylvatica Transcriptome or Gene expression","tax_id":"28930"}
+,
+{"study_accession":"PRJNA123417","study_title":"Fagus sylvatica Transcriptome or Gene expression","tax_id":"28930"}
+]
