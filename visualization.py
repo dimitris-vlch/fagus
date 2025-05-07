@@ -248,7 +248,7 @@ country= frequency.get("country")
 no_data= total_registries - country
 sizes= [country, no_data]
 labels= ["country","no data"]
-colors= ["#9467bd", "#8c564b"] # Μοβ & Καφέ
+colors = ["#4e79a7", "#f28e2b"]  # deep steel blue & warm orange
 fig = plt.figure(figsize=(6, 6))
 plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors = colors)
 
