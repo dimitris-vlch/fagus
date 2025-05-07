@@ -126,7 +126,7 @@ logo_ax.axis('off')
 
 
 plt.tight_layout()
-plt.savefig("geo_pie_chart.png")  # αποθήκευση εικόνας
+plt.savefig("geo_pie_chart.png", bbox_inches="tight")  # αποθήκευση εικόνας
 plt.show()
 
 # Bήμα 8: Bar Chart
@@ -151,7 +151,7 @@ plt.figtext(0.5, 0.03, f"Total registries: {total_registries}", ha='center', fon
 
 # Όπως και στο προηγούμενο βήμα, ορίζουμε .title(), .tight_layout(), .savefig(), .show() για τους ίδιους ακριβώς λόγους.
 
-plt.title("Number of registries with or without geographic information")
+fig.suptitle("Number of registries with or without geographic information")
 plt.figtext(0.5, 0.03, f"Total registries: {total_registries}", ha='center', fontsize=10)
 
 # Python-logo
@@ -162,7 +162,7 @@ logo_ax.imshow(python_logo)
 logo_ax.axis('off')
 
 plt.tight_layout(rect=[0, 0.05, 1, 1])  # η συγκεκριμένη ρύθμιση για .tight_layout() τραβάει το γράφημα λίγο προς τα πάνω για να κάνει χώρο και για το .figtext() να χωρέσει.
-plt.savefig("geo_bar_Chart.png")
+plt.savefig("geo_bar_Chart.png", bbox_inches="tight")
 plt.show()
 
 # Pie Chart και Bar Chart για την γραφική απεικόνιση των πεδίων του geo_fields. Βλέπουμε ποιά είναι τα πεδία με τα πλουσιότερα γεωγραφικά δεδομένα.
@@ -187,7 +187,7 @@ for i, value in enumerate(field_values):
 #   i: το index (0, 1, 2, ...)
 #   value: η τιμή της μπάρας (π.χ. 4435)
 plt.ylabel("Frequency of geographic data presence")
-plt.title("Bar Chart of the frequency of geographic fields")
+fig.suptitle("Bar Chart of the frequency of geographic fields")
 plt.xticks(rotation=30) # περιστρέφει ετικέτες στο χ αξονα κατα 30 μοίρες ώστε να μην επικαλύπτονται όταν αυτές είναι πολύ μεγάλες.
 plt.figtext(0.5, 0.03, f"Total registries: {total_registries}", ha="center", fontsize=10) # λεζάντα στο κάτω μέρος του γραφήματος που αναφέρει τον συνολικό αριθμό των εγγραφών.
 
@@ -199,7 +199,7 @@ logo_ax.imshow(python_logo)
 logo_ax.axis('off')
 
 plt.tight_layout(rect=[0, 0.05, 1, 1])
-plt.savefig("geo_fields_bar_chart.png")
+plt.savefig("geo_fields_bar_chart.png", bbox_inches="tight")
 plt.show()
 
 # Βήμα 11: multi-pie diagram Για καθε πεδιο γεωγραφικής πληροφορίας εμφανίζετια ενα μικρο pie chart που διχνει πόσα δείγματα έχουν το πεδιο αυτό και πόσα δείγματα δεν έχουν το πεδίο αυτό.
@@ -227,7 +227,7 @@ for idx, (field_name, field_value) in enumerate(zip(field_names, field_values)):
 
     plt.subplot(rows, cols, idx + 1)    # Το plt.subplot() δημιουργεί πολλαπλά γραφήματα (subplots) σε μία ενιαία εικόνα. Του δίνουμε τις μεταβλητες που ορισαμε παραπάνω γραμμές και στήλες και μετά τη μεταβλητή idx που παίρνει αριθμητικές θέσεις για field_name.Επειδή το enumerate() ξεκινάει από 0, αλλά το subplot() περιμένει θέσεις ξεκινώντας από 1. Άρα: idx = 0 → θέση 1 idx = 1 → θέση 2. Ειμαστέ έτοιμοι τωρα να ορισουμε .pie().
     plt.pie(sizes,labels=labels,autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors=colors)
-    plt.title(field_name, fontsize=10, fontweight="bold")
+    fig.suptitle(field_name, fontsize=10, fontweight="bold")
 
 # Python-logo
 python_logo = mpimg.imread('png-clipart-python-others-text-logo.png')  
@@ -237,7 +237,7 @@ logo_ax.imshow(python_logo)
 logo_ax.axis('off')
 
 plt.tight_layout(rect=[0, 0.05, 0.9, 0.9])
-plt.savefig("geo_fields_pie_matrix.png")
+plt.savefig("geo_fields_pie_matrix.png", bbox_inches="tight")
 plt.show()
 
 # Βήμα 12: 4 μεμονομένα Pie Chart, ένα για έκαστο geo_field: "country", "location", "isolation_source", "lat", 
@@ -260,9 +260,9 @@ logo_ax.imshow(python_logo)
 logo_ax.axis('off')
 
 plt.tight_layout()
-plt.title("Percentage of registries with or without country geographic information")
+fig.suptitle("Percentage of registries with or without country geographic information")
 plt.figtext(0.5, 0.03, f"Total registries: {total_registries}", ha='center', fontsize=10)
-plt.savefig("country_pie_chart.png")
+plt.savefig("country_pie_chart.png", bbox_inches="tight")
 plt.show()
 
 # location
@@ -284,9 +284,9 @@ logo_ax.imshow(python_logo)
 logo_ax.axis('off')
 
 plt.tight_layout()
-plt.title("Percentage of registries with or without regional geographic information")
+fig.suptitle("Percentage of registries with or without regional geographic information")
 plt.figtext(0.5, 0.03, f"Total registries: {total_registries}", ha='center', fontsize=10)
-plt.savefig("location_pie_chart.png")
+plt.savefig("location_pie_chart.png", bbox_inches="tight")
 plt.show()
 
 # coordinates
@@ -299,7 +299,7 @@ colors = ["#007acc", "#cc0000"]   # καθαρό μπλε & έντονο κόκ�
 
 fig= plt.figure(figsize=(6, 6))
 plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors = colors)
-plt.title("Percentage of registries with or without coordinate geographic information")
+fig.suptitle("Percentage of registries with or without coordinate geographic information")
 plt.figtext(0.5, 0.03, f"Total registries: {total_registries}", ha='center', fontsize=10)
 
 # Python-logo
@@ -310,7 +310,7 @@ logo_ax.imshow(python_logo)
 logo_ax.axis('off')
 
 plt.tight_layout()
-plt.savefig("coordinates_pie_chart.png")
+plt.savefig("coordinates_pie_chart.png",bbox_inches="tight")
 plt.show()
 
 
@@ -324,7 +324,7 @@ colors = ["#005f73", "#94d2bd"]  # σκούρο πετρόλ & απαλό τιρ
 
 fig = plt.figure(figsize=(6, 6))
 plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors = colors)
-plt.title("Percentage of registries with or without geographic information of isolation source")
+fig.suptitle("Percentage of registries with or without geographic information of isolation source")
 plt.figtext(0.5, 0.03, f"Total registries: {total_registries}", ha='center', fontsize=10)
 
 # Python-logo
@@ -335,5 +335,5 @@ logo_ax.imshow(python_logo)
 logo_ax.axis('off')
 
 plt.tight_layout()
-plt.savefig("isolation_source_pie_chart.png")
+plt.savefig("isolation_source_pie_chart.png", bbox_inches="tight") # bbox_inches="tight" ωστε να φένεται όλος ο τίτλος
 plt.show()
