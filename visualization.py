@@ -271,7 +271,7 @@ location= frequency.get("location")
 no_data= total_registries - location
 sizes= [location, no_data]
 labels= ["location","no data"]
-["#17becf", "#bcbd22"] #  Κυανό & Κιτρινοπράσινο
+colors = ["#7fc97f", "#beaed4"]  # soft green & gentle violet
 
 fig = plt.figure(figsize=(6, 6))
 plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors = colors)
@@ -295,7 +295,7 @@ coordinates= frequency.get("lat")
 no_data= total_registries - coordinates
 sizes=[coordinates, no_data]
 labels= ["coordinates","no data"]
-colors = ["#007acc", "#cc0000"]   # καθαρό μπλε & έντονο κόκκινο
+colors = ["#9e9ac8", "#fdae6b"]  # soft purple & warm peach-orange
 
 fig= plt.figure(figsize=(6, 6))
 plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors = colors)
