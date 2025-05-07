@@ -114,8 +114,8 @@ plt.pie(
 # plt.savefig("geo_pie_chart.png") σώζει το γράφημα ως εικόνα .png.
 # plt.show() εμφανίζει το γράφημα στην οθόνη.
 
-plt.figtext(0.5, 0.03, f"Σύνολο εγγραφών: {total_registries}", ha='center', fontsize=10) # σχολιασμός παρακάτω.
-plt.title("Ποσοστό εγγραφών με ή χωρίς γεωγραφική πληροφορία")
+plt.figtext(0.5, 0.03, f"Total registries: {total_registries}", ha='center', fontsize=10) # σχολιασμός παρακάτω.
+plt.title("Percentage of registries with or without geographic information")
 
 # Python-logo
 python_logo = mpimg.imread('png-clipart-python-others-text-logo.png')  
@@ -135,7 +135,7 @@ plt.show()
 
 labels = ["With Geo Info", "Without Geo Info"]
 sizes = [with_geo, without_geo]
-colors = ["blue","red"]
+colors = ["#1f77b4", "#ff7f0e"]  # Μπλε & Πορτοκαλί
 
 # με .figure ορίζουμε γράφημα, το οποίο και του δίνουμε διαστάσεις figsize 6 επι 4 ίντσες.
 # η .bar() δημιουργεί τις μπάρεις του Bar Chart. στο παράδειγμα μας είναι της μορφής .bar(x,y,colors), δηλαδή οι τιμές του  χ άξονα, στη συνέχεια οι τιμές του ψ άξονα και τέλος τα χρώματα των μπαρών.
@@ -143,16 +143,16 @@ colors = ["blue","red"]
 
 fig = plt.figure(figsize=(6,4))
 plt.bar(labels, sizes, color=colors)
-plt.ylabel("Αριθμός εγγραφών")
+plt.ylabel("Registry count")
 
 # η .figtext() είναι συνάρτηση της matplotlib. Προσθέτει κείμενο στο figure. Οι αριθμοί 0.5 και 0.01 αναφέρονται στην οριζόντια και στην κάθετη θέση του κειμένου και παίρνουν τιμές από 0 μέχρι και 1, από αριστερά προς τα δεξιά και από κάτω προς τα πάνω αντίστοιχα. το ha αναφέρεται στην στοίχιση του κειμένου και πέρνει τιμές center, left, right και fontsize  μέγεθος γραμματοσειράς. 
  
-plt.figtext(0.5, 0.03, f"Σύνολο εγγραφών: {total_registries}", ha='center', fontsize=10)
+plt.figtext(0.5, 0.03, f"Total registries: {total_registries}", ha='center', fontsize=10)
 
 # Όπως και στο προηγούμενο βήμα, ορίζουμε .title(), .tight_layout(), .savefig(), .show() για τους ίδιους ακριβώς λόγους.
 
-plt.title("Αριθμός εγγραφών με ή χωρίς γεωγραφική πληροφορία")
-plt.figtext(0.5, 0.03, f"Σύνολο εγγραφών: {total_registries}", ha='center', fontsize=10)
+plt.title("Number of registries with or without geographic information")
+plt.figtext(0.5, 0.03, f"Total registries: {total_registries}", ha='center', fontsize=10)
 
 # Python-logo
 python_logo = mpimg.imread('png-clipart-python-others-text-logo.png')  
@@ -186,10 +186,10 @@ for i, value in enumerate(field_values):
 #   Το enumerate() σου δίνει:
 #   i: το index (0, 1, 2, ...)
 #   value: η τιμή της μπάρας (π.χ. 4435)
-plt.ylabel("Συχνότητα εμφάνισης γεωγραφικής πληροφορίας.")
-plt.title("Bar Chart για τη συχνότητα των πεδίων με γεωγραφική πληροφορία")
+plt.ylabel("Frequency of geographic data presence")
+plt.title("Bar Chart of the frequency of geographic fields")
 plt.xticks(rotation=30) # περιστρέφει ετικέτες στο χ αξονα κατα 30 μοίρες ώστε να μην επικαλύπτονται όταν αυτές είναι πολύ μεγάλες.
-plt.figtext(0.5, 0.03, f"Σύνολο εγγραφών: {total_registries}", ha="center", fontsize=10) # λεζάντα στο κάτω μέρος του γραφήματος που αναφέρει τον συνολικό αριθμό των εγγραφών.
+plt.figtext(0.5, 0.03, f"Total registries: {total_registries}", ha="center", fontsize=10) # λεζάντα στο κάτω μέρος του γραφήματος που αναφέρει τον συνολικό αριθμό των εγγραφών.
 
 # Python-logo
 python_logo = mpimg.imread('png-clipart-python-others-text-logo.png')  
@@ -205,7 +205,7 @@ plt.show()
 # Βήμα 11: multi-pie diagram Για καθε πεδιο γεωγραφικής πληροφορίας εμφανίζετια ενα μικρο pie chart που διχνει πόσα δείγματα έχουν το πεδιο αυτό και πόσα δείγματα δεν έχουν το πεδίο αυτό.
 
 fig = plt.figure(figsize=(12,7))
-plt.figtext(0.5, 0.95, "Ποσοστά κάλυψης γεωγραφικών πεδίων ως προς το σύνολο των εγγραφών", ha="center", fontsize=14, fontweight="bold") # ορίζουμε τίτλο οχι με .title() αλλά με .figtext() γιατί το .title() θα το χρειαστούμε αργότερα για κάθε ξεχωριστό pie chart.
+plt.figtext(0.5, 0.95, "Coverage percentages of geographic fields relative to total registries", ha="center", fontsize=14, fontweight="bold") # we define a title using .figtext() instead of .title() because .title() will be used later for each individual pie chart.
 
 rows = 2    # ορίζουμε μεταβλητές για γραμμες και στηλες που θα ορίσουν τα 8 κελιά που καθένα θα περιέχει ένα pie chart.
 cols = 3
@@ -222,8 +222,9 @@ field_names = ["country", "location", "coordinates", "isolation_source"]
 for idx, (field_name, field_value) in enumerate(zip(field_names, field_values)):
     missing = total_registries - field_value
     sizes = [field_value, missing] #ορίζουμε τα μεγέθη του pie chart.
-    labels = ["Παρατίθεται", "Απουσιάζει"] # labels και χρωματα μπλε και κοκκινο για τα μεγέθη.
-    colors = ["blue","red"]
+    labels = ["Provided", "Missing"] # labels και χρωματα μπλε και κοκκινο για τα μεγέθη.
+    colors = ["#2ca02c", "#d62728"] # Πράσινο & Κόκκινο
+
     plt.subplot(rows, cols, idx + 1)    # Το plt.subplot() δημιουργεί πολλαπλά γραφήματα (subplots) σε μία ενιαία εικόνα. Του δίνουμε τις μεταβλητες που ορισαμε παραπάνω γραμμές και στήλες και μετά τη μεταβλητή idx που παίρνει αριθμητικές θέσεις για field_name.Επειδή το enumerate() ξεκινάει από 0, αλλά το subplot() περιμένει θέσεις ξεκινώντας από 1. Άρα: idx = 0 → θέση 1 idx = 1 → θέση 2. Ειμαστέ έτοιμοι τωρα να ορισουμε .pie().
     plt.pie(sizes,labels=labels,autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors=colors)
     plt.title(field_name, fontsize=10, fontweight="bold")
@@ -247,9 +248,9 @@ country= frequency.get("country")
 no_data= total_registries - country
 sizes= [country, no_data]
 labels= ["country","no data"]
-colors= ["blue", "red"]
+colors= ["#9467bd", "#8c564b"] # Μοβ & Καφέ
 fig = plt.figure(figsize=(6, 6))
-plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors = ["blue","red"])
+plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors = colors)
 
 # Python-logo
 python_logo = mpimg.imread('png-clipart-python-others-text-logo.png')  
@@ -259,8 +260,8 @@ logo_ax.imshow(python_logo)
 logo_ax.axis('off')
 
 plt.tight_layout()
-plt.title("Ποσοστό εγγραφών με ή χωρίς γεωγραφική πληροφορία χώρας")
-plt.figtext(0.5, 0.03, f"Σύνολο εγγραφών: {total_registries}", ha='center', fontsize=10)
+plt.title("Percentage of registries with or without country geographic information")
+plt.figtext(0.5, 0.03, f"Total registries: {total_registries}", ha='center', fontsize=10)
 plt.savefig("country_pie_chart.png")
 plt.show()
 
@@ -270,10 +271,10 @@ location= frequency.get("location")
 no_data= total_registries - location
 sizes= [location, no_data]
 labels= ["location","no data"]
-colors= ["blue", "red"]
+["#17becf", "#bcbd22"] #  Κυανό & Κιτρινοπράσινο
 
 fig = plt.figure(figsize=(6, 6))
-plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors = ["blue","red"])
+plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors = colors)
 
 # Python-logo
 python_logo = mpimg.imread('png-clipart-python-others-text-logo.png')  
@@ -283,8 +284,8 @@ logo_ax.imshow(python_logo)
 logo_ax.axis('off')
 
 plt.tight_layout()
-plt.title("Ποσοστό εγγραφών με ή χωρίς γεωγραφική πληροφορία περιοχής")
-plt.figtext(0.5, 0.03, f"Σύνολο εγγραφών: {total_registries}", ha='center', fontsize=10)
+plt.title("Percentage of registries with or without regional geographic information")
+plt.figtext(0.5, 0.03, f"Total registries: {total_registries}", ha='center', fontsize=10)
 plt.savefig("location_pie_chart.png")
 plt.show()
 
@@ -294,12 +295,12 @@ coordinates= frequency.get("lat")
 no_data= total_registries - coordinates
 sizes=[coordinates, no_data]
 labels= ["coordinates","no data"]
-colors= ["blue", "red"]
+colors = ["#007acc", "#cc0000"]   # καθαρό μπλε & έντονο κόκκινο
 
 fig= plt.figure(figsize=(6, 6))
-plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors = ["blue","red"])
-plt.title("Ποσοστό εγγραφών με ή χωρίς γεωγραφική πληροφορία συντεταγμένων")
-plt.figtext(0.5, 0.03, f"Σύνολο εγγραφών: {total_registries}", ha='center', fontsize=10)
+plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors = colors)
+plt.title("Percentage of registries with or without coordinate geographic information")
+plt.figtext(0.5, 0.03, f"Total registries: {total_registries}", ha='center', fontsize=10)
 
 # Python-logo
 python_logo = mpimg.imread('png-clipart-python-others-text-logo.png')  
@@ -319,12 +320,12 @@ isolation_source= frequency.get("isolation_source")
 no_data= total_registries - isolation_source
 sizes= [isolation_source, no_data]
 labels= ["isolation_source","no data"]
-colors= ["blue", "red"]
+colors = ["#005f73", "#94d2bd"]  # σκούρο πετρόλ & απαλό τιρκουάζ
 
 fig = plt.figure(figsize=(6, 6))
-plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors = ["blue","red"])
-plt.title("Ποσοστό εγγραφών με ή χωρίς γεωγραφική πληροφορία πηγής απομονώσεως")
-plt.figtext(0.5, 0.03, f"Σύνολο εγγραφών: {total_registries}", ha='center', fontsize=10)
+plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors = colors)
+plt.title("Percentage of registries with or without geographic information of isolation source")
+plt.figtext(0.5, 0.03, f"Total registries: {total_registries}", ha='center', fontsize=10)
 
 # Python-logo
 python_logo = mpimg.imread('png-clipart-python-others-text-logo.png')  
