@@ -185,17 +185,17 @@ colors_bar_chart = [
 no_data = total_registries - total_geo_registries
 sizes = [total_geo_registries, no_data]
 labels = ["registries with country \nand coordinates","no data"]
-colors = ["blue", "red"]
+colors = ["#f0e442", "#a65628"]  # έντονο κίτρινο & σοκολατί καφέ
 
 fig = plt.figure(figsize=(6, 6)) # ορίζω fig = ώστε μετά να έχω προσβασε σε fig.add_axes() για την τροποποίηση της θέσης του λόγκο.
-plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors = ["blue","red"])
-plt.title("Ποσοστό εγγραφών με ή χωρίς \nγεωγραφική πληροφορία χώρας και συντεταγμένων.")
+plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=90, colors = colors)
+plt.title("Percentage of registries with or without\nboth country and coordinate information")
 # συμβολοσειρά της μορφής "42.3% (152)"
 # lambda pct: f"" καλεί συνάρτηση
 # {pct:.1f}%: υπολογίζει ποσοστό με .1 δεκαδικο ψηφιο
 # pct / 100. * sum(sizes) μετατρέπει ποσοστό σε απόλυτο αριθμό
 # int μετατρέπει απόλυτο αριθμό σε ακέραιο
-plt.figtext(0.5, 0.03, f"Σύνολο εγγραφών: {total_registries}", ha='center', fontsize=12)
+plt.figtext(0.5, 0.03, f"Total registries: {total_registries}", ha='center', fontsize=12)
 
 # Python-logo
 python_logo = mpimg.imread('png-clipart-python-others-text-logo.png')  
@@ -205,7 +205,7 @@ logo_ax.imshow(python_logo)
 logo_ax.axis('off')
 
 plt.tight_layout()
-plt.savefig("countries_and_coordinates_information_access_pie_chart.png")
+plt.savefig("countries_and_coordinates_information_access_pie_chart.png", dpi=300)
 plt.show()
 
 #Το Διάγραμμα 2 (Pie Chart) παρουσιάζει τα αποτελέσματα της σύγκρισης ανάμεσα στη χώρα που έχει δηλωθεί ως τόπος προέλευσης ενός δείγματος και στη χώρα που προκύπτει από τις δηλωμένες γεωγραφικές συντεταγμένες. Η επεξεργασία των συντεταγμένων γίνεται με χρήση των βιβλιοθηκών Geopandas και Nominatim, μέσω της διαδικασίας του reverse geocoding. Στο γράφημα περιλαμβάνονται μόνο οι εγγραφές που φέρουν ταυτόχρονα και δηλωμένη χώρα και γεωγραφικές συντεταγμένες. 
@@ -223,13 +223,14 @@ print(f"\n {match} matches and {mismatch} mismatches")
 
 sizes = [match, mismatch]
 labels = ["coordinates alligning \nwith country","faulty coordinates \nor country"]
-colors = ["blue", "red"]
+colors = ["#ffd92f", "#e31a1c"]  # έντονο κίτρινο & βαθύ κόκκινο
+
 
 fig = plt.figure(figsize=(6, 6)) # ορίζω fig = ώστε μετά να έχω προσβασε σε fig.add_axes() για την τροποποίηση της θέσης του λόγκο.
-plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=00, colors = ["blue","red"])
-plt.title("Εγγραφές με συντεταγμένες που συμφωνούν \nμε την δηλωμένη χώρα συγκριτικα με εγγραφές που διαφωνούν")
-plt.figtext(0.5, 0.02, f"Σύνολο εγγραφών: {total_registries}", ha='center', fontsize=12)
-plt.figtext(0.5, 0.07, f"Σύνολο εγγραφών με συντεγμένες και χώρα: {len(curated_data)}", ha='center', fontsize=12)
+plt.pie(sizes, labels=labels, autopct= lambda pct: f"{pct:.1f}% ({int(pct / 100. * sum(sizes))})", startangle=00, colors = colors)
+plt.title("Agreement vs disagreement between\ncoordinates and declared country")
+plt.figtext(0.5, 0.02, f"Total registries: {total_registries}", ha='center', fontsize=12)
+plt.figtext(0.5, 0.07, f"Number of registries with both coordinates and country: {len(curated_data)}", ha='center', fontsize=12)
 
 # Python-logo
 python_logo = mpimg.imread('png-clipart-python-others-text-logo.png')  
@@ -239,5 +240,5 @@ logo_ax.imshow(python_logo)
 logo_ax.axis('off')
 
 plt.tight_layout()
-plt.savefig("true_and_faultycoordinates_pie_chart.png")
+plt.savefig("true_and_faultycoordinates_pie_chart.png", dpi=300)
 plt.show()
