@@ -155,7 +155,7 @@ for _, row in combined_geo_dataframe.iterrows():
     if country_match == "no":
         calculated_mismatches_1 += 1
 
-print(f"\nΥπολογίζοντας αποκλειστικά με geopandas, βρίσκω {calculated_mismatches_1} αναντιστοιχίες χώρας-συντεταγμένων και ανιχνεύω {false_positive_mismatches} ψευδώς θετικές αναντιστοιχίες")
+print(f"\nUsing only geopandas, I find {calculated_mismatches_1} country-coordinate mismatches and detect {false_positive_mismatches} false positive mismatches")
 
 calculated_mismatches_2 = 0
 false_positive_mismatches = 0 
@@ -176,7 +176,8 @@ for _, row in combined_geo_dataframe.iterrows():
 
 false_positive_mismatches = calculated_mismatches_1 - calculated_mismatches_2
 
-print(f"\nΥπολογίζοντας με geopandas και διορθώνοντας για ΗΠΑ, βρίσκω {calculated_mismatches_2} αναντιστοιχίες χώρας-συντεταγμένων και ανιχνεύω {false_positive_mismatches} ψευδώς θετικές αναντιστοιχίες")
+print(f"\nUsing geopandas and correcting for the USA, I find {calculated_mismatches_2} country-coordinate mismatches and detect {false_positive_mismatches} false positive mismatches")
+
 
 # Υπολογίζω mismatches με geopandas και πραγματοποιώ την διόρθωση για ΗΠΑ και Σερβία.
 
@@ -201,7 +202,7 @@ for _, row in combined_geo_dataframe.iterrows():
 
 false_positive_mismatches = calculated_mismatches_1 - calculated_mismatches_3
 
-print(f"\nΥπολογίζοντας με geopandas, και διορθώνοντας για ΗΠΑ και Σερβία, βρίσκω {calculated_mismatches_3} αναντιστοιχίες χώρας-συντεταγμένων και ανιχνεύω {false_positive_mismatches} ψευδώς θετικές αναντιστοιχίες")
+print(f"\nUsing geopandas and correcting for the USA and Serbia, I find {calculated_mismatches_3} country-coordinate mismatches and detect {false_positive_mismatches} false positive mismatches")
 
 # Υπολογίζω mismatches με geopandas και Nominatim και πραγματοποιώ την διόρθωση για ΗΠΑ και Σερβία.
 
@@ -220,18 +221,17 @@ for registry in curated_data:
 
 false_positive_mismatches = calculated_mismatches_1 - mismatch
 
-print(f"\nΥπολογίζοντας με geopandas και Nominatim και διορθώνοντας για ΗΠΑ και Σερβία, βρίσκω {mismatch} αναντιστοιχίες χώρας-συντεταγμένων και ανιχνεύω {false_positive_mismatches} ψευδώς θετικές αναντιστοιχίες")
-
+print(f"\nUsing geopandas and correcting for the USA and Serbia, I find {calculated_mismatches_3} country-coordinate mismatches and detect {false_positive_mismatches} false positive mismatches")
 
 # Bar Plot
 
 
 # Ονόματα για τα 4 ζευγάρια
 labels = [
-    "Geopandas (αρχικά)",
-    "Geopandas + ΗΠΑ",
-    "Geopandas + ΗΠΑ + Σερβία",
-    "Geopandas + Nominatim + ΗΠΑ + Σερβία"
+    "Geopandas",
+    "Geopandas + USA",
+    "Geopandas + USA + Serbia",
+    "Geopandas + Nominatim + USA + Serbia"
 ]
 
 # Υψος κύριων bars (mismatches)
@@ -265,9 +265,9 @@ fig, ax = plt.subplots(figsize=(10, 6)) # Πλαίσιο fig και άξονες
 # Το πλάτος κάθε μπαρας είναι το 35% δια του 2 του διαθέσιμου κενού.
 # label το όνομα της κάθε μπάρας και color το χρώμα
 
-bars1 = ax.bar(x - width/2, mismatches, width, label='Αναντιστοιχίες (Mismatch)', color='skyblue') # Μπάρες mismatches
+bars1 = ax.bar(x - width/2, mismatches, width, label='(Mismatch)', color='skyblue') # Μπάρες mismatches
 
-bars2 = ax.bar(x + width/2, false_positives, width, label='Ψευδώς θετικές που διορθώθηκαν', color='orange') # Μπάρες false positives
+bars2 = ax.bar(x + width/2, false_positives, width, label='corrected false positives', color='orange') # Μπάρες false positives
 
 # Τίτλοι και ετικέτες
 # ax.set_ylabel() τίτλος για άξονα y
@@ -278,7 +278,7 @@ bars2 = ax.bar(x + width/2, false_positives, width, label='Ψευδώς θετι
 
 
 ax.set_ylabel("Registries", fontsize=12)
-ax.set_title("Περιορισμοί geopandas & αναγκαιότητα βελτιστοποίησης για τον εντοπισμό ψευδών θετικών αναντιστοιχιών", fontsize=14)
+ax.set_title("Limitations of geopandas & the need for refinement to identify false positive mismatches",fontsize=14)
 ax.set_xticks(x)
 ax.set_xticklabels(labels, rotation=20)
 ax.legend()
