@@ -265,9 +265,9 @@ fig, ax = plt.subplots(figsize=(10, 6)) # Πλαίσιο fig και άξονες
 # Το πλάτος κάθε μπαρας είναι το 35% δια του 2 του διαθέσιμου κενού.
 # label το όνομα της κάθε μπάρας και color το χρώμα
 
-bars1 = ax.bar(x - width/2, mismatches, width, label='(Mismatch)', color='skyblue') # Μπάρες mismatches
+bars1 = ax.bar(x - width/2, mismatches, width, label='Mismatches', color='skyblue') # Μπάρες mismatches
 
-bars2 = ax.bar(x + width/2, false_positives, width, label='corrected false positives', color='orange') # Μπάρες false positives
+bars2 = ax.bar(x + width/2, false_positives, width, label='Corrected false positives', color='orange') # Μπάρες false positives
 
 # Τίτλοι και ετικέτες
 # ax.set_ylabel() τίτλος για άξονα y
@@ -321,6 +321,6 @@ logo_ax.imshow(python_logo)
 logo_ax.axis('off')
 
 plt.tight_layout()
-plt.savefig("mismatch_curation_bar_plot.png")
+plt.savefig("mismatch_curation_bar_plot.png",dpi= 300)
 plt.show()
 
