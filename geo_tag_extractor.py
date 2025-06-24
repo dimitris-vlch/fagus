@@ -11,11 +11,11 @@
     #   Από την βιβλιοθήκη collections, εισάγουμε την ειδική δομή defaultdict, η οποία και συνιστά παραλλαγή του απλού  dict. H defauldict δημιουργεί αυτόματα τιμές για κλειδιά που δεν υπάρχουν ακόμα.
 
     #   d = {}
-    #   d["apple"].append("fruit")  # ❌ Αυτό θα βγάλει σφάλμα: KeyError
+    #   d["apple"].append("fruit")  #  Αυτό θα βγάλει σφάλμα: KeyError
 
     #   from collections import defaultdict
     #   d = defaultdict(list)
-    #   d["apple"].append("fruit")  # ✅ Δεν βγάζει σφάλμα: δημιουργεί κενή λίστα και προσθέτει
+    #   d["apple"].append("fruit")  #  Δεν βγάζει σφάλμα: δημιουργεί κενή λίστα και προσθέτει
 
     #   Έτσι, δεν χρειάζονται ελέγχοι του τύπου if key not in dict:
     #   dict[key] = []
