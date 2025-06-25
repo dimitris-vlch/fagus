@@ -1,7 +1,7 @@
 # In order for the script to work successfully, run the following commands on bash terminal consequetively.
 
 # python3 coordinatinates_country_curation.py
-# python3 coordinatinates_country_curation.py
+# python3 mismatches_and_reverse_geocoding.py
 # python3 coordinatinates_country_curation.py
 
 # note coordinatinates_country_curation.py. The script coordinatinates_country_curation.py takes a while to be completed, so it would be wise for it to be separated from the other the other parts of the script.
