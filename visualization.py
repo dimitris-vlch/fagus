@@ -222,7 +222,7 @@ field_names = ["country", "location", "coordinates", "isolation_source"]
 for idx, (field_name, field_value) in enumerate(zip(field_names, field_values)):
     missing = total_registries - field_value
     sizes = [field_value, missing] #ορίζουμε τα μεγέθη του pie chart.
-    labels = ["Provided", "Missing"] # labels και χρωματα μπλε και κοκκινο για τα μεγέθη.
+    labels = [f"Provided {field_name}", "Missing"] # labels και χρωματα μπλε και κοκκινο για τα μεγέθη.
     colors = ["#2ca02c", "#d62728"] # Πράσινο & Κόκκινο
 
     plt.subplot(rows, cols, idx + 1)    # Το plt.subplot() δημιουργεί πολλαπλά γραφήματα (subplots) σε μία ενιαία εικόνα. Του δίνουμε τις μεταβλητες που ορισαμε παραπάνω γραμμές και στήλες και μετά τη μεταβλητή idx που παίρνει αριθμητικές θέσεις για field_name.Επειδή το enumerate() ξεκινάει από 0, αλλά το subplot() περιμένει θέσεις ξεκινώντας από 1. Άρα: idx = 0 → θέση 1 idx = 1 → θέση 2. Ειμαστέ έτοιμοι τωρα να ορισουμε .pie().
