@@ -1,4 +1,4 @@
-# In order for the script to work successfully, run the following commands on bash terminal consequetively.
+23# In order for the script to work successfully, run the following commands on bash terminal consequetively.
 
 # python3 coordinatinates_country_curation.py
 # python3 mismatches_and_reverse_geocoding.py
@@ -66,7 +66,7 @@ for registry in data:
 # Bήμα 7: Για κάθε εγγραφή κρατάμε μονάχα τα πεδία lat, lon, country_submited
 
 # Η στρατιγική μας. Δημιουργούμε μια κενή λίστα country_and_coordinates_data στην οποία στο τέλος θα την γεμίσουμε με .append(geo_registry). Δημιουργούμε το geo_registry μεσα σε μια for με την παραπάνω συνθήκη if για να βάλουμε μονάχα τα κατάλληλα δείγματα. Στην συνέχεια φτιάχνουμε geo_registry = {"πεδιο" registry.get("πεδιο")}   
-
+    
 country_and_coordinates_data = []
 
 for idx, registry in enumerate(data,1): 
@@ -91,7 +91,7 @@ with open("country_and_coordinates_minimal_data.json.txt", "w", encoding = "utf-
 print (f"\ncountry_and_coordinates_minimal_data.json.txt has been created successfully. This json file contains {len(country_and_coordinates_data)} registries with both country and coordinates and only these fields from the whole registry, as well as the sample_accession field for identification.\n")
 
 ### Έλεγχος της εγκυρότητας των γεωγραφικών δεδομένων μέσω της βιβλιοθήκης geo_pandas
-
+  
 # Βήμα 10: Ορισμός dataframe. Μετατρέπουμε την λίστα country_and_coordinates_data σε dataframe. Μετατρέπει το json σε πίνακα
 
 dataframe = pd.DataFrame(country_and_coordinates_data)
@@ -120,7 +120,7 @@ geo_dataframe = gpd.GeoDataFrame(dataframe, geometry = dataframe["coordinates_po
 # δυστυχώς δεν είναι προεγκατεστημένος ο χάρτης και πρέπει να τον κατεβάσουμε και να ορίσουμε το path.
 
 
-geopandas_naturalearth_lowres = gpd.read_file("/home/dimitris/Documents/Github my repo/fagus/ne_110m_admin_0_countries")
+geopandas_naturalearth_lowres = gpd.read_file("/home/dimitris/fagus/ne_110m_admin_0_countries/ne_110m_admin_0_countries.shp")
 
 # Βήμα 14: Επεξεργασία naturalearth_lowres
 # φορτώνω τον χάρτη natural_lowres.
@@ -208,7 +208,7 @@ plt.tight_layout()
 plt.savefig("countries_and_coordinates_information_access_pie_chart.png", dpi=300)
 plt.show()
 
-#Το Διάγραμμα 2 (Pie Chart) παρουσιάζει τα αποτελέσματα της σύγκρισης ανάμεσα στη χώρα που έχει δηλωθεί ως τόπος προέλευσης ενός δείγματος και στη χώρα που προκύπτει από τις δηλωμένες γεωγραφικές συντεταγμένες. Η επεξεργασία των συντεταγμένων γίνεται με χρήση των βιβλιοθηκών Geopandas και Nominatim, μέσω της διαδικασίας του reverse geocoding. Στο γράφημα περιλαμβάνονται μόνο οι εγγραφές που φέρουν ταυτόχρονα και δηλωμένη χώρα και γεωγραφικές συντεταγμένες. 
+# Το Διάγραμμα 2 (Pie Chart) παρουσιάζει τα αποτελέσματα της σύγκρισης ανάμεσα στη χώρα που έχει δηλωθεί ως τόπος προέλευσης ενός δείγματος και στη χώρα που προκύπτει από τις δηλωμένες γεωγραφικές συντεταγμένες. Η επεξεργασία των συντεταγμένων γίνεται με χρήση των βιβλιοθηκών Geopandas και Nominatim, μέσω της διαδικασίας του reverse geocoding. Στο γράφημα περιλαμβάνονται μόνο οι εγγραφές που φέρουν ταυτόχρονα και δηλωμένη χώρα και γεωγραφικές συντεταγμένες. 
 
 match = 0
 mismatch = 0
